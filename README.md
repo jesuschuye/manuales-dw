@@ -1,0 +1,1 @@
+Proyecto que reune informacion de las distintas tecnologias actuales (2022) más utilizadas tanto en el frontend como en el backend
