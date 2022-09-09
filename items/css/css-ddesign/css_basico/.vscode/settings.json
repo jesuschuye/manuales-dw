@@ -1,0 +1,12 @@
+{
+    "liveServer.settings.port": 5501,
+    "php.validate.executablePath":"C:/php.7.3.7/php.exe",
+    "php.executablePath": "C:/php.7.3.7/php.exe",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
+    
+}

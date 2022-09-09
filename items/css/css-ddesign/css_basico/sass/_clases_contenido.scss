@@ -1,0 +1,102 @@
+.contenido{
+    width: $w-5;
+    min-width: 500px;
+    padding: 2rem;
+}
+
+.section, .article{
+    min-width: 500px;
+    margin:$m-3 auto;
+}
+
+.section{
+    width: $w-100;
+}
+
+.article{
+    width: $w-2;
+}
+
+.destacado{
+    border-left-style: solid;
+    border-left-width: $b-2;
+    border-left-color: $c-primary-2;
+    font-family: $font-p;
+    font-size: $fs-1;
+    background-color: $c-primary-3;
+    margin: $m-1;
+    padding: $p-1-2;
+    border-radius: $b-1;
+    -webkit-border-radius: $b-1;
+    -moz-border-radius: $b-1;
+    -ms-border-radius: $b-1;
+    -o-border-radius: $b-1;
+}
+
+.div-organizador{
+    width: $w-100;
+    max-width: $w-100;
+    min-width: 500px;
+    height: auto;
+    margin: $m-1 auto;
+    border: 1px dashed blue;
+}
+
+.list{
+    padding: $p-2 0;
+    width: $w-1;
+    max-width: $w-1;
+    border: 1px dashed red;
+    font-size: $fs-2;
+    margin: $m-1;
+    position: relative;
+}
+
+.list-item{
+    margin-left: $m-4;
+    padding: $p-1;
+    border: 1px dashed greenyellow;
+    width: $w-1 ;
+}
+
+.list-style-none{
+    list-style: none;
+}
+
+.list-item-type-title{
+    font-size: $fs-2;
+    margin-left: $m-4;
+    padding: $p-2;
+    list-style-type: square;
+}
+
+.pre-list {
+    background-color: $c-grease-1;
+    margin-top: $m-2;
+    margin-bottom: $m-2;
+    margin-left: $m-8;
+    width:$w-4;
+    white-space: pre-line;
+    font-size: $fs-1;
+    padding: $p-1-2;
+    border: 1px solid orange;
+
+}
+
+span{
+    color: $c-primary;
+}
+
+.span{
+    font-weight: bold;
+
+}
+
+.div-pre{
+    width:$w-100;
+    max-width: $w-100;
+}
+
+.div-flex{
+    display: flex;
+}

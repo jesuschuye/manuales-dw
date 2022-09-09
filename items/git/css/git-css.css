@@ -1,0 +1,25 @@
+img{
+    width: 100%;
+    height: auto;
+}
+p.destacado{
+    background-color: rgb(242, 242, 202);
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: rgb(255, 225, 0);
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+h2{
+    color:rgb(150, 146, 146)
+}
+
+h3.h5{
+    margin-bottom: 20px;
+}
+
+p.parrafo{
+    font-size: 1.2em;    
+    margin-bottom: 1em;
+}

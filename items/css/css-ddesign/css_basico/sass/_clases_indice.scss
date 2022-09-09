@@ -1,0 +1,43 @@
+.indice-container{
+    width: $w-7;
+    min-width: 300px;
+    background: rgb(240, 243, 245);
+}
+
+.list-indice-item, .sub-list-indice-item{
+    line-height: $m-5;
+}
+
+.nav-indice{
+    width: $w-100;
+    padding: $p-0;
+}
+
+.list-indice{
+    width: $w-2;
+    margin: $m-1 auto;
+    padding: $p-0;
+    list-style: none;
+}
+
+.list-indice-item{
+    width: $w-100;
+    font-size: $fs-2;
+}
+
+.sub-list-indice{
+    margin-left: $m-0;
+    padding: $p-0;
+    list-style: none;
+}
+
+.sub-list-indice-item{
+    font-size: $fs-2;
+    margin-left: $m-0;
+    padding: $p-0;
+}
+
+.sub-list-indice-item a{
+    display: block;
+    margin-left: $m-2;
+}

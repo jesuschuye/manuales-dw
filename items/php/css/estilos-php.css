@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(213, 235, 247);    
+}
+
+section, article{
+    background-color: rgb(213, 235, 247);
+    width: 90%;    
+}
+
+p.subtitulo {
+    background-color: rgb(250, 248, 225);
+    font-size: 1.2rem;
+}
+
+.position-nav-2{
+    background-color: rgb(250, 248, 225);
+}

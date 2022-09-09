@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+pre{
+    white-space: pre-line;
+    width: 90%;    
+}
+
+div pre{
+    margin: 2.5em auto;
+}
+
+h1, h2, img{
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+
+h2{
+    color:#ff9800;    
+}
+
+h3{
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+p{
+    font-size: 1.2em;
+    padding: 1em 1.2em;
+}
+
+section{
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+article{
+    margin: 1rem auto;
+    padding: 3rem;
+    width: 100%;    
+    /* border: 2px solid $skyblue; */
+}
+
+div h4{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1.5em;
+}
+
+.ul-list{
+    margin: 1em auto;
+    max-width:80%;    
+}
+
+.tools{    
+    text-align: center; 
+    background: #fff;
+}
+
+.tools ul{
+    margin: 0.8em auto;
+    width: 90%;    
+    justify-content: space-evenly;
+    list-style: none;
+    font-weight: bold;
+}
+
+.container-all{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    /* border: 2px solid $blue; */
+    position: relative;
+    
+}
+
+.box-content{
+    position: relative;
+    display: block;
+}
+
+.img-center{
+    max-width: 100%;
+    margin: 1em auto;
+    display: block;
+}
+
+.no-list{
+    list-style: none;    
+    margin-left: 1.5em;
+    margin-bottom: 2em;    
+}
+
+.comentario{
+    opacity: 0.5;
+}
+
+.text-lila{
+    color: rgb(236, 13, 236);
+}
+
+.p_visual{
+    text-align: left;
+}
+
+.format_img{    
+    margin: 1.2em 0;
+    max-width: 95%;
+    /* border: 1px solid orange; */
+}
+
+img.width100{
+    width: 100%;
+}
+
+.window{
+    margin:auto;
+    text-align: center;
+}
+
+.backg{
+    background-color: #3A91B6;
+    color:white
+}
+
+.bg-black{
+    background: black;
+    color: white;
+}
+
+.p_destacado{
+    width: 90%;
+    margin: 2.5em auto;
+}
+
+.p_div{
+    width: 95%;
+    margin: 1.5em auto;
+    padding: 1.1em 1.1em;
+}
+
+.text-skyblue{
+    color:#8da1ff;
+}
+
+.text-purple{
+    color: rgb(209, 139, 209);
+}
+
+/* boton ir arriba */
+.ir-arriba {
+    display:none;
+    padding:8px 20px;
+    background:#fff;
+    font-size:20px;
+	font-weight: 600;
+    color:#024959;
+    cursor:pointer;
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

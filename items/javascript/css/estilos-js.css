@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(247, 231, 213);    
+}
+
+section, article{
+    background-color: rgb(247, 231, 213);
+    width: 90%;    
+}

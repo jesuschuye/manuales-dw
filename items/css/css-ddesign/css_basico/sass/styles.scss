@@ -1,0 +1,104 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+@import '_medidas.scss';
+@import '_clases_indice.scss';
+@import '_clases_contenido.scss';
+@import '_clases_div_graphics.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: justify;
+}
+
+header{
+    width: 90%;
+    height: auto;
+    background: rgb(240, 243, 245);
+    background-image: url(../img/background_basico.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sub-item__title{
+    margin-left: 70%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-item__title-links{  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+    li{
+        padding: $p-1;
+    }
+
+    li a, li a:visited{
+        color: rgb(110, 13, 110);
+        font-size: 1.2em;
+    }
+}
+
+h1{
+    color: $c-primary;
+}
+
+h2{
+    color: $c-primary-1;
+}
+
+h3{
+    color: $c-primary-2;
+    font-size: $m-3;
+    line-height: $m-4;
+}
+
+h4{
+    color:$c-skyblue-2;
+    font-size: $m-2;
+    padding: $p-1;
+    margin-left: $m-2;
+    border: 2px dashed peru;
+}
+
+h5{
+    color:$c-bl;
+    font-size: $m-2;
+    padding: $p-1-2;
+}
+
+figure{
+    width: $w-1;
+    margin-left: auto;
+    margin-right: auto;
+    padding: $p-1-2;
+}
+
+img{
+    width: $w-100;
+    max-width: $w-100;
+    display: block;
+}
+
+video{
+    width: $w-2;
+    margin: $m-1 auto;
+    display: block;
+}
+
+p{
+    font-family: $font-p;
+    padding: $p-2;
+}
+
+.container{
+    width: $w-100;
+    display: flex;
+    margin-top:20px
+}

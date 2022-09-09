@@ -1,0 +1,95 @@
+.header{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: auto;
+    background-image: url(../img/background.PNG);    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+    /* border: 1px solid orange; */
+    width: 28%;
+    padding: 0;
+}
+
+.logo img{
+    width: 50%;    
+    padding: 0;
+}
+
+.menu-links{    
+    width: 70%;
+    height: auto;    
+}
+
+.titulo{
+    color:#FFD83A;
+    width: 100%;
+    text-align: right;
+}
+
+.menu-links__items{    
+    text-align: end;
+}
+
+.menu-links__items ul{
+    margin: 0;    
+    list-style: none;
+    width: 40%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menu-links__items ul li{
+    padding: 0.2em;
+    border-radius: 0.45em;
+    -webkit-border-radius: 0.45em;
+    -moz-border-radius: 0.45em;
+    -ms-border-radius: 0.45em;
+    -o-border-radius: 0.45em;
+}
+
+.menu-links__items ul li:hover{
+    background: rgb(235, 231, 225);    
+}
+
+.menu-links__items ul li a{
+    text-decoration: none;
+    color: rgb(156, 175, 196);
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.menu-links__items ul li a:hover{
+    color: rgb(77, 92, 173);
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+
+/* boton ir arriba */
+
+.ir-arriba {
+    display: none;
+    padding: 8px 20px;
+    background: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    color: #024959;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

@@ -1,0 +1,899 @@
+.div-graphic-position{
+    width: $w-4;
+    height: auto;
+    margin: $m-1 auto;
+    border: 1px solid blue;
+    text-align: center;
+    font-size: $m-2;
+    position: relative;
+
+    .box-1, .box-2{
+        width: $w-6;
+        height: 150px;
+        margin: $m-5 auto;
+    }
+    
+    .box-1{
+        background-color: $c-primary-2;
+    }
+    
+    .box-2{
+        background-color: $c-primary-3;
+    }
+}
+
+.div-graphic-pos-relative-box1{        
+    .box-1, .box-2{
+        width: $w-6;
+        height: 150px;    
+        margin: $m-5 auto;
+    }
+    
+    .box-1{
+        background-color: $c-primary-2;
+        border: 1px solid black;
+        opacity: 0.7;
+        position: relative;
+        top: 50px;
+        right: 50px;    
+    }
+    
+    .box-2{
+        background-color: $c-primary-3;
+    }
+}
+
+.div-graphic-pos-relative-box2{    
+    .box-1, .box-2{
+        width: $w-6;
+        height: 150px;    
+        margin: $m-5 auto;
+    }
+    
+    .box-1{
+        background-color: $c-primary-2;
+        opacity: 0.7;
+    }
+    
+    .box-2{
+        background-color: $c-primary-3;
+        border: 1px solid black;    
+        opacity: 0.7;
+        position: relative;
+        top: -50px;
+        right: -50px;    
+    }
+}
+
+.div-graphic-position-original{
+    width: $w-4;
+    height: auto;
+    margin: $m-1 auto;
+    border: 1px solid blue;
+    text-align: center;
+    font-size: $m-2;        
+    position: relative;
+
+    .box-1, .box-2, .box-3, .box-4, .box-5{        
+        width: $w-7;
+        height: 100px;            
+        
+    }
+    
+    .box-1{        
+        border: 3px solid $c-red;    
+        
+    }
+
+    .box-2{
+        border: 3px solid $c-green;        
+    }
+
+    .box-3{
+        border: 3px solid $c-primary;    
+    }
+
+    .box-4{
+        border: 3px solid $c-grease;    
+    }
+
+    .box-5{
+        border: 3px solid $c-orange;    
+    }
+}
+
+.div-z-index{
+    height: 450px;
+    min-height: 450px;
+
+    .box-1, .box-2, .box-3, .box-4{
+        width: $w-6;
+        height: 150px;
+        margin: $m-5 auto;
+    }
+    
+    .box-1{
+        background-color: $c-primary-2;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .box-2{
+        background-color: $c-primary;
+        position: relative;
+        top: -100px;
+        left: -25px;        
+    }
+
+    .box-3{
+        background-color: $c-aqua;
+        position: relative;
+        top: -200px;
+        left: -50px;        
+    }
+
+    .box-4{
+        background-color: $c-coral;
+        position: relative;
+        top: -300px;
+        left: -75px;        
+    }
+}
+
+.div-video{
+    width: $w-1;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-graphic-position-absolute{
+    width: $w-4;
+    height: auto;
+    margin: $m-1 auto;
+    border: 1px solid blue;        
+    position: relative;
+
+    .box-1, .box-2, .box-3, .box-4, .box-5{        
+        width: $w-7;
+        height: 100px;     
+    }
+    
+    .box-1{        
+        border: 3px solid $c-red;    
+        position: absolute;        
+        left: 160px;
+        p{            
+            color: $c-black;
+            position: relative;            
+        }    
+    }
+
+    .box-2{
+        border: 3px solid $c-green;        
+    }
+
+    .box-3{
+        border: 3px solid $c-primary;    
+    }
+
+    .box-4{
+        border: 3px solid $c-grease;    
+    }
+
+    .box-5{
+        border: 3px solid $c-orange;    
+    }
+}
+
+.div-graphic-position-ejercicio{
+    width: $w-4;
+    height: 500px;
+    margin: $m-1 auto;
+    border: 1px solid blue;        
+    position: relative;    
+
+    .box-1, .box-2, .box-3, .box-4, .box-5{        
+        width: $w-7;
+        height: 140px;     
+    }
+    
+    .box-1{        
+        border: 3px solid $c-red;    
+        position: absolute;
+        top: 0;
+        left: 0;
+        p{            
+            color: $c-black;
+            position: relative;                        
+        }    
+    }
+
+    .box-2{
+        border: 3px solid $c-green;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .box-3{
+        border: 3px solid $c-primary;
+        position: absolute;
+        bottom: 0;
+        left: 0;    
+    }
+
+    .box-4{
+        border: 3px solid $c-grease;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .box-5{
+        border: 3px solid $c-orange;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+
+        p{
+            font-size: 0.8em;
+        }
+    }
+}
+
+.div-graphic-position-sticky{
+    width: $w-4;
+    height: 800px;
+    margin: $m-1 auto;
+    border: 1px solid blue;        
+    position: relative;
+    overflow: scroll;
+
+    .slide{
+        height: 300px;
+        background-color: grey;
+        font-size: $m-7;
+        text-align: center;
+        line-height: $m-10;
+    }
+
+    .menu{
+        background: darkcyan;
+        padding: .5em;
+        text-align: center;
+        font-size: $m-6;
+        width: $w-100;
+        position: sticky;
+        top: 0;
+    }
+
+    .title{
+        margin: $m-1;
+        text-align: center;
+        line-height: $m-5;
+        text-transform: uppercase;
+    }
+
+    .text{
+        font-size: $m-2;
+    }
+}
+
+.div-graphic-position-z-index{
+    width: $w-6;
+    height: 350px;
+    margin: $m-1 auto;
+    border: 1px solid blue;        
+    position: relative;    
+
+    .box{
+        width: 100px;
+        height: 100px;
+        font-size: $m-2;
+        line-height: $m-1;
+        text-align: center;
+        position: relative;
+    }
+
+    .box-1, .box-2, .box-3{
+        display: flex;
+        align-items: center;        
+    }
+
+    .box-1{
+        background-color: darkcyan;
+    }
+
+    .box-2{
+        background-color: darkkhaki;
+        top: -38px;
+        left: 38px;
+    }
+
+    .box-3{
+        background-color: darkmagenta;
+        top: -76px;
+        left: 76px;
+    }
+}
+
+.div-graphic-item-z_index{
+    width: $w-6;
+    height: 350px;
+    margin: $m-1 auto;
+    border: 1px solid blue;        
+    position: relative; 
+
+    .box{
+        width: 100px;
+        height: 100px;
+        font-size: $m-2;
+        line-height: $m-1;
+        text-align: center;
+        position: relative;
+    }
+
+    .box-1, .box-2, .box-3{
+        opacity: 0.8;
+        display: flex;
+        align-items: center;
+    }
+
+    .box-1{
+        background-color: darkcyan;
+        z-index: 3;
+    }
+
+    .box-2{
+        background-color: darkkhaki;
+        top: -38px;
+        left: 38px;
+        z-index: 2;
+    }
+
+    .box-3{
+        z-index: 1;
+        background-color: darkmagenta;
+        top: -76px;
+        left: 76px;
+    }
+}
+
+.div-graphic-item-inline{
+    width: $w-2;
+    height: 150px;
+    margin: $m-1 auto;
+    border: 1px solid blue;        
+    position: relative; 
+
+    .inline{
+        background-color: lightsalmon;
+        font-size: $m-4;
+        padding-bottom: $m-2;
+    }
+
+    .bloque{
+        background-color: aqua;
+        font-size: $m-2;
+    }
+}
+
+.div-graphic-item-inline_sin_background{
+    width: $w-2;
+    height: 150px;
+    margin: $m-1 auto;
+    border: 1px solid blue;        
+    position: relative; 
+
+    .inline{        
+        font-size: $m-4;
+        padding-bottom: $m-2;
+    }
+
+    .bloque{
+        background-color: aqua;
+        font-size: $m-2;
+    }
+}
+
+.div-graphic-item-inline-block{
+    width: $w-2;
+    height: 200px;
+    margin: $m-1 auto;
+    border: 1px solid blue;        
+    position: relative; 
+
+    .inline{
+        background-color: lightsalmon;
+        font-size: $m-4;
+        display: inline-block;
+        margin-bottom: $m-6;        
+    }
+
+    .bloque{
+        background-color: aqua;
+        font-size: $m-2;
+    }
+}
+
+.div-graphic-item-pseudoclases{
+    width: $w-1;
+    height: auto;
+    margin: $m-1 auto;
+    border: 1px solid blue;
+    font-size: $m-2;
+    position: relative;
+}
+
+.div-graphic-item-form{
+    width: $w-4;
+    height: auto;
+    margin-left:auto;
+    margin-right: auto;
+    border: 1px solid red;
+
+    input, label{
+        display: block;
+        margin: $m-2 $m-2;
+    }
+    
+    .input:enabled {
+        background: red;
+        color:white;
+    }
+
+    .input:disabled {
+        background-color: yellow;        
+        border: none;
+    }
+
+    .input:checked + label{
+        font-size: 2em;
+    }
+
+    .input:in-range{
+        background: green;
+    }
+
+    .input:out-of-range{
+        background: blue;
+    }
+
+    .input:optional{
+        background: purple;
+    }
+
+    .input:required{
+        background: lightcoral;
+    }
+
+    .input:valid{
+        background: green;
+    }
+
+    .input:invalid{
+        background: red;
+    }
+}
+
+.div-graphic-item-child{
+    width: $w-4;
+    height: auto;
+    margin:$m-2 auto;    
+    font-size: $m-2;
+    border: 1px solid blue;
+
+    .first-child .hijo:first-child{
+            background-color: blue;
+            color:white;
+        }
+    
+    .last-child .hijo:last-child{
+            background-color: blue;
+            color:white;
+        }
+
+    .nth-child .hijo:nth-child(2){
+            background-color: red;
+            color:white;
+        }
+}
+
+.div-graphic-item-odd{
+    width: $w-4;
+    height: auto;
+    margin:$m-2 auto;    
+    font-size: $m-2;
+    border: 1px solid orange;
+
+    .nth-child .hijo:nth-child(odd){
+        background-color: orange;
+        color:white;
+    }
+}
+
+.div-graphic-item-even{
+    width: $w-4;
+    height: auto;
+    margin:$m-2 auto;    
+    font-size: $m-2;
+    border: 1px solid burlywood;
+
+    .nth-child .hijo:nth-child(even){
+        background-color: burlywood;
+        color:white;
+    }
+}
+
+.div-graphic-item-ecuaciones{
+    width: $w-4;
+    height: auto;
+    margin:$m-2 auto;    
+    font-size: $m-2;
+    border: 1px solid lightsalmon;
+
+    .nth-child .hijo:nth-child(3n){
+        background-color: lightsalmon;
+        color:white;
+    }
+}
+
+.div-graphic-item-last-child{
+    width: $w-4;
+    height: auto;
+    margin:$m-2 auto;    
+    font-size: $m-2;
+    border: 1px solid skyblue;
+
+    .nth-child .hijo:nth-last-child(4){
+        background-color: skyblue;
+        color:blueviolet;
+    }
+}
+
+.div-graphic-item-of-type{
+    width: $w-4;
+    height: auto;
+    margin:$m-2 auto;    
+    font-size: $m-2;
+    border: 1px solid lightpink;
+
+    .first-of-type .hijo:first-of-type{
+        background-color: lightpink;
+        color:blueviolet;
+    }
+
+    .last-of-type .hijo:last-of-type{
+        background-color: lightpink;
+        color:blueviolet;
+    }
+
+    .nth-of-type .hijo:nth-of-type(5){
+        background-color: lightpink;
+        color:blueviolet;
+    }
+
+    .nth-last-of-type .hijo:nth-last-of-type(2){
+        background-color: lightpink;
+        color:blueviolet;
+    }
+}
+
+.div-graphic-item-not{
+    width: $w-4;
+    height: auto;
+    margin:$m-2 auto;    
+    font-size: $m-2;
+    border: 1px solid greenyellow;
+
+    .clase_comun{
+        text-align: center;
+        line-height: $m-4;
+    }
+
+    .not .clase_comun:not(div){
+        background-color: greenyellow;
+    }
+}
+
+:root{
+        --color:red;
+        --border: 3px solid yellow;
+    }
+
+.div-graphic-item-variables{
+    width: $w-4;
+    height: auto;
+    margin:$m-2 auto;    
+    font-size: $m-2;
+    border: 1px solid blue;
+
+    .parrafo{
+        color: var(--color);
+    }
+
+    .article-dos{
+        --color:green;
+        
+        .parrafo{
+            color: var(--color);
+        }    
+    }
+    .check:checked + .box{
+        --color: purple;
+    }
+
+    .box{
+        width: 100px;
+        height: 100px;
+        background: var(--color);
+        border: var(--border);
+    }
+}
+
+.div-graphic-item-background{
+    width: $w-100;
+    height: auto;
+    margin:$m-2 auto;    
+    font-size: $m-2;
+    border: 1px solid blue;
+
+    .pre-list{
+        width: $w-2;
+        white-space: pre-line;
+    }
+
+    [class^="bg-"] {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        margin: 0 auto;
+        height: 150px;
+        border: 1px solid red;
+    }
+
+    .bg-color{
+        background-color: purple;
+    }
+
+    .bg-image{
+        background-image: url(../img/logo.png);
+    }
+
+    .bg-size{
+        background-image: url(../img/logo.png);
+        background-size: contain;
+    }
+
+    .bg-repeat{
+        background-image: url(../img/logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .bg-position{
+        background-image: url(../img/logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .bg-clip{
+        width: $w-2;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .border-box{
+            margin: $m-1;
+            width: $w-6;
+            height: 150px;
+            color:white;
+            border:5px dotted red;
+            background-image: url(../img/cafe.jpeg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-clip: border-box;
+            padding: 25px;
+        }
+
+        .padding-box{
+            margin: $m-1;
+            width: $w-6;
+            height: 150px;
+            color:white;
+            border:5px dotted red;
+            background-image: url(../img/cafe.jpeg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-clip: padding-box;
+            padding: 25px;
+        }
+
+        .content-box{
+            margin: $m-1;
+            width: $w-6;
+            height: 150px;
+            color:white;
+            border:5px dotted red;
+            background-image: url(../img/cafe.jpeg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-clip: content-box;
+            padding: 25px;
+        }
+    }
+    
+    .bg-origin{
+        width: $w-2;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .border-box{
+            margin: $m-1;
+            width: $w-6;
+            height: 150px;
+            color:white;
+            border:5px dotted red;
+            background-image: url(../img/cafe.jpeg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            padding: 25px;
+        }
+
+        .padding-box{
+            margin: $m-1;
+            width: $w-6;
+            height: 150px;
+            color:white;
+            border:5px dotted red;
+            background-image: url(../img/cafe.jpeg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-origin: padding-box;
+            padding: 25px;
+        }
+
+        .content-box{
+            margin: $m-1;
+            width: $w-6;
+            height: 150px;
+            color:white;
+            border:5px dotted red;
+            background-image: url(../img/cafe.jpeg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            padding: 25px;
+        }
+    }
+
+    .div-attachment{
+        width: $w-1;
+        height: 200px;        
+        margin-left:auto;
+        margin-right: auto;
+        border: 1px dotted orange;
+        overflow: hidden;
+        
+        .bg-attachment{
+            width: $w-100;
+            background-image: url(../img/cafe.jpeg);
+            background-size: contain;
+            background-attachment: fixed;
+            padding-bottom: 300px;
+        }
+    }
+
+    .bg-multiple{
+        width: $w-1;
+        height: 200px;
+        background-image: url(../img/logo.png), url(../img/cafe.jpeg);
+        background-size: 10%, cover;
+        background-repeat: no-repeat;
+        background-position: bottom right, center;
+    }
+
+}
+
+.div-graphic-pixel{
+    width: $w-2;
+    height: auto;
+    margin:$m-2 auto;
+    border: 1px solid blue;
+
+    p.doce_px{
+        font-size: 12px;
+    } 
+}
+
+.div-graphic-em{
+    width: $w-2;
+    height: auto;
+    margin:$m-2 auto;
+    border: 1px solid blue;
+
+    p.unem{
+        font-size: 16px;
+    }
+    
+    span.dosem{
+        font-size: 32px;
+    }
+    
+    p.diezpx{
+        font-size: 10px;
+    }
+
+    span.veintepx{
+        font-size: 20px;
+    }
+}
+
+.div-graphic-rem{
+    width: $w-2;
+    height: auto;
+    margin:$m-2 auto;
+    border: 1px solid blue;
+    
+    .veintepx{
+        font-size: 20px;
+    }
+
+    .dosrem{
+        font-size: 2rem;
+    }
+}
+
+.div-graphic-porcentaje{
+    width: $w-2;
+    height: auto;
+    margin:$m-2 auto;
+    border: 1px solid blue;
+    
+    .doscientosporciento{
+        font-size: 40px;
+    }
+
+    .cienporciento{
+        font-size: 100%;
+    }
+}
+
+.div-graphic-list-image{
+    width: $w-2;
+    height: auto;
+    margin:$m-2 auto;
+    border: 1px solid blue;s
+
+    ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    .list__item{
+        list-style: none;
+    }
+
+    .list__item::before {
+        content: '';
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        background-image: url(../img/check.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-right: 1em;
+    }
+}

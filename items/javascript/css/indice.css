@@ -1,0 +1,77 @@
+.indice {
+    border: 1px solid orange;
+    height: auto;
+}
+
+.content-indice{    
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 56px;
+    z-index: 999;
+}
+
+.content-indice h2{
+    background: #055160;
+    margin: 0;
+    padding: 1rem 0;
+    border: none;
+    position: relative;
+    top: 0;
+    font-size: 1.5em;
+}
+    
+.content-indice a{
+    color: orange;
+    font-family: 'Source Code Pro', monospace;
+    line-height: 1.5em;
+}
+
+.indice-menu{
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.indice-menu:hover .nav-indice{
+    display: block;
+    background: #055160;
+}
+
+.nav-indice{
+    display: none;
+    width: 100%;
+    height: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-indice-ul{    
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(3, 1fr);     
+}
+
+/* .nav-indice-item{
+    width: auto;
+} */
+
+.nav-indice-item a{    
+    line-height: 1.7em;
+    font-size: 1em;
+}
+
+.nav-indice-item a:hover{
+    background: #e4f0f5;
+    text-decoration-line: underline;
+    -moz-text-decoration-line: underline;
+}
+
+.nav-indice-item a:focus-visible{
+    display: none;
+}
+
