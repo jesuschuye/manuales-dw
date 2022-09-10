@@ -1,20 +1,16 @@
-<?php include "../templates/head.php";?>
-    <link rel="stylesheet" href="./css/estilos-php.css">
-    <title>PHP basicos</title>
-</head>
-<body>
-    
-    <?php include "../templates/nav.php";?>
+<?php include "../../templates/head.php";?>
+    <link rel="stylesheet" href="./css/php-css.css">
+    <title>PHP basicos</title>    
+    <?php include "../../templates/nav-ini.php";?>
     <?php include "./nav-php.php";?>
     
-    <h1>PHP BASICOS</h1>
     <section>
         <article>
             <!-- Función dirname(__FILE__) -->
             <div class="container mt-4">
                 <h2>Función dirname(__FILE__)</h2>
-                <h3 class="display-6">cursosdesarrolloweb.es: Obtener la ruta de un directorio</h3>
-                <p class="subtitulo bg-light">Archivo de desarrollo: ruta-de-archivo.php</p>
+                <h3 class="h5">cursosdesarrolloweb.es: Obtener la ruta de un directorio</h3>
+                <p class="subtitulo">Archivo de desarrollo: ruta-de-archivo.php</p>
                 <pre class="pre-content">
                     &lt;?php 
                         &nbsp;&nbsp;&nbsp;define('URL', dirname(__FILE__));
@@ -27,8 +23,8 @@
         <article>
             <!-- Funcion fopen de PHP -->
             <div class="container mt-4">
-                <h2>Funcion fopen de PHP.</h2>
-                <h3 class="display-6">Desarrolloweb.com: Verificar la existencia y validez de una URL</h3>
+                <h2>Función fopen.</h2>
+                <h3 class="h5">Desarrolloweb.com: Verificar la existencia y validez de una URL</h3>
                 <p class="subtitulo bg-light">Archivo de desarrollo: </p>
                 <p> Este tipo de script puede ser utilizado para múltiples propósitos: Detectar si los enlaces están rotos, verificar una etapa de inscripción en un formulario...</p>
         
@@ -84,4 +80,4 @@
         </article>
     </section>
 
-<?php include "../templates/footer.php"?>
+<?php include "../../templates/footer.php"?>

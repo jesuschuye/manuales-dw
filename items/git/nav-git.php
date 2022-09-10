@@ -7,21 +7,7 @@
             <!-- <li class="nav-item">                
                 <a class="nav-link" href="#" target="_blank">Libre 2</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">Libre 3</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">Libre 4</a>
-            </li> -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Utilitarios
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="https://tailwindcss.com/" href="_blank">TailwindCSS</a></li>
-                    <!-- <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" href="_blank">Bootstrap</a></li>
-                    <li><a class="dropdown-item" href="hhttps://fontawesome.com/" href="_blank">Fontawesome</a></li> -->
-                </ul>
-            </li>
+             -->            
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos y Manuales
                 </a>

@@ -1,9 +1,7 @@
-<?php include "../templates/head.php";?>
-    <link rel="stylesheet" href="./css/git-css.css">
-    <title>GIT</title>
-</head>
-<body>
-<?php include "../templates/nav.php";?>
+<?php include "../../templates/head.php";?>
+<link rel="stylesheet" href="./css/git-css.css">
+<title>GIT</title>
+<?php include "../../templates/nav-ini.php";?>
 <?php include "./nav-git.php";?>
 <h1>GIT</h1>
 
@@ -245,5 +243,5 @@
         </div>
     </section>
  -->
-<?php include "../templates/footer.php"?>
+<?php include "../../templates/footer.php"?>
 

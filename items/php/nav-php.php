@@ -6,18 +6,18 @@
                     " target="_blank">Oficial PHP</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Libre 1</a>
+                <a class="nav-link" href="./basicos.php">PHP Básico</a>
             </li>            
             <li class="nav-item">
                 <!-- <a class="nav-link disabled">Disabled</a> -->
-                <a class="nav-link" href="#" target="_blank">Libre 2</a>
+                <a class="nav-link" href="./poo.php">PHP Intermedio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">Libre 3</a>
-            </li>
+                <a class="nav-link" href="./conexion-pdo.php">PHP Avanzado</a>
+            </li>            
             <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">Libre 4</a>
-            </li>
+                <a class="nav-link" href="/items/laravel/index.php">Laravel</a>
+            </li>            
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">Utilitarios

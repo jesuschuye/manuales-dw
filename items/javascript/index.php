@@ -1,15 +1,13 @@
-<?php include "../templates/head.php"; ?>
+<?php include "../../templates/head.php"; ?>
     <link rel="stylesheet" href="./css/aside.css">
-    <link rel="stylesheet" href="./css/estilos-js.css">
+    <link rel="stylesheet" href="./css/js-css.css">
     <title>Javascript</title>
-</head>
-<body>
-<?php include "../templates/nav.php"; ?>
+<?php include "../../templates/nav-ini.php";?>
 <?php include "./nav-js.php"; ?>
 <div class="container">
     <div class="row">
         <!-- indice -->
-        <?php include "./templates/aside.php";?>
+        <?php include "./templates/indice-js.php";?>
         <!-- contenido -->
         <div class="col-md-9">
             <h1>PRACTICAS DE JAVASCRIPT</h1>
@@ -18,4 +16,4 @@
 
 </div>
 
-<?php include "../templates/footer.php"; ?>
+<?php include "../../templates/footer.php"; ?>

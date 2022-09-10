@@ -18,8 +18,7 @@ section, article{
     flex-direction: column;    
 }
 
-h1{
-    margin-left: 2em;
+h1{    
     color: rgb(153, 78, 51);
 }
 
