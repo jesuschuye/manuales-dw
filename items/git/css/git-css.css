@@ -20,6 +20,10 @@ h2{
     color:rgb(150, 146, 146)
 }
 
+h3{
+    color: orange;
+}
+
 h3.h5{
     margin-bottom: 20px;
 }

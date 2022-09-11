@@ -9,7 +9,7 @@
         <div class="col-md-3 content">
             <ul class="indice">
                 <li class="mb-4 item-nav">                    
-                    <a href="#" class ="btn btn-outline-primary"><i class="bi bi-arrow-down-square iconos"></i>Fundamentos de git</a>
+                    <a href="#" class ="btn btn-outline-warning"><i class="bi bi-arrow-down-square iconos"></i>Fundamentos de git</a>
                     <ul class="ul-nav mt-3">
                         <li><i class="bi bi-check iconos text-primary"></i><a href="#verificar_version">Verificar la version actual</a></li>
                         <li><i class="bi bi-check iconos text-primary"></i><a href="#actualizar_version">Actualizar a la ultima version</a></li>
@@ -21,16 +21,38 @@
                     </ul>
                 </li>
                 <li class="mb-4 item-nav">
-                    <a href="#" class ="btn btn-outline-primary"><i class="bi bi-arrow-down-square iconos"></i>Flujo básico de Git</a>
+                    <a href="#" class ="btn btn-outline-warning"><i class="bi bi-arrow-down-square iconos"></i>Flujo básico de Git</a>
                     <ul class="ul-nav mt-3">
                         <li><i class="bi bi-check iconos text-primary"></i><a href="#flujo_basico">Flujo basico</a></li>
                         <li><i class="bi bi-check iconos text-primary"></i><a href="#master_main">De master a main</a></li>
                         <li><i class="bi bi-check iconos text-primary"></i><a href="#gitignore">El archivo .gitignore</a></li>
+                        <li><i class="bi bi-check iconos text-primary"></i><a href="#git_clone">Git Clone</a></li>
                     </ul>
                 </li>
-                <li class="mb-4 item-nav"><a href="#">Link 1</a></li>
-                <li class="mb-4 item-nav"><a href="#">Link 2</a></li>
-                <li class="mb-4 item-nav"><a href="#">Link 3</a></li>
+                <li class="mb-4 item-nav">
+                    <a href="#" class ="btn btn-outline-warning"><i class="bi bi-arrow-down-square iconos"></i>Ramas</a>
+                    <ul class="ul-nav mt-3">
+                        <li><i class="bi bi-check iconos text-primary"></i><a href="#">Link 1</a></li>
+                        <li><i class="bi bi-check iconos text-primary"></i><a href="#">Link 2</a></li>
+                        <li><i class="bi bi-check iconos text-primary"></i><a href="#">Link 3</a></li>
+                    </ul>
+                </li>
+                <li class="mb-4 item-nav">
+                    <a href="#" class ="btn btn-outline-warning"><i class="bi bi-arrow-down-square iconos"></i>Capitulo new</a>
+                    <ul class="ul-nav mt-3">
+                        <li><i class="bi bi-check iconos text-primary"></i><a href="#">Link 1</a></li>
+                        <li><i class="bi bi-check iconos text-primary"></i><a href="#">Link 2</a></li>
+                        <li><i class="bi bi-check iconos text-primary"></i><a href="#">Link 3</a></li>
+                    </ul>
+                </li>
+                <li class="mb-4 item-nav">
+                    <a href="#" class ="btn btn-outline-warning"><i class="bi bi-arrow-down-square iconos"></i>Capitulo new</a>
+                    <ul class="ul-nav mt-3">
+                        <li><i class="bi bi-check iconos text-primary"></i><a href="#">Link 1</a></li>
+                        <li><i class="bi bi-check iconos text-primary"></i><a href="#">Link 2</a></li>
+                        <li><i class="bi bi-check iconos text-primary"></i><a href="#">Link 3</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="col-md-9 mt-5">
@@ -328,8 +350,38 @@
                             </div>
                         </div>
                     </article>
+                    <!-- git clone -->
+                    <article>
+                        <h2 id="git_clone">Clonación de repositorios</h2>
+                        <div class="row">
+                            <div class="row mt-5">
+                                <h3 class="h5"><b>git clone</b></h3>
+                                <p class="mt-3">Clonar un repositorio no es más que traer o bajar una copia de un repositorio a nuestro equipo local.</p>
+                                <pre class="pre-content">
+                                    <span class="text-warning">git clone</span> https://github.com/usuario/repositorio.git
+                                </pre>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </section>
+            <!-- Ramas -->
+            <section>
+                <div class="container">
+                    <!-- ramas -->                    
+                    <article>
+                        <h2>Ramas</h2>
+                        <div class="row">
+                            <div class="row mt-5">
+                                <h3 class="h5">branch</h3>
+                                <p class="destacado">Una rama nos permite aislar una nueva funcionalidad en nuestro código, la misma que después podremos añadir a la versión principal <strong>(main)</strong>.</p>
+                                <pre class="pre-content"></pre>
+                            </div>                    
+                        </div>
+                    </article>
+                </div>
+            </section>
+
         </div>
     </div>
 </div>
@@ -344,7 +396,7 @@
                     <div class="row mt-5">
                         <h3 class="h5"></h3>
                         <p class="destacado"></p>
-                        <pre class="pre-content></pre>
+                        <pre class="pre-content"></pre>
                     </div>                    
                 </div>
             </article>
