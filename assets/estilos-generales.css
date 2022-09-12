@@ -20,12 +20,23 @@ section, article{
     flex-direction: column; */    
 }
 
-h1{    
-    color: rgb(153, 78, 51);
+h1 {
+    font-size: 2em;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 2rem 0;
 }
 
 h3{
     opacity: 0.9;
+}
+
+i{
+    margin-right: 5px;
+    color: orange;
 }
 
 ol{
@@ -122,4 +133,8 @@ pre span.comentario{
 
 .comentario {
     opacity: 0.5;
+}
+
+ul.listado{
+    line-height: 2;
 }

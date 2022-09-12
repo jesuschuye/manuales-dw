@@ -1,6 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;600&family=Poppins:wght@300;500&family=Roboto:wght@300;500&display=swap');
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+
+h1{
+    color:orange;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    color:black;    
+    font-family: 'Poppins', sans-serif;    
+}
+
+p.destacado{    
+    background-color: rgba(248, 220, 138,0.7);
+    border-right: 10px solid #ffc107;
+    padding: 1em 0.5em;
+    margin: 2em 0;
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+}
+
+.bg-orange{
+    background-color: rgba(255, 193, 7, 0.5);;
 }
