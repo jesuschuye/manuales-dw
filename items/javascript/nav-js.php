@@ -23,6 +23,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos y Manuales</a>
                 <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://escuelavue.es/" target="_blank">wmedia.es</a></li>
                     <li><a class="dropdown-item" href="https://desarrolloweb.com/home/javascript" target="_blank">DesarrolloWeb</a></li>
                     <li><a class="dropdown-item" href="https://bluuweb.github.io/desarrollo-web-bluuweb/11-01-psint/#ventajas" target="_blank">Fundamentos(BLueweb)</a></li>
                     <li><a class="dropdown-item" href="https://es.javascript.info/" target="_blank">JavaScript Moderno</a></li>
