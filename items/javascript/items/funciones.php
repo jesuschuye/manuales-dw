@@ -37,7 +37,7 @@
                     </pre>            
         
                     <h2 id="f_flecha">Funciones Flecha</h2>
-                    <ul class="mb-5 listado">
+                    <ul class="listado">
                         <li><i class="bi bi-caret-right-fill"></i>No disponen de contexto propio de <b><em>this</em></b>.</li>
                         <li><i class="bi bi-caret-right-fill"></i>Disponen de <b><em>Retorno implícito</em></b>, delimitadores opcionales. </li>
                         <li><i class="bi bi-caret-right-fill"></i>No se alzan.</li>

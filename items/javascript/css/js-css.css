@@ -12,6 +12,18 @@ font-family: 'Roboto', sans-serif; */
     text-decoration: none;
 }
 
+body {
+    font-size: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.5em;
+}
+
 h1{
     color:orange;
     font-family: 'Lato', sans-serif;
@@ -21,6 +33,16 @@ h1{
 h2{
     color:black;    
     font-family: 'Poppins', sans-serif;    
+}
+
+h3,
+h4,
+h5 {
+    margin: 1.2em 0;
+}
+
+dl{
+    padding: 1em 0 0 1em;
 }
 
 p.destacado{    
@@ -34,4 +56,18 @@ p.destacado{
 
 .bg-orange{
     background-color: rgba(255, 193, 7, 0.5);;
+}
+
+.listado{
+    margin-bottom: 2em;
+}
+
+.pre-content-list{
+    color: white;
+    border: 3px solid grey;
+    padding: 0;
+    margin: 2em 0;
+    background-color: #29313f;
+    line-height: 1.5;
+    white-space: pre-wrap;
 }
