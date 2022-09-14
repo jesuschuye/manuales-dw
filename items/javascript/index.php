@@ -4,7 +4,7 @@
     <title>Javascript</title>
 <?php include "../../templates/nav-ini.php";?>
 <?php include "./nav-js.php"; ?>
-<div class="container mt-3">
+<div class="container-fluid mt-3">
     <h1 class="text-center">APUNTES Y PRACTICAS DE JAVASCRIPT</h1>
     <div class="row mt-5">
         <!-- indice -->
@@ -12,7 +12,7 @@
             <?php include "./items/templates/aside-js.php";?>
         </div>
         <!-- contenido -->
-        <div class="col-md-9">
+        <div class="col-md-9 px-md-4">
             <?php include "./introduccion.php";?>
         </div>
     </div>
