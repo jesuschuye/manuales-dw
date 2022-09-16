@@ -57,6 +57,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="<?=BASE_URL?>git/index.php">Git</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.htmlquick.com/es/reference/character-entity-reference.html">Entidades HTML</a>
+                    </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

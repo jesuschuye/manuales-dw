@@ -7,6 +7,12 @@
                 <li><a href="../../../items/javascript/items/"><i class="bi bi-check2-square"></i>defer</a></li>
                 <li><a href="../../../items/javascript/items/"><i class="bi bi-check2-square"></i>La etiqueta &lt;noscript&gt;</a></li>
                 <li><a href="../../../items/javascript/items/"><i class="bi bi-check2-square"></i>Alzado (hoisting)</a></li>
+                <li><a href="../../../items/javascript/items/"><i class="bi bi-check2-square"></i>Declaración con <strong>var</strong></a></li>
+                <li><a href="../../../items/javascript/items/"><i class="bi bi-check2-square"></i>Declaracion con <strong>let</strong></a></li>
+                <li><a href="../../../items/javascript/items/"><i class="bi bi-check2-square"></i>La inmutabilidad</a></li>
+                <li><a href="../../../items/javascript/items/"><i class="bi bi-check2-square"></i>Declaración con <strong>const</strong></a></li>
+                <li><a href="../../../items/javascript/items/"><i class="bi bi-check2-square"></i>concepto 5</a></li>
+                <li><a href="../../../items/javascript/items/"><i class="bi bi-check2-square"></i>concepto 5</a></li>
                 <li><a href="../../../items/javascript/items/"><i class="bi bi-check2-square"></i>concepto 5</a></li>
             </ul>
         </li>
