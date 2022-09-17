@@ -115,3 +115,9 @@ p.name_file{
     bottom: -1px;
     left:5px;
 }
+
+.div-table{    
+    margin: 1.5em auto;    
+    width: 90%;
+    height: auto;
+}
