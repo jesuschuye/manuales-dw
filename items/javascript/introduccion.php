@@ -9,6 +9,7 @@
         <ul class="listado">
           <li><i class="bi bi-back"></i>Dentro de la etiqueta <b><em>head</em></b></li>
           <pre class="pre-content-list">
+
           <span class="text-info">&lt;head&gt;</span>
             <span class="comentario">//Inclusión externa</span>
             <span class="text-warning">&lt;script</span> src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"<span class="text-warning">&gt;&lt;/script&gt;</span>
@@ -24,6 +25,7 @@
           </pre>
           <li><i class="bi bi-back"></i>Antes del cierre de la etiqueta <b><em>/body</em></b></li>
           <pre class="pre-content-list">
+
           <span class="text-info">&lt;body&gt;</span>
 
             <span class="text-warning">&lt;script</span> src="app.js"<span class="text-warning">&gt;&lt;/script&gt;</span>
@@ -37,6 +39,7 @@
             </dd>
           </dl>
           <pre class="pre-content-list">
+
             <span class="text-info">&lt;head&gt;</span>
               <span class="text-warning">&lt;script</span> <span class="text-lila">defer</span> src="app.js"<span class="text-warning">&gt;&lt;/script&gt;</span>
             <span class="text-info">&lt;/head&gt;</span>
@@ -50,6 +53,7 @@
       <div class="row mt-3">
         <p class="destacado">Se utiliza para avisar que el navegador tiene javascript <b>desactivado.</b></p>
         <pre class="pre-content-list">
+
           <span class="text-info">&lt;head&gt;</span>
             <span class="text-warning">&lt;noscript&gt;</span>
               Javascript desactivado <span class="text-danger">⚠</span>
@@ -67,6 +71,7 @@
           <li><i class="bi bi-back"></i>Javascript es un lenguaje que utiliza un tipado (tipo de datos) dinámico. Es decir, se puede asignar y reasignar diferentes tipos de datos a una misma variable.</li>
           <li><i class="bi bi-back"></i>Para ello se utilizan 2 fases: la <strong>declaración</strong> y la <strong>inicialización</strong> de variables.
             <pre class="pre-content-list">
+              
               <span class="comentario">Declaración</span>
               <span class="text-warning">var</span> <span class="text-lila">nombre</span>;
 
@@ -84,11 +89,12 @@
               <img src="/assets/img/ambitos.jpg" alt="ambitos">
             </figure>
           </li>
-          <li><i class="bi bi-back"></i>Cuando sólo se declara ( o crea ) una variables, Javascript le asigna el valor <strong><em>undefined</em></strong>.</li>
+          <li><i class="bi bi-back"></i>Cuando sólo se declara ( o crea ) una variable, Javascript le asigna el valor <strong><em>undefined</em></strong>.</li>
           <li><i class="bi bi-back"></i>Cuando Javascript lee un documento lo hace de <b>arriba</b> hacia <b>abajo</b> y alza hacia el inicio de la programación en el siguiente orden:
             <ol>
               <li>La declaración de variables <b>(no la inicializacion).</b>
                 <pre class="pre-content-list">
+
                 <span class="comentario">//Invocación antes de la declaración</span>
                 <span class="text-danger">console.log</span>( <span class="text-info">nombre</span> ); <span class="comentario">//Resultado: Undefined.</span>
                 <span class="comentario">//Javascript deja de buscar y lo alza</span>
@@ -106,6 +112,7 @@
               </li>
               <li>Las funciones declaradas.</li>
                 <pre class="pre-content-list">
+
                 <span class="comentario">//Este codigo funcionara correctamente</span>
                   <span class="text-lila">saludar()</span>;
                   <span class="text-warning">function</span> <span class="text-lila">saludar()</span>{
@@ -117,6 +124,7 @@
             </ol>
             <p>Ejemplo:</p>
               <pre class="pre-content-list">
+
                 <span class="text-lila">saludar()</span>; <span class="comentario">Invocación</span>
                 <span class="text-warning">function</span> <span class="text-lila">saludar()</span>{ <span class="comentario">declaración de la función</span>
                   <span class="text-danger">console.log</span>("hola desde la función saludar");
@@ -147,6 +155,7 @@
           <li><i class="bi bi-back"></i>Es completamente reasignable.
           <li><i class="bi bi-back"></i>Si son declaradas en el ámbito global pueden ser accedidas desde cualquier lugar.
             <pre class="pre-content-list">
+
                 <span class="text-danger">var</span> <span class="text-info">nombre</span> = "Juan";
                 <span class="text-danger">function</span> <span class="text-warning">saludar()</span>{
                   <span class="text-danger">console.log</span>("Hola " + <span class="text-info">nombre</span>);
@@ -156,6 +165,7 @@
           </li>
           <li><i class="bi bi-back"></i>Tiene ámbito de función, es decir, pueden ser accedidas desde la función donde fueron creadas y también de funciones interiores.
             <pre class="pre-content-list">
+
               <span class="text-danger">var</span> <span class="text-info">nombre</span> = "Juan";
               <span class="text-danger">function</span> <span class="text-warning">saludar()</span>{
                 <span class="text-danger">var</span> <span class="text-info">nombre</span> = "Andrés";
@@ -177,6 +187,7 @@
           <li><i class="bi bi-back"></i>Es completamente reasignable dentro de su ámbito.
           <li><i class="bi bi-back"></i>Tienen ámbito de bloque.
             <pre class="pre-content-list">
+
               {
                 <span class="text-danger">let</span> <span class="text-info">nombre</span> = "Andrés";
               }
@@ -187,13 +198,13 @@
           </li>
           <li><i class="bi bi-back"></i>Sólo pueden ser accedidas desde el bloque donde fueron creados y bloques interiores.
             <pre class="pre-content-list">
+
               {
                 <span class="text-danger">let</span> <span class="text-info">nombre</span> = "Andrés";
                 {
                   <span class="text-danger">console.log</span>( <span class="text-info">nombre</span> ); <span class="comentario">//Resultado: Andrés</span>
                 }
               }
-
             </pre>
           </li>
           <li><i class="bi bi-back"></i>Bloque es todo aquello que está entre llaves ( &lbrace; &rbrace; ).</li>
@@ -227,7 +238,8 @@
         <p class="muted destacado">Se utiliza para almacenar valores constantes (asociados a datos <a href="#" data-bs-toggle="tooltip" data-bs-title="number, string, boolean, undefined, null">primitivos</a>)es decir, que nunca cambiarán durante la ejecución del programa.</p>
         <ul class="listado">
           <li><i class="bi bi-back"></i>Las variables <b><em>const</em></b> no pueden ser alzadas.
-            <pre class="pre-content-list">    
+            <pre class="pre-content-list">
+
               <span class="text-danger">console.log</span>(nombre); <span class="comentario">//Error de accesibilidad</span>
               <span class="text-danger">const</span> <span class="text-info">nombre</span> = "Juan";
             </pre>   
@@ -237,13 +249,15 @@
         <ul class="listado">
           <li><i class="bi bi-back"></i><b><em>const</em></b> no es completamente inmutable</li>
           <li><i class="bi bi-back"></i><b><em>const</em></b> no acepta la reasignación de valores primitivos.
-            <pre class="pre-content-list">    
+            <pre class="pre-content-list">
+
               <span class="text-danger">const</span> <span class="text-info">nombre</span> = "Juan";                
               <span class="text-info">nombre</span> = "Victor" <span class="comentario">//Error</span>
             </pre>    
           </li>
           <li><i class="bi bi-back"></i>Si se pueden <b><em>mutar</em></b> propiedades del valor asociado a la constante (esto se da en el caso de <b>arrays</b> y/o <b>objetos</b>).
-            <pre class="pre-content-list">    
+            <pre class="pre-content-list">
+
               <span class="text-danger">const</span> <span class="text-info">persona</span> = <span class="text-warning">{</span>
                 nombre : "Juan",
                 apellido : "Nuñez"
@@ -257,7 +271,8 @@
           </li>
           <li><i class="bi bi-back"></i>Tiene ámbito de bloque</li>
         </ul>
-        <pre class="pre-content-list">    
+        <pre class="pre-content-list">
+
           {
 
             <span class="text-danger">const</span> <span class="text-info">nombre</span> = "Juan";
@@ -352,45 +367,26 @@
               </tr>
               <tr>
                 <td>Object</td>
-                <td>const obj = new Object</td>                
-                <td>obj instanceof Object  <span class="comentario">//true</span></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>const arr = new Array</td>
-                <td>arr instanceof Array  <span class="comentario">//true</span></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>const map = new Map</td>
-                <td>map instanceof Map  <span class="comentario">//true</span></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>const set = new Set</td>
-                <td>set instanceof Set  <span class="comentario">//true</span></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>const fecha = new Date</td>
-                <td>fecha instanceof Date  <span class="comentario">//true</span></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>const weakmap = new WeakMap</td>
-                <td>weakmap instanceof WeakMap  <span class="comentario">//true</span></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>const weakset = new WeakSet</td>
-                <td>weakset instanceof WeakSet  <span class="comentario">//true</span></td>
+                <td>const obj = new Object
+                  <br/>const arr = new Array
+                  <br/>const map = new Map
+                  <br/>const set = new Set
+                  <br/>const fecha = new Date
+                  <br/>const weakmap = new WeakMap
+                  <br/>const weakset = new WeakSet                  
+                </td>                
+                <td>obj instanceof Object  <span class="comentario">//true</span>
+                  <br/>arr instanceof Array  <span class="comentario">//true</span>
+                  <br/>map instanceof Map  <span class="comentario">//true</span>
+                  <br/>set instanceof Set  <span class="comentario">//true</span>
+                  <br/>fecha instanceof Date  <span class="comentario">//true</span>
+                  <br/>weakmap instanceof WeakMap  <span class="comentario">//true</span>
+                  <br/>weakset instanceof WeakSet  <span class="comentario">//true</span>
+                </td>
               </tr>
             </tbody>
           </table>
-        </div>
-        <pre class="pre-content-list">    
-
-        </pre>
+        </div>        
       </div>
     </article>
   </div>
@@ -400,15 +396,56 @@
 
 
 <!--
-<article>
-  <h3></h3>
-  <div class="row mt-3">
-    <p class="destacado"></p>
-    <pre class="pre-content-list">    
-
-    </pre>
+<section>
+  <div class="container-fluid">
+    <h2></h2>
+    <article>
+      <h3></h3>
+      <div class="row mt-3">
+        <p class="destacado"></p>
+        <pre class="pre-content-list">    
+    
+        </pre>
+      </div>
+    </article>
+    <article>
+      <h3></h3>
+      <div class="row mt-3">
+        <p class="destacado"></p>
+        <pre class="pre-content-list">    
+    
+        </pre>
+      </div>
+    </article>
+    <article>
+      <h3></h3>
+      <div class="row mt-3">
+        <p class="destacado"></p>
+        <pre class="pre-content-list">    
+    
+        </pre>
+      </div>
+    </article>
+    <article>
+      <h3></h3>
+      <div class="row mt-3">
+        <p class="destacado"></p>
+        <pre class="pre-content-list">    
+    
+        </pre>
+      </div>
+    </article>
+    <article>
+      <h3></h3>
+      <div class="row mt-3">
+        <p class="destacado"></p>
+        <pre class="pre-content-list">    
+    
+        </pre>
+      </div>
+    </article>
   </div>
-</article>
+</section>
  -->
 
 <!--
