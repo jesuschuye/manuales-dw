@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../../../assets/bootstrap520/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../../assets/estilos-generales.css">
-    
+<?php include "../../../../templates/head.php"?>    
     <link rel="stylesheet" href="../../css/estilos-css.css">
 
     <link rel="stylesheet" href="css/styles.css">
@@ -19,8 +11,8 @@
     
 </head>
 <body>
-   <?php require "../../../templates/nav.php";?>
-	<?php include "../../nav-css.php";?>
+   <?php require "../../../../templates/nav-ini.php";?>
+    <?php include "../../nav-css.php";?>
     <section class="section">
         <article class="article">
             <div class="div-sub-title">
@@ -331,7 +323,4 @@
         </div>
     </div>
 
-    <script src="../../../../assets/popper.min.js"></script>
-    <script src="../../../../assets/bootstrap520/js/bootstrap.min.js"></script>
-</body>
-</html>
+<?php include "../../../../templates/footer.php"?>

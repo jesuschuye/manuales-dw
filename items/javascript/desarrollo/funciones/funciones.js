@@ -1,10 +1,10 @@
 //invocación
-saludar();
+/* saludar(); */
 
 /* Función declarada */
-function saludar(){
+/* function saludar(){
     console.log("Hola, mi nombre es Jesús");
-}
+} */
 
 
 /* Función expresada */
@@ -34,3 +34,10 @@ function saludar(){
 /*Forma abreviada */
 /* const mayusc = nombre => nombre.toUpperCase();
 console.log(mayusc("Jesus H.")); */
+
+/* parametros y argumentos */
+function nombreCompleto(nombre, apellido){
+    console.log("Mi nombre completo es: " + nombre + " " + apellido);
+}
+
+nombreCompleto("Juan", "Valdez");

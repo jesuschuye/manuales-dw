@@ -20,7 +20,7 @@
           <section>
             <div class="container-fluid">
               <h2>Funciones</h2>
-              <!-- Tipos de funciones -->
+              <!-- concepto -->
               <article>
                 <h3>Concepto</h3>
                 <div class="row mt-3">
@@ -28,17 +28,19 @@
                   <p>Una función en JavaScript es similar a un procedimiento — un conjunto de instrucciones que realiza una tarea o calcula un valor, pero para que un procedimiento califique como función, debe tomar alguna entrada y devolver una salida donde hay alguna relación obvia entre la entrada y la salida. Para usar una función, debes definirla en algún lugar del ámbito desde el que deseas llamarla.</p>
                 </div>
               </article>
+              <!-- tipos de funciones -->
               <article>
                 <h3>Tipos de Funciones</h3>
                 <div class="row mt-3">
                   <p>Existen 3 tipos de funciones</p>
-                  <ul>
+                  <ul class="listado">
                       <li><i class="bi bi-back"></i>Funciones Declaradas</li>
                       <li><i class="bi bi-back"></i>Funciones expresadas</li>
                       <li><i class="bi bi-back"></i>Funciones Flecha o Arrow Functions</li>
                   </ul>
                 </div>
               </article>
+              <!-- funciones declaradas -->
               <article>
                 <h3 id="f_declaradas">Funciones Declaradas</h3>
                 <p>Requieren un identificador y son <span class="text-primary"><a href="#">alzables</a></span>. Pueden ser llamadas (invocadas) desde cualquier parte del código.</p>
@@ -50,6 +52,7 @@
                   }    
                 </pre>            
               </article>
+              <!-- funciones expresadas -->
               <article>
                 <h3 id="f_expresadas">Funciones Expresadas</h3>
                 <p>Pueden tener nombre o ser <b>anónimas</b>. Lo que se <span class="text-primary"><a href="#">alza</a></span> es la declaración, no la asignación. Sólo pueden ser llamadas después de ser asignadas.</p>
@@ -63,6 +66,7 @@
                   <span class="text-info">saludar</span>();    
                 </pre>            
               </article>
+              <!-- funciones flecha -->
               <article>
                 <h3 id="f_flecha">Funciones Flecha</h3>
                 <ul class="listado">
@@ -94,6 +98,39 @@
                 </pre>
                 <a class="btn btn-outline-primary mt-3 mb-3" href="../desarrollo/funciones/funciones.html" target="_blank">Resultado</a>
               </article>
+              <!-- parametros y argumentos -->
+              <article>
+                <h3>Parametros y Argumentos</h3>
+                <div class="row mt-3">
+                  <p class="destacado">Son 2 conceptos distintos pero que finalmente se complementan ya que los argumentos se convierten en parámetros.</p>
+                  <ul class="listado">
+                    <li><i class="bi bi-back"></i><strong><em>Los argumentos</em></strong> son los valores que se le pasan a la función al momento de invocarse. Finalmente son aceptados como <strong><em>parámetros</em></strong>.</li>
+                    <li><i class="bi bi-back"></i><strong><em>Los parámetros</em></strong> son accesibles como variables en el cuerpo de la función</li>
+                    <li><i class="bi bi-back"></i>Todas las <strong><em>funciones</em></strong> pueden tener parámetros para hacerlas más polivalentes</li>
+                  </ul>
+                  <pre class="pre-content-list">    
+                    <span class="text-danger">function</span> <span class="text-warning">nombreCompleto</span> ( <span class="text-lila">parametroNombre</span>, <span class="text-lila">parametroApellido</span> ) {
+                      <span class="text-danger">console.log</span>( "Mi nombre completo es: "
+                      + <span class="text-lila">parametroNombre</span> + " "
+                      + <span class="text-lila">parametroApellido</span> );
+
+                      <span class="comentario">//invocacion</span>
+                      <span class="comentario"><span class="text-warning">nombreCompleto</span>( <span class="text-green">argumentoNombre</span>, <span class="text-green">argumentoApellido</span> )
+                      </span>
+                      <span class="text-warning">nombreCompleto</span>( <span class="text-green">"Juan"</span>, <span class="text-green">"Valdez"</span> )                     
+                    }
+                  </pre>
+                  <h4>Argumentos no definidos</h4>
+                  <ul class="listado">
+                    <li><i class="bi bi-shield-fill-check"></i>Cuando no se definen argumentos a pasar a la función (aún siendo requeridos por ésta), Javascript  interpretará como <b>undefined</b>.</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  
+                </div>
+              </article>
+              
             </div>
           </section>
       </div>

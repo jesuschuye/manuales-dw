@@ -3,7 +3,7 @@
     <h2>Conceptos Básicos</h2>
     <!-- la etiqueta script -->
     <article>
-      <h3>La etiqueta <strong><em>&lt;script&gt;&lt;/script&gt;</em></strong></h3>
+      <h3 id="et_script">La etiqueta <strong><em>&lt;script&gt;&lt;/script&gt;</em></strong></h3>
       <div class="row mt-3">
         <p class="destacado">Se utiliza para incluir código y/o archivos de javascript en un documento <b>html</b>. Existen 3 formas de hacerlo</p>
         <ul class="listado">
@@ -34,7 +34,7 @@
           <p class="destacado"><b><em>Head</em></b> es lo primero que se va a cargar del documento <b>html</b>, asi que si existiera algún archivo javascript que haga referencia a algún elemento del <b>DOM</b> se producirá un error de tipo <b><em>null</em></b></p>
           <li><i class="bi bi-back"></i>Dentro de la etiqueta <b><em>head</em></b> usando el atributo <b>defer</b></li>
           <dl>
-            <dt><b><em>defer</em></b></dt>
+            <dt id="defer"><b><em>defer</em></b></dt>
             <dd>Difiere la carga del documento permitiendo esperar a que se cargue todo el <b><em>DOM</em></b> del  documento html.
             </dd>
           </dl>
@@ -49,7 +49,7 @@
     </article>
     <!-- la etiqueta noscript -->
     <article>
-      <h3>La etiqueta <strong><em>&lt;noscript&gt;&lt;/noscript&gt;</em></strong></h3>
+      <h3 id="et_noscript">La etiqueta <strong><em>&lt;noscript&gt;&lt;/noscript&gt;</em></strong></h3>
       <div class="row mt-3">
         <p class="destacado">Se utiliza para avisar que el navegador tiene javascript <b>desactivado.</b></p>
         <pre class="pre-content-list">
@@ -64,7 +64,7 @@
     </article>
     <!-- alzado - hoisting -->
     <article>
-      <h3>Alzado (hoisting)</h3>
+      <h3 id="alzado">Alzado (hoisting)</h3>
       <div class="row mt-3">
         <p class="destacado">Es la secuencia en la que javascript lee e interpreta un documento <b>html</b>.</p>
         <ul class="listado">
@@ -147,7 +147,7 @@
     </article>
     <!-- Declaracion con var -->
     <article>
-      <h3>Declaración con <strong>var</strong></h3>
+      <h3 id="var">Declaración con <strong>var</strong></h3>
       <div class="row mt-3">
         <p class="destacado"><b><em>var</em></b> hoy en dia ya no se usa mucho debido a la cuestión de la reasignación de valores a las variables</p>
         <p>Características:</p>
@@ -177,9 +177,9 @@
         </ul>
       </div>
     </article>
-    <!-- declración con let -->
+    <!-- declaración con let -->
     <article>
-      <h3>Declaración con <strong>let</strong></h3>
+      <h3 id="let">Declaración con <strong>let</strong></h3>
       <div class="row mt-3">
         <p class="destacado">Es lo que está vigente desde 2015 (ES6)</p>
         <p>Características</p>
@@ -218,7 +218,7 @@
     </article>
     <!-- la inmutabilidad -->
     <article>
-      <h3>La inmutabilidad</h3>      
+      <h3 id="inmutabilidad">La inmutabilidad</h3>      
       <div class="row mt-3">
         <p class="destacado">JavaScript es un lenguaje muy (quizá demasiado) flexible y ofrece varias opciones para manipular todo tipo de estructura de datos, algunas de estas opciones son <strong>Mutables</strong> y otros <strong>Inmutables</strong>.</p>
         <p>
@@ -233,7 +233,7 @@
     </article>
     <!-- Declaracion con const -->
     <article>
-      <h3>Declaración con <strong>const</strong></h3>
+      <h3 id="const">Declaración con <strong>const</strong></h3>
       <div class="row mt-3">
         <p class="muted destacado">Se utiliza para almacenar valores constantes (asociados a datos <a href="#" data-bs-toggle="tooltip" data-bs-title="number, string, boolean, undefined, null">primitivos</a>)es decir, que nunca cambiarán durante la ejecución del programa.</p>
         <ul class="listado">
@@ -288,7 +288,7 @@
     </article>
     <!-- Tipos de datos -->
     <article>
-      <h3>Tipos de datos en Javascript</h3>
+      <h3 id="datosjs">Tipos de datos en Javascript</h3>
       <div class="row mt-3">
         <p class="destacado">Existen 2 tipos de datos en Javascript: <strong>Primitivos</strong> y <strong>Estructurales</strong>.</p>
         <ul class="listado">

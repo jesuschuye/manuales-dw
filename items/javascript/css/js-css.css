@@ -75,6 +75,11 @@ p.p-list{
 
 .listado{
     margin-bottom: 2em;
+    line-height: 2;
+}
+
+.listado li{
+    padding: 0 2em;
 }
 
 .pre-content-list{

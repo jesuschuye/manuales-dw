@@ -24,8 +24,7 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="https://tailwindcss.com/" href="_blank">TailwindCSS</a></li>
-                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/
-" href="_blank">Bootstrap</a></li>
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" href="_blank">Bootstrap</a></li>
                     <li><a class="dropdown-item" href="hhttps://fontawesome.com/" href="_blank">Fontawesome</a></li>
                     <li><a class="dropdown-item" href="https://cdnjs.com/libraries/font-awesome" href="_blank">Fontawesome Libraries</a></li>
                     <li><a class="dropdown-item" href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
@@ -56,8 +55,7 @@
                     <li><a class="dropdown-item" href="https://scrimba.com/learn/cssvariables" target="_blank">Variables CSS</a></li>
                     <li><a class="dropdown-item" href="https://lenguajecss.com/css/" target="_blank">CSS Total</a></li>
                     <li><a class="dropdown-item" href="https://cssreference.io/" target="_blank">CSS Avanzado</a></li>
-                    <li><a class="dropdown-item" href="https://elad.medium.com/new-css-logical-properties-bc6945311ce7
-" target="_blank">Nuevas propiedades</a></li>
+                    <li><a class="dropdown-item" href="https://elad.medium.com/new-css-logical-properties-bc6945311ce7" target="_blank">Nuevas propiedades</a></li>
                     <li><a class="dropdown-item" href="https://www.bufa.es/css3-transitions/" target="_blank">Transiciones tutorial</a></li>
                     <li><a class="dropdown-item" href="/items/css/css-ddesign/css_basico/index.php" target="_blank">DDESIGN Basico</a></li>
                     <li><a class="dropdown-item" href="/items/css/css-ddesign/css_intermedio/index.php" target="_blank">DDESIGN Intermedio</a></li>

@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../../assets/bootstrap520/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../../assets/estilos-generales.css">
+<?php include "../../../../templates/head.php"?>
     
     <link rel="stylesheet" href="../../css/estilos-css.css">
 
@@ -17,7 +10,7 @@
 </head>
 
 <body>
-    <?php require "../../../templates/nav.php";?>
+    <?php require "../../../../templates/nav-ini.php";?>
 	<?php include "../../nav-css.php";?>
     
     <div class="container">
@@ -2626,10 +2619,7 @@
         </div>
     </div>
     
-    <script src="../../../../assets/popper.min.js"></script>
-    <script src="../../../../assets/bootstrap520/js/bootstrap.min.js"></script>
-</body>
-</html>
+    <?php include "../../../../templates/footer.php"?>
 <!--Plantilla-->
 <!--
 <section class="section">

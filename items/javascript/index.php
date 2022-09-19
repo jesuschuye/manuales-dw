@@ -4,9 +4,8 @@
     <title>Javascript</title>
 <?php include "../../templates/nav-ini.php";?>
 <?php include "./nav-js.php"; ?>
-<div class="container-fluid mt-3">
-    <h1 class="text-center">APUNTES Y PRACTICAS DE JAVASCRIPT</h1>
-    <div class="row mt-5">
+<div class="container-fluid content-gen">
+    <div class="row mt-3 contenido">
         <!-- indice -->
         <div class="col-md-3">
             <?php include "./items/templates/aside-js.php";?>

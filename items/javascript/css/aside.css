@@ -1,11 +1,9 @@
-
-
 .nav-indice {
     /* opacity: 0.75; */
     padding: 0;
     line-height: 2;
     position: sticky;
-    top: 140px;
+    top: 150px;
     /* border: 1px solid lightcoral; */
 }
 
@@ -15,6 +13,10 @@
     margin: 0;
     width: 100%;
     /* border: 1px solid black; */
+}
+
+.list-indice li{
+    margin-bottom: 2em;
 }
 
 .list-indice li:hover {
