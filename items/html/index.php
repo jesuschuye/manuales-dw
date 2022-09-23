@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="./css/html-css.css">
 <title>html</title>
 <?php include "../../templates/nav-ini.php";?>
-<h1>Index html</h1>
+<?php include "./nav-html.php";?>
 <section>
     <div class="container">
         <h2></h2>

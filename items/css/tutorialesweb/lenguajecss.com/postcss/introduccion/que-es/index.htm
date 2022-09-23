@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+  <link rel="shortcut icon" href="../../../favicon-1.ico">
+  <title>¿Qué es PostCSS? - CSS en español - Lenguaje CSS</title>
+  <link rel="preload" href="../../../critical-1.css" as="style">
+  <link rel="preload" href="../../../assets/fonts/blinker-vf-1.woff2" as="font" crossorigin="">
+  <link rel="preload" href="../../../assets/fonts/scope-one-400-1.woff2" as="font" crossorigin="">
+  <meta name="description" content="PostCSS se define como un preprocesador, transformador y postprocesador de CSS construido con Javascript, pero... ¿Qué es realmente?">
+  <link rel="stylesheet" href="../../../critical-1.css">
+  <link rel="stylesheet" href="../../../theme-1.css">
+  <script type="module" src="../../../main-1.js"></script>
+  <link rel="canonical" href="index.htm">
+  <meta property="og:title" content="¿Qué es PostCSS? - CSS en español">
+  <meta property="og:image" content="https://lenguajecss.com/postcss/large-summary.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="PostCSS se define como un preprocesador, transformador y postprocesador de CSS construido con Javascript, pero... ¿Qué es realmente?">
+  <meta property="og:url" content="https://lenguajecss.com/postcss/introduccion/que-es/">
+  <meta property="twitter:url" content="https://lenguajecss.com/postcss/introduccion/que-es/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="@Manz">
+  <meta property="twitter:title" content="¿Qué es PostCSS? - CSS en español">
+  <meta property="twitter:description" content="PostCSS se define como un preprocesador, transformador y postprocesador de CSS construido con Javascript, pero... ¿Qué es realmente?">
+  <meta property="twitter:image:src" content="https://lenguajecss.com/postcss/large-summary.jpg">
+</head>
+<body class="css post"><div class="page">
+    <div class="sidebar">
+      <div class="logo flex-center">
+  <a href="../../../index.htm">
+    <img width="42" height="42" src="../../../assets/logo-1.svg" alt="Logo">
+    Lenguaje CSS
+  </a>
+  <div class="icons" style="--icon-size: 32px; --icon-side-padding: 0.15em">
+    <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+    <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+    <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+    <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+    <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+  </div>
+  <span>Un sitio web de <a href="https://manz.dev/"><mark>Manz.dev</mark></a></span>
+</div>
+
+      <form class="search flex-center" action="https://www.google.com/search">
+  <label><span>Buscar:</span> <input type="search" name="q" placeholder="Buscar un tema (ej: flex, grid...)" autocomplete="off"></label>
+  <label><span>Sitio:</span> <input type="hidden" name="q" value="site:lenguajejs.com OR site:lenguajecss.com OR site:lenguajehtml.com OR site:terminaldelinux.com OR site:manz.dev"></label>
+  <div class="search-results"></div>
+</form>
+
+      
+
+<style>
+  sidebar-link {
+    --logo-image: url(../../logo.svg);
+  }
+</style>
+
+<div class="toc"><sidebar-link title="Volver al índice" href="../../index.htm" back="" direct=""></sidebar-link><sidebar-section title="Introducción a PostCSS" href="../index.htm"><sidebar-link href="index.htm" title="¿Qué es PostCSS?"></sidebar-link><sidebar-link href="../configuracion-postcss/index.htm" title="Configuración de PostCSS"></sidebar-link><sidebar-link href="../browserslist/index.htm" title="¿Qué es Browserslist?"></sidebar-link></sidebar-section><sidebar-section title="Plugins de PostCSS" href="../../plugins/index.htm"><sidebar-link href="../../plugins/autoprefixer/index.htm" title="Autoprefixer: Prefijos CSS"></sidebar-link><sidebar-link href="../../plugins/css-nesting/index.htm" title="CSS Nesting: CSS anidado"></sidebar-link><sidebar-link href="../../plugins/purgecss/index.htm" title="PurgeCSS: CSS no utilizado"></sidebar-link></sidebar-section></div>
+
+      
+    </div>
+    <div class="contents">
+      <header class="mega">
+  <h1>¿Qué es PostCSS?</h1></header>
+
+      <div class="content ">
+  <div class="breadcrumbs">
+  <a href="../../../index.htm">ATRÁS</a> <span>ᐳ</span> <a href="../../index.htm">postcss</a> <span>ᐳ</span> <a href="index.htm">¿Qué es PostCSS?</a>
+</div>
+<p>A medida que avanzamos en el <strong>desarrollo web</strong> (<em>y en CSS en particular</em>), nos iremos dando cuenta que la mayor parte del tiempo lo invertimos en realizar tareas repetitivas una y otra vez, y que lo ideal sería tener una forma de <strong>automatizar</strong> dichas tareas.</p>
+<p>Ahí es donde entra en escena <a href="https://postcss.org/"><strong>PostCSS</strong></a>, una estupenda herramienta que permite darle mayor versatilidad a nuestro código CSS, automatizando tareas, realizando trabajo extra por nosotros y, en resumen, ahorrándonos trabajo.</p>
+<h3 id="cómo-funciona-postcss" tabindex="-1">¿Cómo funciona PostCSS?</h3>
+<p>El formato <code>.css</code> es un formato que los navegadores comprenden y saben interpretar. Sin embargo, el formato <code>.postcss</code> o <code>.pcss</code> es un formato que, en principio, los navegadores no entenderán. En general, el código utilizado en un fichero <strong>PostCSS</strong> será igual (<em>o muy parecido</em>) a CSS, pero habrán detalles que no serán estrictamente <strong>código CSS estándar</strong>.</p>
+<p>La herramienta <strong>PostCSS</strong>, realmente sólo es una aplicación Javascript que <strong>transpila</strong> código, o lo que es lo mismo, pasa de un código fuente concreto, en nuestro caso en formato <code>.postcss</code>, a otro código fuente concreto, en nuestro caso <code>.css</code>:</p>
+<p><img src="postcss-a-css.png" alt="PostCSS a CSS" width="693" height="331" loading="lazy"></p>
+<p>Y como veremos a continuación, esto nos ofrece múltiples características interesantes.</p>
+<blockquote>
+<p><strong>OJO</strong>: Aunque al principio solemos utilizar la extensión <code>.pcss</code> o <code>.postcss</code> (<em>para diferenciarlo de un fichero <code>.css</code> estándar</em>), es muy habitual encontrarnos con que, para simplificar, se use la misma extensión <code>.css</code> incluso para los ficheros <strong>PostCSS</strong>.</p>
+</blockquote>
+<h3 id="instalación-de-postcss" tabindex="-1">Instalación de PostCSS</h3>
+<p>Para comenzar a trabajar con <strong>PostCSS</strong> necesitaremos tenerlo instalado en nuestro proyecto. <strong>PostCSS</strong> es simplemente una aplicación Javascript de línea de comandos (<em>CLI</em>), por lo que podemos instalarla con <code>npm</code> en nuestro proyecto y ejecutarla mediante <code>npx</code>:</p>
+<pre class="language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> --save-dev postcss-cli postcss<br><br>$ npx postcss --version<br><span class="token number">8.3</span>.0</code></pre>
+<p>Esto instalará <strong>PostCSS</strong> en la carpeta <code>node_modules</code>, y tendremos la herramienta lista para procesar nuestros archivos <strong>PostCSS</strong>. No te olvides de instalarlo con el flag <code>--save-dev</code> o <code>-D</code>, ya que se trata de una herramienta de desarrollo que generará los archivos definitivos para producción, por lo que no tiene sentido tenerlo como dependencia de producción.</p>
+<blockquote>
+<p>Ten en cuenta que si lo deseas, también puedes instalar la herramienta de terminal de PostCSS <strong>de forma global</strong>. De esta forma se instalará en el sistema sin que esté asociada al proyecto. Tienes más información sobre esto en <a href="https://lenguajejs.com/npm/introduccion/instalaciones-globales/">Instalaciones globales de NPM</a>.</p>
+</blockquote>
+<h3 id="preparando-el-fichero-postcss" tabindex="-1">Preparando el fichero PostCSS</h3>
+<p>Vamos a crear un pequeño ejemplo para ejemplificar el funcionamiento de la mecánica de transpilación de <strong>PostCSS</strong>. Para ello, vamos a crear un fichero <code>index.pcss</code> donde escribiremos nuestro <strong>código CSS no estándar</strong>, que posteriormente será convertido a <strong>código CSS estándar</strong>.</p>
+<p>En el ejemplo vamos a utilizar una característica denominada <strong>nesting css</strong> (<em>anidamiento css</em>), que permite escribir código CSS de forma <strong>más legible y mantenible</strong> «para humanos», pero incompatible para navegadores (<em>al menos, de momento</em>):</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> #444<span class="token punctuation">;</span><br><br>  <span class="token selector">&amp; .item</span> <span class="token punctuation">{</span><br>    <span class="token property">background</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br>    <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p>Observa que este código de ejemplo no es más que una forma de escribir lo que en <strong>CSS estándar</strong> sería el selector <code>.container .item</code>. Dicho así, parece que no ofrece ventajas, pero si continuamos escribiendo código, comenzaremos a ver las ventajas.</p>
+<p>Esta forma de <strong>anidamiento de CSS</strong> (<em>y escribir código en general</em>) nos permite crear agrupaciones por entidades y que el código sea mucho más fácil de entender, organizar y gestionar, sobre todo si hace mucho tiempo que no lees el código (<em>o incluso si nunca antes lo has leído</em>).</p>
+<h3 id="ejecutando-postcss" tabindex="-1">Ejecutando PostCSS</h3>
+<p>Ahora, mediante <strong>PostCSS</strong>, podemos convertir este código a <strong>CSS estándar</strong>, el cuál si será capaz de leerlo el navegador. Para ello, ejecutamos <code>postcss</code> utilizando <code>npx</code> e indicamos la ruta del fichero <code>index.pcss</code> como se ve a continuación.</p>
+<p>Si lo hacemos correctamente, nos aparecerá el siguiente error:</p>
+<pre class="language-bash"><code class="language-bash">$ npx postcss index.pcss<br><br>You did not <span class="token builtin class-name">set</span> any plugins, parser, or stringifier. Right now, PostCSS does nothing.<br>Pick plugins <span class="token keyword">for</span> your <span class="token keyword">case</span> on https://www.postcss.parts/ and use them <span class="token keyword">in</span> postcss.config.js.<br><br><span class="token punctuation">(</span><span class="token punctuation">..</span>.Código del index.pcss<span class="token punctuation">..</span>.<span class="token punctuation">)</span></code></pre>
+<blockquote>
+<blockquote>
+<p>Es importante saber que <strong>PostCSS</strong> funciona a base de <strong>plugins</strong>. Es decir, por si solo, PostCSS no realiza ninguna funcionalidad. Lee el fichero de origen y lo devuelve <strong>sin cambios</strong>.</p>
+</blockquote>
+</blockquote>
+<p>En este ejemplo anterior, el error aparece porque hemos ejecutado PostCSS sin utilizar aún ningún plugin, por lo tanto, nos avisa del error y nos devuelve <strong>exactamente el mismo código</strong> del fichero <code>index.pcss</code>.</p>
+<h3 id="ejecutando-plugins-en-postcss" tabindex="-1">Ejecutando plugins en PostCSS</h3>
+<p>Así pues, vamos a instalar el <strong>plugin de PostCSS</strong> necesario para la funcionalidad que queremos probar (<em>nesting css</em>). El plugin en cuestión es <a href="https://github.com/jonathantneal/postcss-nesting">postcss-nesting</a>:</p>
+<pre class="language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> --save-dev postcss-nesting</code></pre>
+<p>Una vez instalado (<em>recuerda utilizar el parámetro <code>--save-dev</code></em>) lo tendremos en la carpeta <code>node_modules</code> del proyecto, por lo que ahora sí podremos utilizarlo con <strong>PostCSS</strong>, usando el flag <code>-u</code> (<em>use</em>) de <code>postcss</code>:</p>
+<pre class="language-bash"><code class="language-bash">$ npx postcss index.pcss -u postcss-nesting --no-map</code></pre>
+<p>Se puede ver que también estamos usando el parámetro <code>--no-map</code> para que no nos muestre al final una linea de generación del <strong>source-map</strong> (<em>relación entre el fichero original y el CSS resultante</em>) que comienza por algo parecido a <code>/*# sourceMappingURL=</code>.</p>
+<p>El comando anterior nos devolverá el siguiente código por pantalla:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">animation</span><span class="token punctuation">:</span> name 1s<span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> #444<br><span class="token punctuation">}</span><br><span class="token selector">.container .item</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Pero obtener el resultado final por pantalla no suele ser muy práctico, por lo que podemos añadir el parámetro <code>-o index.css</code> para indicar a <strong>PostCSS</strong> que queremos que lo guarde en un fichero en lugar de mostrarlo por pantalla:</p>
+<pre class="language-bash"><code class="language-bash">$ npx postcss index.pcss -u postcss-nesting --no-map -o index.css</code></pre>
+<p>Hemos procesado un fichero con <strong>PostCSS</strong>, con un plugin cargado, generando <strong>código CSS estándar</strong> que entienda el navegador. Muy a grandes rasgos, esto es lo que hace <strong>PostCSS</strong>. Pero ahora imagina que construímos una lista con varios plugins diferentes, que realizan múltiples transformaciones automatizando tareas, organizando código, corrigiendo o avisando de errores, etc... Estas son las ventajas que brinda <strong>PostCSS</strong>.</p>
+<blockquote>
+<p>Más adelante veremos más parámetros de PostCSS, así como la posibilidad de crear un <strong>fichero de configuración</strong> para no tener que crear comandos con muchos parámetros, así como sistemas que automatizan y hacen mucho más sencillo y práctico el uso de PostCSS.</p>
+</blockquote>
+<h3 id="plugins-populares-de-postcss" tabindex="-1">Plugins populares de PostCSS</h3>
+<p>Antes de profundizar más, mencionar que el ecosistema de <strong>PostCSS</strong> es bastante grande y existen plugins para prácticamente cualquier tarea:</p>
+<table>
+<thead>
+<tr>
+<th>Plugin</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/postcss/autoprefixer">autoprefixer</a></td>
+<td>Añade prefijos CSS automáticamente, basándose en CanIUse.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/css-modules/postcss-modules">css-modules</a></td>
+<td>Aplica la estrategia <a href="https://github.com/css-modules/css-modules">CSS Modules</a> para aislar CSS y evitar la cascada.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/stylelint/stylelint">stylelint</a></td>
+<td>Linter de código CSS, compatible también con preprocesadores como LESS o Sass.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/csstools/postcss-preset-env">postcss-preset-env</a></td>
+<td>Convierte CSS no soportado por navegadores en CSS soportado. El Babel de CSS.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cssnano/cssnano">cssnano</a></td>
+<td>Minificador de código CSS.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/FullHuman/purgecss">purgecss</a></td>
+<td>Elimina código CSS muerto (no utilizado) de nuestros proyectos.</td>
+</tr>
+</tbody>
+</table>
+<p>Existen muchos más, pero estos son algunos de los plugins que podemos encontrar para <strong>PostCSS</strong>.</p>
+
+    <nav class="prev-next"><a class="bt next" href="../configuracion-postcss/index.htm" title="Configuración de PostCSS">
+    <span class="icon">
+      <svg-icon name="arrow-right"></svg-icon>
+    </span>
+    <span class="data">
+      <span>Configuración de PostCSS</span>
+      <small>Capítulo siguiente</small>
+    </span>
+  </a></nav>
+
+    <script async="" src="../../../pagead/js/f-1.txt"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center; margin:auto; margin-top: 2em" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0412426997270095" data-ad-slot="3027930890"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+      <div class="related">
+
+  <div class="author">
+    <div class="author-wrapper">
+      <img loading="lazy" class="circle" src="../../../assets/manz-1.webp" alt="Manz">
+      <div>
+        <p>Docente, divulgador informático y <a href="https://manz.dev/">streamer de código</a>. Amante de <strong>CSS</strong>, <strong>Javascript</strong>
+          y de la plataforma web. Ha trabajado como profesor en la Universidad de La Laguna y es director del curso de
+          Programación web FullStack y FrontEnd de EOI desde Tenerife. En sus ratos libres, busca GIF de gatos en Internet.</p>
+        <p class="twitch-badge">
+          <a href="https://twitch.tv/ManzDev">
+            <svg class="twitch" viewbox="0 0 1024 1024">
+              <path style="fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="m262.451 12.904-178.26 178.26v641.672h213.905v178.26l178.26-178.26h142.576L939.809 512V12.904H262.45zm35.645 71.287h570.383v392.164L725.904 618.932H583.287L458.514 743.705V618.932H298.096V84.192zM494.158 208.51v216.36h71.328V208.51h-71.328zm196 0v216.36h71.328V208.51h-71.328z"></path>
+            </svg>
+            Sígueme en Twitch
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="comentarios">
+    <script async="" src="../../../count-1.js" id="dsq-count-scr"></script>
+<script>
+var disqus_config = function () {
+  this.page.path = location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname;
+  this.page.url = 'https://lenguajecss.com' + this.page.path;
+  this.page.identifier = this.page.url;
+};
+document.addEventListener('DOMContentLoaded', function() {
+  const coms = document.querySelector('#comentarios');
+  a = coms.querySelector('#disqus_button');
+  a.dataset.disqusIdentifier = 'https://lenguajecss.com' + (location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname);
+  a.addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.id = 'disqus_thread';
+    coms.appendChild(div);
+    const d = document, s = d.createElement('script');
+    s.src = '//lenguajecss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    this.remove();
+  });
+});
+</script>
+
+    <a class="disqus-comment-count" id="disqus_button" href="#disqus_thread" data-disqus-identifier="https://lenguajecss.com/postcss/introduccion/que-es/">Leer comentarios</a>
+    <a class="discord" href="https://discord.manz.dev/">¡Accede a Discord y cuéntanos!</a>
+  </div>
+
+</div>
+
+    </div>
+    <div class="aside">
+      <div class="aside">
+
+  <div class="aside-top">
+    <a href="https://manz.dev/digitalocean" title="Empieza en DigitalOcean con 100$">
+      <img width="240" height="120" src="../../../assets/digital-ocean-1.png" alt="DigitalOcean">
+    </a>
+  </div><div class="video-related">
+  <div class="table">Hablo de esto en...</div>
+  <a href="https://youtu.be/VWtvKrYGYuo"><img width="220" height="124" src="../../../vi/VWtvKrYGYuo/mqdefault.jpg" alt="¿Qué es PostCSS?"></a>
+</div><script type="module">
+  const ANCHOR_ICON = /* svg */`
+    <svg class="anchor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205" width="36" height="36">
+      <path d="m140 129 16 16s-20 30-42 30V71c14-5 25-18 25-34 0-20-17-36-37-36-21 0-38 16-38 36 0 15 11 29 25
+              34v104c-26-2-42-27-42-27l18-18-65-9 10 63 17-17c15 12 32 37 73 37 51-1 63-29 76-40l19 19 10-64-65
+              10zM83 36c0-10 8-18 19-18s19 8 19 18c0 11-9 19-19 19s-19-8-19-19z"/>
+    </svg>`;
+  // Add inner links to sidebar menu
+  export const addInnerLinks = () => {
+    const summary = document.querySelector(".aside .summary .links");
+    const headers = Array.from(document.querySelectorAll(".content h3, .content h4"));
+    const tocLinks = [];
+    headers.forEach((e) => {
+      const link = `${location.origin}${location.pathname}#${e.id}`;
+      e.innerHTML = `<a class="permalink" href="${link}">${e.textContent} ${ANCHOR_ICON}</a>`;
+      const headerType = e.nodeName.toLowerCase();
+      const textContent = headerType === "h4" ? e.textContent.replace("La propiedad ", "").replace("La función ", "") : e.textContent;
+      tocLinks.push(`<a class="${headerType}" href="#${e.id}">${textContent}</a>`);
+    });
+    summary.insertAdjacentHTML("beforeEnd", tocLinks.join("\n"));
+  };
+
+  addInnerLinks();
+</script>
+
+<div class="summary">
+  <div class="table">Tabla de contenidos</div>
+  <div class="links"></div>
+</div>
+</div>
+
+    </div>
+  </div><footer class="main">
+  <div class="square">
+    <a href="../../../index.htm"><h2>Lenguaje CSS</h2></a>
+    <div class="icons">
+      <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+      <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+      <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+      <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+      <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+      <a href="https://github.com/ManzDev" title="GitHub"><svg-icon type="social" name="github"></svg-icon></a>
+      <a href="https://codepen.io/Manz" title="Codepen"><svg-icon type="social" name="codepen"></svg-icon></a>
+      <a href="https://www.linkedin.com/in/joseromanhdez/" title="Linkedin"><svg-icon type="social" name="linkedin"></svg-icon></a>
+    </div>
+    <p>Documentación sobre CSS y las mejores herramientas y recursos para aprender a utilizar el lenguaje de estilos CSS (Hojas de estilo).</p>
+    <p id="footer">Creado y mantenido por <a href="https://twitter.com/Manz">@Manz</a> con <span title="<3">❤</span></p></div>
+</footer>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-136544-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async="" src='../../../analytics-1.js'></script>
+
+
+</body>
+</html>

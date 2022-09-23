@@ -32,16 +32,9 @@
 
 .list-indice li a:hover {
     display: block;
-    /* background-color: rgb(183, 204, 246); */
-    background-color: rgb(255, 224, 130);
-    border: 2px solid orange;
-    color: rgb(78, 102, 239);
+    /* background-color: rgb(183, 204, 246); */    
     font-weight: 500;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border-radius: 5px;    
 }
 
 .sub-list-indice li{

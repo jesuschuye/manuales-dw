@@ -1,0 +1,705 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+  <link rel="shortcut icon" href="../../../favicon-1.ico">
+  <title>Grid CSS - CSS en español - Lenguaje CSS</title>
+  <link rel="preload" href="../../../critical-1.css" as="style">
+  <link rel="preload" href="../../../assets/fonts/blinker-vf-1.woff2" as="font" crossorigin="">
+  <link rel="preload" href="../../../assets/fonts/scope-one-400-1.woff2" as="font" crossorigin="">
+  <meta name="description" content="Grid CSS permite dejar atrás la problemática forma de crear diseños en CSS, aportando un modelo de cuadrículas o rejillas muy personalizable y flexible.">
+  <link rel="stylesheet" href="../../../critical-1.css">
+  <link rel="stylesheet" href="../../../theme-1.css">
+  <script type="module" src="../../../main-1.js"></script>
+  <link rel="canonical" href="index-1.htm">
+  <meta property="og:title" content="Grid CSS - CSS en español">
+  <meta property="og:image" content="https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/grid-css.png">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="Grid CSS permite dejar atrás la problemática forma de crear diseños en CSS, aportando un modelo de cuadrículas o rejillas muy personalizable y flexible.">
+  <meta property="og:url" content="https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/">
+  <meta property="twitter:url" content="https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="@Manz">
+  <meta property="twitter:title" content="Grid CSS - CSS en español">
+  <meta property="twitter:description" content="Grid CSS permite dejar atrás la problemática forma de crear diseños en CSS, aportando un modelo de cuadrículas o rejillas muy personalizable y flexible.">
+  <meta property="twitter:image:src" content="https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/grid-css.png">
+</head>
+<body class="css post"><div class="page">
+    <div class="sidebar">
+      <div class="logo flex-center">
+  <a href="../../../index.htm">
+    <img width="42" height="42" src="../../../assets/logo-1.svg" alt="Logo">
+    Lenguaje CSS
+  </a>
+  <div class="icons" style="--icon-size: 32px; --icon-side-padding: 0.15em">
+    <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+    <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+    <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+    <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+    <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+  </div>
+  <span>Un sitio web de <a href="https://manz.dev/"><mark>Manz.dev</mark></a></span>
+</div>
+
+      <form class="search flex-center" action="https://www.google.com/search">
+  <label><span>Buscar:</span> <input type="search" name="q" placeholder="Buscar un tema (ej: flex, grid...)" autocomplete="off"></label>
+  <label><span>Sitio:</span> <input type="hidden" name="q" value="site:lenguajejs.com OR site:lenguajecss.com OR site:lenguajehtml.com OR site:terminaldelinux.com OR site:manz.dev"></label>
+  <div class="search-results"></div>
+</form>
+
+      
+
+<style>
+  sidebar-link {
+    --logo-image: url(../../logo-1.svg);
+  }
+</style>
+
+<div class="toc"><sidebar-link title="Volver al índice" href="../../index-1.htm" back="" direct=""></sidebar-link><sidebar-link href="../../cheatsheets/index-1.htm" title="CSS3 Cheatsheet" direct=""></sidebar-link><sidebar-section title="Introducción a CSS" href="../../introduccion/index-1.htm"><sidebar-link href="../../introduccion/que-es-css/index-1.htm" title="¿Qué es CSS?"></sidebar-link><sidebar-link href="../../introduccion/como-usar-css/index-1.htm" title="¿Cómo usar CSS?"></sidebar-link><sidebar-link href="../../introduccion/estructura-de-css/index-1.htm" title="Estructura de CSS"></sidebar-link><sidebar-link href="../../introduccion/minificar-css/index-1.htm" title="Minificar CSS"></sidebar-link><sidebar-link href="../../introduccion/navegadores-web/index-1.htm" title="Navegadores web"></sidebar-link><sidebar-link href="../../introduccion/niveles-y-prefijos-css/index-1.htm" title="Niveles de CSS y prefijos"></sidebar-link><sidebar-link href="../../introduccion/herencia-css/index-1.htm" title="Herencia en CSS"></sidebar-link><sidebar-link href="../../introduccion/cascada-css/index-1.htm" title="Cascada en CSS"></sidebar-link><sidebar-link href="../../introduccion/css-custom-properties/index-1.htm" title="Variables CSS"></sidebar-link><sidebar-link href="../../introduccion/guia-css/index-1.htm" title="La guía de propiedades CSS"></sidebar-link></sidebar-section><sidebar-section title="Modelo de cajas" href="../../modelo-de-cajas/index-1.htm"><sidebar-link href="../../modelo-de-cajas/unidades-css/index-1.htm" title="Unidades CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/que-es/index-1.htm" title="Modelo de cajas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/margenes-y-rellenos/index-1.htm" title="Márgenes y rellenos"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes/index-1.htm" title="Bordes CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/border-radius/index-1.htm" title="Esquinas redondeadas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/propiedades-logicas-css/index-1.htm" title="Propiedades lógicas CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes-imagenes/index-1.htm" title="Bordes con imágenes"></sidebar-link><sidebar-link href="../../modelo-de-cajas/funciones-css/index-1.htm" title="Funciones CSS"></sidebar-link></sidebar-section><sidebar-section title="Colores, fondos e imágenes" href="../../colores-y-fondos/index-1.htm"><sidebar-link href="../../colores-y-fondos/colores-css/index-1.htm" title="Colores CSS"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-opacity/index-1.htm" title="La propiedad opacity"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-background-image/index-1.htm" title="La propiedad background-image"></sidebar-link><sidebar-link href="../../colores-y-fondos/linear-gradient/index-1.htm" title="Gradientes lineales"></sidebar-link><sidebar-link href="../../colores-y-fondos/radial-gradient/index-1.htm" title="Gradientes radiales"></sidebar-link><sidebar-link href="../../colores-y-fondos/conic-gradient/index-1.htm" title="Gradientes cónicos"></sidebar-link><sidebar-link href="../../colores-y-fondos/imagenes-css/index-1.htm" title="Imágenes y Objetos"></sidebar-link></sidebar-section><sidebar-section title="Selectores CSS" href="../../selectores/index-1.htm"><sidebar-link href="../../selectores/selectores-basicos/index-1.htm" title="Selectores CSS básicos"></sidebar-link><sidebar-link href="../../selectores/selectores-avanzados/index-1.htm" title="Selectores CSS avanzados"></sidebar-link><sidebar-link href="../../selectores/pseudoclases/index-1.htm" title="Pseudoclases CSS"></sidebar-link><sidebar-link href="../../selectores/pseudoclases-avanzadas/index-1.htm" title="Pseudoclases CSS avanzadas"></sidebar-link><sidebar-link href="../../selectores/pseudoelementos/index-1.htm" title="Pseudoelementos CSS"></sidebar-link><sidebar-link href="../../selectores/atributos/index-1.htm" title="Atributos CSS"></sidebar-link></sidebar-section><sidebar-section title="Reglas CSS" href="../../reglas-css/index-1.htm"><sidebar-link href="../../reglas-css/que-son-reglas-css/index-1.htm" title="¿Qué son las reglas CSS?"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-import/index-1.htm" title="La regla @import"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-layer/index-1.htm" title="La regla @layer"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-supports/index-1.htm" title="La regla @supports"></sidebar-link></sidebar-section><sidebar-section title="Fuentes y tipografías" href="../../fuentes-y-tipografias/index-1.htm"><sidebar-link href="../../fuentes-y-tipografias/tipografias/index-1.htm" title="Tipografías CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/tipografias-externas/index-1.htm" title="Tipografías externas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/fuentes-variables/index-1.htm" title="Fuentes variables CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/textos-y-alineaciones/index-1.htm" title="Textos y alineaciones"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/propiedades-avanzadas/index-1.htm" title="Propiedades avanzadas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/caracteristicas-personalizadas/index-1.htm" title="Características personalizadas"></sidebar-link></sidebar-section><sidebar-section title="Representación de datos" href="../../representacion-datos/index-1.htm"><sidebar-link href="../../representacion-datos/tablas-css/index-1.htm" title="Tablas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/listas-css/index-1.htm" title="Listas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/contadores-css/index-1.htm" title="Contadores CSS"></sidebar-link></sidebar-section><sidebar-section title="Maquetación y colocación" href="../index-1.htm"><sidebar-link href="../propiedad-display/index-1.htm" title="La propiedad display"></sidebar-link><sidebar-link href="../posicionamiento-css/index-1.htm" title="La propiedad position"></sidebar-link><sidebar-link href="../desplazamientos/index-1.htm" title="La propiedad float"></sidebar-link><sidebar-link href="../flexbox/index-1.htm" title="Flexbox CSS"></sidebar-link><sidebar-link href="index-1.htm" title="Grid CSS"></sidebar-link></sidebar-section><sidebar-section title="Interacciones" href="../../interacciones/index-1.htm"><sidebar-link href="../../interacciones/contornos/index-1.htm" title="Contornos"></sidebar-link><sidebar-link href="../../interacciones/cursor-del-raton/index-1.htm" title="Cursor del ratón"></sidebar-link><sidebar-link href="../../interacciones/scroll-y-overflow/index-1.htm" title="Scroll y Overflow"></sidebar-link><sidebar-link href="../../interacciones/snap-scroll/index-1.htm" title="CSS Snap Scroll"></sidebar-link></sidebar-section><sidebar-section title="Sombras" href="../../sombras/index-1.htm"><sidebar-link href="../../sombras/text-shadow/index-1.htm" title="Sombras CSS en textos"></sidebar-link><sidebar-link href="../../sombras/box-shadow/index-1.htm" title="Sombras CSS en cajas"></sidebar-link><sidebar-link href="../../sombras/drop-shadow/index-1.htm" title="Sombras idénticas CSS"></sidebar-link></sidebar-section><sidebar-section title="Efectos" href="../../efectos/index-1.htm"><sidebar-link href="../../efectos/filtros-css/index-1.htm" title="Filtros CSS"></sidebar-link><sidebar-link href="../../efectos/modos-de-fusion/index-1.htm" title="Modos de fusión CSS"></sidebar-link></sidebar-section><sidebar-section title="Máscaras y recortes" href="../../mascaras-y-recortes/index-1.htm"><sidebar-link href="../../mascaras-y-recortes/clip-path/index-1.htm" title="La propiedad clip-path"></sidebar-link><sidebar-link href="../../mascaras-y-recortes/mask-image/index-1.htm" title="La propiedad mask-image"></sidebar-link></sidebar-section><sidebar-section title="Responsive Web Design" href="../../responsive-web-design/index-1.htm"><sidebar-link href="../../responsive-web-design/que-es/index-1.htm" title="¿Qué es Responsive Design?"></sidebar-link><sidebar-link href="../../responsive-web-design/bases-responsive/index-1.htm" title="Bases del Responsive Design"></sidebar-link><sidebar-link href="../../responsive-web-design/media-queries/index-1.htm" title="Media Queries"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-impresos/index-1.htm" title="Medios impresos"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-paginados/index-1.htm" title="Medios paginados"></sidebar-link><sidebar-link href="../../responsive-web-design/preferencias-usuario/index-1.htm" title="Preferencias de usuario"></sidebar-link></sidebar-section><sidebar-section title="Animaciones CSS" href="../../animaciones/index-1.htm"><sidebar-link href="../../animaciones/transiciones/index-1.htm" title="Transiciones CSS"></sidebar-link><sidebar-link href="../../animaciones/timing-function/index-1.htm" title="Funciones de tiempo"></sidebar-link><sidebar-link href="../../animaciones/animaciones/index-1.htm" title="Animaciones CSS"></sidebar-link><sidebar-link href="../../animaciones/keyframes/index-1.htm" title="La regla @keyframes"></sidebar-link></sidebar-section><sidebar-section title="Transformaciones CSS" href="../../transformaciones/index-1.htm"><sidebar-link href="../../transformaciones/transform/index-1.htm" title="Transformaciones CSS"></sidebar-link><sidebar-link href="../../transformaciones/transform-translate/index-1.htm" title="Translaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-rotate/index-1.htm" title="Rotaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-scale/index-1.htm" title="Escalado 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-skew/index-1.htm" title="Deformaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-3d/index-1.htm" title="Transformaciones 3D"></sidebar-link><sidebar-link href="../../transformaciones/perspective/index-1.htm" title="Perspectivas CSS"></sidebar-link></sidebar-section><sidebar-section title="Dibujar con CSS" href="../../dibujar-con-css/index-1.htm"><sidebar-link href="../../dibujar-con-css/como-empezar/index-1.htm" title="¿Cómo dibujar con CSS?"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-html/index-1.htm" title="Primeros pasos: Estructura HTML"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-css/index-1.htm" title="Primeros pasos: Estructura CSS"></sidebar-link></sidebar-section></div>
+
+      
+    </div>
+    <div class="contents">
+      <header class="mega">
+  <h1>Grid CSS</h1><h2>Cuadrículas, grillas o rejillas</h2></header>
+
+      <div class="content ">
+  <div class="breadcrumbs">
+  <a href="../../../index.htm">ATRÁS</a> <span>ᐳ</span> <a href="../../index-1.htm">css</a> <span>ᐳ</span> <a href="index-1.htm">Grid CSS</a>
+</div>
+<p>Uno de los procesos más problematicos y frustrantes de CSS, sobre todo para novatos o principiantes, es el proceso de colocar y distribuir los elementos a lo largo de una página. Mecanismos como posicionamiento, floats o elementos en bloque o en línea, suelen ser insuficientes (<em>o muy complejos</em>) para crear un layout o estructuras para páginas web actuales.</p>
+<p>El sistema <strong>flexbox</strong> es una gran mejora, sin embargo, está orientado a estructuras de una sola dimensión, por lo que aún necesitamos algo más potente para estructuras web más específicas o complejas. Con el paso del tiempo, muchos frameworks y librerías utilizan un <strong>sistema grid</strong> donde definen una cuadrícula determinada, y modificando los nombres de las clases de los elementos HTML, podemos darle tamaño, posición o colocación.</p>
+<p><img src="grid-css-1.png" alt="Grid CSS" width="1067" height="469" loading="lazy"></p>
+<p><strong>Grid CSS</strong> nace de esa necesidad, y recoge las ventajas de ese sistema, añadiendole numerosas mejoras y características que permiten crear rápidamente cuadrículas sencillas y potentes de forma prácticamente instantánea.</p>
+<h3 id="conceptos" tabindex="-1">Conceptos</h3>
+<p>Antes de comenzar con <strong>Grid CSS</strong>, quizás sería conveniente dominar el sistema <strong>Flexbox</strong>, ya que Grid toma la filosofía y bases de él. Para utilizar <strong>Grid CSS</strong> necesitaremos tener en cuenta una serie de conceptos que utilizaremos a partir de ahora y que definiremos a continuación:</p>
+<p><img src="grid-css-conceptos-1.png" alt="Grid CSS: ¿Cómo funciona?" width="851" height="534" loading="lazy"></p>
+<ul>
+<li><strong>Contenedor</strong>: El elemento padre contenedor que definirá la cuadrícula o rejilla.</li>
+<li><strong>Ítem</strong>: Cada uno de los hijos que contiene la cuadrícula (<em>elemento contenedor</em>).</li>
+<li><strong>Celda (grid cell)</strong>: Cada uno de los cuadritos (<em>unidad mínima</em>) de la cuadrícula.</li>
+<li><strong>Area (grid area)</strong>: Región o conjunto de celdas de la cuadrícula.</li>
+<li><strong>Banda (grid track)</strong>: Banda horizontal o vertical de celdas de la cuadrícula.</li>
+<li><strong>Línea (grid line)</strong>: Separador horizontal o vertical de las celdas de la cuadrícula.</li>
+</ul>
+<p>Para utilizar cuadriculas <strong>Grid CSS</strong>, trabajaremos bajo el siguiente escenario:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>grid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- contenedor --></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>a<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Item 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- cada uno de los ítems del grid --></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>b<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Item 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>c<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Item 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>d<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Item 4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<p>Para activar la cuadrícula <strong>grid</strong> hay que utilizar sobre el elemento contenedor la propiedad <code>display</code> y especificar el valor <strong>grid</strong> o <strong>inline-grid</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Tipo de elemento</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>inline-grid</td>
+<td>Establece una cuadrícula con ítems en línea, de forma equivalente a inline-block.</td>
+</tr>
+<tr>
+<td>grid</td>
+<td>Establece una cuadrícula con ítems en bloque, de forma equivalente a block.</td>
+</tr>
+</tbody>
+</table>
+<p>Este valor influye en como se comportará la cuadrícula con el contenido exterior. El primero de ellos permite que la cuadrícula aparezca encima/debajo del contenido exterior (<em>en bloque</em>) y el segundo de ellos permite que la cuadrícula aparezca a la izquierda/derecha (<em>en línea</em>) del contenido exterior (<em>ojo, la cuadrícula entera, no cada uno de sus ítems</em>):</p>
+<div class="example example-1">
+  <strong>display:</strong>
+  <button class="mode" data-property="display" data-value="grid">grid</button>
+  <button class="mode" data-property="display" data-value="inline-grid">inline-grid</button>
+  <div class="container">
+    <div class="item item-1">1</div>
+    <div class="item item-2">2</div>
+    <div class="item item-3">3</div>
+    <div class="item item-4">4</div>
+  </div>
+</div>
+<style>
+  .example-1 .container {
+    display: grid;
+    background: steelblue;
+  }
+  .example-1 .item {
+    border: 2px solid black;
+    background-color: grey;
+    color: white;
+    width: 50px;
+    height: 50px;
+  }
+</style>
+<script>
+  (() => {
+    const buttons = Array.from(document.querySelectorAll(".example-1 button.mode"));
+    const container = document.querySelector(".example-1 .container");
+    buttons.forEach(button => button.onclick = () => container.style[button.dataset.property] = button.dataset.value);
+  })();
+</script>
+<p>Una vez elegido uno de estos dos valores, y establecida la propiedad <code>display</code> al elemento contenedor, hay varias formas de configurar nuestra cuadrícula grid. Comencemos con las propiedades que se aplican al elemento contenedor (<em>padre</em>).</p>
+<h3 id="grid-con-filas-y-columnas" tabindex="-1">Grid con filas y columnas</h3>
+<p>Es posible crear cuadrículas con un tamaño explícito. Para ello, sólo tenemos que usar las propiedades CSS <code>grid-template-columns</code> y <code>grid-template-rows</code>, que sirven para indicar las dimensiones de cada <strong>celda</strong> de la cuadrícula, diferenciando entre columnas y filas. Las propiedades son las siguientes:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>grid-template-columns</code></td>
+<td>[<em>col1</em>] [<em>col2</em>] ...</td>
+<td>Establece el <badge-type class="size"></badge-type> de cada columna (<em>col 1, col 2...</em>).</td>
+</tr>
+<tr>
+<td><code>grid-template-rows</code></td>
+<td>[<em>fila1</em>] [<em>fila2</em>] ...</td>
+<td>Establece el <badge-type class="size"></badge-type> de cada fila (<em>fila 1, fila 2...</em>).</td>
+</tr>
+</tbody>
+</table>
+<p>Conociendo estas dos propiedades, asumamos el siguiente código CSS:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>  <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 50px 300px<span class="token punctuation">;</span><br>  <span class="token property">grid-template-rows</span><span class="token punctuation">:</span> 200px 75px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Esto significa que tendremos una cuadricula con <strong>2 columnas</strong> (<em>la primera con 50px de ancho y la segunda con 300px de ancho</em>) y con <strong>2 filas</strong> (<em>la primera con 200px de alto y la segunda con 75px de alto</em>). Ahora, dependiendo del número de ítems (<em>elementos hijos</em>) que tenga el contenedor <strong>grid</strong>, tendremos una cuadrícula de 2x2 elementos (<em>4 ítems</em>), 2x3 elementos (<em>6 ítems</em>), 2x4 elementos (<em>8 ítems</em>) y así sucesivamente. Si el número de ítems es impar, la última celda de la cuadrícula se quedará vacía.</p>
+<p><img src="grid-template-columns-1.png" alt="Cuadrículas explícitas (grid-template-rows y grid-template-columns)" width="662" height="534" loading="lazy"></p>
+<p>Veamos un ejemplo interactivo donde se pueden cambiar los valores de <code>grid-template-columns</code> y de <code>grid-template-rows</code> para poder entenderlo mejor:</p>
+<div class="example example-2">
+  <strong>grid-template-columns:</strong>
+  <input class="mode" data-target="container" data-property="grid-template-columns" value="50px">
+  <input class="mode" data-target="container" data-property="grid-template-columns" value="300px">
+  <br>
+  <strong>grid-template-rows:</strong>
+  <input class="mode" data-target="container" data-property="grid-template-rows" value="200px">
+  <input class="mode" data-target="container" data-property="grid-template-rows" value="75px">
+  <div class="container">
+    <div class="item item-1">1</div>
+    <div class="item item-2">2</div>
+    <div class="item item-3">3</div>
+    <div class="item item-4">4</div>
+  </div>
+</div>
+<style>
+  .example-2 .container {
+    display: grid;
+    grid-template-columns: 50px 300px;
+    grid-template-rows: 200px 75px;
+    background: steelblue;
+  }
+  .example-2 input {
+    padding: 2px 4px;
+    width: 45px;
+  }
+  .example-2 .item {
+    border: 2px solid black;
+    background-color: grey;
+    color: white;
+  }
+</style>
+<script>
+  (() => {
+    const inputs = Array.from(document.querySelectorAll(".example-2 input.mode"));
+    const gtc = document.querySelectorAll(".example-2 [data-property='grid-template-columns']");
+    const gtr = document.querySelectorAll(".example-2 [data-property='grid-template-rows']");
+    const container = document.querySelector(`.example-2 .container`);
+    const updateGrid = () => {
+      container.style.gridTemplateColumns = gtc[0].value + " " + gtc[1].value;
+      container.style.gridTemplateRows = gtr[0].value + " " + gtr[1].value;
+    }
+    inputs.forEach(input => {
+      console.log(input);
+      input.oninput = () => updateGrid();
+    });
+  })();
+</script>
+<p>A medida que fueramos incluyendo más ítems en el grid, podríamos aumentar también el número de parámetros de <code>grid-template-columns</code> y/o <code>grid-template-rows</code>. Ten en cuenta que en este caso, tenemos dos valores en cada propiedad (<em>2x2</em>), lo que hacen una cuadrícula de <strong>4 elementos</strong>, que es justo el número de ítems en el HTML.</p>
+<p>En caso de tener más ítems de lo que se indica en la propiedad, los ítems restantes se incluirían sin formato. De tener menos, simplemente se ocuparían los ítems implicados.</p>
+<h4 id="unidad-fracción-restante-fr" tabindex="-1">Unidad fracción restante (fr)</h4>
+<p>En el ejemplo anterior he utilizado <strong>píxels</strong> como unidades de las celdas de la cuadrícula, sin embargo, también podemos utilizar otras unidades (<em>o incluso combinarlas</em>) como porcentajes, la palabra clave <strong>auto</strong> (<em>que obtiene el tamaño restante</em>) o la unidad especial de Grid CSS <strong>fr</strong> (<em>fraction</em>), que simboliza una <strong>fracción de espacio restante en el grid</strong>.</p>
+<p>Veamos un código de ejemplo en acción:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>  <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 1fr 1fr<span class="token punctuation">;</span><br>  <span class="token property">grid-template-rows</span><span class="token punctuation">:</span> 2fr 1fr<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Este nuevo ejemplo, se crea una cuadrícula de 2x2, donde el tamaño de ancho de la cuadrícula se divide en <strong>dos columnas</strong> (<em>mismo tamaño de ancho para cada una</em>), y el tamaño de alto de la cuadrícula se divide en <strong>dos filas</strong>, donde la primera ocupará el doble (<em>2 fr</em>) que la segunda (<em>1 fr</em>):</p>
+<p><img src="grid-unidad-fr-1.png" alt="Cuadrículas explícitas mediante unidades fr" width="851" height="534" loading="lazy"></p>
+<p>De esta forma, podemos tener un mejor control del espacio restante de la cuadrícula, y como utilizarlo.</p>
+<blockquote>
+<p>Se pueden combinar varias <strong>unidades diferentes</strong>, pudiendo utilizar píxeles (<em>px</em>) y fracciones restantes (<em>fr</em>), porcentajes (<em>%</em>) y fracciones restantes (<em>fr</em>) o combinaciónes similares.</p>
+</blockquote>
+<h4 id="filas-y-columnas-repetitivas" tabindex="-1">Filas y columnas repetitivas</h4>
+<p>En algunos casos, en las propiedades <code>grid-template-columns</code> y <code>grid-template-rows</code> podemos necesitar indicar las mismas cantidades un número alto de veces, resultando repetitivo y molesto. Se puede utilizar la expresión <code>repeat()</code> para indicar repetición de valores, indicando el número de veces que se repiten y el tamaño en cuestión.</p>
+<p>La expresión a utilizar sería la siguiente: <code>repeat([núm de veces], [valor o valores])</code>:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>  <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 100px <span class="token function">repeat</span><span class="token punctuation">(</span>2<span class="token punctuation">,</span> 50px<span class="token punctuation">)</span> 200px<span class="token punctuation">;</span><br>  <span class="token property">grid-template-rows</span><span class="token punctuation">:</span> <span class="token function">repeat</span><span class="token punctuation">(</span>2<span class="token punctuation">,</span> 50px 100px<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Asumiendo que tuvieramos un contenedor grid con 8 ítems hijos (<em>o más</em>), el ejemplo anterior crearía una cuadrícula con <strong>4 columnas</strong> (<em>la primera de 100px de ancho, la segunda y tercera de 50px de ancho y la cuarta de 200px de ancho</em>). Por otro lado, tendría <strong>2 filas</strong> (<em>la primera de 50px de alto, y la segunda de 100px de alto</em>). En el caso de tener más ítems hijos, el patrón se seguiría repitiendo.</p>
+<p>El ejemplo anterior sería equivalente al código CSS siguiente:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>  <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 100px 50px 50px 200px<span class="token punctuation">;</span><br>  <span class="token property">grid-template-rows</span><span class="token punctuation">:</span> 50px 100px 50px 100px<span class="token punctuation">;</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<h3 id="grid-con-líneas-nombradas" tabindex="-1">Grid con líneas nombradas</h3>
+<p>Con Grid CSS también tenemos la posibilidad de usar «<strong>linenames</strong>», o lo que es lo mismo, ponerle nombre a las líneas de nuestro sistema grid. Vamos a verlo con un ejemplo, donde probablemente se vea mucho mejor. Partamos de esta estructura HTML:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>grid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>header<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Header<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sidebar<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Sidebar<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>content<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>footer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Footer<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<p>Los nombres de las clases ya dan una idea del contenido que tendrán. Ahora, mediante Grid CSS lo que haremos es darle una estructura definida. Para ello, vamos a considerar los siguientes nombres para las lineas de nuestro grid, utilizando <strong>X</strong> para las posiciones en el <strong>eje X</strong> y utilizando <strong>Y</strong> para las posiciones en el <strong>eje Y</strong>:</p>
+<p><img src="grid-linenames-1.png" alt="Grid nombrados en CSS (linenames)" width="884" height="434" loading="lazy"></p>
+<p>Teniendo esto en cuenta, lo único que tenemos que hacer es indicar estos nombres entre corchetes, justo antes de la medida que establecimos como vimos en apartados anteriores. Obsérvese que también se coloca una nombre de línea final sin medida a continuación, que representa la línea final:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>  <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> [x0] 1fr [x1] 1fr [x2] 1fr [x3]<span class="token punctuation">;</span><br>  <span class="token property">grid-template-rows</span><span class="token punctuation">:</span> [y0] 1fr [y1] 1fr [y2] 1fr [y3]<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>En este caso, los nombres utilizados son tan sólo un ejemplo didáctico. Si se considera más adecuado, se podrían utilizar otros nombres quizás más amigables como <code>top-line</code>, <code>top-medium-line</code>, <code>bottom-medium-line</code> y <code>bottom-line</code>, por ejemplo, en lugar de <code>y0</code>, <code>y1</code>, <code>y2</code> y <code>y3</code> respectivamente.</p>
+<p>Ahora, teniendo los nombres, sólo quedaría delimitar que zonas del grid queremos que ocupe cada uno de nuestros bloques <code>&lt;div&gt;</code> del grid. Para ello utilizaremos las propiedades <code>grid-column-start</code>, <code>grid-column-end</code> y <code>grid-row-start</code>, <code>grid-row-end</code>. También podriamos utilizar sus propiedades de atajo <code>grid-column</code> y <code>grid-row</code>.</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.header</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> darkred<span class="token punctuation">;</span><br>  <span class="token property">grid-column-start</span><span class="token punctuation">:</span> x0<span class="token punctuation">;</span><br>  <span class="token property">grid-column-end</span><span class="token punctuation">:</span> x3<span class="token punctuation">;</span><br><br>  <span class="token comment">/* Equivalente a */</span><br>  <span class="token property">grid-column</span><span class="token punctuation">:</span> x0 / x3<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.sidebar</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span><br>  <span class="token property">grid-row</span><span class="token punctuation">:</span> y1 / y2<span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.content</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span><br>  <span class="token property">grid-column</span><span class="token punctuation">:</span> x1 / x3<span class="token punctuation">;</span><br>  <span class="token property">grid-row</span><span class="token punctuation">:</span> y1 / y3<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.footer</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span><br>  <span class="token property">grid-column</span><span class="token punctuation">:</span> x0 / x3<span class="token punctuation">;</span><br>  <span class="token property">grid-row</span><span class="token punctuation">:</span> y2<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Hemos aplicado la siguiente estructura:</p>
+<ul>
+<li>Zona <code>.header</code> desde la columna <strong>x0</strong> a <strong>x3</strong>.</li>
+<li>Zona <code>.sidebar</code> desde la fila <strong>y1</strong> a <strong>y2</strong>.</li>
+<li>Zona <code>.content</code> desde la columna <strong>x1</strong> a <strong>x3</strong> y desde la fila <strong>y1</strong> a <strong>y3</strong>.</li>
+<li>Zona <code>.footer</code> desde la columna <strong>x0</strong> a <strong>x3</strong> en la fila <strong>y2</strong>.</li>
+</ul>
+<p>Por lo que nuestra estructura grid quedaría así:</p>
+<p><img src="grid-linenames-zones-1.png" alt="Zonas del grid con líneas nombradas (linenames)" width="884" height="434" loading="lazy"></p>
+<p>Un poco más adelante veremos más detalladamente estas últimas propiedades.</p>
+<blockquote>
+<blockquote>
+<p><strong>Nota:</strong> Ten en cuenta que sería necesario darle un tamaño de alto con <code>height</code> al contenedor padre para que el navegador sepa cuanto ocupará la estructura completa. También podemos modificar las medidas <code>1fr</code> para dar menos proporción, por ejemplo utilizando en <code>grid-template-rows</code> un <code>[y0] 0.5fr</code> y un <code>[y2] 0.25fr</code>.</p>
+</blockquote>
+</blockquote>
+<h3 id="grid-por-áreas" tabindex="-1">Grid por áreas</h3>
+<p>Mediante los <strong>grids CSS</strong> es posible indicar el nombre y posición concreta de cada área de una cuadrícula. Para ello utilizaremos la propiedad <code>grid-template-areas</code>, donde debemos especificar el orden de las áreas en la cuadrícula. Posteriormente, en cada ítem hijo, utilizamos la propiedad <code>grid-area</code> para indicar el nombre del área del que se trata:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>grid-template-areas</code></td>
+<td>Indica la disposición de las áreas en el grid. Cada texto entre comillas simboliza una fila.</td>
+</tr>
+<tr>
+<td><code>grid-area</code></td>
+<td>Indica el nombre del área. Se usa sobre ítems hijos del grid.</td>
+</tr>
+</tbody>
+</table>
+<p>De esta forma, es muy sencillo crear una cuadrícula altamente personalizada en apenas unas cuantas líneas de CSS, con mucha flexibilidad en la disposición y posición de cada área:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br>  <span class="token property">grid-template-areas</span><span class="token punctuation">:</span> <span class="token string">"head head"</span><br>                       <span class="token string">"menu main"</span><br>                       <span class="token string">"foot foot"</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.a</span> <span class="token punctuation">{</span> <span class="token property">grid-area</span><span class="token punctuation">:</span> head<span class="token punctuation">;</span> <span class="token property">background</span><span class="token punctuation">:</span> blue <span class="token punctuation">}</span><br><span class="token selector">.b</span> <span class="token punctuation">{</span> <span class="token property">grid-area</span><span class="token punctuation">:</span> menu<span class="token punctuation">;</span> <span class="token property">background</span><span class="token punctuation">:</span> red <span class="token punctuation">}</span><br><span class="token selector">.c</span> <span class="token punctuation">{</span> <span class="token property">grid-area</span><span class="token punctuation">:</span> main<span class="token punctuation">;</span> <span class="token property">background</span><span class="token punctuation">:</span> green <span class="token punctuation">}</span><br><span class="token selector">.d</span> <span class="token punctuation">{</span> <span class="token property">grid-area</span><span class="token punctuation">:</span> foot<span class="token punctuation">;</span> <span class="token property">background</span><span class="token punctuation">:</span> orange <span class="token punctuation">}</span></code></pre>
+<p>Aplicando este código, conseguiríamos una cuadrícula donde:</p>
+<ul>
+<li>El <strong>Item 1</strong>, la cabecera (<em>head</em>), ocuparía toda la parte superior.</li>
+<li>El <strong>Item 2</strong>, el menú (<em>menu</em>), ocuparía el área izquierda del grid, debajo de la cabecera.</li>
+<li>El <strong>Item 3</strong>, el contenido (<em>main</em>), ocuparía el área derecha del grid, debajo de la cabecera.</li>
+<li>El <strong>Item 4</strong>, el pie de cuadrícula (<em>foot</em>), ocuparía toda la zona inferior del grid.</li>
+</ul>
+<p><img src="grid-template-areas-1.png" alt="Grid CSS: Cuadrícula por áreas" width="713" height="326" loading="lazy"></p>
+<blockquote>
+<p><strong>OJO</strong>: Ten en cuenta añadir contenido de texto en cada celda del grid, para que Grid CSS detecte que esa celda no está vacía.</p>
+</blockquote>
+<p>En la propiedad <code>grid-template-areas</code>, en lugar de indicar el nombre del área a colocar, también podemos indicar una palabra clave especial:</p>
+<ul>
+<li>La palabra clave <strong>none</strong>: Indica que no se colocará ninguna celda en esta posición.</li>
+<li>Uno o más puntos (<em>.</em>): Indica que se colocará una celda vacía en esta posición.</li>
+</ul>
+<h3 id="huecos-en-grid" tabindex="-1">Huecos en grid</h3>
+<p>Por defecto, la cuadrícula tiene todas sus celdas pegadas a sus celdas contiguas. Aunque sería posible darle un <code>margin</code> a las celdas dentro del contenedor, existe una forma más apropiada, que evita los problemas clásicos de los modelos de caja: los huecos (<em>gutters</em>).</p>
+<p>Para especificar los <strong>huecos</strong> (<em>espacio entre celdas</em>) podemos utilizar las propiedades <code>column-gap</code> y/o <code>row-gap</code>. En ellas indicaremos el tamaño de dichos huecos:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>column-gap</code></td>
+<td>Establece el <badge-type class="size"></badge-type> de los huecos entre columnas (<em>líneas verticales</em>).</td>
+</tr>
+<tr>
+<td><code>row-gap</code></td>
+<td>Establece el <badge-type class="size"></badge-type> de los huecos entre filas (<em>líneas horizontales</em>).</td>
+</tr>
+</tbody>
+</table>
+<p>Tomemos el ejemplo anterior como base. En él, le indicamos estas propiedades para colocar <strong>huecos</strong> entre las celdas de la cuadrícula. El código a añadir al ejemplo anterior sería el siguiente:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>  <span class="token property">column-gap</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span><br>  <span class="token property">row-gap</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Con esto, obtendríamos un resultado como el siguiente, indicando huecos entre columnas de 100px y huecos entre filas de 10px:</p>
+<p><img src="grid-gap-1.png" alt="Huecos en grid CSS (Grid gaps)" width="614" height="378" loading="lazy"></p>
+<h4 id="atajo-grid-con-huecos" tabindex="-1">Atajo: Grid con huecos</h4>
+<p>Existe una propiedad de atajo para las propiedades <code>column-gap</code> y <code>row-gap</code>, permitiéndonos la posibilidad de no tener que indicarlas por separado.</p>
+<p>La propiedad en cuestión sería <code>gap</code> y se utilizaría de la siguiente forma:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>  <span class="token comment">/* gap: &lt;row-gap> &lt;column-gap> */</span><br>  <span class="token property">gap</span><span class="token punctuation">:</span> 20px 80px<span class="token punctuation">;</span><br><br>  <span class="token comment">/* Equivalente a gap: 40px 40px; */</span><br>  <span class="token comment">/* gap: &lt;rowcolumn-gap> */</span><br>  <span class="token property">gap</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<blockquote>
+<p><strong>OJO</strong>: Antiguamente, las propiedades <code>column-gap</code>, <code>row-gap</code> y <code>gap</code> eran conocidas como <code>grid-column-gap</code>, <code>grid-row-gap</code> y <code>grid-gap</code>, por lo que aún puedes encontrar información obsoleta que las mencione. Hoy en día deberías utilizar las tres primeras en su lugar.</p>
+</blockquote>
+<h3 id="posición-en-el-grid" tabindex="-1">Posición en el grid</h3>
+<p>Existen una serie de propiedades que se pueden utilizar para colocar los ítems dentro de la cuadrícula. Con ellas podemos distribuir los elementos de una forma muy sencilla y cómoda. Dichas propiedades son <code>justify-items</code> y <code>align-items</code>, que ya conocerás del módulo CSS <strong>flexbox</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valores</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>justify-items</code></td>
+<td>start | end | center | <strong>stretch</strong></td>
+<td>Distribuye los elementos en el eje horizontal.</td>
+</tr>
+<tr>
+<td><code>align-items</code></td>
+<td>start | end | center | <strong>stretch</strong></td>
+<td>Distribuye los elementos en el eje vertical.</td>
+</tr>
+</tbody>
+</table>
+<p>Estas propiedades se aplican sobre el elemento contenedor padre, pero afectan a los ítems hijos, por lo que actuan sobre la distribución de cada uno de los hijos. En el caso de que queramos que uno de los ítems hijos tengan una distribución diferente al resto, aplicamos la propiedad <code>justify-self</code> o <code>align-self</code> sobre el ítem hijo en cuestión, sobreescribiendo su distribución.</p>
+<p>Estas propiedades funcionan exactamente igual que sus análogas <code>justify-items</code> o <code>align-items</code>, sólo que en lugar de indicarse en el elemento padre contenedor, se hace sobre un elemento hijo. Las propiedades sobre ítems hijos las veremos más adelante.</p>
+<p>También podemos utilizar las propiedades <code>justify-content</code> o <code>align-content</code> para modificar la distribución de todo el contenido en su conjunto, y no sólo de los ítems por separado:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>justify-content</code></td>
+<td>start | end | center | stretch | space-around | space-between | space-evenly</td>
+</tr>
+<tr>
+<td><code>align-content</code></td>
+<td>start | end | center | stretch | space-around | space-between | space-evenly</td>
+</tr>
+</tbody>
+</table>
+<p>De esta forma, podemos controlar prácticamente todos los aspectos de posicionamiento de la cuadrícula directamente desde los estilos CSS de su contenedor padre. Prueba a establecer a <code>stretch</code> todas las propiedades e ir variando una por una a diferentes valores, para ver las diferencias:</p>
+<div class="example example-6">
+  <strong>justify-items:</strong>
+  <button class="mode" data-property="justify-items" data-value="start">start</button>
+  <button class="mode" data-property="justify-items" data-value="end">end</button>
+  <button class="mode" data-property="justify-items" data-value="center">center</button>
+  <button class="mode" data-property="justify-items" data-value="stretch">stretch</button>
+  <br>
+  <strong>align-items:</strong>
+  <button class="mode" data-property="align-items" data-value="start">start</button>
+  <button class="mode" data-property="align-items" data-value="end">end</button>
+  <button class="mode" data-property="align-items" data-value="center">center</button>
+  <button class="mode" data-property="align-items" data-value="stretch">stretch</button>
+  <br>
+  <strong>justify-content:</strong>
+  <button class="mode" data-property="justify-content" data-value="start">start</button>
+  <button class="mode" data-property="justify-content" data-value="end">end</button>
+  <button class="mode" data-property="justify-content" data-value="center">center</button>
+  <button class="mode" data-property="justify-content" data-value="stretch">stretch</button>
+  <button class="mode" data-property="justify-content" data-value="space-between">space-between</button>
+  <button class="mode" data-property="justify-content" data-value="space-around">space-around</button>
+  <button class="mode" data-property="justify-content" data-value="space-evenly">space-evenly</button>
+  <br>
+  <strong>align-content:</strong>
+  <button class="mode" data-property="align-content" data-value="start">start</button>
+  <button class="mode" data-property="align-content" data-value="end">end</button>
+  <button class="mode" data-property="align-content" data-value="center">center</button>
+  <button class="mode" data-property="align-content" data-value="stretch">stretch</button>
+  <button class="mode" data-property="align-content" data-value="space-between">space-between</button>
+  <button class="mode" data-property="align-content" data-value="space-around">space-around</button>
+  <button class="mode" data-property="align-content" data-value="space-evenly">space-evenly</button>
+  <div class="container">
+    <div class="item item-1">1</div>
+    <div class="item item-2">2</div>
+    <div class="item item-3">3</div>
+    <div class="item item-4">4</div>
+  </div>
+</div>
+<style>
+  .example-6 .container {
+    display: grid;
+    grid-template-areas: "head head" "menu main" "foot foot";
+    background: steelblue;
+    min-height: 200px;
+  }
+  .example-6 .item {
+    border: 2px solid black;
+    background-color: grey;
+    color: white;
+  }
+  .example-6 .item-1 { grid-area: head; background: blue; }
+  .example-6 .item-2 { grid-area: menu; background: red; }
+  .example-6 .item-3 { grid-area: main; background: green; }
+  .example-6 .item-4 { grid-area: foot; background: orange; }
+</style>
+<script>
+  (() => {
+    const buttons = Array.from(document.querySelectorAll(".example-6 button.mode"));
+    const container = document.querySelector(".example-6 .container");
+    buttons.forEach(button => button.onclick = () => container.style[button.dataset.property] = button.dataset.value);
+  })();
+</script>
+<h4 id="atajo-de-posiciones-grid" tabindex="-1">Atajo de posiciones grid</h4>
+<p>Si vamos a crear estructuras grid donde necesitamos utilizar las cuatro propiedades anteriores, quizás sería mejor utilizar un atajo donde simplificaríamos mucho el código resultante. Es el caso de las siguientes propiedades.</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valores</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>place-items</code></td>
+<td>[<em>align-items</em>] [<em>justify-items</em>]</td>
+<td>Propiedad de atajo para *<strong>-items</strong></td>
+</tr>
+<tr>
+<td><code>place-content</code></td>
+<td>[<em>align-content</em>] [<em>justify-content</em>]</td>
+<td>Propiedad de atajo para *<strong>-content</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Con ellas conseguiremos que nuestro código sea menos verboso.</p>
+<h3 id="ajuste-automático-de-celdas" tabindex="-1">Ajuste automático de celdas</h3>
+<p>Es posible utilizar las propiedades <code>grid-auto-columns</code> y <code>grid-auto-rows</code> para darle un tamaño automático a las celdas de la cuadrícula. Para ello, sólo hay que especificar el tamaño deseado en cada una de las propiedades. Además, también podemos utilizar <code>grid-auto-flow</code> para indicar el flujo de elementos en la cuadrícula, y especificar por donde se irán añadiendo. Las propiedades son las siguientes:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valores</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>grid-auto-columns</code></td>
+<td><badge-type class="size"></badge-type></td>
+<td>Indica el tamaño automático de ancho que tendrán las columnas.</td>
+</tr>
+<tr>
+<td><code>grid-auto-rows</code></td>
+<td><badge-type class="size"></badge-type></td>
+<td>Indica el tamaño automático de alto que tendrán las filas.</td>
+</tr>
+<tr>
+<td><code>grid-auto-flow</code></td>
+<td>row | column | dense</td>
+<td>Utiliza un algoritmo de autocolocación (intenta rellenar huecos).</td>
+</tr>
+</tbody>
+</table>
+<p>Un ejemplo de como se insertarían los elementos en una cuadrícula de 2x2 utilizando <code>grid-auto-flow</code> por columnas o por filas:</p>
+<p><img src="grid-css-auto-flow-1.png" alt="Grid CSS: Auto flow" width="777" height="444" loading="lazy"></p>
+<h3 id="atajo-grid" tabindex="-1">Atajo: Grid</h3>
+<p>Por último, existe una propiedad <code>grid</code> que sirve de atajo para la mayoría de propiedades CSS relativas a cuadrículas. Su esquema de utilización sería el siguiente, junto a algunos ejemplos:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>  <span class="token comment">/* grid: &lt;grid-template> &lt;grid-auto-flow> &lt;grid-auto-rows> / &lt;grid-auto-columns> */</span><br><br>  <span class="token property">grid</span><span class="token punctuation">:</span> 100px 20px<span class="token punctuation">;</span><br>  <span class="token property">grid</span><span class="token punctuation">:</span> 200px <span class="token function">repeat</span><span class="token punctuation">(</span>2<span class="token punctuation">,</span> 100px<span class="token punctuation">)</span> 300px<span class="token punctuation">;</span><br>  <span class="token property">grid</span><span class="token punctuation">:</span> row<span class="token punctuation">;</span><br>  <span class="token property">grid</span><span class="token punctuation">:</span> column dense<span class="token punctuation">;</span><br>  <span class="token property">grid</span><span class="token punctuation">:</span> row 200px<span class="token punctuation">;</span><br>  <span class="token property">grid</span><span class="token punctuation">:</span> row 400px / 150px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<h3 id="propiedades-para-ítems-hijos" tabindex="-1">Propiedades para ítems hijos</h3>
+<p>Hasta ahora, salvo algunas excepciones como <code>justify-self</code>, <code>align-self</code> o <code>grid-area</code>, hemos visto propiedades CSS que se aplican solamente al contenedor padre de una cuadrícula. A continuación, vamos a ver ciertas propiedades que en su lugar, se aplican a cada ítem hijo de la cuadrícula, para alterar o cambiar el comportamiento específico de dicho elemento, que no se comporta como la mayoría.</p>
+<p>Algunas de las propiedades vistas hasta ahora son las siguientes:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>justify-self</code></td>
+<td>Altera la justificación del ítem hijo en el eje horizontal.</td>
+</tr>
+<tr>
+<td><code>align-self</code></td>
+<td>Altera la alineación del ítem hijo en el eje vertical.</td>
+</tr>
+<tr>
+<td><code>grid-area</code></td>
+<td>Indica un nombre al área especificada, para su utilización con <code>grid-template-areas</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>Sin embargo, existen algunas propiedades más, referentes en este caso, a la posición de los hijos de la cuadrícula donde va a comenzar o terminar una fila o columna. Las propiedades son las siguientes:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>grid-column-start</code></td>
+<td>Indica en que columna empezará el ítem de la cuadrícula.</td>
+</tr>
+<tr>
+<td><code>grid-column-end</code></td>
+<td>Indica en que columna terminará el ítem de la cuadrícula.</td>
+</tr>
+<tr>
+<td><code>grid-row-start</code></td>
+<td>Indica en que fila empezará el ítem de la cuadrícula.</td>
+</tr>
+<tr>
+<td><code>grid-row-end</code></td>
+<td>Indica en que fila terminará el ítem de la cuadrícula.</td>
+</tr>
+</tbody>
+</table>
+<p>Con dichas propiedades, podemos indicar el siguiente código CSS sobre el primer ítem de una cuadrícula de 4 ítems:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span>grid<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.a</span> <span class="token punctuation">{</span><br>  <span class="token property">grid-column-start</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>  <span class="token property">grid-row-end</span><span class="token punctuation">:</span> 2<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>De esta forma, tenemos una cuadrícula de 4 elementos, en el que indicamos la posición del ítem 1 (<em>elemento con clase <code>.a</code></em>): comenzando en la columna 1 y acabando en el inicio de la columna 2:</p>
+<p><img src="grid-column-start-end-1.png" alt="Grid CSS: grid-column-start y grid-column-end" width="707" height="369" loading="lazy"></p>
+<p>Ese sería el funcionamiento normal. Donde se ve la utilidad de estas propiedades, es si variamos los valores de forma que tomen posiciones diferentes, como por ejemplo, si indicamos que el ítem 1 debe comenzar en la columna 1, pero acabar en la columna 3 (<em>ocupando la hipotética primera y segunda celda</em>):</p>
+<p><img src="grid-column-start-end-2-1.png" alt="Grid CSS: grid-column-start y grid-column-end" width="707" height="314" loading="lazy"></p>
+<p>En este nuevo ejemplo, comenzamos el primer ítem en la columna 2 y lo acabamos al principio de la columna 3, por lo que la celda permanecerá en la posición de la segunda columna. Además, añadimos la propiedad <code>grid-row-start</code> que hace lo mismo que hasta ahora, pero con las filas. En este caso, le indicamos que comience en la fila 3, por lo que el <strong>ítem 1</strong> se desplaza a una nueva fila de la cuadrícula, dejando en la anterior el <strong>ítem 4</strong>:</p>
+<p><img src="grid-column-start-end-3-1.png" alt="Grid CSS: grid-column-start y grid-column-end" width="746" height="314" loading="lazy"></p>
+<p>También es posible utilizar la palabra clave <strong>span</strong> seguida de un número, que indica que abarque hasta esa columna o celda.</p>
+<h4 id="atajo-grid-column-y-grid-row" tabindex="-1">Atajo: grid-column y grid-row</h4>
+<p>El módulo grid de CSS proporciona las propiedades de atajo <code>grid-column</code> y <code>grid-row</code> donde se nos permite escribir en un formato abreviado las propiedades anteriores. Su sintaxis sería la siguiente:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.grid</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.a</span> <span class="token punctuation">{</span><br>  <span class="token comment">/* grid-column: &lt;grid-column-start> &lt;grid-column-end> */</span><br>  <span class="token comment">/* grid-row: &lt;grid-row-start> &lt;grid-row-end> */</span><br>  <span class="token property">grid-column</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span><br>  <span class="token property">grid-column</span><span class="token punctuation">:</span> 4 / 6<span class="token punctuation">;</span><br>  <span class="token property">grid-column</span><span class="token punctuation">:</span> span 3<span class="token punctuation">;</span><br>  <span class="token property">grid-column</span><span class="token punctuation">:</span> span 3 / 6<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>La especificación de Grid CSS ya tiene buen soporte en la actualidad y puede utilizarse en producción. Eso sí, si requieres soporte para navegadores antiguos, sé cuidadoso. Actualmente, su soporte es el siguiente:</p>
+<p><caniuse-support title="CSS Grid Layout (level 1)" feature="css-grid" edge="16/y" firefox="52/y" chrome="57/y" safari="10.1/y" opera="44/y" ios_saf="10.3/y" and_chr="103/y" and_ff="101/y">
+</caniuse-support></p>
+<!-- Especificación W3C: https://www.w3.org/TR/css-grid-1/ -->
+
+    <nav class="prev-next"><a class="bt prev" href="../flexbox/index-1.htm" title="Flexbox CSS">
+    <span class="data">
+      <span>Flexbox CSS</span>
+      <small>Capítulo anterior</small>
+    </span>
+  </a><a class="bt next" href="../../interacciones/contornos/index-1.htm" title="Contornos">
+    <span class="icon">
+      <svg-icon name="arrow-right"></svg-icon>
+    </span>
+    <span class="data">
+      <span>Contornos</span>
+      <small>Capítulo siguiente</small>
+    </span>
+  </a></nav>
+
+    <script async="" src="../../../pagead/js/f-1.txt"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center; margin:auto; margin-top: 2em" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0412426997270095" data-ad-slot="3027930890"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+      <div class="related">
+
+  <div class="author">
+    <div class="author-wrapper">
+      <img loading="lazy" class="circle" src="../../../assets/manz-1.webp" alt="Manz">
+      <div>
+        <p>Docente, divulgador informático y <a href="https://manz.dev/">streamer de código</a>. Amante de <strong>CSS</strong>, <strong>Javascript</strong>
+          y de la plataforma web. Ha trabajado como profesor en la Universidad de La Laguna y es director del curso de
+          Programación web FullStack y FrontEnd de EOI desde Tenerife. En sus ratos libres, busca GIF de gatos en Internet.</p>
+        <p class="twitch-badge">
+          <a href="https://twitch.tv/ManzDev">
+            <svg class="twitch" viewbox="0 0 1024 1024">
+              <path style="fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="m262.451 12.904-178.26 178.26v641.672h213.905v178.26l178.26-178.26h142.576L939.809 512V12.904H262.45zm35.645 71.287h570.383v392.164L725.904 618.932H583.287L458.514 743.705V618.932H298.096V84.192zM494.158 208.51v216.36h71.328V208.51h-71.328zm196 0v216.36h71.328V208.51h-71.328z"></path>
+            </svg>
+            Sígueme en Twitch
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="comentarios">
+    <script async="" src="../../../count-1.js" id="dsq-count-scr"></script>
+<script>
+var disqus_config = function () {
+  this.page.path = location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname;
+  this.page.url = 'https://lenguajecss.com' + this.page.path;
+  this.page.identifier = this.page.url;
+};
+document.addEventListener('DOMContentLoaded', function() {
+  const coms = document.querySelector('#comentarios');
+  a = coms.querySelector('#disqus_button');
+  a.dataset.disqusIdentifier = 'https://lenguajecss.com' + (location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname);
+  a.addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.id = 'disqus_thread';
+    coms.appendChild(div);
+    const d = document, s = d.createElement('script');
+    s.src = '//lenguajecss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    this.remove();
+  });
+});
+</script>
+
+    <a class="disqus-comment-count" id="disqus_button" href="#disqus_thread" data-disqus-identifier="https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/">Leer comentarios</a>
+    <a class="discord" href="https://discord.manz.dev/">¡Accede a Discord y cuéntanos!</a>
+  </div>
+
+</div>
+
+    </div>
+    <div class="aside">
+      <div class="aside">
+
+  <div class="aside-top">
+    <a href="https://manz.dev/digitalocean" title="Empieza en DigitalOcean con 100$">
+      <img width="240" height="120" src="../../../assets/digital-ocean-1.png" alt="DigitalOcean">
+    </a>
+  </div><script type="module">
+  const ANCHOR_ICON = /* svg */`
+    <svg class="anchor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205" width="36" height="36">
+      <path d="m140 129 16 16s-20 30-42 30V71c14-5 25-18 25-34 0-20-17-36-37-36-21 0-38 16-38 36 0 15 11 29 25
+              34v104c-26-2-42-27-42-27l18-18-65-9 10 63 17-17c15 12 32 37 73 37 51-1 63-29 76-40l19 19 10-64-65
+              10zM83 36c0-10 8-18 19-18s19 8 19 18c0 11-9 19-19 19s-19-8-19-19z"/>
+    </svg>`;
+  // Add inner links to sidebar menu
+  export const addInnerLinks = () => {
+    const summary = document.querySelector(".aside .summary .links");
+    const headers = Array.from(document.querySelectorAll(".content h3, .content h4"));
+    const tocLinks = [];
+    headers.forEach((e) => {
+      const link = `${location.origin}${location.pathname}#${e.id}`;
+      e.innerHTML = `<a class="permalink" href="${link}">${e.textContent} ${ANCHOR_ICON}</a>`;
+      const headerType = e.nodeName.toLowerCase();
+      const textContent = headerType === "h4" ? e.textContent.replace("La propiedad ", "").replace("La función ", "") : e.textContent;
+      tocLinks.push(`<a class="${headerType}" href="#${e.id}">${textContent}</a>`);
+    });
+    summary.insertAdjacentHTML("beforeEnd", tocLinks.join("\n"));
+  };
+
+  addInnerLinks();
+</script>
+
+<div class="summary">
+  <div class="table">Tabla de contenidos</div>
+  <div class="links"></div>
+</div>
+<div class="video-related">
+  <div class="table">Lo usamos en...</div><a href="https://youtu.be/wIGAyJGx2kc"><img src="../../../vi/wIGAyJGx2kc/mqdefault-1.jpg" alt="Grid CSS"></a><a href="https://youtu.be/j1-QNzikFCY"><img src="../../../vi/j1-QNzikFCY/mqdefault-1.jpg" alt="Grid CSS"></a></div></div>
+
+    </div>
+  </div><footer class="main">
+  <div class="square">
+    <a href="../../../index.htm"><h2>Lenguaje CSS</h2></a>
+    <div class="icons">
+      <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+      <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+      <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+      <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+      <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+      <a href="https://github.com/ManzDev" title="GitHub"><svg-icon type="social" name="github"></svg-icon></a>
+      <a href="https://codepen.io/Manz" title="Codepen"><svg-icon type="social" name="codepen"></svg-icon></a>
+      <a href="https://www.linkedin.com/in/joseromanhdez/" title="Linkedin"><svg-icon type="social" name="linkedin"></svg-icon></a>
+    </div>
+    <p>Documentación sobre CSS y las mejores herramientas y recursos para aprender a utilizar el lenguaje de estilos CSS (Hojas de estilo).</p>
+    <p id="footer">Creado y mantenido por <a href="https://twitter.com/Manz">@Manz</a> con <span title="<3">❤</span></p></div>
+</footer>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-136544-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async="" src='../../../analytics-1.js'></script>
+
+
+</body>
+</html>

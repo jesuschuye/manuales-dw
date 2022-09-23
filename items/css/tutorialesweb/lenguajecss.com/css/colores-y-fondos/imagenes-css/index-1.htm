@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+  <link rel="shortcut icon" href="../../../favicon-1.ico">
+  <title>Imágenes y Objetos - CSS en español - Lenguaje CSS</title>
+  <link rel="preload" href="../../../critical-1.css" as="style">
+  <link rel="preload" href="../../../assets/fonts/blinker-vf-1.woff2" as="font" crossorigin="">
+  <link rel="preload" href="../../../assets/fonts/scope-one-400-1.woff2" as="font" crossorigin="">
+  <meta name="description" content="En CSS es posible aplicar ciertas modificaciones sobre imágenes u objetos concretos, como modo de relleno, renderización o proporción de aspecto.">
+  <link rel="stylesheet" href="../../../critical-1.css">
+  <link rel="stylesheet" href="../../../theme-1.css">
+  <script type="module" src="../../../main-1.js"></script>
+  <link rel="canonical" href="index-1.htm">
+  <meta property="og:title" content="Imágenes y Objetos - CSS en español">
+  <meta property="og:image" content="https://lenguajecss.com/css/large-summary.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="En CSS es posible aplicar ciertas modificaciones sobre imágenes u objetos concretos, como modo de relleno, renderización o proporción de aspecto.">
+  <meta property="og:url" content="https://lenguajecss.com/css/colores-y-fondos/imagenes-css/">
+  <meta property="twitter:url" content="https://lenguajecss.com/css/colores-y-fondos/imagenes-css/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="@Manz">
+  <meta property="twitter:title" content="Imágenes y Objetos - CSS en español">
+  <meta property="twitter:description" content="En CSS es posible aplicar ciertas modificaciones sobre imágenes u objetos concretos, como modo de relleno, renderización o proporción de aspecto.">
+  <meta property="twitter:image:src" content="https://lenguajecss.com/css/large-summary.jpg">
+</head>
+<body class="css post"><div class="page">
+    <div class="sidebar">
+      <div class="logo flex-center">
+  <a href="../../../index.htm">
+    <img width="42" height="42" src="../../../assets/logo-1.svg" alt="Logo">
+    Lenguaje CSS
+  </a>
+  <div class="icons" style="--icon-size: 32px; --icon-side-padding: 0.15em">
+    <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+    <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+    <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+    <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+    <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+  </div>
+  <span>Un sitio web de <a href="https://manz.dev/"><mark>Manz.dev</mark></a></span>
+</div>
+
+      <form class="search flex-center" action="https://www.google.com/search">
+  <label><span>Buscar:</span> <input type="search" name="q" placeholder="Buscar un tema (ej: flex, grid...)" autocomplete="off"></label>
+  <label><span>Sitio:</span> <input type="hidden" name="q" value="site:lenguajejs.com OR site:lenguajecss.com OR site:lenguajehtml.com OR site:terminaldelinux.com OR site:manz.dev"></label>
+  <div class="search-results"></div>
+</form>
+
+      
+
+<style>
+  sidebar-link {
+    --logo-image: url(../../logo-1.svg);
+  }
+</style>
+
+<div class="toc"><sidebar-link title="Volver al índice" href="../../index-1.htm" back="" direct=""></sidebar-link><sidebar-link href="../../cheatsheets/index-1.htm" title="CSS3 Cheatsheet" direct=""></sidebar-link><sidebar-section title="Introducción a CSS" href="../../introduccion/index-1.htm"><sidebar-link href="../../introduccion/que-es-css/index-1.htm" title="¿Qué es CSS?"></sidebar-link><sidebar-link href="../../introduccion/como-usar-css/index-1.htm" title="¿Cómo usar CSS?"></sidebar-link><sidebar-link href="../../introduccion/estructura-de-css/index-1.htm" title="Estructura de CSS"></sidebar-link><sidebar-link href="../../introduccion/minificar-css/index-1.htm" title="Minificar CSS"></sidebar-link><sidebar-link href="../../introduccion/navegadores-web/index-1.htm" title="Navegadores web"></sidebar-link><sidebar-link href="../../introduccion/niveles-y-prefijos-css/index-1.htm" title="Niveles de CSS y prefijos"></sidebar-link><sidebar-link href="../../introduccion/herencia-css/index-1.htm" title="Herencia en CSS"></sidebar-link><sidebar-link href="../../introduccion/cascada-css/index-1.htm" title="Cascada en CSS"></sidebar-link><sidebar-link href="../../introduccion/css-custom-properties/index-1.htm" title="Variables CSS"></sidebar-link><sidebar-link href="../../introduccion/guia-css/index-1.htm" title="La guía de propiedades CSS"></sidebar-link></sidebar-section><sidebar-section title="Modelo de cajas" href="../../modelo-de-cajas/index-1.htm"><sidebar-link href="../../modelo-de-cajas/unidades-css/index-1.htm" title="Unidades CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/que-es/index-1.htm" title="Modelo de cajas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/margenes-y-rellenos/index-1.htm" title="Márgenes y rellenos"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes/index-1.htm" title="Bordes CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/border-radius/index-1.htm" title="Esquinas redondeadas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/propiedades-logicas-css/index-1.htm" title="Propiedades lógicas CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes-imagenes/index-1.htm" title="Bordes con imágenes"></sidebar-link><sidebar-link href="../../modelo-de-cajas/funciones-css/index-1.htm" title="Funciones CSS"></sidebar-link></sidebar-section><sidebar-section title="Colores, fondos e imágenes" href="../index-1.htm"><sidebar-link href="../colores-css/index-1.htm" title="Colores CSS"></sidebar-link><sidebar-link href="../propiedad-opacity/index-1.htm" title="La propiedad opacity"></sidebar-link><sidebar-link href="../propiedad-background-image/index-1.htm" title="La propiedad background-image"></sidebar-link><sidebar-link href="../linear-gradient/index-1.htm" title="Gradientes lineales"></sidebar-link><sidebar-link href="../radial-gradient/index-1.htm" title="Gradientes radiales"></sidebar-link><sidebar-link href="../conic-gradient/index-1.htm" title="Gradientes cónicos"></sidebar-link><sidebar-link href="index-1.htm" title="Imágenes y Objetos"></sidebar-link></sidebar-section><sidebar-section title="Selectores CSS" href="../../selectores/index-1.htm"><sidebar-link href="../../selectores/selectores-basicos/index-1.htm" title="Selectores CSS básicos"></sidebar-link><sidebar-link href="../../selectores/selectores-avanzados/index-1.htm" title="Selectores CSS avanzados"></sidebar-link><sidebar-link href="../../selectores/pseudoclases/index-1.htm" title="Pseudoclases CSS"></sidebar-link><sidebar-link href="../../selectores/pseudoclases-avanzadas/index-1.htm" title="Pseudoclases CSS avanzadas"></sidebar-link><sidebar-link href="../../selectores/pseudoelementos/index-1.htm" title="Pseudoelementos CSS"></sidebar-link><sidebar-link href="../../selectores/atributos/index-1.htm" title="Atributos CSS"></sidebar-link></sidebar-section><sidebar-section title="Reglas CSS" href="../../reglas-css/index-1.htm"><sidebar-link href="../../reglas-css/que-son-reglas-css/index-1.htm" title="¿Qué son las reglas CSS?"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-import/index-1.htm" title="La regla @import"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-layer/index-1.htm" title="La regla @layer"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-supports/index-1.htm" title="La regla @supports"></sidebar-link></sidebar-section><sidebar-section title="Fuentes y tipografías" href="../../fuentes-y-tipografias/index-1.htm"><sidebar-link href="../../fuentes-y-tipografias/tipografias/index-1.htm" title="Tipografías CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/tipografias-externas/index-1.htm" title="Tipografías externas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/fuentes-variables/index-1.htm" title="Fuentes variables CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/textos-y-alineaciones/index-1.htm" title="Textos y alineaciones"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/propiedades-avanzadas/index-1.htm" title="Propiedades avanzadas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/caracteristicas-personalizadas/index-1.htm" title="Características personalizadas"></sidebar-link></sidebar-section><sidebar-section title="Representación de datos" href="../../representacion-datos/index-1.htm"><sidebar-link href="../../representacion-datos/tablas-css/index-1.htm" title="Tablas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/listas-css/index-1.htm" title="Listas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/contadores-css/index-1.htm" title="Contadores CSS"></sidebar-link></sidebar-section><sidebar-section title="Maquetación y colocación" href="../../maquetacion-y-colocacion/index-1.htm"><sidebar-link href="../../maquetacion-y-colocacion/propiedad-display/index-1.htm" title="La propiedad display"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/posicionamiento-css/index-1.htm" title="La propiedad position"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/desplazamientos/index-1.htm" title="La propiedad float"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/flexbox/index-1.htm" title="Flexbox CSS"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/grid-css/index-1.htm" title="Grid CSS"></sidebar-link></sidebar-section><sidebar-section title="Interacciones" href="../../interacciones/index-1.htm"><sidebar-link href="../../interacciones/contornos/index-1.htm" title="Contornos"></sidebar-link><sidebar-link href="../../interacciones/cursor-del-raton/index-1.htm" title="Cursor del ratón"></sidebar-link><sidebar-link href="../../interacciones/scroll-y-overflow/index-1.htm" title="Scroll y Overflow"></sidebar-link><sidebar-link href="../../interacciones/snap-scroll/index-1.htm" title="CSS Snap Scroll"></sidebar-link></sidebar-section><sidebar-section title="Sombras" href="../../sombras/index-1.htm"><sidebar-link href="../../sombras/text-shadow/index-1.htm" title="Sombras CSS en textos"></sidebar-link><sidebar-link href="../../sombras/box-shadow/index-1.htm" title="Sombras CSS en cajas"></sidebar-link><sidebar-link href="../../sombras/drop-shadow/index-1.htm" title="Sombras idénticas CSS"></sidebar-link></sidebar-section><sidebar-section title="Efectos" href="../../efectos/index-1.htm"><sidebar-link href="../../efectos/filtros-css/index-1.htm" title="Filtros CSS"></sidebar-link><sidebar-link href="../../efectos/modos-de-fusion/index-1.htm" title="Modos de fusión CSS"></sidebar-link></sidebar-section><sidebar-section title="Máscaras y recortes" href="../../mascaras-y-recortes/index-1.htm"><sidebar-link href="../../mascaras-y-recortes/clip-path/index-1.htm" title="La propiedad clip-path"></sidebar-link><sidebar-link href="../../mascaras-y-recortes/mask-image/index-1.htm" title="La propiedad mask-image"></sidebar-link></sidebar-section><sidebar-section title="Responsive Web Design" href="../../responsive-web-design/index-1.htm"><sidebar-link href="../../responsive-web-design/que-es/index-1.htm" title="¿Qué es Responsive Design?"></sidebar-link><sidebar-link href="../../responsive-web-design/bases-responsive/index-1.htm" title="Bases del Responsive Design"></sidebar-link><sidebar-link href="../../responsive-web-design/media-queries/index-1.htm" title="Media Queries"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-impresos/index-1.htm" title="Medios impresos"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-paginados/index-1.htm" title="Medios paginados"></sidebar-link><sidebar-link href="../../responsive-web-design/preferencias-usuario/index-1.htm" title="Preferencias de usuario"></sidebar-link></sidebar-section><sidebar-section title="Animaciones CSS" href="../../animaciones/index-1.htm"><sidebar-link href="../../animaciones/transiciones/index-1.htm" title="Transiciones CSS"></sidebar-link><sidebar-link href="../../animaciones/timing-function/index-1.htm" title="Funciones de tiempo"></sidebar-link><sidebar-link href="../../animaciones/animaciones/index-1.htm" title="Animaciones CSS"></sidebar-link><sidebar-link href="../../animaciones/keyframes/index-1.htm" title="La regla @keyframes"></sidebar-link></sidebar-section><sidebar-section title="Transformaciones CSS" href="../../transformaciones/index-1.htm"><sidebar-link href="../../transformaciones/transform/index-1.htm" title="Transformaciones CSS"></sidebar-link><sidebar-link href="../../transformaciones/transform-translate/index-1.htm" title="Translaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-rotate/index-1.htm" title="Rotaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-scale/index-1.htm" title="Escalado 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-skew/index-1.htm" title="Deformaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-3d/index-1.htm" title="Transformaciones 3D"></sidebar-link><sidebar-link href="../../transformaciones/perspective/index-1.htm" title="Perspectivas CSS"></sidebar-link></sidebar-section><sidebar-section title="Dibujar con CSS" href="../../dibujar-con-css/index-1.htm"><sidebar-link href="../../dibujar-con-css/como-empezar/index-1.htm" title="¿Cómo dibujar con CSS?"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-html/index-1.htm" title="Primeros pasos: Estructura HTML"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-css/index-1.htm" title="Primeros pasos: Estructura CSS"></sidebar-link></sidebar-section></div>
+
+      
+    </div>
+    <div class="contents">
+      <header class="mega">
+  <h1>Imágenes y Objetos</h1><h2>Propiedades para modificar objetos e imágenes</h2></header>
+
+      <div class="content ">
+  <div class="breadcrumbs">
+  <a href="../../../index.htm">ATRÁS</a> <span>ᐳ</span> <a href="../../index-1.htm">css</a> <span>ᐳ</span> <a href="index-1.htm">Imágenes y Objetos</a>
+</div>
+<p>Al insertar en un documento HTML algunos <strong>objetos</strong> como imágenes a través de la etiqueta <code>&lt;img&gt;</code>, elementos multimedia a través de <code>&lt;video&gt;</code> u otros como <code>&lt;textarea&gt;</code> o <code>&lt;input&gt;</code>, dichos elementos tienen su propia forma de mostrarse en pantalla ya que tienen características ajenas a CSS. Por dicha razón, muchas veces tienen un tamaño inicial que no encaja con el uso que queremos darle, no se adapta a las cajas o contenedores que usamos o no funciona como tenemos previsto que lo haga.</p>
+<p>Sin embargo, existen algunas propiedades en CSS que nos permiten modificar ciertos aspectos de estos elementos, pudiendo darle estilo y adaptarlos. Aquí puedes ver una tabla de resumen de las propiedades que vamos a ver:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valores</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>object-fit</code></td>
+<td><strong>fill</strong> | contain | cover | none | scale-down</td>
+<td>Modo de relleno del elemento.</td>
+</tr>
+<tr>
+<td><code>object-position</code></td>
+<td><badge-type class="percent"></badge-type> <badge-type class="percent"></badge-type></td>
+<td>Posición (x,y) del elemento.</td>
+</tr>
+<tr>
+<td><code>image-rendering</code></td>
+<td><strong>auto</strong> | smooth | high-quality | crisp-edges | pixelated</td>
+<td>Algoritmo de escalado a utilizar.</td>
+</tr>
+<tr>
+<td><code>image-orientation</code></td>
+<td><strong>from-image</strong> | none | <badge-type class="angle"></badge-type> [flip]</td>
+<td>Orientación de la imagen.</td>
+</tr>
+<tr>
+<td><code>aspect-ratio</code></td>
+<td><strong>auto</strong> | <badge-type class="number"></badge-type> / <badge-type class="number"></badge-type> | <badge-type class="number"></badge-type></td>
+<td>Define la proporción de aspecto.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="la-propiedad-object-fit" tabindex="-1">La propiedad object-fit</h3>
+<p>La propiedad <code>object-fit</code> nos va a permitir cambiar el modo en el que se rellena una imagen <code>&lt;img&gt;</code> (<em>o cualquier otro objeto de representación externa a CSS</em>) en su contenedor padre. Los valores que puede tomar dicha propiedad son los siguientes:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>fill</strong></td>
+<td>Rellena la imagen en el espacio del contenedor padre. Habitualmente, estirando la imagen.</td>
+</tr>
+<tr>
+<td><code>contain</code></td>
+<td>Mantiene el aspecto natural <strong>conteniendo</strong> el máximo posible de la imagen.</td>
+</tr>
+<tr>
+<td><code>cover</code></td>
+<td>Mantiene el aspecto natural <strong>cubriendo</strong> el contenedor padre, de modo que no hayan huecos sin cubrir.</td>
+</tr>
+<tr>
+<td><code>none</code></td>
+<td>Mantiene el aspecto natural.</td>
+</tr>
+<tr>
+<td><code>scale-down</code></td>
+<td>Similar a <code>none</code> o <code>contain</code>, escalando hacia abajo.</td>
+</tr>
+</tbody>
+</table>
+<p>Imaginemos que una imagen, que tiene su propio tamaño, es notablemente superior a los elementos contenedores que la van a contener. Por defecto, la imagen tiene su propio tamaño y se desbordará, pero nos podría interesar cambiar el tamaño para que se adapte al contenedor padre. Para ello, utilizaremos los diferentes valores de la propiedad <code>object-fit</code>:</p>
+<p><img src="object-fit-1.png" alt="La propiedad Object-fit CSS" width="1279" height="707" loading="lazy"></p>
+<p>Así pues, podemos plantear el siguiente código de ejemplo, donde se puede utilizar la propiedad <code>object-fit</code> con sus diferentes valores y comprobar como se comporta:</p>
+<p><code-sandbox></code-sandbox></p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>parent<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://placekitten.com/500/300<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://placekitten.com/100/400<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://placekitten.com/300/200<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://placekitten.com/300/300<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css"><br><span class="token selector">.parent</span> <span class="token punctuation">{</span><br>  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">.item</span> <span class="token punctuation">{</span><br>  <span class="token property">margin</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 150px<span class="token punctuation">;</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> 150px<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> lightgrey<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">img</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span><br>  <span class="token property">object-fit</span><span class="token punctuation">:</span> fill<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="la-propiedad-object-position" tabindex="-1">La propiedad object-position</h3>
+<p>Además, tenemos la propiedad <code>object-position</code> que nos sirve para utilizar junto a la propiedad <code>object-fit</code> y cambiar la posición donde aparece la imagen, especialmente cuando está recortada y sólo aparece un fragmento o parte de la imagen. La propiedad funciona de forma muy parecida a como lo hace la propiedad <code>background-position</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>50% 50%</strong></td>
+<td>Por defecto, la imagen está centrada tanto en <code>X</code> como en <code>Y</code>.</td>
+</tr>
+<tr>
+<td><badge-type class="percent"></badge-type> <badge-type class="percent"></badge-type></td>
+<td>Se puede indicar un porcentaje para colocarlo en el eje correspondiente.</td>
+</tr>
+</tbody>
+</table>
+<p>También se pueden indicar palabras clave como <code>top</code>, <code>left</code>, <code>right</code>, <code>bottom</code> o <code>center</code> para indicar en que zona quieres centrar la imagen, incluso, añadiendo un porcentaje tras ellos para ajustar más concretamente:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.element img</span> <span class="token punctuation">{</span><br>  <span class="token property">object-fit</span><span class="token punctuation">:</span> cover<span class="token punctuation">;</span><br>  <span class="token property">object-position</span><span class="token punctuation">:</span> left 20% top 25%<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<h3 id="la-propiedad-image-rendering" tabindex="-1">La propiedad image-rendering</h3>
+<p>La propiedad <code>image-rendering</code> permite indicar al navegador como se debería renderizar una imagen, y más concretamente, que algoritmo de reescalado se debería aplicar. Por lo general, este valor lo utilizará correctamente el navegador, pero en algunas situaciones, al cambiar de tamaño a ciertas imágenes, es posible que se vean con una menor calidad o con defectos como bordes borrosos o ciertas imperfecciones.</p>
+<p>Con la propiedad <code>image-rendering</code> indicamos al navegador que sistema de reescalado debe utilizar, algo muy interesante cuando utilizamos por ejemplo, imágenes <strong>pixel art</strong>, donde nos interesa que se utilicen algoritmos como <strong>nearest neighbour</strong> (<em>vecinos más próximos</em>) que respeta y preserva la definición del pixel art.</p>
+<p>Los valores que puede tomar la propiedad son los siguientes:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>auto%</strong></td>
+<td>Por defecto, el navegador decide que algoritmo de escalado utilizar.</td>
+</tr>
+<tr>
+<td><code>smooth</code></td>
+<td>La imagen es escalada con algoritmos que priorizan la apariencia, ideal para fotos.</td>
+</tr>
+<tr>
+<td><code>high-quality</code></td>
+<td>Idéntico a <code>smooth</code>, pero con mejor calidad. Utilizar cuando la calidad se degrada.</td>
+</tr>
+<tr>
+<td><code>crisp-edges</code></td>
+<td>Enfocado en preservar contrastes y bordes de imagen. Ideal para lineas definidas y bocetos.</td>
+</tr>
+<tr>
+<td><code>pixelated</code></td>
+<td>Usa algoritmo de &quot;vecinos más próximos&quot;, orientado a preservar pixel art bien definido.</td>
+</tr>
+</tbody>
+</table>
+<p>Aquí puedes ver, por ejemplo, la diferencia de aplicar <code>image-rendering</code> con los valores <code>crisp-edges</code> y <code>pixelated</code> respectivamente a una imagen orientada para representar un dibujo pixel art. Como se observa, el Super Mario de la derecha tiene los bordes mucho más definidos que el Super Mario de la izquierda, el cuál se ve más borroso:</p>
+<p><img src="image-rendering-1.png" alt="La propiedad image-rendering en CSS" width="1024" height="596" loading="lazy"></p>
+<p>Hoy en día, la compatibilidad entre navegadores de esta propiedad es muy buena, salvo Internet Explorer, que usa valores no estándares.</p>
+<p><caniuse-support title="Crisp edges/pixelated images" feature="css-crisp-edges" edge="79/y" firefox="3.6/y" chrome="41/y" safari="10/y" opera="11.6/y" ios_saf="10.0-10.2/y" and_chr="103/y" and_ff="101/y">
+</caniuse-support></p>
+<h3 id="la-propiedad-image-orientation" tabindex="-1">La propiedad image-orientation</h3>
+<p>La propiedad <code>image-orientation</code> permite rotar una imagen respecto a la información que se encuentra en sus metadatos, o por el contrario, desactivarla y mostrarla tal cuál aparece en la propia imagen. Los valores que se pueden indicar son los siguientes, donde <strong>from-image</strong> es el valor por defecto:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>from-image</strong></td>
+<td>Usa la orientación de la imagen indicada en sus metadatos EXIF.</td>
+</tr>
+<tr>
+<td><code>none</code></td>
+<td>No se usa ninguna rotación adicional. Se muestra tal cual.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="la-propiedad-aspect-ratio" tabindex="-1">La propiedad aspect-ratio</h3>
+<p>La propiedad <code>aspect-ratio</code> permite cambiar la proporción de aspecto <code>width / height</code> de una imagen u objeto desde CSS. De esta forma, podemos asegurarnos de que las imágenes no se deformarán o tendrán una relación de aspecto no adecuada en nuestras páginas. Actualmente, el <a href="https://caniuse.com/mdn-css_properties_aspect-ratio">soporte es bueno</a>.</p>
+<p>Los valores de la propiedad <code>aspect-ratio</code> son:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>auto</strong></td>
+<td>El navegador calcula automáticamente la proporción adecuada.</td>
+</tr>
+<tr>
+<td><badge-type class="number"></badge-type> / <badge-type class="number"></badge-type></td>
+<td>Se utilizará la proporción <code>width</code> / <code>height</code> indicada.</td>
+</tr>
+<tr>
+<td>auto <badge-type class="number"></badge-type> / <badge-type class="number"></badge-type></td>
+<td>Utiliza la proporción indicada, salvo que tenga un tamaño definido.</td>
+</tr>
+</tbody>
+</table>
+
+    <nav class="prev-next"><a class="bt prev" href="../conic-gradient/index-1.htm" title="Gradientes cónicos">
+    <span class="data">
+      <span>Gradientes cónicos</span>
+      <small>Capítulo anterior</small>
+    </span>
+  </a><a class="bt next" href="../../selectores/selectores-basicos/index-1.htm" title="Selectores CSS básicos">
+    <span class="icon">
+      <svg-icon name="arrow-right"></svg-icon>
+    </span>
+    <span class="data">
+      <span>Selectores CSS básicos</span>
+      <small>Capítulo siguiente</small>
+    </span>
+  </a></nav>
+
+    <script async="" src="../../../pagead/js/f-1.txt"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center; margin:auto; margin-top: 2em" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0412426997270095" data-ad-slot="3027930890"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+      <div class="related">
+
+  <div class="author">
+    <div class="author-wrapper">
+      <img loading="lazy" class="circle" src="../../../assets/manz-1.webp" alt="Manz">
+      <div>
+        <p>Docente, divulgador informático y <a href="https://manz.dev/">streamer de código</a>. Amante de <strong>CSS</strong>, <strong>Javascript</strong>
+          y de la plataforma web. Ha trabajado como profesor en la Universidad de La Laguna y es director del curso de
+          Programación web FullStack y FrontEnd de EOI desde Tenerife. En sus ratos libres, busca GIF de gatos en Internet.</p>
+        <p class="twitch-badge">
+          <a href="https://twitch.tv/ManzDev">
+            <svg class="twitch" viewbox="0 0 1024 1024">
+              <path style="fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="m262.451 12.904-178.26 178.26v641.672h213.905v178.26l178.26-178.26h142.576L939.809 512V12.904H262.45zm35.645 71.287h570.383v392.164L725.904 618.932H583.287L458.514 743.705V618.932H298.096V84.192zM494.158 208.51v216.36h71.328V208.51h-71.328zm196 0v216.36h71.328V208.51h-71.328z"></path>
+            </svg>
+            Sígueme en Twitch
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="comentarios">
+    <script async="" src="../../../count-1.js" id="dsq-count-scr"></script>
+<script>
+var disqus_config = function () {
+  this.page.path = location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname;
+  this.page.url = 'https://lenguajecss.com' + this.page.path;
+  this.page.identifier = this.page.url;
+};
+document.addEventListener('DOMContentLoaded', function() {
+  const coms = document.querySelector('#comentarios');
+  a = coms.querySelector('#disqus_button');
+  a.dataset.disqusIdentifier = 'https://lenguajecss.com' + (location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname);
+  a.addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.id = 'disqus_thread';
+    coms.appendChild(div);
+    const d = document, s = d.createElement('script');
+    s.src = '//lenguajecss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    this.remove();
+  });
+});
+</script>
+
+    <a class="disqus-comment-count" id="disqus_button" href="#disqus_thread" data-disqus-identifier="https://lenguajecss.com/css/colores-y-fondos/imagenes-css/">Leer comentarios</a>
+    <a class="discord" href="https://discord.manz.dev/">¡Accede a Discord y cuéntanos!</a>
+  </div>
+
+</div>
+
+    </div>
+    <div class="aside">
+      <div class="aside">
+
+  <div class="aside-top">
+    <a href="https://manz.dev/digitalocean" title="Empieza en DigitalOcean con 100$">
+      <img width="240" height="120" src="../../../assets/digital-ocean-1.png" alt="DigitalOcean">
+    </a>
+  </div><script type="module">
+  const ANCHOR_ICON = /* svg */`
+    <svg class="anchor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205" width="36" height="36">
+      <path d="m140 129 16 16s-20 30-42 30V71c14-5 25-18 25-34 0-20-17-36-37-36-21 0-38 16-38 36 0 15 11 29 25
+              34v104c-26-2-42-27-42-27l18-18-65-9 10 63 17-17c15 12 32 37 73 37 51-1 63-29 76-40l19 19 10-64-65
+              10zM83 36c0-10 8-18 19-18s19 8 19 18c0 11-9 19-19 19s-19-8-19-19z"/>
+    </svg>`;
+  // Add inner links to sidebar menu
+  export const addInnerLinks = () => {
+    const summary = document.querySelector(".aside .summary .links");
+    const headers = Array.from(document.querySelectorAll(".content h3, .content h4"));
+    const tocLinks = [];
+    headers.forEach((e) => {
+      const link = `${location.origin}${location.pathname}#${e.id}`;
+      e.innerHTML = `<a class="permalink" href="${link}">${e.textContent} ${ANCHOR_ICON}</a>`;
+      const headerType = e.nodeName.toLowerCase();
+      const textContent = headerType === "h4" ? e.textContent.replace("La propiedad ", "").replace("La función ", "") : e.textContent;
+      tocLinks.push(`<a class="${headerType}" href="#${e.id}">${textContent}</a>`);
+    });
+    summary.insertAdjacentHTML("beforeEnd", tocLinks.join("\n"));
+  };
+
+  addInnerLinks();
+</script>
+
+<div class="summary">
+  <div class="table">Tabla de contenidos</div>
+  <div class="links"></div>
+</div>
+</div>
+
+    </div>
+  </div><footer class="main">
+  <div class="square">
+    <a href="../../../index.htm"><h2>Lenguaje CSS</h2></a>
+    <div class="icons">
+      <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+      <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+      <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+      <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+      <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+      <a href="https://github.com/ManzDev" title="GitHub"><svg-icon type="social" name="github"></svg-icon></a>
+      <a href="https://codepen.io/Manz" title="Codepen"><svg-icon type="social" name="codepen"></svg-icon></a>
+      <a href="https://www.linkedin.com/in/joseromanhdez/" title="Linkedin"><svg-icon type="social" name="linkedin"></svg-icon></a>
+    </div>
+    <p>Documentación sobre CSS y las mejores herramientas y recursos para aprender a utilizar el lenguaje de estilos CSS (Hojas de estilo).</p>
+    <p id="footer">Creado y mantenido por <a href="https://twitter.com/Manz">@Manz</a> con <span title="<3">❤</span></p></div>
+</footer>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-136544-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async="" src='../../../analytics-1.js'></script>
+
+
+</body>
+</html>

@@ -1,0 +1,444 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+  <link rel="shortcut icon" href="../../../favicon-1.ico">
+  <title>Contadores CSS - CSS en español - Lenguaje CSS</title>
+  <link rel="preload" href="../../../critical-1.css" as="style">
+  <link rel="preload" href="../../../assets/fonts/blinker-vf-1.woff2" as="font" crossorigin="">
+  <link rel="preload" href="../../../assets/fonts/scope-one-400-1.woff2" as="font" crossorigin="">
+  <meta name="description" content="Es posible crear contadores utilizando sólo código CSS, sin necesidad del uso de programación">
+  <link rel="stylesheet" href="../../../critical-1.css">
+  <link rel="stylesheet" href="../../../theme-1.css">
+  <script type="module" src="../../../main-1.js"></script>
+  <link rel="canonical" href="index-1.htm">
+  <meta property="og:title" content="Contadores CSS - CSS en español">
+  <meta property="og:image" content="https://lenguajecss.com/css/large-summary.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="Es posible crear contadores utilizando sólo código CSS, sin necesidad del uso de programación">
+  <meta property="og:url" content="https://lenguajecss.com/css/representacion-datos/contadores-css/">
+  <meta property="twitter:url" content="https://lenguajecss.com/css/representacion-datos/contadores-css/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="@Manz">
+  <meta property="twitter:title" content="Contadores CSS - CSS en español">
+  <meta property="twitter:description" content="Es posible crear contadores utilizando sólo código CSS, sin necesidad del uso de programación">
+  <meta property="twitter:image:src" content="https://lenguajecss.com/css/large-summary.jpg">
+</head>
+<body class="css post"><div class="page">
+    <div class="sidebar">
+      <div class="logo flex-center">
+  <a href="../../../index.htm">
+    <img width="42" height="42" src="../../../assets/logo-1.svg" alt="Logo">
+    Lenguaje CSS
+  </a>
+  <div class="icons" style="--icon-size: 32px; --icon-side-padding: 0.15em">
+    <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+    <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+    <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+    <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+    <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+  </div>
+  <span>Un sitio web de <a href="https://manz.dev/"><mark>Manz.dev</mark></a></span>
+</div>
+
+      <form class="search flex-center" action="https://www.google.com/search">
+  <label><span>Buscar:</span> <input type="search" name="q" placeholder="Buscar un tema (ej: flex, grid...)" autocomplete="off"></label>
+  <label><span>Sitio:</span> <input type="hidden" name="q" value="site:lenguajejs.com OR site:lenguajecss.com OR site:lenguajehtml.com OR site:terminaldelinux.com OR site:manz.dev"></label>
+  <div class="search-results"></div>
+</form>
+
+      
+
+<style>
+  sidebar-link {
+    --logo-image: url(../../logo-1.svg);
+  }
+</style>
+
+<div class="toc"><sidebar-link title="Volver al índice" href="../../index-1.htm" back="" direct=""></sidebar-link><sidebar-link href="../../cheatsheets/index-1.htm" title="CSS3 Cheatsheet" direct=""></sidebar-link><sidebar-section title="Introducción a CSS" href="../../introduccion/index-1.htm"><sidebar-link href="../../introduccion/que-es-css/index-1.htm" title="¿Qué es CSS?"></sidebar-link><sidebar-link href="../../introduccion/como-usar-css/index-1.htm" title="¿Cómo usar CSS?"></sidebar-link><sidebar-link href="../../introduccion/estructura-de-css/index-1.htm" title="Estructura de CSS"></sidebar-link><sidebar-link href="../../introduccion/minificar-css/index-1.htm" title="Minificar CSS"></sidebar-link><sidebar-link href="../../introduccion/navegadores-web/index-1.htm" title="Navegadores web"></sidebar-link><sidebar-link href="../../introduccion/niveles-y-prefijos-css/index-1.htm" title="Niveles de CSS y prefijos"></sidebar-link><sidebar-link href="../../introduccion/herencia-css/index-1.htm" title="Herencia en CSS"></sidebar-link><sidebar-link href="../../introduccion/cascada-css/index-1.htm" title="Cascada en CSS"></sidebar-link><sidebar-link href="../../introduccion/css-custom-properties/index-1.htm" title="Variables CSS"></sidebar-link><sidebar-link href="../../introduccion/guia-css/index-1.htm" title="La guía de propiedades CSS"></sidebar-link></sidebar-section><sidebar-section title="Modelo de cajas" href="../../modelo-de-cajas/index-1.htm"><sidebar-link href="../../modelo-de-cajas/unidades-css/index-1.htm" title="Unidades CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/que-es/index-1.htm" title="Modelo de cajas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/margenes-y-rellenos/index-1.htm" title="Márgenes y rellenos"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes/index-1.htm" title="Bordes CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/border-radius/index-1.htm" title="Esquinas redondeadas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/propiedades-logicas-css/index-1.htm" title="Propiedades lógicas CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes-imagenes/index-1.htm" title="Bordes con imágenes"></sidebar-link><sidebar-link href="../../modelo-de-cajas/funciones-css/index-1.htm" title="Funciones CSS"></sidebar-link></sidebar-section><sidebar-section title="Colores, fondos e imágenes" href="../../colores-y-fondos/index-1.htm"><sidebar-link href="../../colores-y-fondos/colores-css/index-1.htm" title="Colores CSS"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-opacity/index-1.htm" title="La propiedad opacity"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-background-image/index-1.htm" title="La propiedad background-image"></sidebar-link><sidebar-link href="../../colores-y-fondos/linear-gradient/index-1.htm" title="Gradientes lineales"></sidebar-link><sidebar-link href="../../colores-y-fondos/radial-gradient/index-1.htm" title="Gradientes radiales"></sidebar-link><sidebar-link href="../../colores-y-fondos/conic-gradient/index-1.htm" title="Gradientes cónicos"></sidebar-link><sidebar-link href="../../colores-y-fondos/imagenes-css/index-1.htm" title="Imágenes y Objetos"></sidebar-link></sidebar-section><sidebar-section title="Selectores CSS" href="../../selectores/index-1.htm"><sidebar-link href="../../selectores/selectores-basicos/index-1.htm" title="Selectores CSS básicos"></sidebar-link><sidebar-link href="../../selectores/selectores-avanzados/index-1.htm" title="Selectores CSS avanzados"></sidebar-link><sidebar-link href="../../selectores/pseudoclases/index-1.htm" title="Pseudoclases CSS"></sidebar-link><sidebar-link href="../../selectores/pseudoclases-avanzadas/index-1.htm" title="Pseudoclases CSS avanzadas"></sidebar-link><sidebar-link href="../../selectores/pseudoelementos/index-1.htm" title="Pseudoelementos CSS"></sidebar-link><sidebar-link href="../../selectores/atributos/index-1.htm" title="Atributos CSS"></sidebar-link></sidebar-section><sidebar-section title="Reglas CSS" href="../../reglas-css/index-1.htm"><sidebar-link href="../../reglas-css/que-son-reglas-css/index-1.htm" title="¿Qué son las reglas CSS?"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-import/index-1.htm" title="La regla @import"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-layer/index-1.htm" title="La regla @layer"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-supports/index-1.htm" title="La regla @supports"></sidebar-link></sidebar-section><sidebar-section title="Fuentes y tipografías" href="../../fuentes-y-tipografias/index-1.htm"><sidebar-link href="../../fuentes-y-tipografias/tipografias/index-1.htm" title="Tipografías CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/tipografias-externas/index-1.htm" title="Tipografías externas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/fuentes-variables/index-1.htm" title="Fuentes variables CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/textos-y-alineaciones/index-1.htm" title="Textos y alineaciones"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/propiedades-avanzadas/index-1.htm" title="Propiedades avanzadas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/caracteristicas-personalizadas/index-1.htm" title="Características personalizadas"></sidebar-link></sidebar-section><sidebar-section title="Representación de datos" href="../index-1.htm"><sidebar-link href="../tablas-css/index-1.htm" title="Tablas CSS"></sidebar-link><sidebar-link href="../listas-css/index-1.htm" title="Listas CSS"></sidebar-link><sidebar-link href="index-1.htm" title="Contadores CSS"></sidebar-link></sidebar-section><sidebar-section title="Maquetación y colocación" href="../../maquetacion-y-colocacion/index-1.htm"><sidebar-link href="../../maquetacion-y-colocacion/propiedad-display/index-1.htm" title="La propiedad display"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/posicionamiento-css/index-1.htm" title="La propiedad position"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/desplazamientos/index-1.htm" title="La propiedad float"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/flexbox/index-1.htm" title="Flexbox CSS"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/grid-css/index-1.htm" title="Grid CSS"></sidebar-link></sidebar-section><sidebar-section title="Interacciones" href="../../interacciones/index-1.htm"><sidebar-link href="../../interacciones/contornos/index-1.htm" title="Contornos"></sidebar-link><sidebar-link href="../../interacciones/cursor-del-raton/index-1.htm" title="Cursor del ratón"></sidebar-link><sidebar-link href="../../interacciones/scroll-y-overflow/index-1.htm" title="Scroll y Overflow"></sidebar-link><sidebar-link href="../../interacciones/snap-scroll/index-1.htm" title="CSS Snap Scroll"></sidebar-link></sidebar-section><sidebar-section title="Sombras" href="../../sombras/index-1.htm"><sidebar-link href="../../sombras/text-shadow/index-1.htm" title="Sombras CSS en textos"></sidebar-link><sidebar-link href="../../sombras/box-shadow/index-1.htm" title="Sombras CSS en cajas"></sidebar-link><sidebar-link href="../../sombras/drop-shadow/index-1.htm" title="Sombras idénticas CSS"></sidebar-link></sidebar-section><sidebar-section title="Efectos" href="../../efectos/index-1.htm"><sidebar-link href="../../efectos/filtros-css/index-1.htm" title="Filtros CSS"></sidebar-link><sidebar-link href="../../efectos/modos-de-fusion/index-1.htm" title="Modos de fusión CSS"></sidebar-link></sidebar-section><sidebar-section title="Máscaras y recortes" href="../../mascaras-y-recortes/index-1.htm"><sidebar-link href="../../mascaras-y-recortes/clip-path/index-1.htm" title="La propiedad clip-path"></sidebar-link><sidebar-link href="../../mascaras-y-recortes/mask-image/index-1.htm" title="La propiedad mask-image"></sidebar-link></sidebar-section><sidebar-section title="Responsive Web Design" href="../../responsive-web-design/index-1.htm"><sidebar-link href="../../responsive-web-design/que-es/index-1.htm" title="¿Qué es Responsive Design?"></sidebar-link><sidebar-link href="../../responsive-web-design/bases-responsive/index-1.htm" title="Bases del Responsive Design"></sidebar-link><sidebar-link href="../../responsive-web-design/media-queries/index-1.htm" title="Media Queries"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-impresos/index-1.htm" title="Medios impresos"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-paginados/index-1.htm" title="Medios paginados"></sidebar-link><sidebar-link href="../../responsive-web-design/preferencias-usuario/index-1.htm" title="Preferencias de usuario"></sidebar-link></sidebar-section><sidebar-section title="Animaciones CSS" href="../../animaciones/index-1.htm"><sidebar-link href="../../animaciones/transiciones/index-1.htm" title="Transiciones CSS"></sidebar-link><sidebar-link href="../../animaciones/timing-function/index-1.htm" title="Funciones de tiempo"></sidebar-link><sidebar-link href="../../animaciones/animaciones/index-1.htm" title="Animaciones CSS"></sidebar-link><sidebar-link href="../../animaciones/keyframes/index-1.htm" title="La regla @keyframes"></sidebar-link></sidebar-section><sidebar-section title="Transformaciones CSS" href="../../transformaciones/index-1.htm"><sidebar-link href="../../transformaciones/transform/index-1.htm" title="Transformaciones CSS"></sidebar-link><sidebar-link href="../../transformaciones/transform-translate/index-1.htm" title="Translaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-rotate/index-1.htm" title="Rotaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-scale/index-1.htm" title="Escalado 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-skew/index-1.htm" title="Deformaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-3d/index-1.htm" title="Transformaciones 3D"></sidebar-link><sidebar-link href="../../transformaciones/perspective/index-1.htm" title="Perspectivas CSS"></sidebar-link></sidebar-section><sidebar-section title="Dibujar con CSS" href="../../dibujar-con-css/index-1.htm"><sidebar-link href="../../dibujar-con-css/como-empezar/index-1.htm" title="¿Cómo dibujar con CSS?"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-html/index-1.htm" title="Primeros pasos: Estructura HTML"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-css/index-1.htm" title="Primeros pasos: Estructura CSS"></sidebar-link></sidebar-section></div>
+
+      
+    </div>
+    <div class="contents">
+      <header class="mega">
+  <h1>Contadores CSS</h1><h2>CSS Counters: Contando con CSS</h2></header>
+
+      <div class="content ">
+  <div class="breadcrumbs">
+  <a href="../../../index.htm">ATRÁS</a> <span>ᐳ</span> <a href="../../index-1.htm">css</a> <span>ᐳ</span> <a href="index-1.htm">Contadores CSS</a>
+</div>
+<p>Si conocemos los estilos que es posible darle a una <a href="../listas-css/index-1.htm">lista con CSS</a> es posible que nos interese conocer la posibilidad de <strong>crear contadores personalizados con CSS</strong> y utilizarlos en nuestras páginas para contar diferentes elementos de la misma, además de crear sistemas de numeración personalizados y adaptados a nuestros criterios.</p>
+<h3 id="propiedades-de-contador" tabindex="-1">Propiedades de contador</h3>
+<p>Para empezar, en CSS podemos crear un <strong>contador CSS</strong>. Básicamente, lo único que tenemos que hacer es asignarle un <code>id</code> o nombre, que nos permitirá hacer referencia a él posteriormente. Veamos que propiedades podemos utilizar para esto:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedades</th>
+<th>Valores</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>counter-reset</code></td>
+<td><em>id</em> <em>valor inicial</em> | <strong>none</strong></td>
+<td>Resetea el contador <em>id</em> al <em>valor inicial</em> (<code>0</code> por defecto).</td>
+</tr>
+<tr>
+<td><code>counter-increment</code></td>
+<td></td>
+<td>Incrementa un contador, indicándole su <code>id</code> de referencia.</td>
+</tr>
+<tr>
+<td><code>counter-set</code></td>
+<td><em>id</em> <em>valor inicial</em> | <strong>none</strong></td>
+<td>Similar a <code>counter-reset</code>, pero no realiza incremento si existe.</td>
+</tr>
+</tbody>
+</table>
+<p>En primer lugar, tenemos las propiedades <code>counter-reset</code> y <code>counter-increment</code> que no hacen otra cosa más que resetear a cero o incrementar un contador CSS, indicándole el nombre o <code>id</code> del mismo.</p>
+<h3 id="la-función-counter" tabindex="-1">La función counter()</h3>
+<p>Sin embargo, necesitamos mostrarlo de alguna forma o sería inútil. Para ello, podemos utilizar la función CSS <code>counter()</code>, que se suele utilizar junto a la propiedad <code>content</code> en pseudoelementos <code>::before</code> o <code>::after</code>.</p>
+<p>A dicha función, se le debe pasar de forma obligatoria el <code>id</code> del contador, y de forma opcional el tipo de contador que queremos utilizar, que de no hacerlo, tomará por defecto el tipo <code>decimal</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Función</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>counter(</code><em>id</em><code>,</code><em>type</em><code>)</code></td>
+<td>Usa el contador con <code>id</code> aplicando un estilo <code>type</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>Así pues, veamos un ejemplo en acción con lo que hemos visto hasta ahora. El siguiente ejemplo incorpora 3 elementos con clase <code>item</code> que queremos contabilizar, a pesar de no ser una lista y, además, teniendo contenido de por medio.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>content<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Esto es un ejemplo de varios detalles:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Detalle A<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>Explicación opcional del detalle.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Detalle B<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Detalle C<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Otro contenido no relevante.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css"><br><span class="token selector">.item</span> <span class="token punctuation">{</span><br>  <span class="token property">counter-increment</span><span class="token punctuation">:</span> detail-counter<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.item::before</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token function">counter</span><span class="token punctuation">(</span>detail-counter<span class="token punctuation">)</span> <span class="token string">" "</span><span class="token punctuation">;</span><br>  <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code></pre>
+<p>Para ello, establecemos un incremento en cada elemento con clase <code>.item</code> y además, inmediatamente antes de ese elemento, colocamos visualmente el contador, en rojo y negrita, seguido de un espacio en blanco. Observa que el contador lo hemos llamado <code>detail-counter</code>, aunque se podría llamar de cualquier otra forma.</p>
+<blockquote>
+<p>Aunque no se muestre explícitamente, es como si tuvieramos un <code>counter-reset: detail-counter 0</code> en el elemento <code>.content</code>, que es el que inicializa todo a <code>0</code>. El contador se inicializa en <code>0</code> pero realiza el primer incremento antes de mostrar el valor, por lo que los números contarán a partir del <code>1</code>.</p>
+</blockquote>
+<p>En la función <code>counter()</code> no indicamos tipo, por lo tanto usará el tipo <code>decimal</code> por defecto. Si quieres saber que otros tipos existen, echa un vistazo al artículo de <a href="../listas-css/index-1.htm">Listas CSS</a>.</p>
+<h3 id="creación-de-contadores" tabindex="-1">Creación de contadores</h3>
+<p>Si necesitamos algún tipo de <strong>contador personalizado</strong> y no nos bastan con los que incorpora CSS, es posible crearlo y customizarlo a nuestro gusto, mediante la regla <code>@counter-style</code>. Básicamente, te permite crear un tipo de contador, y decirle los símbolos que vamos a utilizar.</p>
+<table>
+<thead>
+<tr>
+<th>Regla</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>@counter-style</code> <em>nombre</em></td>
+<td>Crea un tipo de numeración para utilizar en contadores CSS.</td>
+</tr>
+</tbody>
+</table>
+<p>Dentro de la regla <code>@counter-style</code>, en la que debemos especificar un nombre para hacer referencia, podemos utilizar varias propiedades. Veamos un ejemplo sencillo, en el que creamos un sistema de numeración llamado <code>spanish</code> que cuenta los números del uno al tres, colocándole a cada uno el sufijo <strong>»</strong>:</p>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@counter-style</span> spanish</span> <span class="token punctuation">{</span><br>  <span class="token property">system</span><span class="token punctuation">:</span> cyclic<span class="token punctuation">;</span><br>  <span class="token property">symbols</span><span class="token punctuation">:</span> <span class="token string">"uno"</span> <span class="token string">"dos"</span> <span class="token string">"tres"</span><span class="token punctuation">;</span><br>  <span class="token property">suffix</span><span class="token punctuation">:</span> <span class="token string">"» "</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">ul</span> <span class="token punctuation">{</span><br>  <span class="token property">list-style-type</span><span class="token punctuation">:</span> spanish<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">li::marker</span> <span class="token punctuation">{</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Observa que al establecer un sistema <strong>cíclico</strong>, una vez terminamos el tres, volvemos a empezar en uno. Además de <code>system</code>, <code>symbols</code> y <code>suffix</code> existen otras propiedades que se pueden utilizar en las reglas <code>@counter-style</code>, echemos un vistazo y expliquemos para que funcionan y que valores pueden tomar:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>system</code></td>
+<td>Establece el sistema de repetición al terminar los símbolos. El valor por defecto es <strong>symbolic</strong>.</td>
+</tr>
+<tr>
+<td><code>symbols</code></td>
+<td>Indica los símbolos de nuestro sistema de numeración, separados por espacios.</td>
+</tr>
+<tr>
+<td><code>additive-symbols</code></td>
+<td>Indica los símbolos de nuestro sistema de numeración de forma acumulativa.</td>
+</tr>
+<tr>
+<td><code>suffix</code></td>
+<td>Indica un sufijo que aparecerá siempre al final.</td>
+</tr>
+<tr>
+<td><code>prefix</code></td>
+<td>Indica un prefijo que aparecerá siempre al principio.</td>
+</tr>
+<tr>
+<td><code>negative</code></td>
+<td>Indica el prefijo y sufijo que tendrían los valores negativos.</td>
+</tr>
+<tr>
+<td><code>range</code></td>
+<td>Limita el ámbito del contador.</td>
+</tr>
+<tr>
+<td><code>pad</code></td>
+<td>Indica la longitud y relleno que usará. Por defecto, el valor es <code>0 &quot;&quot;</code></td>
+</tr>
+<tr>
+<td><code>fallback</code></td>
+<td>Indica un tipo de contador de fallback, en caso de que no pueda crearse.</td>
+</tr>
+<tr>
+<td><code>speak-as</code></td>
+<td>Indica como representará el contador un sintetizador de voz.</td>
+</tr>
+</tbody>
+</table>
+<p>Vayamos una por una y veamos que valores pueden tomar.</p>
+<h4 id="la-propiedad-system" tabindex="-1">La propiedad system</h4>
+<p>Un sistema de numeración puede comportarse de varias formas. Tenemos una propiedad denominada <code>system</code> que permite indicar uno de los siguientes valores y determinar su comportamiento:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cyclic</code></td>
+<td>Establece un comportamiento cíclico.</td>
+<td><code>A B C</code> -&gt; A, B, C, A, B, C, A...</td>
+</tr>
+<tr>
+<td><code>fixed</code></td>
+<td>Establece una numeración de un número finito de elementos.</td>
+<td><code>A B C</code> -&gt; A, B, C, 4, 5, 6...</td>
+</tr>
+<tr>
+<td><code>symbolic</code></td>
+<td>Estable un patrón repetible y acumulable.</td>
+<td><code>A B C</code> -&gt; A, B, C, AA, BB, CC, AAA...</td>
+</tr>
+<tr>
+<td><code>alphabetic</code></td>
+<td>Estable un patrón alfabético repetible y acumulable.</td>
+<td><code>A B C</code> -&gt; A, B, C, AA, AB, AC, BA, BB, BC, CA...</td>
+</tr>
+<tr>
+<td><code>numeric</code></td>
+<td>Establece un patrón numérico repetible con cero.</td>
+<td><code>A B C</code> -&gt; B, C, BA, BB, BC, CA, CB, CC, BAA, BAB...</td>
+</tr>
+<tr>
+<td><code>additive</code></td>
+<td>Establece un patrón añadiendo símbolos asociados y acumulables.</td>
+<td>⚀, ⚁, ⚂, ⚃, ⚄, ⚅, ⚅⚀, ⚅⚁, ⚅⚂, ⚅⚃, ⚅⚄, ⚅⚅, ⚅⚅⚀...</td>
+</tr>
+<tr>
+<td><code>extends</code></td>
+<td>Simplemente extiende un sistema con un sufijo o prefijo.</td>
+<td><code>&quot;) &quot;</code> -&gt; 1), 2), 3), 4), 5), 6), 7), 8), 9)...</td>
+</tr>
+</tbody>
+</table>
+<p>A continuación, observa la combinación de un <code>system: additive</code> junto a la propiedad <code>additive-symbols</code> para crear combinaciones de símbolos, ya que es ligeramente diferente a las anteriores:</p>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@counter-style</span> dice</span> <span class="token punctuation">{</span><br>  <span class="token property">system</span><span class="token punctuation">:</span> additive<span class="token punctuation">;</span><br>  <span class="token property">additive-symbols</span><span class="token punctuation">:</span> 6 ⚅<span class="token punctuation">,</span> 5 ⚄<span class="token punctuation">,</span> 4 ⚃<span class="token punctuation">,</span> 3 ⚂<span class="token punctuation">,</span> 2 ⚁<span class="token punctuation">,</span> 1 ⚀<span class="token punctuation">;</span><br>  <span class="token property">suffix</span><span class="token punctuation">:</span> <span class="token string">" "</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<h4 id="la-propiedad-symbols" tabindex="-1">La propiedad symbols</h4>
+<p>Mediante la propiedad <code>symbols</code>, o la propiedad <code>additive-symbols</code>, podemos establecer una lista de símbolos para crear nuestro sistema de numeración. Además de establecer una lista de símbolos, también es posible añadir una lista de imágenes, mediante la función <code>url(imagen.png)</code>, por ejemplo.</p>
+<h4 id="la-propiedad-negative" tabindex="-1">La propiedad negative</h4>
+<p>La propiedad <code>negative</code> espera dos parámetros. El primero de esos parámetros será el <badge-type class="string"></badge-type> que se añadirá justo ante de un símbolo negativo. Por otro lado, el segundo parámetro será el <badge-type class="string"></badge-type> que se añadirá justo después de un símbolo negativo. Veamos dos ejemplos:</p>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@counter-style</span> negative-paren</span> <span class="token punctuation">{</span><br>  <span class="token property">negative</span><span class="token punctuation">:</span> <span class="token string">"("</span> <span class="token string">")"</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token comment">/* (2), (1), 0, 1, 2, 3, 4, 5, 6, 7, 8... */</span><br><br><span class="token atrule"><span class="token rule">@counter-style</span> negative-minus</span> <span class="token punctuation">{</span><br>  <span class="token property">negative</span><span class="token punctuation">:</span> <span class="token string">"-"</span> <span class="token string">""</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token comment">/* -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8... */</span></code></pre>
+<h4 id="la-propiedad-range" tabindex="-1">La propiedad range</h4>
+<p>Con la propiedad <code>range</code> podemos utilizar el valor <code>auto</code> o uno personalizado. De indicar el valor <code>auto</code>, se establecerá un rango dependiendo del valor indicado en la propiedad <code>system</code>. Por lo tanto:</p>
+<ul>
+<li>Para sistemas <code>cyclic</code>, <code>numeric</code> o <code>fixed</code>, el rango va desde <code>-∞</code> a <code>∞</code>.</li>
+<li>Para sistemas <code>alphabetic</code> o <code>symbolic</code>, el rango va desde <code>1</code> a <code>∞</code>.</li>
+<li>Para sistemas <code>additive</code>, el rango va desde <code>0</code> a <code>∞</code>.</li>
+<li>Para sistemas <code>extends</code>, se adapta al estilo extendido.</li>
+</ul>
+<h4 id="la-propiedad-pad" tabindex="-1">La propiedad pad</h4>
+<p>Mediante la propiedad <code>pad</code> se puede rellenar con ceros (<em>o con otros carácteres</em>) el sistema de numeración que queramos utilizar. Por ejemplo, para extender el sistema decimal y obtener los siguientes valores: <code>001</code>, <code>002</code>, <code>003</code>, <code>004</code>, <code>005</code>, <code>006</code>, etc... necesitaremos hacer lo siguiente:</p>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@counter-style</span> decimal-zeropad</span> <span class="token punctuation">{</span><br>  <span class="token property">system</span><span class="token punctuation">:</span> extends decimal<span class="token punctuation">;</span><br>  <span class="token property">pad</span><span class="token punctuation">:</span> 3 <span class="token string">"0"</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Ten en cuenta que la propiedad <code>pad</code> permite definir un primer parámetro que será el número de dígitos que debe tener el número del contador, mientras que el segundo parámetro será el relleno que utilizará a la izquierda hasta llegar a ese número de dígitos indicado anteriormente.</p>
+<h4 id="la-propiedad-fallback" tabindex="-1">La propiedad fallback</h4>
+<p>La propiedad <code>fallback</code> simplemente determina el tipo de sistema que va a utilizarse en el caso de que no se pueda usar algún otro que haya sido indicado. Por defecto, si no se especifica, utilizará <strong>decimal</strong>.</p>
+<h4 id="la-propiedad-speak-as" tabindex="-1">La propiedad speak-as</h4>
+<p>La propiedad <code>speak-as</code> intenta garantizar que los contadores se puedan no solo ver visualmente a través de un navegador, sino reproducir a través de sintetizadores de voz y sistemas equivalentes. Con esta propiedad puedes determinar como se comportará al leerlo, indicando uno de los siguientes valores:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>auto</code></td>
+<td>Si <code>system</code> es <code>alphabetic</code>, usa <code>spell-out</code>. Si es <code>cyclic</code>, usa <code>bullets</code>. En otro caso, usa <code>numbers</code>.</td>
+</tr>
+<tr>
+<td><code>bullets</code></td>
+<td>Lee la lista como si fuera una lista sin orden.</td>
+</tr>
+<tr>
+<td><code>numbers</code></td>
+<td>Lee la lista como si fuera una lista numerada.</td>
+</tr>
+<tr>
+<td><code>words</code></td>
+<td>Lee la lista como un valor textual. Si contiene imágenes, las lee como <code>numbers</code>.</td>
+</tr>
+<tr>
+<td><code>spell-out</code></td>
+<td>Lee la lista como un valor textual, letra a letra. Si no reconoce símbolos, los lee como <code>numbers</code>.</td>
+</tr>
+<tr>
+<td><em>nombre</em></td>
+<td>Lee la lista como se declara, sino actua como <code>auto</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>Esto proporcionará una mejor <strong>accesibilidad</strong> a nuestras listas o contadores de cara a sintentizadores de voz o lectores de accesibilidad.</p>
+
+    <nav class="prev-next"><a class="bt prev" href="../listas-css/index-1.htm" title="Listas CSS">
+    <span class="data">
+      <span>Listas CSS</span>
+      <small>Capítulo anterior</small>
+    </span>
+  </a><a class="bt next" href="../../maquetacion-y-colocacion/propiedad-display/index-1.htm" title="La propiedad display">
+    <span class="icon">
+      <svg-icon name="arrow-right"></svg-icon>
+    </span>
+    <span class="data">
+      <span>La propiedad display</span>
+      <small>Capítulo siguiente</small>
+    </span>
+  </a></nav>
+
+    <script async="" src="../../../pagead/js/f-1.txt"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center; margin:auto; margin-top: 2em" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0412426997270095" data-ad-slot="3027930890"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+      <div class="related">
+
+  <div class="author">
+    <div class="author-wrapper">
+      <img loading="lazy" class="circle" src="../../../assets/manz-1.webp" alt="Manz">
+      <div>
+        <p>Docente, divulgador informático y <a href="https://manz.dev/">streamer de código</a>. Amante de <strong>CSS</strong>, <strong>Javascript</strong>
+          y de la plataforma web. Ha trabajado como profesor en la Universidad de La Laguna y es director del curso de
+          Programación web FullStack y FrontEnd de EOI desde Tenerife. En sus ratos libres, busca GIF de gatos en Internet.</p>
+        <p class="twitch-badge">
+          <a href="https://twitch.tv/ManzDev">
+            <svg class="twitch" viewbox="0 0 1024 1024">
+              <path style="fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="m262.451 12.904-178.26 178.26v641.672h213.905v178.26l178.26-178.26h142.576L939.809 512V12.904H262.45zm35.645 71.287h570.383v392.164L725.904 618.932H583.287L458.514 743.705V618.932H298.096V84.192zM494.158 208.51v216.36h71.328V208.51h-71.328zm196 0v216.36h71.328V208.51h-71.328z"></path>
+            </svg>
+            Sígueme en Twitch
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="comentarios">
+    <script async="" src="../../../count-1.js" id="dsq-count-scr"></script>
+<script>
+var disqus_config = function () {
+  this.page.path = location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname;
+  this.page.url = 'https://lenguajecss.com' + this.page.path;
+  this.page.identifier = this.page.url;
+};
+document.addEventListener('DOMContentLoaded', function() {
+  const coms = document.querySelector('#comentarios');
+  a = coms.querySelector('#disqus_button');
+  a.dataset.disqusIdentifier = 'https://lenguajecss.com' + (location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname);
+  a.addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.id = 'disqus_thread';
+    coms.appendChild(div);
+    const d = document, s = d.createElement('script');
+    s.src = '//lenguajecss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    this.remove();
+  });
+});
+</script>
+
+    <a class="disqus-comment-count" id="disqus_button" href="#disqus_thread" data-disqus-identifier="https://lenguajecss.com/css/representacion-datos/contadores-css/">Leer comentarios</a>
+    <a class="discord" href="https://discord.manz.dev/">¡Accede a Discord y cuéntanos!</a>
+  </div>
+
+</div>
+
+    </div>
+    <div class="aside">
+      <div class="aside">
+
+  <div class="aside-top">
+    <a href="https://manz.dev/digitalocean" title="Empieza en DigitalOcean con 100$">
+      <img width="240" height="120" src="../../../assets/digital-ocean-1.png" alt="DigitalOcean">
+    </a>
+  </div><script type="module">
+  const ANCHOR_ICON = /* svg */`
+    <svg class="anchor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205" width="36" height="36">
+      <path d="m140 129 16 16s-20 30-42 30V71c14-5 25-18 25-34 0-20-17-36-37-36-21 0-38 16-38 36 0 15 11 29 25
+              34v104c-26-2-42-27-42-27l18-18-65-9 10 63 17-17c15 12 32 37 73 37 51-1 63-29 76-40l19 19 10-64-65
+              10zM83 36c0-10 8-18 19-18s19 8 19 18c0 11-9 19-19 19s-19-8-19-19z"/>
+    </svg>`;
+  // Add inner links to sidebar menu
+  export const addInnerLinks = () => {
+    const summary = document.querySelector(".aside .summary .links");
+    const headers = Array.from(document.querySelectorAll(".content h3, .content h4"));
+    const tocLinks = [];
+    headers.forEach((e) => {
+      const link = `${location.origin}${location.pathname}#${e.id}`;
+      e.innerHTML = `<a class="permalink" href="${link}">${e.textContent} ${ANCHOR_ICON}</a>`;
+      const headerType = e.nodeName.toLowerCase();
+      const textContent = headerType === "h4" ? e.textContent.replace("La propiedad ", "").replace("La función ", "") : e.textContent;
+      tocLinks.push(`<a class="${headerType}" href="#${e.id}">${textContent}</a>`);
+    });
+    summary.insertAdjacentHTML("beforeEnd", tocLinks.join("\n"));
+  };
+
+  addInnerLinks();
+</script>
+
+<div class="summary">
+  <div class="table">Tabla de contenidos</div>
+  <div class="links"></div>
+</div>
+</div>
+
+    </div>
+  </div><footer class="main">
+  <div class="square">
+    <a href="../../../index.htm"><h2>Lenguaje CSS</h2></a>
+    <div class="icons">
+      <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+      <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+      <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+      <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+      <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+      <a href="https://github.com/ManzDev" title="GitHub"><svg-icon type="social" name="github"></svg-icon></a>
+      <a href="https://codepen.io/Manz" title="Codepen"><svg-icon type="social" name="codepen"></svg-icon></a>
+      <a href="https://www.linkedin.com/in/joseromanhdez/" title="Linkedin"><svg-icon type="social" name="linkedin"></svg-icon></a>
+    </div>
+    <p>Documentación sobre CSS y las mejores herramientas y recursos para aprender a utilizar el lenguaje de estilos CSS (Hojas de estilo).</p>
+    <p id="footer">Creado y mantenido por <a href="https://twitter.com/Manz">@Manz</a> con <span title="<3">❤</span></p></div>
+</footer>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-136544-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async="" src='../../../analytics-1.js'></script>
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+@import url('../../../css2');
+
+:root {
+  --handwrite-font: "Caveat", "Courier New", consolas;
+}
+
+body {
+  background: #222;
+}
+
+#app {
+  background: url(phone-bg.jpg) no-repeat center left;
+  background-size: cover;
+  min-height: 100%;
+  padding: 2em;
+}
+

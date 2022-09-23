@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+  <link rel="shortcut icon" href="../../../favicon-1.ico">
+  <title>Unidades CSS - CSS en español - Lenguaje CSS</title>
+  <link rel="preload" href="../../../critical-1.css" as="style">
+  <link rel="preload" href="../../../assets/fonts/blinker-vf-1.woff2" as="font" crossorigin="">
+  <link rel="preload" href="../../../assets/fonts/scope-one-400-1.woff2" as="font" crossorigin="">
+  <meta name="description" content="¿Qué unidades existen en CSS? ¿Cuántas hay? Las más comunes son los píxels, aunque también existen porcentajes y otros tipos de unidades.">
+  <link rel="stylesheet" href="../../../critical-1.css">
+  <link rel="stylesheet" href="../../../theme-1.css">
+  <script type="module" src="../../../main-1.js"></script>
+  <link rel="canonical" href="index-1.htm">
+  <meta property="og:title" content="Unidades CSS - CSS en español">
+  <meta property="og:image" content="https://lenguajecss.com/css/large-summary.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="¿Qué unidades existen en CSS? ¿Cuántas hay? Las más comunes son los píxels, aunque también existen porcentajes y otros tipos de unidades.">
+  <meta property="og:url" content="https://lenguajecss.com/css/modelo-de-cajas/unidades-css/">
+  <meta property="twitter:url" content="https://lenguajecss.com/css/modelo-de-cajas/unidades-css/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="@Manz">
+  <meta property="twitter:title" content="Unidades CSS - CSS en español">
+  <meta property="twitter:description" content="¿Qué unidades existen en CSS? ¿Cuántas hay? Las más comunes son los píxels, aunque también existen porcentajes y otros tipos de unidades.">
+  <meta property="twitter:image:src" content="https://lenguajecss.com/css/large-summary.jpg">
+</head>
+<body class="css post"><div class="page">
+    <div class="sidebar">
+      <div class="logo flex-center">
+  <a href="../../../index.htm">
+    <img width="42" height="42" src="../../../assets/logo-1.svg" alt="Logo">
+    Lenguaje CSS
+  </a>
+  <div class="icons" style="--icon-size: 32px; --icon-side-padding: 0.15em">
+    <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+    <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+    <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+    <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+    <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+  </div>
+  <span>Un sitio web de <a href="https://manz.dev/"><mark>Manz.dev</mark></a></span>
+</div>
+
+      <form class="search flex-center" action="https://www.google.com/search">
+  <label><span>Buscar:</span> <input type="search" name="q" placeholder="Buscar un tema (ej: flex, grid...)" autocomplete="off"></label>
+  <label><span>Sitio:</span> <input type="hidden" name="q" value="site:lenguajejs.com OR site:lenguajecss.com OR site:lenguajehtml.com OR site:terminaldelinux.com OR site:manz.dev"></label>
+  <div class="search-results"></div>
+</form>
+
+      
+
+<style>
+  sidebar-link {
+    --logo-image: url(../../logo-1.svg);
+  }
+</style>
+
+<div class="toc"><sidebar-link title="Volver al índice" href="../../index-1.htm" back="" direct=""></sidebar-link><sidebar-link href="../../cheatsheets/index-1.htm" title="CSS3 Cheatsheet" direct=""></sidebar-link><sidebar-section title="Introducción a CSS" href="../../introduccion/index-1.htm"><sidebar-link href="../../introduccion/que-es-css/index-1.htm" title="¿Qué es CSS?"></sidebar-link><sidebar-link href="../../introduccion/como-usar-css/index-1.htm" title="¿Cómo usar CSS?"></sidebar-link><sidebar-link href="../../introduccion/estructura-de-css/index-1.htm" title="Estructura de CSS"></sidebar-link><sidebar-link href="../../introduccion/minificar-css/index-1.htm" title="Minificar CSS"></sidebar-link><sidebar-link href="../../introduccion/navegadores-web/index-1.htm" title="Navegadores web"></sidebar-link><sidebar-link href="../../introduccion/niveles-y-prefijos-css/index-1.htm" title="Niveles de CSS y prefijos"></sidebar-link><sidebar-link href="../../introduccion/herencia-css/index-1.htm" title="Herencia en CSS"></sidebar-link><sidebar-link href="../../introduccion/cascada-css/index-1.htm" title="Cascada en CSS"></sidebar-link><sidebar-link href="../../introduccion/css-custom-properties/index-1.htm" title="Variables CSS"></sidebar-link><sidebar-link href="../../introduccion/guia-css/index-1.htm" title="La guía de propiedades CSS"></sidebar-link></sidebar-section><sidebar-section title="Modelo de cajas" href="../index-1.htm"><sidebar-link href="index-1.htm" title="Unidades CSS"></sidebar-link><sidebar-link href="../que-es/index-1.htm" title="Modelo de cajas"></sidebar-link><sidebar-link href="../margenes-y-rellenos/index-1.htm" title="Márgenes y rellenos"></sidebar-link><sidebar-link href="../bordes/index-1.htm" title="Bordes CSS"></sidebar-link><sidebar-link href="../border-radius/index-1.htm" title="Esquinas redondeadas"></sidebar-link><sidebar-link href="../propiedades-logicas-css/index-1.htm" title="Propiedades lógicas CSS"></sidebar-link><sidebar-link href="../bordes-imagenes/index-1.htm" title="Bordes con imágenes"></sidebar-link><sidebar-link href="../funciones-css/index-1.htm" title="Funciones CSS"></sidebar-link></sidebar-section><sidebar-section title="Colores, fondos e imágenes" href="../../colores-y-fondos/index-1.htm"><sidebar-link href="../../colores-y-fondos/colores-css/index-1.htm" title="Colores CSS"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-opacity/index-1.htm" title="La propiedad opacity"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-background-image/index-1.htm" title="La propiedad background-image"></sidebar-link><sidebar-link href="../../colores-y-fondos/linear-gradient/index-1.htm" title="Gradientes lineales"></sidebar-link><sidebar-link href="../../colores-y-fondos/radial-gradient/index-1.htm" title="Gradientes radiales"></sidebar-link><sidebar-link href="../../colores-y-fondos/conic-gradient/index-1.htm" title="Gradientes cónicos"></sidebar-link><sidebar-link href="../../colores-y-fondos/imagenes-css/index-1.htm" title="Imágenes y Objetos"></sidebar-link></sidebar-section><sidebar-section title="Selectores CSS" href="../../selectores/index-1.htm"><sidebar-link href="../../selectores/selectores-basicos/index-1.htm" title="Selectores CSS básicos"></sidebar-link><sidebar-link href="../../selectores/selectores-avanzados/index-1.htm" title="Selectores CSS avanzados"></sidebar-link><sidebar-link href="../../selectores/pseudoclases/index-1.htm" title="Pseudoclases CSS"></sidebar-link><sidebar-link href="../../selectores/pseudoclases-avanzadas/index-1.htm" title="Pseudoclases CSS avanzadas"></sidebar-link><sidebar-link href="../../selectores/pseudoelementos/index-1.htm" title="Pseudoelementos CSS"></sidebar-link><sidebar-link href="../../selectores/atributos/index-1.htm" title="Atributos CSS"></sidebar-link></sidebar-section><sidebar-section title="Reglas CSS" href="../../reglas-css/index-1.htm"><sidebar-link href="../../reglas-css/que-son-reglas-css/index-1.htm" title="¿Qué son las reglas CSS?"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-import/index-1.htm" title="La regla @import"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-layer/index-1.htm" title="La regla @layer"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-supports/index-1.htm" title="La regla @supports"></sidebar-link></sidebar-section><sidebar-section title="Fuentes y tipografías" href="../../fuentes-y-tipografias/index-1.htm"><sidebar-link href="../../fuentes-y-tipografias/tipografias/index-1.htm" title="Tipografías CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/tipografias-externas/index-1.htm" title="Tipografías externas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/fuentes-variables/index-1.htm" title="Fuentes variables CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/textos-y-alineaciones/index-1.htm" title="Textos y alineaciones"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/propiedades-avanzadas/index-1.htm" title="Propiedades avanzadas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/caracteristicas-personalizadas/index-1.htm" title="Características personalizadas"></sidebar-link></sidebar-section><sidebar-section title="Representación de datos" href="../../representacion-datos/index-1.htm"><sidebar-link href="../../representacion-datos/tablas-css/index-1.htm" title="Tablas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/listas-css/index-1.htm" title="Listas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/contadores-css/index-1.htm" title="Contadores CSS"></sidebar-link></sidebar-section><sidebar-section title="Maquetación y colocación" href="../../maquetacion-y-colocacion/index-1.htm"><sidebar-link href="../../maquetacion-y-colocacion/propiedad-display/index-1.htm" title="La propiedad display"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/posicionamiento-css/index-1.htm" title="La propiedad position"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/desplazamientos/index-1.htm" title="La propiedad float"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/flexbox/index-1.htm" title="Flexbox CSS"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/grid-css/index-1.htm" title="Grid CSS"></sidebar-link></sidebar-section><sidebar-section title="Interacciones" href="../../interacciones/index-1.htm"><sidebar-link href="../../interacciones/contornos/index-1.htm" title="Contornos"></sidebar-link><sidebar-link href="../../interacciones/cursor-del-raton/index-1.htm" title="Cursor del ratón"></sidebar-link><sidebar-link href="../../interacciones/scroll-y-overflow/index-1.htm" title="Scroll y Overflow"></sidebar-link><sidebar-link href="../../interacciones/snap-scroll/index-1.htm" title="CSS Snap Scroll"></sidebar-link></sidebar-section><sidebar-section title="Sombras" href="../../sombras/index-1.htm"><sidebar-link href="../../sombras/text-shadow/index-1.htm" title="Sombras CSS en textos"></sidebar-link><sidebar-link href="../../sombras/box-shadow/index-1.htm" title="Sombras CSS en cajas"></sidebar-link><sidebar-link href="../../sombras/drop-shadow/index-1.htm" title="Sombras idénticas CSS"></sidebar-link></sidebar-section><sidebar-section title="Efectos" href="../../efectos/index-1.htm"><sidebar-link href="../../efectos/filtros-css/index-1.htm" title="Filtros CSS"></sidebar-link><sidebar-link href="../../efectos/modos-de-fusion/index-1.htm" title="Modos de fusión CSS"></sidebar-link></sidebar-section><sidebar-section title="Máscaras y recortes" href="../../mascaras-y-recortes/index-1.htm"><sidebar-link href="../../mascaras-y-recortes/clip-path/index-1.htm" title="La propiedad clip-path"></sidebar-link><sidebar-link href="../../mascaras-y-recortes/mask-image/index-1.htm" title="La propiedad mask-image"></sidebar-link></sidebar-section><sidebar-section title="Responsive Web Design" href="../../responsive-web-design/index-1.htm"><sidebar-link href="../../responsive-web-design/que-es/index-1.htm" title="¿Qué es Responsive Design?"></sidebar-link><sidebar-link href="../../responsive-web-design/bases-responsive/index-1.htm" title="Bases del Responsive Design"></sidebar-link><sidebar-link href="../../responsive-web-design/media-queries/index-1.htm" title="Media Queries"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-impresos/index-1.htm" title="Medios impresos"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-paginados/index-1.htm" title="Medios paginados"></sidebar-link><sidebar-link href="../../responsive-web-design/preferencias-usuario/index-1.htm" title="Preferencias de usuario"></sidebar-link></sidebar-section><sidebar-section title="Animaciones CSS" href="../../animaciones/index-1.htm"><sidebar-link href="../../animaciones/transiciones/index-1.htm" title="Transiciones CSS"></sidebar-link><sidebar-link href="../../animaciones/timing-function/index-1.htm" title="Funciones de tiempo"></sidebar-link><sidebar-link href="../../animaciones/animaciones/index-1.htm" title="Animaciones CSS"></sidebar-link><sidebar-link href="../../animaciones/keyframes/index-1.htm" title="La regla @keyframes"></sidebar-link></sidebar-section><sidebar-section title="Transformaciones CSS" href="../../transformaciones/index-1.htm"><sidebar-link href="../../transformaciones/transform/index-1.htm" title="Transformaciones CSS"></sidebar-link><sidebar-link href="../../transformaciones/transform-translate/index-1.htm" title="Translaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-rotate/index-1.htm" title="Rotaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-scale/index-1.htm" title="Escalado 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-skew/index-1.htm" title="Deformaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-3d/index-1.htm" title="Transformaciones 3D"></sidebar-link><sidebar-link href="../../transformaciones/perspective/index-1.htm" title="Perspectivas CSS"></sidebar-link></sidebar-section><sidebar-section title="Dibujar con CSS" href="../../dibujar-con-css/index-1.htm"><sidebar-link href="../../dibujar-con-css/como-empezar/index-1.htm" title="¿Cómo dibujar con CSS?"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-html/index-1.htm" title="Primeros pasos: Estructura HTML"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-css/index-1.htm" title="Primeros pasos: Estructura CSS"></sidebar-link></sidebar-section></div>
+
+      
+    </div>
+    <div class="contents">
+      <header class="mega">
+  <h1>Unidades CSS</h1><h2>Conoce las unidades para indicar tamaños o distancias</h2></header>
+
+      <div class="content ">
+  <div class="breadcrumbs">
+  <a href="../../../index.htm">ATRÁS</a> <span>ᐳ</span> <a href="../../index-1.htm">css</a> <span>ᐳ</span> <a href="index-1.htm">Unidades CSS</a>
+</div>
+<p>Antes de comenzar a utilizar propiedades que utilicen medidas, como por ejemplo <code>width</code> (<em>propiedad que sirve para establecer un ancho a un elemento concreto</em>), es conveniente conocer los tipos de unidades <badge-type class="unit"></badge-type> que pueden utilizarse en CSS para indicar un determinado tamaño <badge-type class="size"></badge-type>. Existen varios tipos de unidades, vamos a desglosarlas en grupos y explicar cada una de ellas. Más adelante veremos las propiedades de CSS que pueden utilizarlas.</p>
+<h3 id="unidades-absolutas" tabindex="-1">Unidades absolutas</h3>
+<p>Las <strong>unidades absolutas</strong> son un tipo de medida fija que no cambia, que no depende de ningún otro factor. Son ideales en contextos donde las medidas no varían como pueden ser en medios impresos (documentos, impresiones, etc...), pero son unidades poco adecuadas para la web, ya que no tienen la capacidad de adaptarse a diferentes resoluciones o pantallas, que es lo que tendemos a hacer hoy en día.</p>
+<p>Existen varias unidades absolutas, como se puede ver en el siguiente gráfico:</p>
+<p><img src="unidades-absolutas-1.png" alt="Unidades absolutas en CSS" width="1024" height="300" loading="lazy"></p>
+<p>A continuación, podemos ver las diferentes <strong>unidades absolutas</strong> que pueden utilizarse en CSS son las siguientes (<em>de mayor a menor tamaño</em>):</p>
+<table>
+<thead>
+<tr>
+<th>Unidad</th>
+<th>Significado</th>
+<th>Medida aproximada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>in</code></td>
+<td>Pulgadas</td>
+<td>1in = 25.4mm</td>
+</tr>
+<tr>
+<td><code>cm</code></td>
+<td>Centímetros</td>
+<td>1cm = 10mm</td>
+</tr>
+<tr>
+<td><code>pc</code></td>
+<td>Picas</td>
+<td>1pc = 4.23mm</td>
+</tr>
+<tr>
+<td><code>mm</code></td>
+<td>Milímetros</td>
+<td>1mm = 1mm</td>
+</tr>
+<tr>
+<td><code>pt</code></td>
+<td>Puntos</td>
+<td>1pt = 0.35mm</td>
+</tr>
+<tr>
+<td><code>px</code></td>
+<td>Píxels</td>
+<td>1px = 0.26mm</td>
+</tr>
+<tr>
+<td><code>Q</code></td>
+<td>Cuarto de mm</td>
+<td>1Q  = 0.248mm</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<blockquote>
+<p><strong>Consejo</strong>: El punto (<code>pt</code>) podría ser una medida ideal para documentos CSS en los que se fija el tamaño de las fuentes en medios impresos.</p>
+</blockquote>
+</blockquote>
+<h4 id="la-unidad-px-píxel" tabindex="-1">La unidad px (píxel)</h4>
+<p>El uso de la unidad <code>px</code> está muy extendida en el desarrollo y diseño web, y es prácticamente una de las primeras unidades de CSS que se recomienda aprender. La razón, es que se trata de una unidad muy sencilla para el desarrollador: muy fácil de comprender, conocida y que nos permitirá afianzar conceptos a la vez que profundizamos en el diseño web.</p>
+<blockquote>
+<p>No obstante, es conveniente saber que no es la única unidad, y que probablemente más adelante nos interese aprender otras unidades que pueden ser mucho más versátiles y útiles para situaciones concretas. ¡Empieza por los <code>px</code> pero una vez los domines no te quedes ahí!</p>
+</blockquote>
+<h3 id="unidades-relativas" tabindex="-1">Unidades relativas</h3>
+<p>Las <strong>unidades relativas</strong> son un tipo de medida mucho más potente y habitual en el CSS que creamos generalmente. Al contrario que las unidades absolutas, las unidades relativas dependen de algún otro factor (<em>resolución, tamaño de letra, etc...</em>). Tienen una curva de aprendizaje más compleja, pero son ideales para trabajar en dispositivos con diferentes tamaños, ya que son muy flexibles y versátiles.</p>
+<p>Las <strong>unidades relativas</strong> más conocidas son las siguientes:</p>
+<table>
+<thead>
+<tr>
+<th>Unidad</th>
+<th>Significado</th>
+<th>Medida aproximada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>em</code></td>
+<td>«M»</td>
+<td>1em = tamaño de fuente establecida en navegador</td>
+</tr>
+<tr>
+<td><code>ex</code></td>
+<td>«X» (~0.5em)</td>
+<td>1ex = ~ mitad del tamaño de fuente del navegador</td>
+</tr>
+<tr>
+<td><code>ch</code></td>
+<td>«zero width»</td>
+<td>1ch = tamaño de ancho del cero ( <code>0</code> )</td>
+</tr>
+<tr>
+<td><code>rem</code></td>
+<td>«root M»</td>
+<td>1rem = tamaño de fuente personalizado</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>Porcentaje</td>
+<td>Relativa a herencia (concretamente, al elemento padre)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="la-unidad-em" tabindex="-1">La unidad em</h4>
+<p>La unidad <code>em</code> se utiliza para hacer referencia al <strong>tamaño actual de la fuente</strong> que ha sido establecida en el navegador, que habitualmente es un valor aproximado a <code>16px</code> (<em>salvo que se modifique por el usuario</em>). De esta forma, podemos trabajar simplificando las unidades a medidas en base a ese tamaño.</p>
+<p>Por ejemplo, imaginemos que el tamaño de la fuente establecida en el navegador del usuario es exactamente <code>16px</code>. Una cantidad <code>1em</code> equivaldría a <code>16px</code>, mientras que una cantidad de <code>2em</code> sería justo el doble: <code>32px</code>. Por otro lado, una cantidad de <code>0.5em</code> sería justo la mitad: <code>8px</code>.</p>
+<p><img src="unidades-relativas-em-1.png" alt="Unidades relativas en CSS: em" width="1025" height="262" loading="lazy"></p>
+<p>Existen ciertas unidades menos utilizadas dentro de las unidades relativas, como por ejemplo las unidades <code>ex</code> o <code>ch</code>. Mientras que la unidad <code>em</code> es el tamaño de la fuente establecida por el navegador del usuario, la unidad <code>ex</code> es <strong>la mitad del tamaño</strong> de la fuente establecida por el navegador del usuario, por lo que se cumple que <code>1ex</code> es igual a <code>0.5em</code>.</p>
+<p><img src="x-height-1.png" alt="Altura de la x minúscula" width="800" height="250" loading="lazy"></p>
+<p>Realmente, la medida <code>ex</code> está basada en la <strong>altura de la x minúscula</strong>, que es aproximadamente un poco más de la mitad de la fuente actual (<em>depende de la tipografía utilizada</em>). La unidad <code>ch</code> por su parte, equivale al tamaño de ancho del <code>0</code> de la fuente actual, aunque como hemos dicho, en la práctica es un tipo de unidad que no se suele utilizar frecuentemente.</p>
+<h4 id="la-unidad-rem-root-em" tabindex="-1">La unidad rem (root em)</h4>
+<p>Una unidad muy interesante y práctica para tipografías es la unidad <code>rem</code> (<em>root em</em>). Esta unidad toma la idea de la unidad <code>em</code>, pero permitiendo establecer un <strong>tamaño base</strong> personalizado (<em>generalmente para el documento en general, utilizando <code>html</code> o la pseudoclase <code>:root</code></em>). De esta forma, podemos trabajar con múltiplos del tamaño base:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">:root</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 22px<span class="token punctuation">;</span>    <span class="token comment">/* Tamaño base */</span><br><span class="token punctuation">}</span><br><br><span class="token selector">h1</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span>    <span class="token comment">/* El doble del tamaño base: 44px */</span><br><span class="token punctuation">}</span><br><br><span class="token selector">h2</span> <span class="token punctuation">{</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span>    <span class="token comment">/* El mismo tamaño base: 22px */</span><br><span class="token punctuation">}</span></code></pre>
+<p>Como podemos ver, posteriormente podremos ir utilizando la unidad <code>rem</code> en ciertas partes del documento. Con esto, estamos indicando el factor de escala (<em>respecto al tamaño base</em>). En el ejemplo anterior, los elementos <code>&lt;h1&gt;</code> tendrán <strong>44 píxels</strong> de tamaño, ya que hemos establecido <code>2rem</code>, que significa «el doble que el tamaño base». Por otro lado, los elementos <code>&lt;h2&gt;</code> tendrían el mismo tamaño: <strong>22 píxels</strong>.</p>
+<p>Esto nos da una ventaja principal considerable: Si queremos cambiar el tamaño del texto en general, sólo tenemos que cambiar el <code>font-size</code> de la pseudoclase <code>:root</code>, puesto que el resto de unidades son factores de escalado y se modificarán todas en consecuencia al cambio del <code>:root</code>. Algo, sin duda, muy práctico y fácil de mantener.</p>
+<p><caniuse-support title="rem (root em) units" feature="rem" edge="12/y" firefox="3.6/y" chrome="4/y" safari="5/y" opera="11.6/y" ios_saf="4.0-4.1/y" and_chr="103/y" and_ff="101/y">
+</caniuse-support></p>
+<blockquote>
+<p><strong>Consejo</strong>: Cuando se especifican valores de unidades iguales a <code>0</code>, como por ejemplo <code>0px</code>, <code>0em</code> o <code>0%</code>, podemos omitir las unidades y escribir simplemente <code>0</code>, ya que en este caso particular las unidades son redundantes y no aportan valor.</p>
+</blockquote>
+<h3 id="unidades-flexibles-viewport" tabindex="-1">Unidades flexibles (viewport)</h3>
+<p>Existen unas unidades de &quot;nueva generación&quot; que resultan muy útiles, porque dependen del <strong>viewport</strong> (<em>región visible de la página web en el navegador</em>). Con estas unidades podemos hacer referencia a un porcentaje concreto del tamaño específico que tengamos en la ventana del navegador, independientemente de si es redimensionado o no.</p>
+<p>Estas unidades son las siguientes:</p>
+<table>
+<thead>
+<tr>
+<th>Unidad</th>
+<th>Significado</th>
+<th>Medida aproximada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>vw</code></td>
+<td>viewport width</td>
+<td>1vw = 1% ancho de navegador</td>
+</tr>
+<tr>
+<td><code>vh</code></td>
+<td>viewport height</td>
+<td>1vh = 1% alto de navegador</td>
+</tr>
+<tr>
+<td><code>vmin</code></td>
+<td>viewport minimum</td>
+<td>1vmin = 1% de alto o ancho (el mínimo)</td>
+</tr>
+<tr>
+<td><code>vmax</code></td>
+<td>viewport maximum</td>
+<td>1vmax = 1% de alto o ancho (el máximo)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="la-unidad-vw-viewport-width" tabindex="-1">La unidad vw (viewport width)</h4>
+<p>La unidad <code>vw</code> es un tipo de unidad que hace referencia al ancho del viewport (<em>región visible de la página en el navegador</em>). Por ejemplo, si definimos <code>50vw</code>, estamos indicando un <strong>50%</strong> del ancho actual del navegador. Esto nos permite utilizar tamaños que dependan de las dimensiones de la ventana del navegador.</p>
+<h4 id="la-unidad-vh-viewport-height" tabindex="-1">La unidad vh (viewport height)</h4>
+<p>Por su parte, la unidad <code>vh</code> hace referencia de la misma forma al alto del viewport. Por ejemplo, mientras <code>50vw</code> hace referencia al <code>50%</code> del <strong>ancho del navegador</strong>, si indicamos <code>50vh</code> estaremos haciendo referencia a la mitad (<code>50%</code>) del <strong>alto del navegador</strong>.</p>
+<h4 id="las-unidades-vmin-vmax" tabindex="-1">Las unidades vmin / vmax</h4>
+<p>Por último, tenemos las unidades <code>vmin</code> y <code>vmax</code>. La unidad <code>vmin</code> (<em>viewport minimum</em>), simplemente hace referencia al valor más pequeño (<em>mínimo</em>) entre el tamaño de <strong>ancho</strong> y el tamaño de <strong>alto</strong> del viewport del navegador. Por otro lado, la unidad <code>vmax</code> (<em>viewport maximum</em>) hace referencia al valor más grande (<em>máximo</em>) entre el tamaño de <strong>ancho</strong> y el tamaño de <strong>alto</strong> del viewport del navegador.</p>
+<p>Esto puede ser útil en algunas situaciones donde quieres flexibilidad con diseños adaptables, y no necesitas estar haciendo cálculos previos para saber cuál es el más pequeño o más grande antes de utilizarlos.</p>
+<p><caniuse-support title="Viewport units: vw, vh, vmin, vmax" feature="viewport-units" edge="16/y" firefox="19/y" chrome="26/y" safari="6.1/y" opera="15/y" ios_saf="8/y" and_chr="103/y" and_ff="101/y">
+</caniuse-support></p>
+<blockquote>
+<p>Es interesante tener en cuenta que existen una serie de funciones para hacer <strong>cálculos con unidades CSS</strong>. Son las funciones <code>calc()</code>, <code>min()</code>, <code>max()</code> o <code>clamp()</code>, entre otras. Las veremos más adelante, en el capítulo de <a href="../funciones-css/index-1.htm">funciones CSS</a>.</p>
+</blockquote>
+
+    <nav class="prev-next"><a class="bt prev" href="../../introduccion/guia-css/index-1.htm" title="La guía de propiedades CSS">
+    <span class="data">
+      <span>La guía de propiedades CSS</span>
+      <small>Capítulo anterior</small>
+    </span>
+  </a><a class="bt next" href="../que-es/index-1.htm" title="Modelo de cajas">
+    <span class="icon">
+      <svg-icon name="arrow-right"></svg-icon>
+    </span>
+    <span class="data">
+      <span>Modelo de cajas</span>
+      <small>Capítulo siguiente</small>
+    </span>
+  </a></nav>
+
+    <script async="" src="../../../pagead/js/f-1.txt"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center; margin:auto; margin-top: 2em" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0412426997270095" data-ad-slot="3027930890"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+      <div class="related">
+
+  <div class="author">
+    <div class="author-wrapper">
+      <img loading="lazy" class="circle" src="../../../assets/manz-1.webp" alt="Manz">
+      <div>
+        <p>Docente, divulgador informático y <a href="https://manz.dev/">streamer de código</a>. Amante de <strong>CSS</strong>, <strong>Javascript</strong>
+          y de la plataforma web. Ha trabajado como profesor en la Universidad de La Laguna y es director del curso de
+          Programación web FullStack y FrontEnd de EOI desde Tenerife. En sus ratos libres, busca GIF de gatos en Internet.</p>
+        <p class="twitch-badge">
+          <a href="https://twitch.tv/ManzDev">
+            <svg class="twitch" viewbox="0 0 1024 1024">
+              <path style="fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="m262.451 12.904-178.26 178.26v641.672h213.905v178.26l178.26-178.26h142.576L939.809 512V12.904H262.45zm35.645 71.287h570.383v392.164L725.904 618.932H583.287L458.514 743.705V618.932H298.096V84.192zM494.158 208.51v216.36h71.328V208.51h-71.328zm196 0v216.36h71.328V208.51h-71.328z"></path>
+            </svg>
+            Sígueme en Twitch
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="comentarios">
+    <script async="" src="../../../count-1.js" id="dsq-count-scr"></script>
+<script>
+var disqus_config = function () {
+  this.page.path = location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname;
+  this.page.url = 'https://lenguajecss.com' + this.page.path;
+  this.page.identifier = this.page.url;
+};
+document.addEventListener('DOMContentLoaded', function() {
+  const coms = document.querySelector('#comentarios');
+  a = coms.querySelector('#disqus_button');
+  a.dataset.disqusIdentifier = 'https://lenguajecss.com' + (location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname);
+  a.addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.id = 'disqus_thread';
+    coms.appendChild(div);
+    const d = document, s = d.createElement('script');
+    s.src = '//lenguajecss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    this.remove();
+  });
+});
+</script>
+
+    <a class="disqus-comment-count" id="disqus_button" href="#disqus_thread" data-disqus-identifier="https://lenguajecss.com/css/modelo-de-cajas/unidades-css/">Leer comentarios</a>
+    <a class="discord" href="https://discord.manz.dev/">¡Accede a Discord y cuéntanos!</a>
+  </div>
+
+</div>
+
+    </div>
+    <div class="aside">
+      <div class="aside">
+
+  <div class="aside-top">
+    <a href="https://manz.dev/digitalocean" title="Empieza en DigitalOcean con 100$">
+      <img width="240" height="120" src="../../../assets/digital-ocean-1.png" alt="DigitalOcean">
+    </a>
+  </div><script type="module">
+  const ANCHOR_ICON = /* svg */`
+    <svg class="anchor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205" width="36" height="36">
+      <path d="m140 129 16 16s-20 30-42 30V71c14-5 25-18 25-34 0-20-17-36-37-36-21 0-38 16-38 36 0 15 11 29 25
+              34v104c-26-2-42-27-42-27l18-18-65-9 10 63 17-17c15 12 32 37 73 37 51-1 63-29 76-40l19 19 10-64-65
+              10zM83 36c0-10 8-18 19-18s19 8 19 18c0 11-9 19-19 19s-19-8-19-19z"/>
+    </svg>`;
+  // Add inner links to sidebar menu
+  export const addInnerLinks = () => {
+    const summary = document.querySelector(".aside .summary .links");
+    const headers = Array.from(document.querySelectorAll(".content h3, .content h4"));
+    const tocLinks = [];
+    headers.forEach((e) => {
+      const link = `${location.origin}${location.pathname}#${e.id}`;
+      e.innerHTML = `<a class="permalink" href="${link}">${e.textContent} ${ANCHOR_ICON}</a>`;
+      const headerType = e.nodeName.toLowerCase();
+      const textContent = headerType === "h4" ? e.textContent.replace("La propiedad ", "").replace("La función ", "") : e.textContent;
+      tocLinks.push(`<a class="${headerType}" href="#${e.id}">${textContent}</a>`);
+    });
+    summary.insertAdjacentHTML("beforeEnd", tocLinks.join("\n"));
+  };
+
+  addInnerLinks();
+</script>
+
+<div class="summary">
+  <div class="table">Tabla de contenidos</div>
+  <div class="links"></div>
+</div>
+</div>
+
+    </div>
+  </div><footer class="main">
+  <div class="square">
+    <a href="../../../index.htm"><h2>Lenguaje CSS</h2></a>
+    <div class="icons">
+      <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+      <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+      <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+      <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+      <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+      <a href="https://github.com/ManzDev" title="GitHub"><svg-icon type="social" name="github"></svg-icon></a>
+      <a href="https://codepen.io/Manz" title="Codepen"><svg-icon type="social" name="codepen"></svg-icon></a>
+      <a href="https://www.linkedin.com/in/joseromanhdez/" title="Linkedin"><svg-icon type="social" name="linkedin"></svg-icon></a>
+    </div>
+    <p>Documentación sobre CSS y las mejores herramientas y recursos para aprender a utilizar el lenguaje de estilos CSS (Hojas de estilo).</p>
+    <p id="footer">Creado y mantenido por <a href="https://twitter.com/Manz">@Manz</a> con <span title="<3">❤</span></p></div>
+</footer>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-136544-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async="" src='../../../analytics-1.js'></script>
+
+
+</body>
+</html>

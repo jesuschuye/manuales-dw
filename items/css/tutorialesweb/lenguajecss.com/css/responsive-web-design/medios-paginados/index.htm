@@ -1,0 +1,418 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+  <link rel="shortcut icon" href="../../../favicon.ico">
+  <title>Medios paginados - CSS en español - Lenguaje CSS</title>
+  <link rel="preload" href="../../../critical.css" as="style">
+  <link rel="preload" href="../../../assets/fonts/blinker-vf.woff2" as="font" crossorigin="">
+  <link rel="preload" href="../../../assets/fonts/scope-one-400.woff2" as="font" crossorigin="">
+  <meta name="description" content="CSS permite aplicar estilos a documentos destinados a impresión, permitiendo administrar su método de paginación.">
+  <link rel="stylesheet" href="../../../critical.css">
+  <link rel="stylesheet" href="../../../theme.css">
+  <script type="module" src="../../../main.js"></script>
+  <link rel="canonical" href="index.htm">
+  <meta property="og:title" content="Medios paginados - CSS en español">
+  <meta property="og:image" content="https://lenguajecss.com/css/large-summary.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="CSS permite aplicar estilos a documentos destinados a impresión, permitiendo administrar su método de paginación.">
+  <meta property="og:url" content="https://lenguajecss.com/css/responsive-web-design/medios-paginados/">
+  <meta property="twitter:url" content="https://lenguajecss.com/css/responsive-web-design/medios-paginados/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="@Manz">
+  <meta property="twitter:title" content="Medios paginados - CSS en español">
+  <meta property="twitter:description" content="CSS permite aplicar estilos a documentos destinados a impresión, permitiendo administrar su método de paginación.">
+  <meta property="twitter:image:src" content="https://lenguajecss.com/css/large-summary.jpg">
+</head>
+<body class="css post"><div class="page">
+    <div class="sidebar">
+      <div class="logo flex-center">
+  <a href="/">
+    <img width="42" height="42" src="../../../assets/logo.svg" alt="Logo">
+    Lenguaje CSS
+  </a>
+  <div class="icons" style="--icon-size: 32px; --icon-side-padding: 0.15em">
+    <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+    <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+    <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+    <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+    <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+  </div>
+  <span>Un sitio web de <a href="https://manz.dev/"><mark>Manz.dev</mark></a></span>
+</div>
+
+      <form class="search flex-center" action="https://www.google.com/search">
+  <label><span>Buscar:</span> <input type="search" name="q" placeholder="Buscar un tema (ej: flex, grid...)" autocomplete="off"></label>
+  <label><span>Sitio:</span> <input type="hidden" name="q" value="site:lenguajejs.com OR site:lenguajecss.com OR site:lenguajehtml.com OR site:terminaldelinux.com OR site:manz.dev"></label>
+  <div class="search-results"></div>
+</form>
+
+      
+
+<style>
+  sidebar-link {
+    --logo-image: url(../../logo.svg);
+  }
+</style>
+
+<div class="toc"><sidebar-link title="Volver al índice" href="../../index.htm" back="" direct=""></sidebar-link><sidebar-link href="../../cheatsheets/index.htm" title="CSS3 Cheatsheet" direct=""></sidebar-link><sidebar-section title="Introducción a CSS" href="../../introduccion/index.htm"><sidebar-link href="../../introduccion/que-es-css/index.htm" title="¿Qué es CSS?"></sidebar-link><sidebar-link href="../../introduccion/como-usar-css/index.htm" title="¿Cómo usar CSS?"></sidebar-link><sidebar-link href="../../introduccion/estructura-de-css/index.htm" title="Estructura de CSS"></sidebar-link><sidebar-link href="../../introduccion/minificar-css/index.htm" title="Minificar CSS"></sidebar-link><sidebar-link href="../../introduccion/navegadores-web/index.htm" title="Navegadores web"></sidebar-link><sidebar-link href="../../introduccion/niveles-y-prefijos-css/index.htm" title="Niveles de CSS y prefijos"></sidebar-link><sidebar-link href="../../introduccion/herencia-css/index.htm" title="Herencia en CSS"></sidebar-link><sidebar-link href="../../introduccion/cascada-css/index.htm" title="Cascada en CSS"></sidebar-link><sidebar-link href="../../introduccion/css-custom-properties/index.htm" title="Variables CSS"></sidebar-link><sidebar-link href="../../introduccion/guia-css/index.htm" title="La guía de propiedades CSS"></sidebar-link></sidebar-section><sidebar-section title="Modelo de cajas" href="../../modelo-de-cajas/index.htm"><sidebar-link href="../../modelo-de-cajas/unidades-css/index.htm" title="Unidades CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/que-es/index.htm" title="Modelo de cajas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/margenes-y-rellenos/index.htm" title="Márgenes y rellenos"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes/index.htm" title="Bordes CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/border-radius/index.htm" title="Esquinas redondeadas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/propiedades-logicas-css/index.htm" title="Propiedades lógicas CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes-imagenes/index.htm" title="Bordes con imágenes"></sidebar-link><sidebar-link href="../../modelo-de-cajas/funciones-css/index.htm" title="Funciones CSS"></sidebar-link></sidebar-section><sidebar-section title="Colores, fondos e imágenes" href="../../colores-y-fondos/index.htm"><sidebar-link href="../../colores-y-fondos/colores-css/index.htm" title="Colores CSS"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-opacity/index.htm" title="La propiedad opacity"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-background-image/index.htm" title="La propiedad background-image"></sidebar-link><sidebar-link href="../../colores-y-fondos/linear-gradient/index.htm" title="Gradientes lineales"></sidebar-link><sidebar-link href="../../colores-y-fondos/radial-gradient/index.htm" title="Gradientes radiales"></sidebar-link><sidebar-link href="../../colores-y-fondos/conic-gradient/index.htm" title="Gradientes cónicos"></sidebar-link><sidebar-link href="../../colores-y-fondos/imagenes-css/index.htm" title="Imágenes y Objetos"></sidebar-link></sidebar-section><sidebar-section title="Selectores CSS" href="../../selectores/index.htm"><sidebar-link href="../../selectores/selectores-basicos/index.htm" title="Selectores CSS básicos"></sidebar-link><sidebar-link href="../../selectores/selectores-avanzados/index.htm" title="Selectores CSS avanzados"></sidebar-link><sidebar-link href="../../selectores/pseudoclases/index.htm" title="Pseudoclases CSS"></sidebar-link><sidebar-link href="../../selectores/pseudoclases-avanzadas/index.htm" title="Pseudoclases CSS avanzadas"></sidebar-link><sidebar-link href="../../selectores/pseudoelementos/index.htm" title="Pseudoelementos CSS"></sidebar-link><sidebar-link href="../../selectores/atributos/index.htm" title="Atributos CSS"></sidebar-link></sidebar-section><sidebar-section title="Reglas CSS" href="../../reglas-css/index.htm"><sidebar-link href="../../reglas-css/que-son-reglas-css/index.htm" title="¿Qué son las reglas CSS?"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-import/index.htm" title="La regla @import"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-layer/index.htm" title="La regla @layer"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-supports/index.htm" title="La regla @supports"></sidebar-link></sidebar-section><sidebar-section title="Fuentes y tipografías" href="../../fuentes-y-tipografias/index.htm"><sidebar-link href="../../fuentes-y-tipografias/tipografias/index.htm" title="Tipografías CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/tipografias-externas/index.htm" title="Tipografías externas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/fuentes-variables/index.htm" title="Fuentes variables CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/textos-y-alineaciones/index.htm" title="Textos y alineaciones"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/propiedades-avanzadas/index.htm" title="Propiedades avanzadas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/caracteristicas-personalizadas/index.htm" title="Características personalizadas"></sidebar-link></sidebar-section><sidebar-section title="Representación de datos" href="../../representacion-datos/index.htm"><sidebar-link href="../../representacion-datos/tablas-css/index.htm" title="Tablas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/listas-css/index.htm" title="Listas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/contadores-css/index.htm" title="Contadores CSS"></sidebar-link></sidebar-section><sidebar-section title="Maquetación y colocación" href="../../maquetacion-y-colocacion/index.htm"><sidebar-link href="../../maquetacion-y-colocacion/propiedad-display/index.htm" title="La propiedad display"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/posicionamiento-css/index.htm" title="La propiedad position"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/desplazamientos/index.htm" title="La propiedad float"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/flexbox/index.htm" title="Flexbox CSS"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/grid-css/index.htm" title="Grid CSS"></sidebar-link></sidebar-section><sidebar-section title="Interacciones" href="../../interacciones/index.htm"><sidebar-link href="../../interacciones/contornos/index.htm" title="Contornos"></sidebar-link><sidebar-link href="../../interacciones/cursor-del-raton/index.htm" title="Cursor del ratón"></sidebar-link><sidebar-link href="../../interacciones/scroll-y-overflow/index.htm" title="Scroll y Overflow"></sidebar-link><sidebar-link href="../../interacciones/snap-scroll/index.htm" title="CSS Snap Scroll"></sidebar-link></sidebar-section><sidebar-section title="Sombras" href="../../sombras/index.htm"><sidebar-link href="../../sombras/text-shadow/index.htm" title="Sombras CSS en textos"></sidebar-link><sidebar-link href="../../sombras/box-shadow/index.htm" title="Sombras CSS en cajas"></sidebar-link><sidebar-link href="../../sombras/drop-shadow/index.htm" title="Sombras idénticas CSS"></sidebar-link></sidebar-section><sidebar-section title="Efectos" href="../../efectos/index.htm"><sidebar-link href="../../efectos/filtros-css/index.htm" title="Filtros CSS"></sidebar-link><sidebar-link href="../../efectos/modos-de-fusion/index.htm" title="Modos de fusión CSS"></sidebar-link></sidebar-section><sidebar-section title="Máscaras y recortes" href="../../mascaras-y-recortes/index.htm"><sidebar-link href="../../mascaras-y-recortes/clip-path/index.htm" title="La propiedad clip-path"></sidebar-link><sidebar-link href="../../mascaras-y-recortes/mask-image/index.htm" title="La propiedad mask-image"></sidebar-link></sidebar-section><sidebar-section title="Responsive Web Design" href="../index.htm"><sidebar-link href="../que-es/index.htm" title="¿Qué es Responsive Design?"></sidebar-link><sidebar-link href="../bases-responsive/index.htm" title="Bases del Responsive Design"></sidebar-link><sidebar-link href="../media-queries/index.htm" title="Media Queries"></sidebar-link><sidebar-link href="../medios-impresos/index.htm" title="Medios impresos"></sidebar-link><sidebar-link href="index.htm" title="Medios paginados"></sidebar-link><sidebar-link href="../preferencias-usuario/index.htm" title="Preferencias de usuario"></sidebar-link></sidebar-section><sidebar-section title="Animaciones CSS" href="../../animaciones/index.htm"><sidebar-link href="../../animaciones/transiciones/index.htm" title="Transiciones CSS"></sidebar-link><sidebar-link href="../../animaciones/timing-function/index.htm" title="Funciones de tiempo"></sidebar-link><sidebar-link href="../../animaciones/animaciones/index.htm" title="Animaciones CSS"></sidebar-link><sidebar-link href="../../animaciones/keyframes/index.htm" title="La regla @keyframes"></sidebar-link></sidebar-section><sidebar-section title="Transformaciones CSS" href="../../transformaciones/index.htm"><sidebar-link href="../../transformaciones/transform/index.htm" title="Transformaciones CSS"></sidebar-link><sidebar-link href="../../transformaciones/transform-translate/index.htm" title="Translaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-rotate/index.htm" title="Rotaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-scale/index.htm" title="Escalado 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-skew/index.htm" title="Deformaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-3d/index.htm" title="Transformaciones 3D"></sidebar-link><sidebar-link href="../../transformaciones/perspective/index.htm" title="Perspectivas CSS"></sidebar-link></sidebar-section><sidebar-section title="Dibujar con CSS" href="../../dibujar-con-css/index.htm"><sidebar-link href="../../dibujar-con-css/como-empezar/index.htm" title="¿Cómo dibujar con CSS?"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-html/index.htm" title="Primeros pasos: Estructura HTML"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-css/index.htm" title="Primeros pasos: Estructura CSS"></sidebar-link></sidebar-section></div>
+
+      
+    </div>
+    <div class="contents">
+      <header class="mega">
+  <h1>Medios paginados</h1><h2>Media queries para adaptar contenido a páginas</h2></header>
+
+      <div class="content ">
+  <div class="breadcrumbs">
+  <a href="/">ATRÁS</a> <span>ᐳ</span> <a href="../../index.htm">css</a> <span>ᐳ</span> <a href="index.htm">Medios paginados</a>
+</div>
+<p>Existe una particularidad de CSS denominada <strong>CSS Paged Media</strong>, que no es más que un conjunto de características y propiedades específicas para <strong>medios paginados</strong>, como por ejemplo podrían ser, documentos impresos o la exportación en archivos <code>.pdf</code>.</p>
+<h3 id="la-regla-page" tabindex="-1">La regla @page</h3>
+<p>Existen varias propiedades CSS interesantes para estos medios, que pueden ser utilizadas dentro de un bloque <code>@page</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valores</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>size</code></td>
+<td><strong>auto</strong> | <em>tipo documento</em> | <badge-type class="size"></badge-type> <badge-type class="size"></badge-type></td>
+<td>Indica el ancho y alto de cada página.</td>
+</tr>
+<tr>
+<td><code>margin</code></td>
+<td><badge-type class="size"></badge-type></td>
+<td>Idéntica a la propiedad <code>margin</code> que conocemos.</td>
+</tr>
+</tbody>
+</table>
+<p>Mediante la propiedad <code>size</code> se puede establecer el formato de la página, tanto mediante los valores predefinidos <code>portrait</code> o <code>landscape</code> (<em>vertical o apaisado</em>), como especificando las medidas mediante unidades:</p>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@page</span></span> <span class="token punctuation">{</span><br>  <span class="token property">size</span><span class="token punctuation">:</span> 8.27in 11.69in<span class="token punctuation">;</span>  <span class="token comment">/* DIN A4 */</span><br>  <span class="token property">margin</span><span class="token punctuation">:</span> .5in .5in .5in .5in<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>De forma adicional, también puedes indicar el <strong>tipo de documento</strong> mediante algunas palabras clave como valor de la propiedad <code>size</code> (<em>las cuales se pueden usar junto a <code>landscape</code> o <code>portrait</code> para definir su orientación</em>):</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Medidas</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A5</code></td>
+<td>148mm×210mm</td>
+<td>Documento de mitad de tamaño de un folio DIN A4.</td>
+</tr>
+<tr>
+<td><code>B5</code></td>
+<td>176mm×250mm</td>
+<td>Documento de tamaño entre A5 y A4.</td>
+</tr>
+<tr>
+<td><code>A4</code></td>
+<td>210mm×297mm</td>
+<td>Documento de exactamente el tamaño folio DIN A4.</td>
+</tr>
+<tr>
+<td><code>B4</code></td>
+<td>250mm×353mm</td>
+<td>Documento de tamaño entre A4 y A3.</td>
+</tr>
+<tr>
+<td><code>A3</code></td>
+<td>297mm×420mm</td>
+<td>Documento del doble de tamaño de un folio DIN A4.</td>
+</tr>
+<tr>
+<td><code>letter</code></td>
+<td>215.9mm×279.4mm</td>
+<td>Documento de tamaño de las cartas americanas.</td>
+</tr>
+<tr>
+<td><code>legal</code></td>
+<td>215.9mm×355.6mm</td>
+<td>Documento de tamaño de notificación legal americana.</td>
+</tr>
+<tr>
+<td><code>ledger</code></td>
+<td>279.4mm×431.8mm</td>
+<td>Documento de tamaño libro americano.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<blockquote>
+<p><strong>Nota</strong>: Cualquier propiedad utilizada dentro de una regla <code>@page</code> que no sea una de las anteriores será ignorada.</p>
+</blockquote>
+</blockquote>
+<p>Una vez tenemos definida la estructura de cada página del documento, pasaremos de una página web que tiene una estructura continua a un documento paginado, donde cada cierto tamaño tiene un <strong>salto de página</strong> que interrumpe el contenido.</p>
+<p><img src="paginacion.png" alt="Paginación de contenidos" width="824" height="549" loading="lazy"></p>
+<p>Al establecer dichos saltos de página, el contenido se adapta al tamaño de cada página especificado, pero puede ocurrir que debido a los límites impuestos por los saltos de página, un cierto contenido <strong>se corte a la mitad</strong> y se vea continuado en la siguiente página, comportamiento no deseable en prácticamente el 100% de los casos.</p>
+<h3 id="orphans-widows" tabindex="-1">Orphans &amp; Widows</h3>
+<p>Existen casos en los que el comportamiento descrito anteriormente no sea un problema, sin embargo, pueden darse muchos casos en los que sí lo sería:</p>
+<ul>
+<li>Una imagen o una tabla empieza <strong>al final</strong> de una página (<em>se muestra cortada</em>).</li>
+<li>Un párrafo de texto comienza en la <strong>última línea</strong> de una página (<em>es poco atractivo</em>).</li>
+<li>Un nuevo tema comienza a <strong>mitad</strong> de página (<em>lo ideal sería comenzar a principio de página</em>).</li>
+</ul>
+<p>Para evitar estos problemas de paginación se suelen utilizar algunas propiedades interesantes:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valores</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>orphans</code></td>
+<td><badge-type class="number"></badge-type></td>
+<td>Número de líneas «huérfanas» permitidas (<em>antes de salto</em>)</td>
+</tr>
+<tr>
+<td><code>widows</code></td>
+<td><badge-type class="number"></badge-type></td>
+<td>Número de líneas «viudas» permitidas (<em>después de salto</em>)</td>
+</tr>
+</tbody>
+</table>
+<p>Mediante la propiedad <code>orphans</code> (<em>líneas huérfanas</em>) indicamos hasta que número de líneas no vamos a permitir que aparezcan de forma aislada al final de una página.</p>
+<p>Por ejemplo, si especificamos <code>orphans: 3</code>, significa que cualquier párrafo cortado con el salto de página, debe mostrar más de 3 líneas al final de la página. En caso contrario, se moverá el párrafo completo a la siguiente página.</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">{</span><br>  <span class="token property">orphans</span><span class="token punctuation">:</span> 3<span class="token punctuation">;</span><br>  <span class="token property">widows</span><span class="token punctuation">:</span> 3<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Por otra parte, la propiedad <code>widows</code> (<em>líneas viudas</em>) es la propiedad opuesta a <code>orphans</code>. Si al principio de una página quedan menos de ese número de líneas indicado en <code>widows</code>, se ajusta para que lo supere.</p>
+<p><caniuse-support title="CSS widows & orphans" feature="css-widows-orphans" edge="12/y" firefox="✗/n" chrome="25/y" safari="7/y" opera="9/y" ios_saf="7.0-7.1/y" and_chr="103/y" and_ff="✗/n">
+</caniuse-support></p>
+<h3 id="saltos-de-página" tabindex="-1">Saltos de página</h3>
+<p>Por último, mencionar las propiedades de salto de página, muy útiles para evitar comportamientos que pueden quedar poco atractivos en un documento paginado:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valores</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>page-break-inside</code></td>
+<td><strong>auto</strong> | avoid</td>
+<td>Evita cortar elementos en un salto de página</td>
+</tr>
+<tr>
+<td><code>page-break-before</code></td>
+<td><strong>auto</strong> | always | avoid | left | right</td>
+<td>Evita o crea un salto de página antes del elemento</td>
+</tr>
+<tr>
+<td><code>page-break-after</code></td>
+<td><strong>auto</strong> | always | avoid | left | right</td>
+<td>Evita o crea un salto de página después del elemento</td>
+</tr>
+</tbody>
+</table>
+<p>La propiedad <code>page-break-inside</code> se utiliza para evitar que un cierto elemento pueda ser cortado a la mitad en un salto de página, como por ejemplo imágenes, tablas o fragmentos de código:</p>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@media</span> print</span> <span class="token punctuation">{</span><br>  <span class="token selector">table,<br>  img,<br>  pre,<br>  code</span> <span class="token punctuation">{</span><br>    <span class="token property">page-break-inside</span><span class="token punctuation">:</span> avoid<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p>De forma similar, las propiedades <code>page-break-before</code> y <code>page-break-after</code> se utilizan para evitar o forzar al generar el documento paginado que ciertos elementos se mantengan antes o después del salto de página.</p>
+<p><caniuse-support title="CSS page-break properties" feature="css-page-break" edge="12/a" firefox="2/a" chrome="4/a" safari="3.1/a" opera="10.0-10.1/d" ios_saf="3.2/a" and_chr="103/a" and_ff="101/a">
+</caniuse-support></p>
+<h3 id="fragmentos-rotos" tabindex="-1">Fragmentos rotos</h3>
+<p>Se considera un fragmento roto, cuando tenemos un elemento que, por las medidas del padre, se «interrumpe» y continua en la línea siguiente, pero por su naturaleza, da la impresión que se ha roto. Para cambiar este comportamiento, podemos utilizar la propiedad <code>box-decoration-break</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valores</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>box-decoration-break</code></td>
+<td><strong>slice</strong> | <code>clone</code></td>
+<td>Determina si se debe «partir» el elemento, o clonar en varias partes.</td>
+</tr>
+</tbody>
+</table>
+<p>Un ejemplo claro del uso de esta propiedad, se puede ver en el siguiente ejemplo:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam excepturi<br>    similique iure voluptate beatae cum libero, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>assumenda expedita<br>    possimus, neque hic minus<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>, enim eveniet temporibus quibusdam<br>    fuga cupiditate laborum maxime.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css"><br><span class="token selector">.container</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">span</span> <span class="token punctuation">{</span><br>  <span class="token property">border</span><span class="token punctuation">:</span> 3px solid black<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> gold<span class="token punctuation">;</span><br>  <span class="token property">box-decoration-break</span><span class="token punctuation">:</span> clone<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code></pre>
+<p>Observa que el elemento <code>&lt;span&gt;</code>, un elemento que tiene una naturaleza <strong>en línea</strong>, se podría ver «partido» si tiene definido un borde y/o un fondo. Este es el comportamiento por defecto de la propiedad, que está establecida al valor <strong>slice</strong>. Podemos indicarle el valor <code>clone</code>, si lo que queremos es que el navegador cree varios clones independientes y «cierre» las partes, en lugar de mostrarla con aspecto de estar roto o «partido».</p>
+<h3 id="pseudoclases-de-página" tabindex="-1">Pseudoclases de página</h3>
+<p>También existen algunas <a href="../../selectores/pseudoclases/index.htm">pseudoclases</a> específicas para paginación, que permiten hacer referencia a páginas concretas del documento generado, pudiendo aplicar estilos sólo a este tipo de páginas:</p>
+<table>
+<thead>
+<tr>
+<th>Pseudo-clase</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>:first</code></td>
+<td>Primera página del documento paginado.</td>
+</tr>
+<tr>
+<td><code>:left</code></td>
+<td>Páginas izquierdas del documento paginado.</td>
+</tr>
+<tr>
+<td><code>:right</code></td>
+<td>Páginas derechas del documento paginado.</td>
+</tr>
+<tr>
+<td><code>:blank</code></td>
+<td>Páginas en blanco (generadas por los saltos de página).</td>
+</tr>
+</tbody>
+</table>
+<p>Sólo algunas propiedades CSS como <code>margin</code>, <code>padding</code>, <code>background</code> u otras pueden estar permitidas dentro de estas pseudoclases especiales.</p>
+
+    <nav class="prev-next"><a class="bt prev" href="../medios-impresos/index.htm" title="Medios impresos">
+    <span class="data">
+      <span>Medios impresos</span>
+      <small>Capítulo anterior</small>
+    </span>
+  </a><a class="bt next" href="../preferencias-usuario/index.htm" title="Preferencias de usuario">
+    <span class="icon">
+      <svg-icon name="arrow-right"></svg-icon>
+    </span>
+    <span class="data">
+      <span>Preferencias de usuario</span>
+      <small>Capítulo siguiente</small>
+    </span>
+  </a></nav>
+
+    <script async="" src="../../../pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center; margin:auto; margin-top: 2em" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0412426997270095" data-ad-slot="3027930890"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+      <div class="related">
+
+  <div class="author">
+    <div class="author-wrapper">
+      <img loading="lazy" class="circle" src="../../../assets/manz.webp" alt="Manz">
+      <div>
+        <p>Docente, divulgador informático y <a href="https://manz.dev/">streamer de código</a>. Amante de <strong>CSS</strong>, <strong>Javascript</strong>
+          y de la plataforma web. Ha trabajado como profesor en la Universidad de La Laguna y es director del curso de
+          Programación web FullStack y FrontEnd de EOI desde Tenerife. En sus ratos libres, busca GIF de gatos en Internet.</p>
+        <p class="twitch-badge">
+          <a href="https://twitch.tv/ManzDev">
+            <svg class="twitch" viewbox="0 0 1024 1024">
+              <path style="fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="m262.451 12.904-178.26 178.26v641.672h213.905v178.26l178.26-178.26h142.576L939.809 512V12.904H262.45zm35.645 71.287h570.383v392.164L725.904 618.932H583.287L458.514 743.705V618.932H298.096V84.192zM494.158 208.51v216.36h71.328V208.51h-71.328zm196 0v216.36h71.328V208.51h-71.328z"></path>
+            </svg>
+            Sígueme en Twitch
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="comentarios">
+    <script async="" src="../../../count.js" id="dsq-count-scr"></script>
+<script>
+var disqus_config = function () {
+  this.page.path = location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname;
+  this.page.url = 'https://lenguajecss.com' + this.page.path;
+  this.page.identifier = this.page.url;
+};
+document.addEventListener('DOMContentLoaded', function() {
+  const coms = document.querySelector('#comentarios');
+  a = coms.querySelector('#disqus_button');
+  a.dataset.disqusIdentifier = 'https://lenguajecss.com' + (location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname);
+  a.addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.id = 'disqus_thread';
+    coms.appendChild(div);
+    const d = document, s = d.createElement('script');
+    s.src = '//lenguajecss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    this.remove();
+  });
+});
+</script>
+
+    <a class="disqus-comment-count" id="disqus_button" href="#disqus_thread" data-disqus-identifier="https://lenguajecss.com/css/responsive-web-design/medios-paginados/">Leer comentarios</a>
+    <a class="discord" href="https://discord.manz.dev/">¡Accede a Discord y cuéntanos!</a>
+  </div>
+
+</div>
+
+    </div>
+    <div class="aside">
+      <div class="aside">
+
+  <div class="aside-top">
+    <a href="https://manz.dev/digitalocean" title="Empieza en DigitalOcean con 100$">
+      <img width="240" height="120" src="../../../assets/digital-ocean.png" alt="DigitalOcean">
+    </a>
+  </div><script type="module">
+  const ANCHOR_ICON = /* svg */`
+    <svg class="anchor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205" width="36" height="36">
+      <path d="m140 129 16 16s-20 30-42 30V71c14-5 25-18 25-34 0-20-17-36-37-36-21 0-38 16-38 36 0 15 11 29 25
+              34v104c-26-2-42-27-42-27l18-18-65-9 10 63 17-17c15 12 32 37 73 37 51-1 63-29 76-40l19 19 10-64-65
+              10zM83 36c0-10 8-18 19-18s19 8 19 18c0 11-9 19-19 19s-19-8-19-19z"/>
+    </svg>`;
+  // Add inner links to sidebar menu
+  export const addInnerLinks = () => {
+    const summary = document.querySelector(".aside .summary .links");
+    const headers = Array.from(document.querySelectorAll(".content h3, .content h4"));
+    const tocLinks = [];
+    headers.forEach((e) => {
+      const link = `${location.origin}${location.pathname}#${e.id}`;
+      e.innerHTML = `<a class="permalink" href="${link}">${e.textContent} ${ANCHOR_ICON}</a>`;
+      const headerType = e.nodeName.toLowerCase();
+      const textContent = headerType === "h4" ? e.textContent.replace("La propiedad ", "").replace("La función ", "") : e.textContent;
+      tocLinks.push(`<a class="${headerType}" href="#${e.id}">${textContent}</a>`);
+    });
+    summary.insertAdjacentHTML("beforeEnd", tocLinks.join("\n"));
+  };
+
+  addInnerLinks();
+</script>
+
+<div class="summary">
+  <div class="table">Tabla de contenidos</div>
+  <div class="links"></div>
+</div>
+</div>
+
+    </div>
+  </div><footer class="main">
+  <div class="square">
+    <a href="/"><h2>Lenguaje CSS</h2></a>
+    <div class="icons">
+      <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+      <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+      <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+      <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+      <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+      <a href="https://github.com/ManzDev" title="GitHub"><svg-icon type="social" name="github"></svg-icon></a>
+      <a href="https://codepen.io/Manz" title="Codepen"><svg-icon type="social" name="codepen"></svg-icon></a>
+      <a href="https://www.linkedin.com/in/joseromanhdez/" title="Linkedin"><svg-icon type="social" name="linkedin"></svg-icon></a>
+    </div>
+    <p>Documentación sobre CSS y las mejores herramientas y recursos para aprender a utilizar el lenguaje de estilos CSS (Hojas de estilo).</p>
+    <p id="footer">Creado y mantenido por <a href="https://twitter.com/Manz">@Manz</a> con <span title="<3">❤</span></p></div>
+</footer>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-136544-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async="" src='../../../analytics.js'></script>
+
+
+</body>
+</html>

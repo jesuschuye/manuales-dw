@@ -1,0 +1,1176 @@
+Uri: https://fonts.googleapis.com/css2?family=Caveat&display=block
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css2-1
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/caveat/v17/WnznHAc5bAfYB2QRah7pcpNvOx-pjfJ9SII.ttf
+File Name: C:\Downloaded Web Sites\lenguajecss.com\s\caveat\v17\WnznHAc5bAfYB2QRah7pcpNvOx-pjfJ9SII-1.ttf
+Content Type: font/ttf
+
+Uri: https://img.youtube.com/vi/5ckym8sBJ4E/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\5ckym8sBJ4E\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/7xaoL-1hPu8/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\7xaoL-1hPu8\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/Aq_VPZ4oTAs/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\Aq_VPZ4oTAs\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/bb2xQK9bFOc/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\bb2xQK9bFOc\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/fOuBWGNGIP4/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\fOuBWGNGIP4\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/GhRrJGJ1cFY/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\GhRrJGJ1cFY\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/GZs95MvU2CM/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\GZs95MvU2CM\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/j1-QNzikFCY/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\j1-QNzikFCY\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/jSia5SigafE/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\jSia5SigafE\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/nIWdkXBwWLI/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\nIWdkXBwWLI\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/nQmfuFXX3cU/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\nQmfuFXX3cU\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/OjI8jMcKN8s/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\OjI8jMcKN8s\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/pJGpscsl7hE/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\pJGpscsl7hE\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/PTh6GL0e3A0/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\PTh6GL0e3A0\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/QxQnaqEyhyU/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\QxQnaqEyhyU\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/r4g0DwGclgU/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\r4g0DwGclgU\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/SK6_0spurQI/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\SK6_0spurQI\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/tnTi5ocYa4o/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\tnTi5ocYa4o\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/ToYIHvOpwos/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\ToYIHvOpwos\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/TZXeLM1JjKc/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\TZXeLM1JjKc\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/uCekNkTw84Y/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\uCekNkTw84Y\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/uskKA8vzfsA/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\uskKA8vzfsA\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/VWtvKrYGYuo/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\VWtvKrYGYuo\mqdefault.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/wIGAyJGx2kc/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\wIGAyJGx2kc\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://img.youtube.com/vi/ZWIgWulXQFg/mqdefault.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\vi\ZWIgWulXQFg\mqdefault-1.jpg
+Content Type: image/jpeg
+
+Uri: https://lenguajecss.com/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\index.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/assets/css.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\css-1.jpg
+Content Type: image/jpeg
+
+Uri: https://lenguajecss.com/assets/digital-ocean.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\digital-ocean-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/assets/fonts/blinker-vf.woff
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\fonts\blinker-vf.woff
+Content Type: font/woff
+
+Uri: https://lenguajecss.com/assets/fonts/blinker-vf.woff2
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\fonts\blinker-vf-1.woff2
+Content Type: font/woff
+
+Uri: https://lenguajecss.com/assets/fonts/entercommand.woff
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\fonts\entercommand.woff
+Content Type: font/woff
+
+Uri: https://lenguajecss.com/assets/fonts/entercommand.woff2
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\fonts\entercommand.woff2
+Content Type: font/woff
+
+Uri: https://lenguajecss.com/assets/fonts/montserrat-vf.woff
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\fonts\montserrat-vf.woff
+Content Type: font/woff
+
+Uri: https://lenguajecss.com/assets/fonts/montserrat-vf.woff2
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\fonts\montserrat-vf.woff2
+Content Type: font/woff
+
+Uri: https://lenguajecss.com/assets/fonts/scope-one-400.woff
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\fonts\scope-one-400.woff
+Content Type: font/woff
+
+Uri: https://lenguajecss.com/assets/fonts/scope-one-400.woff2
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\fonts\scope-one-400-1.woff2
+Content Type: font/woff
+
+Uri: https://lenguajecss.com/assets/fonts/victor-mono-500.woff
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\fonts\victor-mono-500.woff
+Content Type: font/woff
+
+Uri: https://lenguajecss.com/assets/fonts/victor-mono-500.woff2
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\fonts\victor-mono-500.woff2
+Content Type: font/woff
+
+Uri: https://lenguajecss.com/assets/index.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\index.jpg
+Content Type: image/jpeg
+
+Uri: https://lenguajecss.com/assets/logo.svg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\logo-1.svg
+Content Type: image/svg+xml
+
+Uri: https://lenguajecss.com/assets/manz.webp
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\manz-1.webp
+Content Type: image/webp
+
+Uri: https://lenguajecss.com/assets/postcss.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\assets\postcss.jpg
+Content Type: image/jpeg
+
+Uri: https://lenguajecss.com/cdn-cgi/images/browser-bar.png?1376755637
+File Name: C:\Downloaded Web Sites\lenguajecss.com\cdn-cgi\images\browser-bar.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/cdn-cgi/images/cf-icon-browser.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\cdn-cgi\images\cf-icon-browser.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/cdn-cgi/images/cf-icon-cloud.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\cdn-cgi\images\cf-icon-cloud.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/cdn-cgi/images/cf-icon-error.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\cdn-cgi\images\cf-icon-error.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/cdn-cgi/images/cf-icon-horizontal-arrow.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\cdn-cgi\images\cf-icon-horizontal-arrow.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/cdn-cgi/images/cf-icon-ok.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\cdn-cgi\images\cf-icon-ok.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/cdn-cgi/images/cf-icon-server.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\cdn-cgi\images\cf-icon-server.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/cdn-cgi/images/cf-no-screenshot-error.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\cdn-cgi\images\cf-no-screenshot-error.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/cdn-cgi/images/cf-no-screenshot-warn.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\cdn-cgi\images\cf-no-screenshot-warn.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/cdn-cgi/images/icon-exclamation.png?1376755637
+File Name: C:\Downloaded Web Sites\lenguajecss.com\cdn-cgi\images\icon-exclamation.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/cdn-cgi/l/email-protection
+File Name: C:\Downloaded Web Sites\lenguajecss.com\cdn-cgi\l\email-protection.html
+Content Type: text/html
+
+Uri: https://lenguajecss.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+File Name: C:\Downloaded Web Sites\lenguajecss.com\cdn-cgi\scripts\5c5dd728\cloudflare-static\email-decode.min-1.js
+Content Type: application/javascript
+
+Uri: https://lenguajecss.com/cdn-cgi/styles/cf.errors.css
+File Name: C:\Downloaded Web Sites\lenguajecss.com\cdn-cgi\styles\cf.errors.css
+Content Type: text/css
+
+Uri: https://lenguajecss.com/critical.css
+File Name: C:\Downloaded Web Sites\lenguajecss.com\critical-1.css
+Content Type: text/css
+
+Uri: https://lenguajecss.com/css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/animaciones/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\animaciones\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/animaciones/animaciones/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\animaciones\animaciones\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/animaciones/keyframes/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\animaciones\keyframes\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/animaciones/keyframes/keyframes-syntax.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\animaciones\keyframes\keyframes-syntax-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/animaciones/timing-function/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\animaciones\timing-function\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/animaciones/timing-function/cubic-bezier.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\animaciones\timing-function\cubic-bezier-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/animaciones/timing-function/monkey-guybrush.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\animaciones\timing-function\monkey-guybrush-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/animaciones/transiciones/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\animaciones\transiciones\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/cheatsheets/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\cheatsheets\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/cheatsheets/cheatsheet.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\cheatsheets\cheatsheet-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/cheatsheets/CheatsheetDonation.cdn.js
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\cheatsheets\CheatsheetDonation.cdn-1.js
+Content Type: application/javascript
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/colores-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\colores-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/colores-css/colores-rgb.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\colores-css\colores-rgb-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/colores-css/hsl.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\colores-css\hsl-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/colores-css/ListColors.cdn.js
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\colores-css\ListColors.cdn-1.js
+Content Type: application/javascript
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/conic-gradient/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\conic-gradient\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/imagenes-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\imagenes-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/imagenes-css/image-rendering.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\imagenes-css\image-rendering-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/imagenes-css/object-fit.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\imagenes-css\object-fit-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/linear-gradient/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\linear-gradient\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/linear-gradient/circle-orientation.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\linear-gradient\circle-orientation-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/linear-gradient/gradiente-css-con-tamano.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\linear-gradient\gradiente-css-con-tamano-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/linear-gradient/linear-gradient.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\linear-gradient\linear-gradient-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/propiedad-background-image/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\propiedad-background-image\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/propiedad-background-image/background-repeat.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\propiedad-background-image\background-repeat-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/propiedad-background-image/linear-radial-conic-gradient.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\propiedad-background-image\linear-radial-conic-gradient-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/propiedad-opacity/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\propiedad-opacity\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/propiedad-opacity/grumpy-cat.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\propiedad-opacity\grumpy-cat-1.jpg
+Content Type: image/jpeg
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/radial-gradient/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\radial-gradient\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/colores-y-fondos/radial-gradient/radial-gradient.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\colores-y-fondos\radial-gradient\radial-gradient-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/dibujar-con-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\dibujar-con-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/dibujar-con-css/como-empezar/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\dibujar-con-css\como-empezar\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/dibujar-con-css/como-empezar/diagrama-css.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\dibujar-con-css\como-empezar\diagrama-css-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/dibujar-con-css/como-empezar/dibujando-con-css.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\dibujar-con-css\como-empezar\dibujando-con-css-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/dibujar-con-css/estructura-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\dibujar-con-css\estructura-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/dibujar-con-css/estructura-css/como-dibujar-con-css.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\dibujar-con-css\estructura-css\como-dibujar-con-css-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/dibujar-con-css/estructura-html/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\dibujar-con-css\estructura-html\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/dibujar-con-css/estructura-html/dibujando-diskette-con-css.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\dibujar-con-css\estructura-html\dibujando-diskette-con-css-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/dibujar-con-css/estructura-html/esquema-diskette-css.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\dibujar-con-css\estructura-html\esquema-diskette-css-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/efectos/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\efectos\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/efectos/filtros-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\efectos\filtros-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/efectos/filtros-css/hue.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\efectos\filtros-css\hue-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/efectos/modos-de-fusion/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\efectos\modos-de-fusion\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/fuentes-y-tipografias/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\fuentes-y-tipografias\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/fuentes-y-tipografias/caracteristicas-personalizadas/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\fuentes-y-tipografias\caracteristicas-personalizadas\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/fuentes-y-tipografias/fuentes-variables/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\fuentes-y-tipografias\fuentes-variables\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/fuentes-y-tipografias/propiedades-avanzadas/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\fuentes-y-tipografias\propiedades-avanzadas\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/fuentes-y-tipografias/propiedades-avanzadas/font-size-adjust.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\fuentes-y-tipografias\propiedades-avanzadas\font-size-adjust-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/fuentes-y-tipografias/textos-y-alineaciones/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\fuentes-y-tipografias\textos-y-alineaciones\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/fuentes-y-tipografias/textos-y-alineaciones/text-indent-letter-spacing-line-height.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\fuentes-y-tipografias\textos-y-alineaciones\text-indent-letter-spacing-line-height-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/fuentes-y-tipografias/tipografias-externas/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\fuentes-y-tipografias\tipografias-externas\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/fuentes-y-tipografias/tipografias-externas/google-fonts-select.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\fuentes-y-tipografias\tipografias-externas\google-fonts-select-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/fuentes-y-tipografias/tipografias/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\fuentes-y-tipografias\tipografias\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/fuentes-y-tipografias/tipografias/font-weight.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\fuentes-y-tipografias\tipografias\font-weight-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/fuentes-y-tipografias/tipografias/monospaced-font.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\fuentes-y-tipografias\tipografias\monospaced-font-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/fuentes-y-tipografias/tipografias/serif-sans-serif.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\fuentes-y-tipografias\tipografias\serif-sans-serif-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/interacciones/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\interacciones\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/interacciones/contornos/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\interacciones\contornos\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/interacciones/cursor-del-raton/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\interacciones\cursor-del-raton\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/interacciones/cursor-del-raton/cursors.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\interacciones\cursor-del-raton\cursors-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/interacciones/scroll-y-overflow/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\interacciones\scroll-y-overflow\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/interacciones/scroll-y-overflow/overflow-css.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\interacciones\scroll-y-overflow\overflow-css-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/interacciones/snap-scroll/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\interacciones\snap-scroll\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/introduccion/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/introduccion/cascada-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\cascada-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/introduccion/como-usar-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\como-usar-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/introduccion/css-custom-properties/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\css-custom-properties\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/introduccion/css-custom-properties/custom-properties-variables-css.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\css-custom-properties\custom-properties-variables-css-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/introduccion/estructura-de-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\estructura-de-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/introduccion/estructura-de-css/sintaxis-multiples-valores.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\estructura-de-css\sintaxis-multiples-valores-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/introduccion/estructura-de-css/sintaxis-simple.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\estructura-de-css\sintaxis-simple-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/introduccion/estructura-de-css/sintaxis-visual.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\estructura-de-css\sintaxis-visual-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/introduccion/guia-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\guia-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/introduccion/guia-css/CSSBook.cdn.js
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\guia-css\CSSBook.cdn-1.js
+Content Type: application/javascript
+
+Uri: https://lenguajecss.com/css/introduccion/guia-css/index.cdn.css
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\guia-css\index.cdn-1.css
+Content Type: text/css
+
+Uri: https://lenguajecss.com/css/introduccion/guia-css/index.cdn.js
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\guia-css\index.cdn-1.js
+Content Type: application/javascript
+
+Uri: https://lenguajecss.com/css/introduccion/guia-css/phone-bg.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\guia-css\phone-bg-1.jpg
+Content Type: image/jpeg
+
+Uri: https://lenguajecss.com/css/introduccion/herencia-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\herencia-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/introduccion/minificar-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\minificar-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/introduccion/navegadores-web/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\navegadores-web\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/introduccion/navegadores-web/platform-status.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\navegadores-web\platform-status-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/introduccion/navegadores-web/statcounter-2009-2016.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\navegadores-web\statcounter-2009-2016-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/introduccion/niveles-y-prefijos-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\niveles-y-prefijos-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/introduccion/niveles-y-prefijos-css/caniuse.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\niveles-y-prefijos-css\caniuse-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/introduccion/que-es-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\que-es-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/introduccion/que-es-css/html-css-navegador.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\que-es-css\html-css-navegador-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/introduccion/que-es-css/que-es-css.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\introduccion\que-es-css\que-es-css-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/logo.svg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\logo-1.svg
+Content Type: image/svg+xml
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/desplazamientos/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\desplazamientos\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/flexbox/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\flexbox\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/flexbox/flexbox-como-funciona.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\flexbox\flexbox-como-funciona-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/flexbox/flexbox-css.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\flexbox\flexbox-css-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\grid-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/grid-column-start-end-2.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\grid-css\grid-column-start-end-2-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/grid-column-start-end-3.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\grid-css\grid-column-start-end-3-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/grid-column-start-end.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\grid-css\grid-column-start-end-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/grid-css-auto-flow.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\grid-css\grid-css-auto-flow-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/grid-css-conceptos.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\grid-css\grid-css-conceptos-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/grid-css.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\grid-css\grid-css-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/grid-gap.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\grid-css\grid-gap-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/grid-linenames-zones.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\grid-css\grid-linenames-zones-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/grid-linenames.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\grid-css\grid-linenames-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/grid-template-areas.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\grid-css\grid-template-areas-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/grid-template-columns.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\grid-css\grid-template-columns-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/grid-unidad-fr.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\grid-css\grid-unidad-fr-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/posicionamiento-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\posicionamiento-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/posicionamiento-css/z-index.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\posicionamiento-css\z-index-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/maquetacion-y-colocacion/propiedad-display/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\maquetacion-y-colocacion\propiedad-display\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/mascaras-y-recortes/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\mascaras-y-recortes\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/mascaras-y-recortes/clip-path/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\mascaras-y-recortes\clip-path\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/mascaras-y-recortes/clip-path/clip-path-circle.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\mascaras-y-recortes\clip-path\clip-path-circle-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/mascaras-y-recortes/clip-path/clip-path-inset.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\mascaras-y-recortes\clip-path\clip-path-inset-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/mascaras-y-recortes/clip-path/clip-path-polygon.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\mascaras-y-recortes\clip-path\clip-path-polygon-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/mascaras-y-recortes/mask-image/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\mascaras-y-recortes\mask-image\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/mascaras-y-recortes/mask-image/mask-image.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\mascaras-y-recortes\mask-image\mask-image-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/border-radius/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\border-radius\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/border-radius/corners.svg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\border-radius\corners-1.svg
+Content Type: image/svg+xml
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/bordes-imagenes/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\bordes-imagenes\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/bordes-imagenes/9-slice.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\bordes-imagenes\9-slice-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/bordes-imagenes/border-image-css.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\bordes-imagenes\border-image-css-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/bordes-imagenes/border-image-repeat.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\bordes-imagenes\border-image-repeat-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/bordes-imagenes/ejemplo-border-image.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\bordes-imagenes\ejemplo-border-image-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/bordes/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\bordes\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/bordes/border-styles.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\bordes\border-styles-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/funciones-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\funciones-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/margenes-y-rellenos/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\margenes-y-rellenos\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/margenes-y-rellenos/margin-overlap.svg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\margenes-y-rellenos\margin-overlap-1.svg
+Content Type: image/svg+xml
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/propiedades-logicas-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\propiedades-logicas-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/propiedades-logicas-css/classic-vs-logical-properties.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\propiedades-logicas-css\classic-vs-logical-properties-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/propiedades-logicas-css/logical-properties-extra.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\propiedades-logicas-css\logical-properties-extra-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/propiedades-logicas-css/logical-properties.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\propiedades-logicas-css\logical-properties-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/que-es/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\que-es\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/que-es/css-is-awesome.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\que-es\css-is-awesome-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/que-es/modelo-de-cajas.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\que-es\modelo-de-cajas-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/que-es/positions.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\que-es\positions-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/unidades-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\unidades-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/unidades-css/unidades-absolutas.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\unidades-css\unidades-absolutas-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/unidades-css/unidades-relativas-em.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\unidades-css\unidades-relativas-em-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/modelo-de-cajas/unidades-css/x-height.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\modelo-de-cajas\unidades-css\x-height-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/reglas-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\reglas-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/reglas-css/la-regla-import/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\reglas-css\la-regla-import\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/reglas-css/la-regla-layer/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\reglas-css\la-regla-layer\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/reglas-css/la-regla-supports/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\reglas-css\la-regla-supports\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/reglas-css/que-son-reglas-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\reglas-css\que-son-reglas-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/representacion-datos/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\representacion-datos\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/representacion-datos/contadores-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\representacion-datos\contadores-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/representacion-datos/listas-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\representacion-datos\listas-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/representacion-datos/listas-css/DemoList.cdn.js
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\representacion-datos\listas-css\DemoList.cdn-1.js
+Content Type: application/javascript
+
+Uri: https://lenguajecss.com/css/representacion-datos/tablas-css/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\representacion-datos\tablas-css\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/responsive-web-design/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/responsive-web-design/bases-responsive/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\bases-responsive\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/responsive-web-design/bases-responsive/rwd-porcentajes.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\bases-responsive\rwd-porcentajes-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/responsive-web-design/media-queries/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\media-queries\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/responsive-web-design/media-queries/device-width.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\media-queries\device-width-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/responsive-web-design/medios-impresos/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\medios-impresos\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/responsive-web-design/medios-impresos/ecofont.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\medios-impresos\ecofont-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/responsive-web-design/medios-paginados/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\medios-paginados\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/responsive-web-design/medios-paginados/paginacion.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\medios-paginados\paginacion-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/responsive-web-design/preferencias-usuario/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\preferencias-usuario\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/responsive-web-design/que-es/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\que-es\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/responsive-web-design/que-es/breakpoints-vs-non-breakpoints.gif
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\que-es\breakpoints-vs-non-breakpoints-1.gif
+Content Type: image/gif
+
+Uri: https://lenguajecss.com/css/responsive-web-design/que-es/breakpoints-vs-non-breakpoints.mp4
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\que-es\breakpoints-vs-non-breakpoints-1.mp4
+Content Type: video/mp4
+
+Uri: https://lenguajecss.com/css/responsive-web-design/que-es/flow-vs-static.gif
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\que-es\flow-vs-static-1.gif
+Content Type: image/gif
+
+Uri: https://lenguajecss.com/css/responsive-web-design/que-es/flow-vs-static.mp4
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\que-es\flow-vs-static-1.mp4
+Content Type: video/mp4
+
+Uri: https://lenguajecss.com/css/responsive-web-design/que-es/max-width-vs-no-max-width.gif
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\que-es\max-width-vs-no-max-width-1.gif
+Content Type: image/gif
+
+Uri: https://lenguajecss.com/css/responsive-web-design/que-es/max-width-vs-no-max-width.mp4
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\que-es\max-width-vs-no-max-width-1.mp4
+Content Type: video/mp4
+
+Uri: https://lenguajecss.com/css/responsive-web-design/que-es/relative-units-vs-static-units.gif
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\que-es\relative-units-vs-static-units-1.gif
+Content Type: image/gif
+
+Uri: https://lenguajecss.com/css/responsive-web-design/que-es/relative-units-vs-static-units.mp4
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\que-es\relative-units-vs-static-units-1.mp4
+Content Type: video/mp4
+
+Uri: https://lenguajecss.com/css/responsive-web-design/que-es/responsive-adaptative.mp4
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\que-es\responsive-adaptative-1.mp4
+Content Type: video/mp4
+
+Uri: https://lenguajecss.com/css/responsive-web-design/que-es/responsive-vs-adaptative.gif
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\que-es\responsive-vs-adaptative-1.gif
+Content Type: image/gif
+
+Uri: https://lenguajecss.com/css/responsive-web-design/que-es/responsive-web-design.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\que-es\responsive-web-design-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/responsive-web-design/que-es/web-responsive.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\responsive-web-design\que-es\web-responsive-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/selectores/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/selectores/atributos/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\atributos\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/selectores/atributos/sintaxis-atributos.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\atributos\sintaxis-atributos-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/selectores/pseudoclases-avanzadas/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\pseudoclases-avanzadas\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/selectores/pseudoclases-avanzadas/first-last-child.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\pseudoclases-avanzadas\first-last-child-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/selectores/pseudoclases-avanzadas/nth-child-1.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\pseudoclases-avanzadas\nth-child-1-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/selectores/pseudoclases-avanzadas/nth-of-type.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\pseudoclases-avanzadas\nth-of-type-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/selectores/pseudoclases-avanzadas/NthTest.cdn.js
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\pseudoclases-avanzadas\NthTest.cdn-1.js
+Content Type: application/javascript
+
+Uri: https://lenguajecss.com/css/selectores/pseudoclases/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\pseudoclases\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/selectores/pseudoclases/sintaxis-pseudoclases.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\pseudoclases\sintaxis-pseudoclases-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/selectores/pseudoelementos/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\pseudoelementos\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/selectores/pseudoelementos/first-letter-first-line.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\pseudoelementos\first-letter-first-line-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/selectores/pseudoelementos/sintaxis-pseudoelementos.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\pseudoelementos\sintaxis-pseudoelementos-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/selectores/selectores-avanzados/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\selectores-avanzados\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/selectores/selectores-avanzados/peter-griffin-css.gif
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\selectores-avanzados\peter-griffin-css-1.gif
+Content Type: image/gif
+
+Uri: https://lenguajecss.com/css/selectores/selectores-avanzados/selector-descendiente.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\selectores-avanzados\selector-descendiente-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/selectores/selectores-avanzados/selector-hermano-adyacente.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\selectores-avanzados\selector-hermano-adyacente-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/selectores/selectores-avanzados/selector-hermano-general.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\selectores-avanzados\selector-hermano-general-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/selectores/selectores-avanzados/selector-hijo.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\selectores-avanzados\selector-hijo-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/selectores/selectores-avanzados/selector-universal.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\selectores-avanzados\selector-universal-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/selectores/selectores-basicos/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\selectores-basicos\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/selectores/selectores-basicos/sintaxis-basica.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\selectores\selectores-basicos\sintaxis-basica-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/sombras/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\sombras\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/sombras/box-shadow/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\sombras\box-shadow\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/sombras/drop-shadow/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\sombras\drop-shadow\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/sombras/drop-shadow/box-shadow-vs-drop-shadow.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\sombras\drop-shadow\box-shadow-vs-drop-shadow-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/sombras/text-shadow/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\sombras\text-shadow\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/transformaciones/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\transformaciones\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/transformaciones/perspective/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\transformaciones\perspective\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/transformaciones/transform-3d/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\transformaciones\transform-3d\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/transformaciones/transform-3d/transform-axis-x-y-z.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\transformaciones\transform-3d\transform-axis-x-y-z-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/css/transformaciones/transform-rotate/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\transformaciones\transform-rotate\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/transformaciones/transform-scale/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\transformaciones\transform-scale\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/transformaciones/transform-skew/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\transformaciones\transform-skew\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/transformaciones/transform-translate/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\transformaciones\transform-translate\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/transformaciones/transform/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\transformaciones\transform\index-1.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/css/transformaciones/transform/transform-css.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\css\transformaciones\transform\transform-css-1.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/favicon.ico
+File Name: C:\Downloaded Web Sites\lenguajecss.com\favicon-1.ico
+Content Type: image/x-icon
+
+Uri: https://lenguajecss.com/main.js
+File Name: C:\Downloaded Web Sites\lenguajecss.com\main-1.js
+Content Type: application/javascript
+
+Uri: https://lenguajecss.com/postcss/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\index.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/postcss/introduccion/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\introduccion\index.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/postcss/introduccion/browserslist/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\introduccion\browserslist\index.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/postcss/introduccion/browserslist/browserslist.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\introduccion\browserslist\browserslist.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/postcss/introduccion/configuracion-postcss/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\introduccion\configuracion-postcss\index.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/postcss/introduccion/que-es/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\introduccion\que-es\index.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/postcss/introduccion/que-es/postcss-a-css.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\introduccion\que-es\postcss-a-css.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/postcss/logo.svg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\logo.svg
+Content Type: image/svg+xml
+
+Uri: https://lenguajecss.com/postcss/plugins/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\plugins\index.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/postcss/plugins/autoprefixer/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\plugins\autoprefixer\index.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/postcss/plugins/autoprefixer/autoprefixer.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\plugins\autoprefixer\autoprefixer.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/postcss/plugins/css-nesting/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\plugins\css-nesting\index.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/postcss/plugins/css-nesting/css-nesting.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\plugins\css-nesting\css-nesting.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/postcss/plugins/purgecss/
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\plugins\purgecss\index.htm
+Content Type: text/html
+
+Uri: https://lenguajecss.com/postcss/plugins/purgecss/google-chrome-coverage.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\plugins\purgecss\google-chrome-coverage.png
+Content Type: image/png
+
+Uri: https://lenguajecss.com/postcss/plugins/purgecss/purgecss.jpg
+File Name: C:\Downloaded Web Sites\lenguajecss.com\postcss\plugins\purgecss\purgecss.jpg
+Content Type: image/jpeg
+
+Uri: https://lenguajecss.com/theme.css
+File Name: C:\Downloaded Web Sites\lenguajecss.com\theme-1.css
+Content Type: text/css
+
+Uri: https://lenguajecss.disqus.com/count.js
+File Name: C:\Downloaded Web Sites\lenguajecss.com\count-1.js
+Content Type: application/javascript
+
+Uri: https://manz.dev/manz-logo.png
+File Name: C:\Downloaded Web Sites\lenguajecss.com\manz-logo.png
+Content Type: image/png
+
+Uri: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+File Name: C:\Downloaded Web Sites\lenguajecss.com\pagead\js\f-1.txt
+Content Type: text/javascript
+
+Uri: https://www.google-analytics.com/analytics.js
+File Name: C:\Downloaded Web Sites\lenguajecss.com\analytics-1.js
+Content Type: text/javascript
+

@@ -1,0 +1,848 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <title>Lenguaje CSS - CSS en español - Lenguaje CSS</title>
+  <link rel="preload" href="../critical.css" as="style">
+  <link rel="preload" href="../assets/fonts/blinker-vf.woff2" as="font" crossorigin="">
+  <link rel="preload" href="../assets/fonts/scope-one-400.woff2" as="font" crossorigin="">
+  <meta name="description" content="Lenguaje de hojas de estilos utilizado en el diseño web para dotar de aspecto visual a una página web.">
+  <link rel="stylesheet" href="../critical.css">
+  <link rel="stylesheet" href="../theme.css">
+  <script type="module" src="../main.js"></script>
+  <link rel="canonical" href="index.htm">
+  <meta property="og:title" content="Lenguaje CSS - CSS en español">
+  <meta property="og:image" content="https://lenguajecss.com/large-summary.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="Lenguaje de hojas de estilos utilizado en el diseño web para dotar de aspecto visual a una página web.">
+  <meta property="og:url" content="https://lenguajecss.com/css/">
+  <meta property="twitter:url" content="https://lenguajecss.com/css/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="@Manz">
+  <meta property="twitter:title" content="Lenguaje CSS - CSS en español">
+  <meta property="twitter:description" content="Lenguaje de hojas de estilos utilizado en el diseño web para dotar de aspecto visual a una página web.">
+  <meta property="twitter:image:src" content="https://lenguajecss.com/large-summary.jpg">
+</head>
+<body class="css main"><div class="mainpage">
+    
+
+<div class="sidebar"><div class="logo flex-center">
+  <a href="/">
+    <img width="42" height="42" src="../assets/logo.svg" alt="Logo">
+    Lenguaje CSS
+  </a>
+  <div class="icons" style="--icon-size: 32px; --icon-side-padding: 0.15em">
+    <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+    <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+    <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+    <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+    <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+  </div>
+  <span>Un sitio web de <a href="https://manz.dev/"><mark>Manz.dev</mark></a></span>
+</div>
+<form class="search flex-center" action="https://www.google.com/search">
+  <label><span>Buscar:</span> <input type="search" name="q" placeholder="Buscar un tema (ej: flex, grid...)" autocomplete="off"></label>
+  <label><span>Sitio:</span> <input type="hidden" name="q" value="site:lenguajejs.com OR site:lenguajecss.com OR site:lenguajehtml.com OR site:terminaldelinux.com OR site:manz.dev"></label>
+  <div class="search-results"></div>
+</form>
+<sidebar-link title="HTML5" subtitle="Etiquetas HTML" href="https://lenguajehtml.com/html/" icon=""></sidebar-link>
+  <sidebar-link title="SVG" subtitle="Etiquetas SVG" href="https://lenguajehtml.com/svg/" icon="" beta=""></sidebar-link>
+  <sidebar-link title="CSS" subtitle="CSS vanilla" href="index.htm" icon=""></sidebar-link>
+  <sidebar-link title="PostCSS" subtitle="Transformador CSS" href="https://lenguajecss.com/postcss/" icon=""></sidebar-link>
+  <sidebar-link title="Javascript" subtitle="Javascript ES2022+" href="https://lenguajejs.com/javascript/" icon=""></sidebar-link>
+  <sidebar-link title="NPM" subtitle="Node Package Manager" href="https://lenguajejs.com/npm/" icon=""></sidebar-link>
+  <sidebar-link title="WebComponents" subtitle="Componentes web" href="https://lenguajejs.com/webcomponents/" icon=""></sidebar-link>
+  <sidebar-link title="Terminal" subtitle="Terminal de GNU/Linux" href="https://terminaldelinux.com/terminal/" icon=""></sidebar-link>
+  <sidebar-link title="VueJS" subtitle="Framework VueJS 3" href="https://lenguajejs.com/vuejs/" icon=""></sidebar-link>
+  <sidebar-link title="Automatizadores" subtitle="Empaquetadores Javascript" href="https://lenguajejs.com/automatizadores/" icon=""></sidebar-link>
+  <sidebar-link title="Retos" subtitle="Retos de Frontend" href="https://lenguajejs.com/retos/" icon=""></sidebar-link>
+  
+</div>
+
+
+    <div class="content-list">
+      <header class="mega">
+  <div class="text-wrapper">
+    <span>Hojas de estilo</span>
+    <h2>Lenguaje CSS</h2>
+    <p class="description">Lenguaje de hojas de estilos utilizado en el diseño web para dotar de aspecto visual a una página web.</p>
+  </div>
+  <div class="cover">
+    <img class="inner-logo" src="logo.svg" alt="Logo">
+    <img class="design" src="../assets/css.jpg" alt="Lenguaje CSS">
+  </div>
+</header>
+
+      <div class="contents">
+        <div class="list"><div class="category-header">
+        <h4>Introducción a CSS</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="introduccion/que-es-css/index.htm">
+              <span>¿Qué es CSS?</span>
+              <span class="text">Lenguaje de estilos para dotar de aspecto visual</span>
+              <span class="extra"><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="introduccion/como-usar-css/index.htm">
+              <span>¿Cómo usar CSS?</span>
+              <span class="text">Formas de aplicar CSS a una página web</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="introduccion/estructura-de-css/index.htm">
+              <span>Estructura de CSS</span>
+              <span class="text">Sintaxis inicial para escribir código CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="introduccion/minificar-css/index.htm">
+              <span>Minificar CSS</span>
+              <span class="text">Compactar archivos CSS y borrar carácteres prescindibles</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="introduccion/navegadores-web/index.htm">
+              <span>Navegadores web</span>
+              <span class="text">Navegadores web, motores y sus diferencias</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="introduccion/niveles-y-prefijos-css/index.htm">
+              <span>Niveles de CSS y prefijos</span>
+              <span class="text">Cómo se estructuran las versiones (niveles) de CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="introduccion/herencia-css/index.htm">
+              <span>Herencia en CSS</span>
+              <span class="text">La herencia o sobreescritura de propiedades en CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="introduccion/cascada-css/index.htm">
+              <span>Cascada en CSS</span>
+              <span class="text">La cascada de CSS: Importancia, Especificidad y Orden</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="introduccion/css-custom-properties/index.htm">
+              <span>Variables CSS</span>
+              <span class="text">CSS Custom Properties: Variables nativas de CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="introduccion/guia-css/index.htm">
+              <span>La guía de propiedades CSS</span>
+              <span class="text">Guía «telefónica» de propiedades CSS</span>
+              <span class="extra"><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+<div class="category-header">
+        <h4>Modelo de cajas</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="modelo-de-cajas/unidades-css/index.htm">
+              <span>Unidades CSS</span>
+              <span class="text">Conoce las unidades para indicar tamaños o distancias</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="modelo-de-cajas/que-es/index.htm">
+              <span>Modelo de cajas</span>
+              <span class="text">Modelo de cajas: Márgen, borde, relleno y contenido</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="modelo-de-cajas/margenes-y-rellenos/index.htm">
+              <span>Márgenes y rellenos</span>
+              <span class="text">Las propiedades margin, padding y relacionadas</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="modelo-de-cajas/bordes/index.htm">
+              <span>Bordes CSS</span>
+              <span class="text">Características de los bordes de los elementos</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="modelo-de-cajas/border-radius/index.htm">
+              <span>Esquinas redondeadas</span>
+              <span class="text">La propiedad border-radius para redondear esquinas</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="modelo-de-cajas/propiedades-logicas-css/index.htm">
+              <span>Propiedades lógicas CSS</span>
+              <span class="text">Propiedades lógicas para reemplazar el modelo de cajas</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="modelo-de-cajas/bordes-imagenes/index.htm">
+              <span>Bordes con imágenes</span>
+              <span class="text">La técnica 9-slice para crear bordes con imágenes</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="modelo-de-cajas/funciones-css/index.htm">
+              <span>Funciones CSS</span>
+              <span class="text">Funciones CSS para calcular cantidades específicas</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+<div class="category-header">
+        <h4>Colores, fondos e imágenes</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="colores-y-fondos/colores-css/index.htm">
+              <span>Colores CSS</span>
+              <span class="text">Establecer colores de texto y de fondo</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="colores-y-fondos/propiedad-opacity/index.htm">
+              <span>La propiedad opacity</span>
+              <span class="text">Establecer transparencia en un elemento</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="colores-y-fondos/propiedad-background-image/index.htm">
+              <span>La propiedad background-image</span>
+              <span class="text">Establecer imágenes de fondo en CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="colores-y-fondos/linear-gradient/index.htm">
+              <span>Gradientes lineales</span>
+              <span class="text">La función linear-gradient() de CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="colores-y-fondos/radial-gradient/index.htm">
+              <span>Gradientes radiales</span>
+              <span class="text">La función radial-gradient() de CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="colores-y-fondos/conic-gradient/index.htm">
+              <span>Gradientes cónicos</span>
+              <span class="text">La función conic-gradient() de CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="colores-y-fondos/imagenes-css/index.htm">
+              <span>Imágenes y Objetos</span>
+              <span class="text">Propiedades para modificar objetos e imágenes</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+<div class="category-header">
+        <h4>Selectores CSS</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="selectores/selectores-basicos/index.htm">
+              <span>Selectores CSS básicos</span>
+              <span class="text">Formas básicas de seleccionar elementos (clases, ids, etc...)</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="selectores/selectores-avanzados/index.htm">
+              <span>Selectores CSS avanzados</span>
+              <span class="text">Formas de seleccionar elementos por sus relaciones</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="selectores/pseudoclases/index.htm">
+              <span>Pseudoclases CSS</span>
+              <span class="text">Formas de seleccionar elementos por comportamiento</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="selectores/pseudoclases-avanzadas/index.htm">
+              <span>Pseudoclases CSS avanzadas</span>
+              <span class="text">Formas de seleccionar elementos por su estructura</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="selectores/pseudoelementos/index.htm">
+              <span>Pseudoelementos CSS</span>
+              <span class="text">Formas de seleccionar aspectos inexistentes en el HTML</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="selectores/atributos/index.htm">
+              <span>Atributos CSS</span>
+              <span class="text">Formas de seleccionar elementos según sus atributos</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+<div class="category-header">
+        <h4>Reglas CSS</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="reglas-css/que-son-reglas-css/index.htm">
+              <span>¿Qué son las reglas CSS?</span>
+              <span class="text">Reglas CSS, precedidas por el carácter @</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="reglas-css/la-regla-import/index.htm">
+              <span>La regla @import</span>
+              <span class="text">Regla para incluir CSS externo de otros archivos</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="reglas-css/la-regla-layer/index.htm">
+              <span>La regla @layer</span>
+              <span class="text">Crear capas CSS con código independiente</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="reglas-css/la-regla-supports/index.htm">
+              <span>La regla @supports</span>
+              <span class="text">Crear reglas condicionales y fallbacks en CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+<div class="category-header">
+        <h4>Fuentes y tipografías</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="fuentes-y-tipografias/tipografias/index.htm">
+              <span>Tipografías CSS</span>
+              <span class="text">Bases de las tipografías y fuentes en CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="fuentes-y-tipografias/tipografias-externas/index.htm">
+              <span>Tipografías externas</span>
+              <span class="text">Utilizar tipografías externas (no instaladas)</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="fuentes-y-tipografias/fuentes-variables/index.htm">
+              <span>Fuentes variables CSS</span>
+              <span class="text">Tipografías con pesos variables en un solo archivo</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="fuentes-y-tipografias/textos-y-alineaciones/index.htm">
+              <span>Textos y alineaciones</span>
+              <span class="text">Propiedades CSS para alinear o aplicar a textos</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="fuentes-y-tipografias/propiedades-avanzadas/index.htm">
+              <span>Propiedades avanzadas</span>
+              <span class="text">Otras propiedades CSS avanzadas para tipografías</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="fuentes-y-tipografias/caracteristicas-personalizadas/index.htm">
+              <span>Características personalizadas</span>
+              <span class="text">Activar características especiales en tipografías</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+<div class="category-header">
+        <h4>Representación de datos</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="representacion-datos/tablas-css/index.htm">
+              <span>Tablas CSS</span>
+              <span class="text">Dar estilos a tablas HTML</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="representacion-datos/listas-css/index.htm">
+              <span>Listas CSS</span>
+              <span class="text">Dar estilo a listas HTML</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="representacion-datos/contadores-css/index.htm">
+              <span>Contadores CSS</span>
+              <span class="text">CSS Counters: Contando con CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+<div class="category-header">
+        <h4>Maquetación y colocación</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="maquetacion-y-colocacion/propiedad-display/index.htm">
+              <span>La propiedad display</span>
+              <span class="text">Conceptos fundamentales de maquetación</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="maquetacion-y-colocacion/posicionamiento-css/index.htm">
+              <span>La propiedad position</span>
+              <span class="text">Formas especiales de colocar o posicionar elementos</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="maquetacion-y-colocacion/desplazamientos/index.htm">
+              <span>La propiedad float</span>
+              <span class="text">Elementos flotantes (Desplazamientos)</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="maquetacion-y-colocacion/flexbox/index.htm">
+              <span>Flexbox CSS</span>
+              <span class="text">Modelo de cajas flexibles (Flex)</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="maquetacion-y-colocacion/grid-css/index.htm">
+              <span>Grid CSS</span>
+              <span class="text">Cuadrículas, grillas o rejillas</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+<div class="category-header">
+        <h4>Interacciones</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="interacciones/contornos/index.htm">
+              <span>Contornos</span>
+              <span class="text">Resaltado de contorno para propósitos de accesibilidad</span>
+              <span class="extra"><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="interacciones/cursor-del-raton/index.htm">
+              <span>Cursor del ratón</span>
+              <span class="text">Formas de personalizar el cursor del ratón del usuario</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="interacciones/scroll-y-overflow/index.htm">
+              <span>Scroll y Overflow</span>
+              <span class="text">Suavizar efecto de scroll</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="interacciones/snap-scroll/index.htm">
+              <span>CSS Snap Scroll</span>
+              <span class="text">Ajuste de scroll</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+<div class="category-header">
+        <h4>Sombras</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="sombras/text-shadow/index.htm">
+              <span>Sombras CSS en textos</span>
+              <span class="text">La propiedad text-shadow</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="sombras/box-shadow/index.htm">
+              <span>Sombras CSS en cajas</span>
+              <span class="text">La propiedad box-shadow</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="sombras/drop-shadow/index.htm">
+              <span>Sombras idénticas CSS</span>
+              <span class="text">La función drop-shadow() de la propiedad filter</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+<div class="category-header">
+        <h4>Efectos</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="efectos/filtros-css/index.htm">
+              <span>Filtros CSS</span>
+              <span class="text">Aplicación de filtros para modificaciones visuales</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="efectos/modos-de-fusion/index.htm">
+              <span>Modos de fusión CSS</span>
+              <span class="text">Mecanismos para fusionar y mezclar elementos</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+<div class="category-header">
+        <h4>Máscaras y recortes</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="mascaras-y-recortes/clip-path/index.htm">
+              <span>La propiedad clip-path</span>
+              <span class="text">Diferentes formas de realizar recortes mediante CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="mascaras-y-recortes/mask-image/index.htm">
+              <span>La propiedad mask-image</span>
+              <span class="text">Máscaras en elementos</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+<div class="category-header">
+        <h4>Responsive Web Design</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="responsive-web-design/que-es/index.htm">
+              <span>¿Qué es Responsive Design?</span>
+              <span class="text">Crear diseños adaptables a dispositivos móviles</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="responsive-web-design/bases-responsive/index.htm">
+              <span>Bases del Responsive Design</span>
+              <span class="text">Conceptos y características a conocer del RWD</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="responsive-web-design/media-queries/index.htm">
+              <span>Media Queries</span>
+              <span class="text">Reglas especiales para establecer excepciones en CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="responsive-web-design/medios-impresos/index.htm">
+              <span>Medios impresos</span>
+              <span class="text">Media queries para adaptar contenido a impresiones</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="responsive-web-design/medios-paginados/index.htm">
+              <span>Medios paginados</span>
+              <span class="text">Media queries para adaptar contenido a páginas</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="responsive-web-design/preferencias-usuario/index.htm">
+              <span>Preferencias de usuario</span>
+              <span class="text">Detectar preferencias del usuario en su sistema operativo</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+<div class="category-header">
+        <h4>Animaciones CSS</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="animaciones/transiciones/index.htm">
+              <span>Transiciones CSS</span>
+              <span class="text">Suavizar cambios de estilo en interacciones del usuario</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="animaciones/timing-function/index.htm">
+              <span>Funciones de tiempo</span>
+              <span class="text">Cambiando el ritmo con propiedades *-timing-function</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="animaciones/animaciones/index.htm">
+              <span>Animaciones CSS</span>
+              <span class="text">Propiedades para crear animaciones en CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="animaciones/keyframes/index.htm">
+              <span>La regla @keyframes</span>
+              <span class="text">Crear fotogramas clave de una animación</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+<div class="category-header">
+        <h4>Transformaciones CSS</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="transformaciones/transform/index.htm">
+              <span>Transformaciones CSS</span>
+              <span class="text">La propiedad transform de CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="transformaciones/transform-translate/index.htm">
+              <span>Translaciones 2D</span>
+              <span class="text">Trasladar: La función CSS translate()</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="transformaciones/transform-rotate/index.htm">
+              <span>Rotaciones 2D</span>
+              <span class="text">Rotaciones: La función CSS rotate()</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="transformaciones/transform-scale/index.htm">
+              <span>Escalado 2D</span>
+              <span class="text">Reescalar: La función CSS scale()</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="transformaciones/transform-skew/index.htm">
+              <span>Deformaciones 2D</span>
+              <span class="text">Las funciones CSS skewX() y skewY()</span>
+              <span class="extra"><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="transformaciones/transform-3d/index.htm">
+              <span>Transformaciones 3D</span>
+              <span class="text">Funciones de transformación en 3D</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="transformaciones/perspective/index.htm">
+              <span>Perspectivas CSS</span>
+              <span class="text">Establecer punto de fuga para perspectivas en CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+<div class="category-header">
+        <h4>Dibujar con CSS</h4>
+      </div>
+      <div class="cards-container">
+  <div class="card-item">
+          <div>
+            <a href="dibujar-con-css/como-empezar/index.htm">
+              <span>¿Cómo dibujar con CSS?</span>
+              <span class="text">Algunos consejos y advertencias antes de empezar</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="dibujar-con-css/estructura-html/index.htm">
+              <span>Primeros pasos: Estructura HTML</span>
+              <span class="text">Primeros pasos para dibujar con CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span><span class="e"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div><div class="card-item">
+          <div>
+            <a href="dibujar-con-css/estructura-css/index.htm">
+              <span>Primeros pasos: Estructura CSS</span>
+              <span class="text">Primeros pasos para dibujar con CSS</span>
+              <span class="extra"><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="f"></span><span class="e"></span></span>
+            </a>
+          </div>
+        </div>
+</div>
+
+</div>
+
+      </div>
+    </div>
+  </div><footer class="main">
+  <div class="square">
+    <a href="/"><h2>Lenguaje CSS</h2></a>
+    <div class="icons">
+      <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+      <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+      <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+      <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+      <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+      <a href="https://github.com/ManzDev" title="GitHub"><svg-icon type="social" name="github"></svg-icon></a>
+      <a href="https://codepen.io/Manz" title="Codepen"><svg-icon type="social" name="codepen"></svg-icon></a>
+      <a href="https://www.linkedin.com/in/joseromanhdez/" title="Linkedin"><svg-icon type="social" name="linkedin"></svg-icon></a>
+    </div>
+    <p>Documentación sobre CSS y las mejores herramientas y recursos para aprender a utilizar el lenguaje de estilos CSS (Hojas de estilo).</p>
+    <p id="footer">Creado y mantenido por <a href="https://twitter.com/Manz">@Manz</a> con <span title="<3">❤</span></p></div>
+</footer>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-136544-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async="" src='../analytics.js'></script>
+
+
+</body>
+</html>

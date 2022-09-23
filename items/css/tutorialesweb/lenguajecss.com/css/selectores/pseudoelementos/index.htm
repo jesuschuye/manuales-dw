@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+  <link rel="shortcut icon" href="../../../favicon.ico">
+  <title>Pseudoelementos CSS - CSS en español - Lenguaje CSS</title>
+  <link rel="preload" href="../../../critical.css" as="style">
+  <link rel="preload" href="../../../assets/fonts/blinker-vf.woff2" as="font" crossorigin="">
+  <link rel="preload" href="../../../assets/fonts/scope-one-400.woff2" as="font" crossorigin="">
+  <meta name="description" content="Los pseudoelementos CSS permiten aplicar estilos que añaden elementos (o estilos) que realmente no existen originalmente en el documento HTML.">
+  <link rel="stylesheet" href="../../../critical.css">
+  <link rel="stylesheet" href="../../../theme.css">
+  <script type="module" src="../../../main.js"></script>
+  <link rel="canonical" href="index.htm">
+  <meta property="og:title" content="Pseudoelementos CSS - CSS en español">
+  <meta property="og:image" content="https://lenguajecss.com/css/large-summary.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="Los pseudoelementos CSS permiten aplicar estilos que añaden elementos (o estilos) que realmente no existen originalmente en el documento HTML.">
+  <meta property="og:url" content="https://lenguajecss.com/css/selectores/pseudoelementos/">
+  <meta property="twitter:url" content="https://lenguajecss.com/css/selectores/pseudoelementos/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="@Manz">
+  <meta property="twitter:title" content="Pseudoelementos CSS - CSS en español">
+  <meta property="twitter:description" content="Los pseudoelementos CSS permiten aplicar estilos que añaden elementos (o estilos) que realmente no existen originalmente en el documento HTML.">
+  <meta property="twitter:image:src" content="https://lenguajecss.com/css/large-summary.jpg">
+</head>
+<body class="css post"><div class="page">
+    <div class="sidebar">
+      <div class="logo flex-center">
+  <a href="/">
+    <img width="42" height="42" src="../../../assets/logo.svg" alt="Logo">
+    Lenguaje CSS
+  </a>
+  <div class="icons" style="--icon-size: 32px; --icon-side-padding: 0.15em">
+    <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+    <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+    <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+    <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+    <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+  </div>
+  <span>Un sitio web de <a href="https://manz.dev/"><mark>Manz.dev</mark></a></span>
+</div>
+
+      <form class="search flex-center" action="https://www.google.com/search">
+  <label><span>Buscar:</span> <input type="search" name="q" placeholder="Buscar un tema (ej: flex, grid...)" autocomplete="off"></label>
+  <label><span>Sitio:</span> <input type="hidden" name="q" value="site:lenguajejs.com OR site:lenguajecss.com OR site:lenguajehtml.com OR site:terminaldelinux.com OR site:manz.dev"></label>
+  <div class="search-results"></div>
+</form>
+
+      
+
+<style>
+  sidebar-link {
+    --logo-image: url(../../logo.svg);
+  }
+</style>
+
+<div class="toc"><sidebar-link title="Volver al índice" href="../../index.htm" back="" direct=""></sidebar-link><sidebar-link href="../../cheatsheets/index.htm" title="CSS3 Cheatsheet" direct=""></sidebar-link><sidebar-section title="Introducción a CSS" href="../../introduccion/index.htm"><sidebar-link href="../../introduccion/que-es-css/index.htm" title="¿Qué es CSS?"></sidebar-link><sidebar-link href="../../introduccion/como-usar-css/index.htm" title="¿Cómo usar CSS?"></sidebar-link><sidebar-link href="../../introduccion/estructura-de-css/index.htm" title="Estructura de CSS"></sidebar-link><sidebar-link href="../../introduccion/minificar-css/index.htm" title="Minificar CSS"></sidebar-link><sidebar-link href="../../introduccion/navegadores-web/index.htm" title="Navegadores web"></sidebar-link><sidebar-link href="../../introduccion/niveles-y-prefijos-css/index.htm" title="Niveles de CSS y prefijos"></sidebar-link><sidebar-link href="../../introduccion/herencia-css/index.htm" title="Herencia en CSS"></sidebar-link><sidebar-link href="../../introduccion/cascada-css/index.htm" title="Cascada en CSS"></sidebar-link><sidebar-link href="../../introduccion/css-custom-properties/index.htm" title="Variables CSS"></sidebar-link><sidebar-link href="../../introduccion/guia-css/index.htm" title="La guía de propiedades CSS"></sidebar-link></sidebar-section><sidebar-section title="Modelo de cajas" href="../../modelo-de-cajas/index.htm"><sidebar-link href="../../modelo-de-cajas/unidades-css/index.htm" title="Unidades CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/que-es/index.htm" title="Modelo de cajas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/margenes-y-rellenos/index.htm" title="Márgenes y rellenos"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes/index.htm" title="Bordes CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/border-radius/index.htm" title="Esquinas redondeadas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/propiedades-logicas-css/index.htm" title="Propiedades lógicas CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes-imagenes/index.htm" title="Bordes con imágenes"></sidebar-link><sidebar-link href="../../modelo-de-cajas/funciones-css/index.htm" title="Funciones CSS"></sidebar-link></sidebar-section><sidebar-section title="Colores, fondos e imágenes" href="../../colores-y-fondos/index.htm"><sidebar-link href="../../colores-y-fondos/colores-css/index.htm" title="Colores CSS"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-opacity/index.htm" title="La propiedad opacity"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-background-image/index.htm" title="La propiedad background-image"></sidebar-link><sidebar-link href="../../colores-y-fondos/linear-gradient/index.htm" title="Gradientes lineales"></sidebar-link><sidebar-link href="../../colores-y-fondos/radial-gradient/index.htm" title="Gradientes radiales"></sidebar-link><sidebar-link href="../../colores-y-fondos/conic-gradient/index.htm" title="Gradientes cónicos"></sidebar-link><sidebar-link href="../../colores-y-fondos/imagenes-css/index.htm" title="Imágenes y Objetos"></sidebar-link></sidebar-section><sidebar-section title="Selectores CSS" href="../index.htm"><sidebar-link href="../selectores-basicos/index.htm" title="Selectores CSS básicos"></sidebar-link><sidebar-link href="../selectores-avanzados/index.htm" title="Selectores CSS avanzados"></sidebar-link><sidebar-link href="../pseudoclases/index.htm" title="Pseudoclases CSS"></sidebar-link><sidebar-link href="../pseudoclases-avanzadas/index.htm" title="Pseudoclases CSS avanzadas"></sidebar-link><sidebar-link href="index.htm" title="Pseudoelementos CSS"></sidebar-link><sidebar-link href="../atributos/index.htm" title="Atributos CSS"></sidebar-link></sidebar-section><sidebar-section title="Reglas CSS" href="../../reglas-css/index.htm"><sidebar-link href="../../reglas-css/que-son-reglas-css/index.htm" title="¿Qué son las reglas CSS?"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-import/index.htm" title="La regla @import"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-layer/index.htm" title="La regla @layer"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-supports/index.htm" title="La regla @supports"></sidebar-link></sidebar-section><sidebar-section title="Fuentes y tipografías" href="../../fuentes-y-tipografias/index.htm"><sidebar-link href="../../fuentes-y-tipografias/tipografias/index.htm" title="Tipografías CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/tipografias-externas/index.htm" title="Tipografías externas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/fuentes-variables/index.htm" title="Fuentes variables CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/textos-y-alineaciones/index.htm" title="Textos y alineaciones"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/propiedades-avanzadas/index.htm" title="Propiedades avanzadas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/caracteristicas-personalizadas/index.htm" title="Características personalizadas"></sidebar-link></sidebar-section><sidebar-section title="Representación de datos" href="../../representacion-datos/index.htm"><sidebar-link href="../../representacion-datos/tablas-css/index.htm" title="Tablas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/listas-css/index.htm" title="Listas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/contadores-css/index.htm" title="Contadores CSS"></sidebar-link></sidebar-section><sidebar-section title="Maquetación y colocación" href="../../maquetacion-y-colocacion/index.htm"><sidebar-link href="../../maquetacion-y-colocacion/propiedad-display/index.htm" title="La propiedad display"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/posicionamiento-css/index.htm" title="La propiedad position"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/desplazamientos/index.htm" title="La propiedad float"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/flexbox/index.htm" title="Flexbox CSS"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/grid-css/index.htm" title="Grid CSS"></sidebar-link></sidebar-section><sidebar-section title="Interacciones" href="../../interacciones/index.htm"><sidebar-link href="../../interacciones/contornos/index.htm" title="Contornos"></sidebar-link><sidebar-link href="../../interacciones/cursor-del-raton/index.htm" title="Cursor del ratón"></sidebar-link><sidebar-link href="../../interacciones/scroll-y-overflow/index.htm" title="Scroll y Overflow"></sidebar-link><sidebar-link href="../../interacciones/snap-scroll/index.htm" title="CSS Snap Scroll"></sidebar-link></sidebar-section><sidebar-section title="Sombras" href="../../sombras/index.htm"><sidebar-link href="../../sombras/text-shadow/index.htm" title="Sombras CSS en textos"></sidebar-link><sidebar-link href="../../sombras/box-shadow/index.htm" title="Sombras CSS en cajas"></sidebar-link><sidebar-link href="../../sombras/drop-shadow/index.htm" title="Sombras idénticas CSS"></sidebar-link></sidebar-section><sidebar-section title="Efectos" href="../../efectos/index.htm"><sidebar-link href="../../efectos/filtros-css/index.htm" title="Filtros CSS"></sidebar-link><sidebar-link href="../../efectos/modos-de-fusion/index.htm" title="Modos de fusión CSS"></sidebar-link></sidebar-section><sidebar-section title="Máscaras y recortes" href="../../mascaras-y-recortes/index.htm"><sidebar-link href="../../mascaras-y-recortes/clip-path/index.htm" title="La propiedad clip-path"></sidebar-link><sidebar-link href="../../mascaras-y-recortes/mask-image/index.htm" title="La propiedad mask-image"></sidebar-link></sidebar-section><sidebar-section title="Responsive Web Design" href="../../responsive-web-design/index.htm"><sidebar-link href="../../responsive-web-design/que-es/index.htm" title="¿Qué es Responsive Design?"></sidebar-link><sidebar-link href="../../responsive-web-design/bases-responsive/index.htm" title="Bases del Responsive Design"></sidebar-link><sidebar-link href="../../responsive-web-design/media-queries/index.htm" title="Media Queries"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-impresos/index.htm" title="Medios impresos"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-paginados/index.htm" title="Medios paginados"></sidebar-link><sidebar-link href="../../responsive-web-design/preferencias-usuario/index.htm" title="Preferencias de usuario"></sidebar-link></sidebar-section><sidebar-section title="Animaciones CSS" href="../../animaciones/index.htm"><sidebar-link href="../../animaciones/transiciones/index.htm" title="Transiciones CSS"></sidebar-link><sidebar-link href="../../animaciones/timing-function/index.htm" title="Funciones de tiempo"></sidebar-link><sidebar-link href="../../animaciones/animaciones/index.htm" title="Animaciones CSS"></sidebar-link><sidebar-link href="../../animaciones/keyframes/index.htm" title="La regla @keyframes"></sidebar-link></sidebar-section><sidebar-section title="Transformaciones CSS" href="../../transformaciones/index.htm"><sidebar-link href="../../transformaciones/transform/index.htm" title="Transformaciones CSS"></sidebar-link><sidebar-link href="../../transformaciones/transform-translate/index.htm" title="Translaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-rotate/index.htm" title="Rotaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-scale/index.htm" title="Escalado 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-skew/index.htm" title="Deformaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-3d/index.htm" title="Transformaciones 3D"></sidebar-link><sidebar-link href="../../transformaciones/perspective/index.htm" title="Perspectivas CSS"></sidebar-link></sidebar-section><sidebar-section title="Dibujar con CSS" href="../../dibujar-con-css/index.htm"><sidebar-link href="../../dibujar-con-css/como-empezar/index.htm" title="¿Cómo dibujar con CSS?"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-html/index.htm" title="Primeros pasos: Estructura HTML"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-css/index.htm" title="Primeros pasos: Estructura CSS"></sidebar-link></sidebar-section></div>
+
+      
+    </div>
+    <div class="contents">
+      <header class="mega">
+  <h1>Pseudoelementos CSS</h1><h2>Formas de seleccionar aspectos inexistentes en el HTML</h2></header>
+
+      <div class="content ">
+  <div class="breadcrumbs">
+  <a href="/">ATRÁS</a> <span>ᐳ</span> <a href="../../index.htm">css</a> <span>ᐳ</span> <a href="index.htm">Pseudoelementos CSS</a>
+</div>
+<p>Al igual que las pseudoclases, los pseudoelementos son otra de las características de CSS que permiten hacer referencias a «comportamientos virtuales no tangibles», o lo que es lo mismo, se le puede dar estilo a elementos que no existen realmente en el HTML, y que se pueden generar desde CSS.</p>
+<h3 id="pseudoelementos" tabindex="-1">Pseudoelementos</h3>
+<p>Recordemos la sintaxis de los pseudoelementos, que está precedida de <strong>dos puntos dobles</strong> (<code>::</code>) para diferenciarlos de las pseudoclases, las cuales sólo tienen <strong>dos puntos</strong> (<code>:</code>). No obstante, este cambio surgió posteriormente, por lo que aún hoy en día es frecuente ver fragmentos de código con pseudoelementos con la sintaxis de pseudoclase con <strong>un solo par de puntos</strong> <code>:</code>.</p>
+<p><img src="sintaxis-pseudoelementos.png" alt="Sintaxis avanzada" width="981" height="234" loading="lazy"></p>
+<p>Dentro de la categoría de los <strong>pseudoelementos CSS</strong>, como punto central, se encuentra la propiedad <code>content</code>. Esta propiedad se utiliza en selectores que incluyen los pseudoelementos <code>::before</code> o <code>::after</code>, para indicar que vamos a crear contenido antes o después del elemento en cuestión:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad/Pseudoelemento</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>content</code></td>
+<td>Propiedad para generar contenido. Sólo usable en <code>::before</code> o <code>::after</code>.</td>
+</tr>
+<tr>
+<td><code>::before</code></td>
+<td>Aplica los estilos <strong>antes</strong> del elemento indicado.</td>
+</tr>
+<tr>
+<td><code>::after</code></td>
+<td>Aplica los estilos <strong>después</strong> del elemento indicado.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="la-propiedad-content" tabindex="-1">La propiedad content</h4>
+<p>La propiedad <code>content</code> admite parámetros de diverso tipo, incluso concatenando información mediante espacios. Podemos utilizar tres tipos de contenido:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><badge-type class="string"></badge-type> <code>&quot;...&quot;</code></td>
+<td>Añade el contenido de texto indicado.</td>
+<td><code>content: &quot;Contenido:&quot;;</code></td>
+</tr>
+<tr>
+<td><code>attr(</code><em>atributo</em><code>)</code></td>
+<td>Añade el valor del atributo HTML indicado.</td>
+<td><code>content: attr(href);</code></td>
+</tr>
+<tr>
+<td><badge-type class="image"></badge-type> <code>url(...)</code></td>
+<td>Añade la imagen indicada en la <code>URL</code>.</td>
+<td><code>content: url(icon.png);</code></td>
+</tr>
+<tr>
+<td><badge-type class="gradient"></badge-type></td>
+<td>Añade un gradiente del tamaño indicado.</td>
+<td><code>content: linear-gradient(red, blue);</code></td>
+</tr>
+<tr>
+<td><badge-type class="counter"></badge-type></td>
+<td>Define un <a href="../../representacion-datos/contadores-css/index.htm">contador CSS</a> para mostrar.</td>
+<td><code>content: counter(item);</code></td>
+</tr>
+</tbody>
+</table>
+<p>Ten en cuenta que la propiedad <code>content</code> sólo funciona dentro de los pseudoelementos <code>::before</code> y <code>::after</code>.</p>
+<h4 id="el-pseudoelemento-before" tabindex="-1">El pseudoelemento ::before</h4>
+<p>Por otro lado, los pseudoelementos <code>::before</code> y <code>::after</code> permiten hacer referencia a «justo antes del elemento» y «justo después del elemento», respectivamente. Se trata de un pseudoelemento que se escribe de forma posterior a la clave o elemento en cuestión, precedido por doble <code>:</code> y que, por ejemplo, <code>::before</code> se encargará de añadir contenido <strong>antes</strong> del inicio de la etiqueta de apertura.</p>
+<p>De esta forma, podremos generar información (<em>usualmente con fines decorativos</em>) que no existe en el HTML, pero que por circunstancias de diseño sería lo apropiado colocar en el código CSS:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">q::before</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">"«"</span><span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> #888<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<h4 id="el-pseudoelemento-after" tabindex="-1">El pseudoelemento ::after</h4>
+<p>De la misma forma, tenemos el pseudoelemento <code>::after</code>, que permitirá añadir contenido después de la etiqueta de cierre en cuestión. El código correspondiente sería el siguiente:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">q::after</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">"»"</span><span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> #888<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Los ejemplos anteriores unidos, permitirían insertar el carácter <code>«</code> antes de las citas indicadas con el elemento HTML <code>&lt;q&gt;</code> y el carácter <code>»</code> al finalizar la misma, ambas de color gris.</p>
+<h4 id="la-función-attr" tabindex="-1">La función attr()</h4>
+<p>Es interesante recalcar la utilidad de la función CSS <strong>attr()</strong>, que en lugar de generar el contenido textual que le indiquemos, permite recuperar esa información del valor del <strong>atributo HTML</strong> especificado. Veamos un ejemplo para clarificarlo, concatenándolo con texto:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">a::after</span> <span class="token punctuation">{</span><br>  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">" ( "</span> <span class="token function">attr</span><span class="token punctuation">(</span>href<span class="token punctuation">)</span> <span class="token string">" )"</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Este pequeño ejemplo de código CSS, realiza una búsqueda de elementos que sean enlaces <code>&lt;a&gt;</code>, y posteriormente (<code>::after</code>) muestra un contenido de texto donde, envuelto entre paréntesis, escribe el contenido del atributo <code>href</code> del enlace tratado. Esto puede ser realmente útil en una página de estilos que se aplica a una página en el momento de imprimir, en los cuales se pierde la información del enlace al no ser un medio interactivo.</p>
+<blockquote>
+<p><strong>Truco</strong>: También se puede utilizar la expresión <strong>url()</strong> para añadir una imagen al contenido generado, tal y como lo hacemos en la propiedad <code>background</code>, por ejemplo.</p>
+</blockquote>
+<h3 id="otros-pseudoelementos" tabindex="-1">Otros pseudoelementos</h3>
+<p>Aunque <code>::before</code> y <code>::after</code> suelen ser los ejemplos de pseudoelementos más frecuentes, existen muchos otros pseudoelementos. Veamos cuales existen y profundicemos en ellos:</p>
+<table>
+<thead>
+<tr>
+<th>Pseudoelemento</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>::first-letter</code></td>
+<td>Aplica los estilos en la primera letra del texto.</td>
+</tr>
+<tr>
+<td><code>::first-line</code></td>
+<td>Aplica los estilos en la primera línea del texto.</td>
+</tr>
+<tr>
+<td><code>::marker</code></td>
+<td>Aplica estilos a los elementos de cada ítem de una lista.</td>
+</tr>
+<tr>
+<td><code>::backdrop</code></td>
+<td>Aplica estilos al fondo exterior de un elemento (sin que afecte a este).</td>
+</tr>
+<tr>
+<td><code>::placeholder</code></td>
+<td>Aplica estilos a los textos de sugerencia de los campos <code>&lt;input&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>::selection</code></td>
+<td>Aplica estilos al fragmento de texto seleccionado por el usuario.</td>
+</tr>
+</tbody>
+</table>
+<p>Expliquemos algunos de estos pseudoelementos.</p>
+<h4 id="el-pseudoelemento-first-letter" tabindex="-1">El pseudoelemento ::first-letter</h4>
+<p>Este pseudoelemento, como su propio nombre indica, permite dar estilo a la primera letra del texto indicado. Así podremos recrear el efecto clásico de los cuentos o algunas obras, donde la primera letra se establece mucho más grande que el resto del texto y con una tipografía decorativa.</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">{</span><br>  <span class="token property">font-family</span><span class="token punctuation">:</span> Verdana<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">p::first-letter</span> <span class="token punctuation">{</span><br>  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'Times New Roman'</span><span class="token punctuation">,</span> serif<span class="token punctuation">;</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 42px<span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Observa el posible resultado:</p>
+<p><img src="first-letter-first-line.png" alt="First-letter y First-line en CSS" width="925" height="238" loading="lazy"></p>
+<h4 id="el-pseudoelemento-first-line" tabindex="-1">El pseudoelemento ::first-line</h4>
+<p>Por otro lado, el pseudoelemento <code>::first-line</code> es muy útil para aplicar un estilo solamente a la <strong>primera línea</strong> del texto indicado. Puede ser interesante si queremos cambiar algún detalle, pero que afecte exclusivamente a la primera línea, independientemente del tamaño que tenga (<em>lo calcula el navegador</em>).</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">{</span><br>  <span class="token property">font-family</span><span class="token punctuation">:</span> Verdana<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">p::first-line</span> <span class="token punctuation">{</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> #999<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Obviamente, se puede aplicar a otros elementos o clases en el selector de CSS, en este caso lo hemos hecho a un elemento de párrafo <code>&lt;p&gt;</code>, ya que se trata de un párrafo de texto.</p>
+<h3 id="el-pseudoelemento-marker" tabindex="-1">El pseudoelemento ::marker</h3>
+<p>Existe también un pseudoelemento para hacer referencias a los signos o marcas de la listas (<code>&lt;ol&gt;</code> o <code>&lt;ul&gt;</code>), en el caso de que queramos que tengan, por ejemplo, un color diferente al del texto de la lista.</p>
+<p>Se aplican a los elementos <code>&lt;li&gt;</code> de los ítems de una lista. Veamos un ejemplo:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">ul ::marker</span> <span class="token punctuation">{</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Esto mostraría el texto de la lista con el color habitual que tenga (<em>por ejemplo, negro</em>), pero los signos que preceden a cada ítem de la lista, aparecerían en color verde.</p>
+<p><caniuse-support title="CSS ::marker pseudo-element" feature="css-marker-pseudo" edge="86/y" firefox="68/y" chrome="86/y" safari="12/y" opera="72/y" ios_saf="11.3-11.4/y" and_chr="103/y" and_ff="101/y">
+</caniuse-support></p>
+<h3 id="el-pseudoelemento-backdrop" tabindex="-1">El pseudoelemento ::backdrop</h3>
+<p>El pseudoelemento <code>::backdrop</code> nos permite desenfocar el fondo de un elemento para darle más protagonismo al que está en primer plano, como se suele hacer con algunos diálogos o mensajes modales, que comunican una información y hay que prestarle atención y poner el foco en ellos.</p>
+<p>En este caso, <code>::backdrop</code> es un pseudoelemento que aplicará los estilos al fondo, sin que afecte al elemento del primer plano. Habitualmente, suele ser utilizado para poner en escala de grises el fondo, utilizar la propiedad <code>backdrop-filter</code> con el valor <code>blur(2px)</code>, o algo similar, donde se le reste importancia al fondo y el usuario se centre en el mensaje o la información de primer plano.</p>
+<h3 id="el-pseudoelemento-placeholder" tabindex="-1">El pseudoelemento ::placeholder</h3>
+<p>Mediante el pseudoelemento <code>::placeholder</code> podemos dar estilos particulares a los elementos <code>&lt;input&gt;</code> que tienen el atributo <code>placeholder</code> definido. El atributo <code>placeholder</code> sirve para indicar una sugerencia o mensaje de ayuda o de información con la finalidad de ese campo de texto, normalmente una ayuda de lo que deben escribir o similar.</p>
+<p>Con <code>::placeholder</code> podremos cambiar este color, por ejemplo, que suele ser un gris apagado por defecto.</p>
+<h3 id="el-pseudoelemento-selection" tabindex="-1">El pseudoelemento ::selection</h3>
+<p>Cuando marcamos un fragmento de texto, el navegador suele aplicar un color de fondo que depende del sistema operativo, del tema, o similar. Al igual que ocurre con la propiedad <code>accent-color</code>, es posible que queramos aprovechar esto para definir un color que tengan sentido con los colores corporativos de la marca, página o similar, por lo que podríamos cambiarlo haciendo uso del pseudoelemento <code>::selection</code>.</p>
+<p><caniuse-support title="::selection CSS pseudo-element" feature="css-selection" edge="12/y" firefox="2/y" chrome="4/y" safari="3.1/y" opera="9.5-9.6/y" ios_saf="✗/n" and_chr="103/y" and_ff="101/y">
+</caniuse-support></p>
+
+    <nav class="prev-next"><a class="bt prev" href="../pseudoclases-avanzadas/index.htm" title="Pseudoclases CSS avanzadas">
+    <span class="data">
+      <span>Pseudoclases CSS avanzadas</span>
+      <small>Capítulo anterior</small>
+    </span>
+  </a><a class="bt next" href="../atributos/index.htm" title="Atributos CSS">
+    <span class="icon">
+      <svg-icon name="arrow-right"></svg-icon>
+    </span>
+    <span class="data">
+      <span>Atributos CSS</span>
+      <small>Capítulo siguiente</small>
+    </span>
+  </a></nav>
+
+    <script async="" src="../../../pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center; margin:auto; margin-top: 2em" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0412426997270095" data-ad-slot="3027930890"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+      <div class="related">
+
+  <div class="author">
+    <div class="author-wrapper">
+      <img loading="lazy" class="circle" src="../../../assets/manz.webp" alt="Manz">
+      <div>
+        <p>Docente, divulgador informático y <a href="https://manz.dev/">streamer de código</a>. Amante de <strong>CSS</strong>, <strong>Javascript</strong>
+          y de la plataforma web. Ha trabajado como profesor en la Universidad de La Laguna y es director del curso de
+          Programación web FullStack y FrontEnd de EOI desde Tenerife. En sus ratos libres, busca GIF de gatos en Internet.</p>
+        <p class="twitch-badge">
+          <a href="https://twitch.tv/ManzDev">
+            <svg class="twitch" viewbox="0 0 1024 1024">
+              <path style="fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="m262.451 12.904-178.26 178.26v641.672h213.905v178.26l178.26-178.26h142.576L939.809 512V12.904H262.45zm35.645 71.287h570.383v392.164L725.904 618.932H583.287L458.514 743.705V618.932H298.096V84.192zM494.158 208.51v216.36h71.328V208.51h-71.328zm196 0v216.36h71.328V208.51h-71.328z"></path>
+            </svg>
+            Sígueme en Twitch
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="comentarios">
+    <script async="" src="../../../count.js" id="dsq-count-scr"></script>
+<script>
+var disqus_config = function () {
+  this.page.path = location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname;
+  this.page.url = 'https://lenguajecss.com' + this.page.path;
+  this.page.identifier = this.page.url;
+};
+document.addEventListener('DOMContentLoaded', function() {
+  const coms = document.querySelector('#comentarios');
+  a = coms.querySelector('#disqus_button');
+  a.dataset.disqusIdentifier = 'https://lenguajecss.com' + (location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname);
+  a.addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.id = 'disqus_thread';
+    coms.appendChild(div);
+    const d = document, s = d.createElement('script');
+    s.src = '//lenguajecss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    this.remove();
+  });
+});
+</script>
+
+    <a class="disqus-comment-count" id="disqus_button" href="#disqus_thread" data-disqus-identifier="https://lenguajecss.com/css/selectores/pseudoelementos/">Leer comentarios</a>
+    <a class="discord" href="https://discord.manz.dev/">¡Accede a Discord y cuéntanos!</a>
+  </div>
+
+</div>
+
+    </div>
+    <div class="aside">
+      <div class="aside">
+
+  <div class="aside-top">
+    <a href="https://manz.dev/digitalocean" title="Empieza en DigitalOcean con 100$">
+      <img width="240" height="120" src="../../../assets/digital-ocean.png" alt="DigitalOcean">
+    </a>
+  </div><div class="video-related">
+  <div class="table">Hablo de esto en...</div>
+  <a href="https://youtu.be/TZXeLM1JjKc&t=7448s"><img width="220" height="124" src="../../../vi/TZXeLM1JjKc/mqdefault.jpg" alt="Pseudoelementos CSS"></a>
+</div><script type="module">
+  const ANCHOR_ICON = /* svg */`
+    <svg class="anchor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205" width="36" height="36">
+      <path d="m140 129 16 16s-20 30-42 30V71c14-5 25-18 25-34 0-20-17-36-37-36-21 0-38 16-38 36 0 15 11 29 25
+              34v104c-26-2-42-27-42-27l18-18-65-9 10 63 17-17c15 12 32 37 73 37 51-1 63-29 76-40l19 19 10-64-65
+              10zM83 36c0-10 8-18 19-18s19 8 19 18c0 11-9 19-19 19s-19-8-19-19z"/>
+    </svg>`;
+  // Add inner links to sidebar menu
+  export const addInnerLinks = () => {
+    const summary = document.querySelector(".aside .summary .links");
+    const headers = Array.from(document.querySelectorAll(".content h3, .content h4"));
+    const tocLinks = [];
+    headers.forEach((e) => {
+      const link = `${location.origin}${location.pathname}#${e.id}`;
+      e.innerHTML = `<a class="permalink" href="${link}">${e.textContent} ${ANCHOR_ICON}</a>`;
+      const headerType = e.nodeName.toLowerCase();
+      const textContent = headerType === "h4" ? e.textContent.replace("La propiedad ", "").replace("La función ", "") : e.textContent;
+      tocLinks.push(`<a class="${headerType}" href="#${e.id}">${textContent}</a>`);
+    });
+    summary.insertAdjacentHTML("beforeEnd", tocLinks.join("\n"));
+  };
+
+  addInnerLinks();
+</script>
+
+<div class="summary">
+  <div class="table">Tabla de contenidos</div>
+  <div class="links"></div>
+</div>
+</div>
+
+    </div>
+  </div><footer class="main">
+  <div class="square">
+    <a href="/"><h2>Lenguaje CSS</h2></a>
+    <div class="icons">
+      <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+      <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+      <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+      <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+      <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+      <a href="https://github.com/ManzDev" title="GitHub"><svg-icon type="social" name="github"></svg-icon></a>
+      <a href="https://codepen.io/Manz" title="Codepen"><svg-icon type="social" name="codepen"></svg-icon></a>
+      <a href="https://www.linkedin.com/in/joseromanhdez/" title="Linkedin"><svg-icon type="social" name="linkedin"></svg-icon></a>
+    </div>
+    <p>Documentación sobre CSS y las mejores herramientas y recursos para aprender a utilizar el lenguaje de estilos CSS (Hojas de estilo).</p>
+    <p id="footer">Creado y mantenido por <a href="https://twitter.com/Manz">@Manz</a> con <span title="<3">❤</span></p></div>
+</footer>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-136544-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async="" src='../../../analytics.js'></script>
+
+
+</body>
+</html>

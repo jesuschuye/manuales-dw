@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+  <link rel="shortcut icon" href="../../../favicon.ico">
+  <title>Listas CSS - CSS en español - Lenguaje CSS</title>
+  <link rel="preload" href="../../../critical.css" as="style">
+  <link rel="preload" href="../../../assets/fonts/blinker-vf.woff2" as="font" crossorigin="">
+  <link rel="preload" href="../../../assets/fonts/scope-one-400.woff2" as="font" crossorigin="">
+  <meta name="description" content="Con CSS se puede cambiar el comportamiento de las listas HTML para que muestren otra numeración, o un espacio de separación diferente.">
+  <link rel="stylesheet" href="../../../critical.css">
+  <link rel="stylesheet" href="../../../theme.css">
+  <script type="module" src="../../../main.js"></script>
+  <link rel="canonical" href="index.htm">
+  <meta property="og:title" content="Listas CSS - CSS en español">
+  <meta property="og:image" content="https://lenguajecss.com/css/large-summary.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="Con CSS se puede cambiar el comportamiento de las listas HTML para que muestren otra numeración, o un espacio de separación diferente.">
+  <meta property="og:url" content="https://lenguajecss.com/css/representacion-datos/listas-css/">
+  <meta property="twitter:url" content="https://lenguajecss.com/css/representacion-datos/listas-css/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="@Manz">
+  <meta property="twitter:title" content="Listas CSS - CSS en español">
+  <meta property="twitter:description" content="Con CSS se puede cambiar el comportamiento de las listas HTML para que muestren otra numeración, o un espacio de separación diferente.">
+  <meta property="twitter:image:src" content="https://lenguajecss.com/css/large-summary.jpg">
+</head>
+<body class="css post"><div class="page">
+    <div class="sidebar">
+      <div class="logo flex-center">
+  <a href="/">
+    <img width="42" height="42" src="../../../assets/logo.svg" alt="Logo">
+    Lenguaje CSS
+  </a>
+  <div class="icons" style="--icon-size: 32px; --icon-side-padding: 0.15em">
+    <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+    <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+    <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+    <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+    <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+  </div>
+  <span>Un sitio web de <a href="https://manz.dev/"><mark>Manz.dev</mark></a></span>
+</div>
+
+      <form class="search flex-center" action="https://www.google.com/search">
+  <label><span>Buscar:</span> <input type="search" name="q" placeholder="Buscar un tema (ej: flex, grid...)" autocomplete="off"></label>
+  <label><span>Sitio:</span> <input type="hidden" name="q" value="site:lenguajejs.com OR site:lenguajecss.com OR site:lenguajehtml.com OR site:terminaldelinux.com OR site:manz.dev"></label>
+  <div class="search-results"></div>
+</form>
+
+      
+
+<style>
+  sidebar-link {
+    --logo-image: url(../../logo.svg);
+  }
+</style>
+
+<div class="toc"><sidebar-link title="Volver al índice" href="../../index.htm" back="" direct=""></sidebar-link><sidebar-link href="../../cheatsheets/index.htm" title="CSS3 Cheatsheet" direct=""></sidebar-link><sidebar-section title="Introducción a CSS" href="../../introduccion/index.htm"><sidebar-link href="../../introduccion/que-es-css/index.htm" title="¿Qué es CSS?"></sidebar-link><sidebar-link href="../../introduccion/como-usar-css/index.htm" title="¿Cómo usar CSS?"></sidebar-link><sidebar-link href="../../introduccion/estructura-de-css/index.htm" title="Estructura de CSS"></sidebar-link><sidebar-link href="../../introduccion/minificar-css/index.htm" title="Minificar CSS"></sidebar-link><sidebar-link href="../../introduccion/navegadores-web/index.htm" title="Navegadores web"></sidebar-link><sidebar-link href="../../introduccion/niveles-y-prefijos-css/index.htm" title="Niveles de CSS y prefijos"></sidebar-link><sidebar-link href="../../introduccion/herencia-css/index.htm" title="Herencia en CSS"></sidebar-link><sidebar-link href="../../introduccion/cascada-css/index.htm" title="Cascada en CSS"></sidebar-link><sidebar-link href="../../introduccion/css-custom-properties/index.htm" title="Variables CSS"></sidebar-link><sidebar-link href="../../introduccion/guia-css/index.htm" title="La guía de propiedades CSS"></sidebar-link></sidebar-section><sidebar-section title="Modelo de cajas" href="../../modelo-de-cajas/index.htm"><sidebar-link href="../../modelo-de-cajas/unidades-css/index.htm" title="Unidades CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/que-es/index.htm" title="Modelo de cajas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/margenes-y-rellenos/index.htm" title="Márgenes y rellenos"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes/index.htm" title="Bordes CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/border-radius/index.htm" title="Esquinas redondeadas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/propiedades-logicas-css/index.htm" title="Propiedades lógicas CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes-imagenes/index.htm" title="Bordes con imágenes"></sidebar-link><sidebar-link href="../../modelo-de-cajas/funciones-css/index.htm" title="Funciones CSS"></sidebar-link></sidebar-section><sidebar-section title="Colores, fondos e imágenes" href="../../colores-y-fondos/index.htm"><sidebar-link href="../../colores-y-fondos/colores-css/index.htm" title="Colores CSS"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-opacity/index.htm" title="La propiedad opacity"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-background-image/index.htm" title="La propiedad background-image"></sidebar-link><sidebar-link href="../../colores-y-fondos/linear-gradient/index.htm" title="Gradientes lineales"></sidebar-link><sidebar-link href="../../colores-y-fondos/radial-gradient/index.htm" title="Gradientes radiales"></sidebar-link><sidebar-link href="../../colores-y-fondos/conic-gradient/index.htm" title="Gradientes cónicos"></sidebar-link><sidebar-link href="../../colores-y-fondos/imagenes-css/index.htm" title="Imágenes y Objetos"></sidebar-link></sidebar-section><sidebar-section title="Selectores CSS" href="../../selectores/index.htm"><sidebar-link href="../../selectores/selectores-basicos/index.htm" title="Selectores CSS básicos"></sidebar-link><sidebar-link href="../../selectores/selectores-avanzados/index.htm" title="Selectores CSS avanzados"></sidebar-link><sidebar-link href="../../selectores/pseudoclases/index.htm" title="Pseudoclases CSS"></sidebar-link><sidebar-link href="../../selectores/pseudoclases-avanzadas/index.htm" title="Pseudoclases CSS avanzadas"></sidebar-link><sidebar-link href="../../selectores/pseudoelementos/index.htm" title="Pseudoelementos CSS"></sidebar-link><sidebar-link href="../../selectores/atributos/index.htm" title="Atributos CSS"></sidebar-link></sidebar-section><sidebar-section title="Reglas CSS" href="../../reglas-css/index.htm"><sidebar-link href="../../reglas-css/que-son-reglas-css/index.htm" title="¿Qué son las reglas CSS?"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-import/index.htm" title="La regla @import"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-layer/index.htm" title="La regla @layer"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-supports/index.htm" title="La regla @supports"></sidebar-link></sidebar-section><sidebar-section title="Fuentes y tipografías" href="../../fuentes-y-tipografias/index.htm"><sidebar-link href="../../fuentes-y-tipografias/tipografias/index.htm" title="Tipografías CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/tipografias-externas/index.htm" title="Tipografías externas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/fuentes-variables/index.htm" title="Fuentes variables CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/textos-y-alineaciones/index.htm" title="Textos y alineaciones"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/propiedades-avanzadas/index.htm" title="Propiedades avanzadas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/caracteristicas-personalizadas/index.htm" title="Características personalizadas"></sidebar-link></sidebar-section><sidebar-section title="Representación de datos" href="../index.htm"><sidebar-link href="../tablas-css/index.htm" title="Tablas CSS"></sidebar-link><sidebar-link href="index.htm" title="Listas CSS"></sidebar-link><sidebar-link href="../contadores-css/index.htm" title="Contadores CSS"></sidebar-link></sidebar-section><sidebar-section title="Maquetación y colocación" href="../../maquetacion-y-colocacion/index.htm"><sidebar-link href="../../maquetacion-y-colocacion/propiedad-display/index.htm" title="La propiedad display"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/posicionamiento-css/index.htm" title="La propiedad position"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/desplazamientos/index.htm" title="La propiedad float"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/flexbox/index.htm" title="Flexbox CSS"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/grid-css/index.htm" title="Grid CSS"></sidebar-link></sidebar-section><sidebar-section title="Interacciones" href="../../interacciones/index.htm"><sidebar-link href="../../interacciones/contornos/index.htm" title="Contornos"></sidebar-link><sidebar-link href="../../interacciones/cursor-del-raton/index.htm" title="Cursor del ratón"></sidebar-link><sidebar-link href="../../interacciones/scroll-y-overflow/index.htm" title="Scroll y Overflow"></sidebar-link><sidebar-link href="../../interacciones/snap-scroll/index.htm" title="CSS Snap Scroll"></sidebar-link></sidebar-section><sidebar-section title="Sombras" href="../../sombras/index.htm"><sidebar-link href="../../sombras/text-shadow/index.htm" title="Sombras CSS en textos"></sidebar-link><sidebar-link href="../../sombras/box-shadow/index.htm" title="Sombras CSS en cajas"></sidebar-link><sidebar-link href="../../sombras/drop-shadow/index.htm" title="Sombras idénticas CSS"></sidebar-link></sidebar-section><sidebar-section title="Efectos" href="../../efectos/index.htm"><sidebar-link href="../../efectos/filtros-css/index.htm" title="Filtros CSS"></sidebar-link><sidebar-link href="../../efectos/modos-de-fusion/index.htm" title="Modos de fusión CSS"></sidebar-link></sidebar-section><sidebar-section title="Máscaras y recortes" href="../../mascaras-y-recortes/index.htm"><sidebar-link href="../../mascaras-y-recortes/clip-path/index.htm" title="La propiedad clip-path"></sidebar-link><sidebar-link href="../../mascaras-y-recortes/mask-image/index.htm" title="La propiedad mask-image"></sidebar-link></sidebar-section><sidebar-section title="Responsive Web Design" href="../../responsive-web-design/index.htm"><sidebar-link href="../../responsive-web-design/que-es/index.htm" title="¿Qué es Responsive Design?"></sidebar-link><sidebar-link href="../../responsive-web-design/bases-responsive/index.htm" title="Bases del Responsive Design"></sidebar-link><sidebar-link href="../../responsive-web-design/media-queries/index.htm" title="Media Queries"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-impresos/index.htm" title="Medios impresos"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-paginados/index.htm" title="Medios paginados"></sidebar-link><sidebar-link href="../../responsive-web-design/preferencias-usuario/index.htm" title="Preferencias de usuario"></sidebar-link></sidebar-section><sidebar-section title="Animaciones CSS" href="../../animaciones/index.htm"><sidebar-link href="../../animaciones/transiciones/index.htm" title="Transiciones CSS"></sidebar-link><sidebar-link href="../../animaciones/timing-function/index.htm" title="Funciones de tiempo"></sidebar-link><sidebar-link href="../../animaciones/animaciones/index.htm" title="Animaciones CSS"></sidebar-link><sidebar-link href="../../animaciones/keyframes/index.htm" title="La regla @keyframes"></sidebar-link></sidebar-section><sidebar-section title="Transformaciones CSS" href="../../transformaciones/index.htm"><sidebar-link href="../../transformaciones/transform/index.htm" title="Transformaciones CSS"></sidebar-link><sidebar-link href="../../transformaciones/transform-translate/index.htm" title="Translaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-rotate/index.htm" title="Rotaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-scale/index.htm" title="Escalado 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-skew/index.htm" title="Deformaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-3d/index.htm" title="Transformaciones 3D"></sidebar-link><sidebar-link href="../../transformaciones/perspective/index.htm" title="Perspectivas CSS"></sidebar-link></sidebar-section><sidebar-section title="Dibujar con CSS" href="../../dibujar-con-css/index.htm"><sidebar-link href="../../dibujar-con-css/como-empezar/index.htm" title="¿Cómo dibujar con CSS?"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-html/index.htm" title="Primeros pasos: Estructura HTML"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-css/index.htm" title="Primeros pasos: Estructura CSS"></sidebar-link></sidebar-section></div>
+
+      
+    </div>
+    <div class="contents">
+      <header class="mega">
+  <h1>Listas CSS</h1><h2>Dar estilo a listas HTML</h2></header>
+
+      <div class="content ">
+  <div class="breadcrumbs">
+  <a href="/">ATRÁS</a> <span>ᐳ</span> <a href="../../index.htm">css</a> <span>ᐳ</span> <a href="index.htm">Listas CSS</a>
+</div>
+<p>Al crear listas HTML mediante las etiquetas <code>&lt;ol&gt;</code> o <code>&lt;ul&gt;</code>, dichas etiquetas poseen propiedades CSS específicas para alterar el estilo o características de las marcas o viñetas que se crean a la izquierda de los items de la lista, mediante la etiqueta HTML <code>&lt;li&gt;</code>.</p>
+<h3 id="propiedades-css-para-listas" tabindex="-1">Propiedades CSS para listas</h3>
+<p>Por ejemplo, a continuación tenemos las propiedades principales de las listas:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>list-style-image</code></td>
+<td><strong>none</strong> | <code>url(</code><em>image.png</em><code>)</code></td>
+<td>Indica una imagen para usar como viñeta de ítem.</td>
+</tr>
+<tr>
+<td><code>list-style-position</code></td>
+<td><code>inside</code> | <strong>outside</strong></td>
+<td>Establece o elimina indentación de ítems sobre la lista.</td>
+</tr>
+<tr>
+<td><code>list-style-type</code></td>
+<td><strong>disc</strong> | <strong>decimal</strong> | <em>type</em> | <code>none</code></td>
+<td>Establece el tipo de viñeta que se va a utilizar.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="la-propiedad-list-style-image" tabindex="-1">La propiedad list-style-image</h4>
+<p>A través de la propiedad <code>list-style-image</code> podemos indicar la URL de una imagen para utilizarla a modo de icono o viñeta en cada ítem de la lista, es decir, en cada ítem <code>&lt;li&gt;</code>. Esta propiedad, por defecto, tiene el valor <strong>none</strong>, o lo que es lo mismo, no establece ninguna imagen por cada ítem de la lista.</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">li</span> <span class="token punctuation">{</span><br>  <span class="token property">list-style-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"https://manz.dev/assets/stickers/batmanz.png"</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<blockquote>
+<p>Un detalle a tener en cuenta, es que esta propiedad se puede usar tanto en los ítems <code>&lt;li&gt;</code> de cada punto de la lista, como en sus contenedores <code>&lt;ul&gt;</code> o <code>&lt;ol&gt;</code>.</p>
+</blockquote>
+<h4 id="la-propiedad-list-style-position" tabindex="-1">La propiedad list-style-position</h4>
+<p>Por otro lado, la propiedad <code>list-style-position</code> permite establecer una indentación a todos los ítems de la lista, estableciendolos desplazados a la derecha (<em>inside</em>), el lado interior de la lista, o sin desplazar (<em>outside</em>), el lado exterior de la lista, opción por defecto.</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">ul</span> <span class="token punctuation">{</span><br>  <span class="token property">list-style-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"https://manz.dev/assets/stickers/batmanz.png"</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span><br>  <span class="token property">list-style-position</span><span class="token punctuation">:</span> inside<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<h4 id="la-propiedad-list-style-type" tabindex="-1">La propiedad list-style-type</h4>
+<p>La tercera propiedad, <code>list-style-type</code> nos permite indicar que tipo de viñetas tendrán las listas (<em>en el caso de no estar utilizando ningun imagen</em>).
+Se establecen varios grupos que veremos en el siguiente apartado. Cada uno de ellos se puede utilizar con cualquier tipo de lista, pero generalmente, se recomienda tener en cuenta el tipo de lista. Por ejemplo, si tenemos una lista <code>&lt;ul&gt;</code> (<em>no ordenada</em>), aunque es posible, quizás una viñeta numerada no tenga mucho sentido.</p>
+<p>Por defecto, las listas <code>&lt;ul&gt;</code> (<em>no numeradas</em>) utilizan la opción <code>disc</code> por defecto, mientras que las listas <code>&lt;ol&gt;</code> (<em>numeradas</em>) utilizan la opción <code>decimal</code> por defecto, mostrando una lista numérica decimal.</p>
+<h3 id="viñetas-css-para-las-listas" tabindex="-1">Viñetas CSS para las listas</h3>
+<p>A través de la propiedad <code>list-style-type</code> que hemos mencionado podemos cambiar el tipo de viñeta que utilizaremos en una lista a nuestro antojo. Conviene conocer todos los tipos que existen, que aunque algunos son muy sencillos, tenemos muchos otros que dependen de los idiomas, sistemas numéricos u otros aspectos.</p>
+<script src="DemoList.cdn.js"></script>
+<style>
+  .type-container {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 10px 0;
+  }
+</style>
+<h4 id="listas-con-símbolos" tabindex="-1">Listas con símbolos</h4>
+<p>Este primer grupo, especialmente indicado para listas sin orden <code>&lt;ul&gt;</code>, por ejemplo, donde se utilizará un símbolo como viñeta que no representa ningún orden específico:</p>
+<div class="type-container">
+  <demo-list type="disc"></demo-list>
+  <demo-list type="circle"></demo-list>
+  <demo-list type="square"></demo-list>
+  <demo-list type="disclosure-open"></demo-list>
+  <demo-list type="disclosure-closed"></demo-list>
+</div>
+<h4 id="listas-numéricas" tabindex="-1">Listas numéricas</h4>
+<p>Si lo que queremos es establecer una lista numerada <code>&lt;ol&gt;</code>, los valores recomendados deberían ser uno de los siguientes:</p>
+<div class="type-container">
+  <demo-list type="decimal"></demo-list>
+  <demo-list type="decimal-leading-zero"></demo-list>
+  <demo-list type="lower-roman"></demo-list>
+  <demo-list type="upper-roman"></demo-list>
+  <demo-list type="armenian" alias="upper-armenian"></demo-list>
+  <demo-list type="lower-armenian"></demo-list>
+  <demo-list type="bengali"></demo-list>
+  <demo-list type="georgian"></demo-list>
+  <demo-list type="arabic-indic"></demo-list>
+  <demo-list type="cambodian" alias="khmer"></demo-list>
+  <demo-list type="cjk-decimal"></demo-list>
+  <demo-list type="devanagari"></demo-list>
+  <demo-list type="gujarati"></demo-list>
+  <demo-list type="gurmukhi"></demo-list>
+  <demo-list type="hebrew"></demo-list>
+  <demo-list type="kannada"></demo-list>
+  <demo-list type="lao"></demo-list>
+  <demo-list type="malayalam"></demo-list>
+  <demo-list type="mongolian"></demo-list>
+  <demo-list type="myanmar"></demo-list>
+  <demo-list type="oriya"></demo-list>
+  <demo-list type="persian"></demo-list>
+  <demo-list type="tamil"></demo-list>
+  <demo-list type="telugu"></demo-list>
+  <demo-list type="thai"></demo-list>
+  <demo-list type="tibetan"></demo-list>
+  <demo-list type="cjk-earthly-branch"></demo-list>
+  <demo-list type="cjk-earthly-stem"></demo-list>
+</div>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>Ten en cuenta que en algunos navegadores o sistemas operativos puede que los apartados anteriores no se muestren correctamente, ya que los está generando a partir de la compatibilidad del navegador utilizado.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h4 id="listas-alfabéticas" tabindex="-1">Listas alfabéticas</h4>
+<p>En el caso de querer utilizar una lista numerada <code>&lt;ol&gt;</code>, pero querer &quot;numerarla&quot; con letras, es posible con alguna de estas posibilidades:</p>
+<div class="type-container">
+  <demo-list type="lower-alpha" alias="lower-latin"></demo-list>
+  <demo-list type="upper-alpha" alias="upper-latin"></demo-list>
+  <demo-list type="lower-greek"></demo-list>
+  <demo-list type="hiragana"></demo-list>
+  <demo-list type="hiragana-iroha"></demo-list>
+  <demo-list type="katakana"></demo-list>
+  <demo-list type="katakana-iroha"></demo-list>
+</div>
+<h4 id="listas-complejas" tabindex="-1">Listas complejas</h4>
+<p>Dentro de las listas complejas podemos encontrar un primer grupo japonés, un segundo grupo coreano y un tercer grupo chino:</p>
+<div class="type-container">
+  <demo-list type="japanese-informal"></demo-list>
+  <demo-list type="japanese-formal"></demo-list>
+  <demo-list type="korean-hangul-formal"></demo-list>
+  <demo-list type="korean-hangul-informal"></demo-list>
+  <demo-list type="korean-hanja-formal"></demo-list>
+  <demo-list type="simp-chinese-informal"></demo-list>
+  <demo-list type="simp-chinese-formal"></demo-list>
+  <demo-list type="trad-chinese-informal"></demo-list>
+  <demo-list type="trad-chinese-formal"></demo-list>
+  <demo-list type="cjk-ideographic"></demo-list>
+</div>
+<h3 id="el-pseudoelemento-marker" tabindex="-1">El pseudoelemento ::marker</h3>
+<p>Al utilizar listas, puedes utilizar el pseudoelemento <code>::marker</code> para hacer referencia a la viñeta en cuestión. De esta forma, podrás cambiar los estilos de dicha viñeta o retocarlos. Observa el siguiente ejemplo:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">ul</span> <span class="token punctuation">{</span><br>  <span class="token property">list-style-type</span><span class="token punctuation">:</span> upper-roman<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token selector">li::marker</span> <span class="token punctuation">{</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<blockquote>
+<p>Ten en cuenta que no es posible utilizar cualquier propiedad en este pseudoelemento, y solo es posible utilizar algunas propiedades como <code>color</code>, <code>content</code> u otras.</p>
+</blockquote>
+<h3 id="atajo-la-propiedad-list-style" tabindex="-1">Atajo: La propiedad list-style</h3>
+<p>Como en la mayoría de propiedades de CSS, existe una propiedad &quot;shorthand&quot; de atajo que nos permite indicar los valores anteriores en una sola propiedad. Para ello, utilizaremos <code>list-style</code> con el orden aconsejado siguiente:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">li</span> <span class="token punctuation">{</span><br>    <span class="token comment">/* list-style: &lt;type> &lt;position> &lt;image> */</span><br>    <span class="token property">list-style</span><span class="token punctuation">:</span> circle inside none<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Observa que en primer lugar utilizaremos el valor de la propiedad <code>list-style-type</code>, en segundo lugar el valor de la propiedad <code>list-style-position</code> y en tercer y último lugar, el valor de la propiedad <code>list-style-image</code>. En caso de no necesitar indicar alguno de ellos, simplemente podemos omitirlo.</p>
+
+    <nav class="prev-next"><a class="bt prev" href="../tablas-css/index.htm" title="Tablas CSS">
+    <span class="data">
+      <span>Tablas CSS</span>
+      <small>Capítulo anterior</small>
+    </span>
+  </a><a class="bt next" href="../contadores-css/index.htm" title="Contadores CSS">
+    <span class="icon">
+      <svg-icon name="arrow-right"></svg-icon>
+    </span>
+    <span class="data">
+      <span>Contadores CSS</span>
+      <small>Capítulo siguiente</small>
+    </span>
+  </a></nav>
+
+    <script async="" src="../../../pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center; margin:auto; margin-top: 2em" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0412426997270095" data-ad-slot="3027930890"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+      <div class="related">
+
+  <div class="author">
+    <div class="author-wrapper">
+      <img loading="lazy" class="circle" src="../../../assets/manz.webp" alt="Manz">
+      <div>
+        <p>Docente, divulgador informático y <a href="https://manz.dev/">streamer de código</a>. Amante de <strong>CSS</strong>, <strong>Javascript</strong>
+          y de la plataforma web. Ha trabajado como profesor en la Universidad de La Laguna y es director del curso de
+          Programación web FullStack y FrontEnd de EOI desde Tenerife. En sus ratos libres, busca GIF de gatos en Internet.</p>
+        <p class="twitch-badge">
+          <a href="https://twitch.tv/ManzDev">
+            <svg class="twitch" viewbox="0 0 1024 1024">
+              <path style="fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="m262.451 12.904-178.26 178.26v641.672h213.905v178.26l178.26-178.26h142.576L939.809 512V12.904H262.45zm35.645 71.287h570.383v392.164L725.904 618.932H583.287L458.514 743.705V618.932H298.096V84.192zM494.158 208.51v216.36h71.328V208.51h-71.328zm196 0v216.36h71.328V208.51h-71.328z"></path>
+            </svg>
+            Sígueme en Twitch
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="comentarios">
+    <script async="" src="../../../count.js" id="dsq-count-scr"></script>
+<script>
+var disqus_config = function () {
+  this.page.path = location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname;
+  this.page.url = 'https://lenguajecss.com' + this.page.path;
+  this.page.identifier = this.page.url;
+};
+document.addEventListener('DOMContentLoaded', function() {
+  const coms = document.querySelector('#comentarios');
+  a = coms.querySelector('#disqus_button');
+  a.dataset.disqusIdentifier = 'https://lenguajecss.com' + (location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname);
+  a.addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.id = 'disqus_thread';
+    coms.appendChild(div);
+    const d = document, s = d.createElement('script');
+    s.src = '//lenguajecss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    this.remove();
+  });
+});
+</script>
+
+    <a class="disqus-comment-count" id="disqus_button" href="#disqus_thread" data-disqus-identifier="https://lenguajecss.com/css/representacion-datos/listas-css/">Leer comentarios</a>
+    <a class="discord" href="https://discord.manz.dev/">¡Accede a Discord y cuéntanos!</a>
+  </div>
+
+</div>
+
+    </div>
+    <div class="aside">
+      <div class="aside">
+
+  <div class="aside-top">
+    <a href="https://manz.dev/digitalocean" title="Empieza en DigitalOcean con 100$">
+      <img width="240" height="120" src="../../../assets/digital-ocean.png" alt="DigitalOcean">
+    </a>
+  </div><script type="module">
+  const ANCHOR_ICON = /* svg */`
+    <svg class="anchor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205" width="36" height="36">
+      <path d="m140 129 16 16s-20 30-42 30V71c14-5 25-18 25-34 0-20-17-36-37-36-21 0-38 16-38 36 0 15 11 29 25
+              34v104c-26-2-42-27-42-27l18-18-65-9 10 63 17-17c15 12 32 37 73 37 51-1 63-29 76-40l19 19 10-64-65
+              10zM83 36c0-10 8-18 19-18s19 8 19 18c0 11-9 19-19 19s-19-8-19-19z"/>
+    </svg>`;
+  // Add inner links to sidebar menu
+  export const addInnerLinks = () => {
+    const summary = document.querySelector(".aside .summary .links");
+    const headers = Array.from(document.querySelectorAll(".content h3, .content h4"));
+    const tocLinks = [];
+    headers.forEach((e) => {
+      const link = `${location.origin}${location.pathname}#${e.id}`;
+      e.innerHTML = `<a class="permalink" href="${link}">${e.textContent} ${ANCHOR_ICON}</a>`;
+      const headerType = e.nodeName.toLowerCase();
+      const textContent = headerType === "h4" ? e.textContent.replace("La propiedad ", "").replace("La función ", "") : e.textContent;
+      tocLinks.push(`<a class="${headerType}" href="#${e.id}">${textContent}</a>`);
+    });
+    summary.insertAdjacentHTML("beforeEnd", tocLinks.join("\n"));
+  };
+
+  addInnerLinks();
+</script>
+
+<div class="summary">
+  <div class="table">Tabla de contenidos</div>
+  <div class="links"></div>
+</div>
+</div>
+
+    </div>
+  </div><footer class="main">
+  <div class="square">
+    <a href="/"><h2>Lenguaje CSS</h2></a>
+    <div class="icons">
+      <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+      <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+      <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+      <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+      <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+      <a href="https://github.com/ManzDev" title="GitHub"><svg-icon type="social" name="github"></svg-icon></a>
+      <a href="https://codepen.io/Manz" title="Codepen"><svg-icon type="social" name="codepen"></svg-icon></a>
+      <a href="https://www.linkedin.com/in/joseromanhdez/" title="Linkedin"><svg-icon type="social" name="linkedin"></svg-icon></a>
+    </div>
+    <p>Documentación sobre CSS y las mejores herramientas y recursos para aprender a utilizar el lenguaje de estilos CSS (Hojas de estilo).</p>
+    <p id="footer">Creado y mantenido por <a href="https://twitter.com/Manz">@Manz</a> con <span title="<3">❤</span></p></div>
+</footer>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-136544-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async="" src='../../../analytics.js'></script>
+
+
+</body>
+</html>

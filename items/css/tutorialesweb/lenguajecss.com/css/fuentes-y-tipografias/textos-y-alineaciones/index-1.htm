@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+  <link rel="shortcut icon" href="../../../favicon-1.ico">
+  <title>Textos y alineaciones - CSS en español - Lenguaje CSS</title>
+  <link rel="preload" href="../../../critical-1.css" as="style">
+  <link rel="preload" href="../../../assets/fonts/blinker-vf-1.woff2" as="font" crossorigin="">
+  <link rel="preload" href="../../../assets/fonts/scope-one-400-1.woff2" as="font" crossorigin="">
+  <meta name="description" content="CSS incorpora gran cantidad de propiedades para modificar el comportamiento de los textos de una página web.">
+  <link rel="stylesheet" href="../../../critical-1.css">
+  <link rel="stylesheet" href="../../../theme-1.css">
+  <script type="module" src="../../../main-1.js"></script>
+  <link rel="canonical" href="index-1.htm">
+  <meta property="og:title" content="Textos y alineaciones - CSS en español">
+  <meta property="og:image" content="https://lenguajecss.com/css/large-summary.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="CSS incorpora gran cantidad de propiedades para modificar el comportamiento de los textos de una página web.">
+  <meta property="og:url" content="https://lenguajecss.com/css/fuentes-y-tipografias/textos-y-alineaciones/">
+  <meta property="twitter:url" content="https://lenguajecss.com/css/fuentes-y-tipografias/textos-y-alineaciones/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="@Manz">
+  <meta property="twitter:title" content="Textos y alineaciones - CSS en español">
+  <meta property="twitter:description" content="CSS incorpora gran cantidad de propiedades para modificar el comportamiento de los textos de una página web.">
+  <meta property="twitter:image:src" content="https://lenguajecss.com/css/large-summary.jpg">
+</head>
+<body class="css post"><div class="page">
+    <div class="sidebar">
+      <div class="logo flex-center">
+  <a href="../../../index.htm">
+    <img width="42" height="42" src="../../../assets/logo-1.svg" alt="Logo">
+    Lenguaje CSS
+  </a>
+  <div class="icons" style="--icon-size: 32px; --icon-side-padding: 0.15em">
+    <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+    <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+    <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+    <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+    <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+  </div>
+  <span>Un sitio web de <a href="https://manz.dev/"><mark>Manz.dev</mark></a></span>
+</div>
+
+      <form class="search flex-center" action="https://www.google.com/search">
+  <label><span>Buscar:</span> <input type="search" name="q" placeholder="Buscar un tema (ej: flex, grid...)" autocomplete="off"></label>
+  <label><span>Sitio:</span> <input type="hidden" name="q" value="site:lenguajejs.com OR site:lenguajecss.com OR site:lenguajehtml.com OR site:terminaldelinux.com OR site:manz.dev"></label>
+  <div class="search-results"></div>
+</form>
+
+      
+
+<style>
+  sidebar-link {
+    --logo-image: url(../../logo-1.svg);
+  }
+</style>
+
+<div class="toc"><sidebar-link title="Volver al índice" href="../../index-1.htm" back="" direct=""></sidebar-link><sidebar-link href="../../cheatsheets/index-1.htm" title="CSS3 Cheatsheet" direct=""></sidebar-link><sidebar-section title="Introducción a CSS" href="../../introduccion/index-1.htm"><sidebar-link href="../../introduccion/que-es-css/index-1.htm" title="¿Qué es CSS?"></sidebar-link><sidebar-link href="../../introduccion/como-usar-css/index-1.htm" title="¿Cómo usar CSS?"></sidebar-link><sidebar-link href="../../introduccion/estructura-de-css/index-1.htm" title="Estructura de CSS"></sidebar-link><sidebar-link href="../../introduccion/minificar-css/index-1.htm" title="Minificar CSS"></sidebar-link><sidebar-link href="../../introduccion/navegadores-web/index-1.htm" title="Navegadores web"></sidebar-link><sidebar-link href="../../introduccion/niveles-y-prefijos-css/index-1.htm" title="Niveles de CSS y prefijos"></sidebar-link><sidebar-link href="../../introduccion/herencia-css/index-1.htm" title="Herencia en CSS"></sidebar-link><sidebar-link href="../../introduccion/cascada-css/index-1.htm" title="Cascada en CSS"></sidebar-link><sidebar-link href="../../introduccion/css-custom-properties/index-1.htm" title="Variables CSS"></sidebar-link><sidebar-link href="../../introduccion/guia-css/index-1.htm" title="La guía de propiedades CSS"></sidebar-link></sidebar-section><sidebar-section title="Modelo de cajas" href="../../modelo-de-cajas/index-1.htm"><sidebar-link href="../../modelo-de-cajas/unidades-css/index-1.htm" title="Unidades CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/que-es/index-1.htm" title="Modelo de cajas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/margenes-y-rellenos/index-1.htm" title="Márgenes y rellenos"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes/index-1.htm" title="Bordes CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/border-radius/index-1.htm" title="Esquinas redondeadas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/propiedades-logicas-css/index-1.htm" title="Propiedades lógicas CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes-imagenes/index-1.htm" title="Bordes con imágenes"></sidebar-link><sidebar-link href="../../modelo-de-cajas/funciones-css/index-1.htm" title="Funciones CSS"></sidebar-link></sidebar-section><sidebar-section title="Colores, fondos e imágenes" href="../../colores-y-fondos/index-1.htm"><sidebar-link href="../../colores-y-fondos/colores-css/index-1.htm" title="Colores CSS"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-opacity/index-1.htm" title="La propiedad opacity"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-background-image/index-1.htm" title="La propiedad background-image"></sidebar-link><sidebar-link href="../../colores-y-fondos/linear-gradient/index-1.htm" title="Gradientes lineales"></sidebar-link><sidebar-link href="../../colores-y-fondos/radial-gradient/index-1.htm" title="Gradientes radiales"></sidebar-link><sidebar-link href="../../colores-y-fondos/conic-gradient/index-1.htm" title="Gradientes cónicos"></sidebar-link><sidebar-link href="../../colores-y-fondos/imagenes-css/index-1.htm" title="Imágenes y Objetos"></sidebar-link></sidebar-section><sidebar-section title="Selectores CSS" href="../../selectores/index-1.htm"><sidebar-link href="../../selectores/selectores-basicos/index-1.htm" title="Selectores CSS básicos"></sidebar-link><sidebar-link href="../../selectores/selectores-avanzados/index-1.htm" title="Selectores CSS avanzados"></sidebar-link><sidebar-link href="../../selectores/pseudoclases/index-1.htm" title="Pseudoclases CSS"></sidebar-link><sidebar-link href="../../selectores/pseudoclases-avanzadas/index-1.htm" title="Pseudoclases CSS avanzadas"></sidebar-link><sidebar-link href="../../selectores/pseudoelementos/index-1.htm" title="Pseudoelementos CSS"></sidebar-link><sidebar-link href="../../selectores/atributos/index-1.htm" title="Atributos CSS"></sidebar-link></sidebar-section><sidebar-section title="Reglas CSS" href="../../reglas-css/index-1.htm"><sidebar-link href="../../reglas-css/que-son-reglas-css/index-1.htm" title="¿Qué son las reglas CSS?"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-import/index-1.htm" title="La regla @import"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-layer/index-1.htm" title="La regla @layer"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-supports/index-1.htm" title="La regla @supports"></sidebar-link></sidebar-section><sidebar-section title="Fuentes y tipografías" href="../index-1.htm"><sidebar-link href="../tipografias/index-1.htm" title="Tipografías CSS"></sidebar-link><sidebar-link href="../tipografias-externas/index-1.htm" title="Tipografías externas"></sidebar-link><sidebar-link href="../fuentes-variables/index-1.htm" title="Fuentes variables CSS"></sidebar-link><sidebar-link href="index-1.htm" title="Textos y alineaciones"></sidebar-link><sidebar-link href="../propiedades-avanzadas/index-1.htm" title="Propiedades avanzadas"></sidebar-link><sidebar-link href="../caracteristicas-personalizadas/index-1.htm" title="Características personalizadas"></sidebar-link></sidebar-section><sidebar-section title="Representación de datos" href="../../representacion-datos/index-1.htm"><sidebar-link href="../../representacion-datos/tablas-css/index-1.htm" title="Tablas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/listas-css/index-1.htm" title="Listas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/contadores-css/index-1.htm" title="Contadores CSS"></sidebar-link></sidebar-section><sidebar-section title="Maquetación y colocación" href="../../maquetacion-y-colocacion/index-1.htm"><sidebar-link href="../../maquetacion-y-colocacion/propiedad-display/index-1.htm" title="La propiedad display"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/posicionamiento-css/index-1.htm" title="La propiedad position"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/desplazamientos/index-1.htm" title="La propiedad float"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/flexbox/index-1.htm" title="Flexbox CSS"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/grid-css/index-1.htm" title="Grid CSS"></sidebar-link></sidebar-section><sidebar-section title="Interacciones" href="../../interacciones/index-1.htm"><sidebar-link href="../../interacciones/contornos/index-1.htm" title="Contornos"></sidebar-link><sidebar-link href="../../interacciones/cursor-del-raton/index-1.htm" title="Cursor del ratón"></sidebar-link><sidebar-link href="../../interacciones/scroll-y-overflow/index-1.htm" title="Scroll y Overflow"></sidebar-link><sidebar-link href="../../interacciones/snap-scroll/index-1.htm" title="CSS Snap Scroll"></sidebar-link></sidebar-section><sidebar-section title="Sombras" href="../../sombras/index-1.htm"><sidebar-link href="../../sombras/text-shadow/index-1.htm" title="Sombras CSS en textos"></sidebar-link><sidebar-link href="../../sombras/box-shadow/index-1.htm" title="Sombras CSS en cajas"></sidebar-link><sidebar-link href="../../sombras/drop-shadow/index-1.htm" title="Sombras idénticas CSS"></sidebar-link></sidebar-section><sidebar-section title="Efectos" href="../../efectos/index-1.htm"><sidebar-link href="../../efectos/filtros-css/index-1.htm" title="Filtros CSS"></sidebar-link><sidebar-link href="../../efectos/modos-de-fusion/index-1.htm" title="Modos de fusión CSS"></sidebar-link></sidebar-section><sidebar-section title="Máscaras y recortes" href="../../mascaras-y-recortes/index-1.htm"><sidebar-link href="../../mascaras-y-recortes/clip-path/index-1.htm" title="La propiedad clip-path"></sidebar-link><sidebar-link href="../../mascaras-y-recortes/mask-image/index-1.htm" title="La propiedad mask-image"></sidebar-link></sidebar-section><sidebar-section title="Responsive Web Design" href="../../responsive-web-design/index-1.htm"><sidebar-link href="../../responsive-web-design/que-es/index-1.htm" title="¿Qué es Responsive Design?"></sidebar-link><sidebar-link href="../../responsive-web-design/bases-responsive/index-1.htm" title="Bases del Responsive Design"></sidebar-link><sidebar-link href="../../responsive-web-design/media-queries/index-1.htm" title="Media Queries"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-impresos/index-1.htm" title="Medios impresos"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-paginados/index-1.htm" title="Medios paginados"></sidebar-link><sidebar-link href="../../responsive-web-design/preferencias-usuario/index-1.htm" title="Preferencias de usuario"></sidebar-link></sidebar-section><sidebar-section title="Animaciones CSS" href="../../animaciones/index-1.htm"><sidebar-link href="../../animaciones/transiciones/index-1.htm" title="Transiciones CSS"></sidebar-link><sidebar-link href="../../animaciones/timing-function/index-1.htm" title="Funciones de tiempo"></sidebar-link><sidebar-link href="../../animaciones/animaciones/index-1.htm" title="Animaciones CSS"></sidebar-link><sidebar-link href="../../animaciones/keyframes/index-1.htm" title="La regla @keyframes"></sidebar-link></sidebar-section><sidebar-section title="Transformaciones CSS" href="../../transformaciones/index-1.htm"><sidebar-link href="../../transformaciones/transform/index-1.htm" title="Transformaciones CSS"></sidebar-link><sidebar-link href="../../transformaciones/transform-translate/index-1.htm" title="Translaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-rotate/index-1.htm" title="Rotaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-scale/index-1.htm" title="Escalado 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-skew/index-1.htm" title="Deformaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-3d/index-1.htm" title="Transformaciones 3D"></sidebar-link><sidebar-link href="../../transformaciones/perspective/index-1.htm" title="Perspectivas CSS"></sidebar-link></sidebar-section><sidebar-section title="Dibujar con CSS" href="../../dibujar-con-css/index-1.htm"><sidebar-link href="../../dibujar-con-css/como-empezar/index-1.htm" title="¿Cómo dibujar con CSS?"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-html/index-1.htm" title="Primeros pasos: Estructura HTML"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-css/index-1.htm" title="Primeros pasos: Estructura CSS"></sidebar-link></sidebar-section></div>
+
+      
+    </div>
+    <div class="contents">
+      <header class="mega">
+  <h1>Textos y alineaciones</h1><h2>Propiedades CSS para alinear o aplicar a textos</h2></header>
+
+      <div class="content ">
+  <div class="breadcrumbs">
+  <a href="../../../index.htm">ATRÁS</a> <span>ᐳ</span> <a href="../../index-1.htm">css</a> <span>ᐳ</span> <a href="index-1.htm">Textos y alineaciones</a>
+</div>
+<p>CSS dispone de ciertas propiedades relacionadas con el texto de una página, pero alejándose de criterios de tipografías, y centrándose más en objetivos de alineación o tratamiento de espaciados. Veamos algunas de estas propiedades:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>letter-spacing</code></td>
+<td><strong>normal</strong> | <badge-type class="size"></badge-type></td>
+<td>Espacio entre letras (tracking)</td>
+</tr>
+<tr>
+<td><code>word-spacing</code></td>
+<td><strong>normal</strong> | <badge-type class="size"></badge-type></td>
+<td>Espacio entre palabras</td>
+</tr>
+<tr>
+<td><code>line-height</code></td>
+<td><strong>normal</strong> | <badge-type class="size"></badge-type></td>
+<td>Altura de una línea (interlineado)</td>
+</tr>
+<tr>
+<td><code>text-indent</code></td>
+<td><badge-type class="size"></badge-type></td>
+<td>Indentación de texto (sangría)</td>
+</tr>
+<tr>
+<td><code>white-space</code></td>
+<td><strong>normal</strong> | nowrap | pre | pre-line | pre-wrap</td>
+<td>Comportamiento de los espacios</td>
+</tr>
+<tr>
+<td><code>tab-size</code></td>
+<td><badge-type class="number"></badge-type> | <badge-type class="size"></badge-type></td>
+<td>Ancho de las tabulaciones (espacio o tamaño)</td>
+</tr>
+<tr>
+<td><code>direction</code></td>
+<td><strong>ltr</strong> | rtl</td>
+<td>Dirección del texto</td>
+</tr>
+</tbody>
+</table>
+<p>Las tres primeras propiedades, determinan el espacio en diferentes zonas del texto. Por ejemplo la primera de ellas, <code>letter-spacing</code> , especifica el espacio de separación que hay entre cada letra de un texto, denominado comúnmente <strong>interletraje</strong> o <strong>tracking</strong>. Con números negativos tendremos más unidas las letras y con números positivos, las tendremos más separadas unas de otras.</p>
+<p><img src="text-indent-letter-spacing-line-height-1.png" alt="Alineaciones de texto" width="787" height="284" loading="lazy"></p>
+<p>La propiedad <code>line-height</code> especifica la <strong>altura</strong> que tendrá cada línea de texto, una característica que puede facilitar muchísimo la lectura, puesto que un interlineado excesivo puede desorientar al lector, mientras que uno insuficiente puede hacer perder al visitante el foco en el texto.</p>
+<p>La propiedad <code>word-spacing</code> permite establecer el espacio que hay entre una palabra y otra en un texto determinado, lo que puede facilitar la legibilidad de los textos de una página web y da flexibilidad y control sobre ciertas tipografías.</p>
+<p>La propiedad <code>text-indent</code> establece un tamaño de indentación (<em>por defecto, <strong>0</strong></em>), o lo que es lo mismo, hace un sangrado, desplazando el texto la longitud especificada hacia la derecha (<em>o izquierda en cantidades negativas</em>).</p>
+<p>Al utilizar <code>white-space</code> podemos indicar el comportamiento que tendrán los espacios en blanco en una página web. Por defecto, el valor es <code>normal</code> (<em>transforma múltiples espacios en blanco en un solo espacio consecutivo</em>), pero tiene otras opciones posibles:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Espacios en blanco consecutivos</th>
+<th>Contenido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>normal</strong></td>
+<td>Los espacios se transforman en uno solo.</td>
+<td>Se ajusta al contenedor.</td>
+</tr>
+<tr>
+<td>nowrap</td>
+<td>Los espacios se transforman en uno solo.</td>
+<td>Ignora saltos de línea.</td>
+</tr>
+<tr>
+<td>pre</td>
+<td>Respeta literalmente los espacios.</td>
+<td>Ignora saltos de línea.</td>
+</tr>
+<tr>
+<td>pre-wrap</td>
+<td>Respeta literalmente los espacios.</td>
+<td>Se ajusta al contenedor.</td>
+</tr>
+<tr>
+<td>pre-line</td>
+<td>Respeta literalmente los espacios y suprime los espacios del final.</td>
+<td>Se ajusta al contenedor.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<blockquote>
+<blockquote>
+<p><strong>Nota</strong>: La diferencia entre <code>pre-wrap</code> y <code>pre-line</code> es que este último respeta literalmente los espacios que están antes del texto, mientras que si sobran después del texto, los suprime.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>Probablemente, a medida que realices diferentes diseños, te encontrarás con la desagradable situación en la que un texto concreto (<em>por ejemplo, un enlace demasiado largo</em>) no cabe dentro de un contenedor, por lo que el texto se desborda y provoca efectos no deseados como salirse de su lugar.</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hyphens</code></td>
+<td><strong>manual</strong> | none | auto</td>
+<td>Indica si se debe dividir las palabras por guiones.</td>
+</tr>
+<tr>
+<td><code>overflow-wrap</code></td>
+<td><strong>normal</strong> | break-word | anywhere</td>
+<td>Dividir palabras para evitar desbordamientos.</td>
+</tr>
+<tr>
+<td><code>line-break</code></td>
+<td><strong>auto</strong> | loose | normal | strict | anywhere</td>
+<td>Determina como dividir líneas.</td>
+</tr>
+<tr>
+<td><code>word-break</code></td>
+<td><strong>normal</strong> | keep-all | break-all</td>
+<td>Establece si está permitido partir palabras.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<blockquote>
+<p><strong>OJO</strong>: La propiedad <code>overflow-wrap</code> sólo funciona cuando <code>white-space</code> está establecida a valores que respeten espacios. Además, la propiedad <code>word-wrap</code> es un alias de <code>overflow-wrap</code> por temas de retrocompatibilidad.</p>
+</blockquote>
+</blockquote>
+<p>Existen formas de mitigar este problema, como la propiedad <code>word-break</code> , <code>word-wrap</code> o la propiedad <code>hyphens</code> , sin embargo, aún están en fase de desarrollo y su soporte está poco extendido en la actualidad. Aún así, si quieres probar una combinación de varias propiedades que suele dar resultado para paliar este comportamiento, puedes probar lo siguiente:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span><br>    <span class="token property">hyphens</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span><br>    <span class="token property">word-wrap</span><span class="token punctuation">:</span> break-word<span class="token punctuation">;</span><br>    <span class="token property">word-break</span><span class="token punctuation">:</span> break-word<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Por otra parte, la propiedad <code>tab-size</code> permite establecer el número de espacios que se mostrarán en el cliente o navegador al representar el carácter de un <kbd>TAB</kbd> (<em>tabulador</em>), que generalmente se convierten a un espacio en blanco, pero sin embargo son visibles en elementos HTML como <code>&lt;textarea&gt;</code> o <code>&lt;pre&gt;</code> .</p>
+<p><caniuse-support title="CSS3 tab-size" feature="css3-tabsize" edge="79/y" firefox="53/y" chrome="42/y" safari="13.1/y" opera="29/y" ios_saf="13.4-13.7/y" and_chr="103/y" and_ff="101/y">
+</caniuse-support></p>
+<p>Por último, la propiedad <code>direction</code> permite establecer la dirección del texto: de izquierda a derecha (<em>ltr, left to right</em>) o de derecha a izquierda (<em>rtl, right to left</em>).</p>
+<h3 id="alineaciones" tabindex="-1">Alineaciones</h3>
+<p>También existen varias propiedades CSS que permiten modificar las diferentes alineaciones de los textos en su conjunto. Veamos un resumen de ellas:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>text-align</code></td>
+<td><strong>left</strong> | center | right | justify</td>
+<td>Justificación del texto</td>
+</tr>
+<tr>
+<td><code>text-justify</code></td>
+<td><strong>auto</strong> | inter-word | inter-character | none</td>
+<td>Método de justificación de textos</td>
+</tr>
+<tr>
+<td><code>text-overflow</code></td>
+<td><strong>clip</strong> | ellipsis | <em>texto</em></td>
+<td>Comportamiento cuando el texto no cabe «[...]»</td>
+</tr>
+</tbody>
+</table>
+<p>En el primer caso, se puede establecer los valores <code>left</code> , <code>right</code> , <code>center</code> o <code>justify</code> a la propiedad <code>text-align</code> para alinear horizontalmente el texto a la izquierda, a la derecha, en el centro o justificar el texto, respectivamente, de la misma forma que lo hacemos en un procesador de texto.</p>
+<p>En la propiedad <code>text-justify</code> indicamos el tipo de justificación de texto que el navegador realizará: automática (<em>el navegador elige</em>), ajustar el espacio entre palabras (<em>el resultado de ajustar con la propiedad word-spacing</em>), ajustar el espacio entre par de carácteres (<em>el resultado de ajustar con la propiedad letter-spacing</em>) y justificación desactivada.</p>
+<p><caniuse-support title="CSS text-justify" feature="css-text-justify" edge="12/a" firefox="55/y" chrome="✗/n" safari="✗/n" opera="✗/n" ios_saf="✗/n" and_chr="✗/n" and_ff="101/y">
+</caniuse-support></p>
+<p>Por su parte, la propiedad <code>text-overflow</code> cambia el comportamiento del navegador cuando detecta que un texto no cabe y se desborda. En ella podemos utilizar los valores <code>clip</code> , desbordar el contenedor (<em>comportamiento por defecto</em>), <code>ellipsis</code> , que muestra el texto «...» cuando no cabe más texto y por último indicar el texto que queremos utilizar en lugar de «...».</p>
+<p>Al igual que existe <code>text-align</code> para alinear horizontalmente, también existe la propiedad <code>vertical-align</code> , que se encarga de la alineación vertical de un elemento, pudiendo establecer como valor las siguientes opciones:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>¿Cómo hace la alineación?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>baseline</strong></td>
+<td>La base del elemento con la base del elemento padre.</td>
+</tr>
+<tr>
+<td>sub</td>
+<td>El elemento como un subíndice.</td>
+</tr>
+<tr>
+<td>super</td>
+<td>El elemento como un superíndice.</td>
+</tr>
+<tr>
+<td>top</td>
+<td>La parte superior del elemento con la parte superior del elemento más alto de la línea.</td>
+</tr>
+<tr>
+<td>middle</td>
+<td>El elemento en la mitad del elemento padre.</td>
+</tr>
+<tr>
+<td>bottom</td>
+<td>La parte inferior del elemento con la parte inferior del elemento más bajo de esa línea.</td>
+</tr>
+<tr>
+<td>text-top</td>
+<td>La parte superior del elemento con la parte superior del texto padre.</td>
+</tr>
+<tr>
+<td>text-bottom</td>
+<td>La parte inferior del elemento con la parte inferior del texto padre.</td>
+</tr>
+<tr>
+<td><em>tamaño</em></td>
+<td>Sube o baja un elemento el tamaño o porcentaje  especificado.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<blockquote>
+<p><strong>Consejo</strong>: Cuidado con <code>vertical-align</code> . Esta propiedad puede querer utilizarse para centrar verticalmente un elemento, sin embargo, su utilización es un poco menos intuitiva de lo que en un principio se cree, ya que se debe utilizar para alinear textos respecto a elementos. Para alinear bloques de contenido o crear estructuras de diseño, véase <a href="../../maquetacion-y-colocacion/flexbox/index-1.htm">Flexbox</a>.</p>
+</blockquote>
+</blockquote>
+<h3 id="variaciones" tabindex="-1">Variaciones</h3>
+<p>Por último, existen varias propiedades aplicables a los textos para variar su naturaleza. Echemos un vistazo:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>text-decoration</code></td>
+<td><strong>none</strong> | underline | overline | line-through</td>
+<td>Indica el tipo de subrayado (decoración)</td>
+</tr>
+<tr>
+<td><code>text-transform</code></td>
+<td><strong>none</strong> | capitalize | uppercase | lowercase</td>
+<td>Transforma a mayús/minús o texto capitalizado</td>
+</tr>
+</tbody>
+</table>
+<p>La propiedad <code>text-decoration</code> permite establecer <strong>subrayados</strong> (<em>underline</em>), subrayados por encima del texto (<em>overline</em>) y tachados (<em>line-through</em>). Indicando el valor <code>none</code> se puede eliminar cualquiera de los formatos anteriores. Es muy utilizado, por ejemplo, para eliminar el subrayado de los textos que tienen un enlace o hipervínculo.</p>
+<p>Por último, la propiedad <code>text-transform</code> es muy útil para convertir textos a mayúsculas (<em>uppercase</em>) o minúsculas (<em>lowercase</em>), o incluso capitalizar el texto (<em>capitalize</em>), es decir, poner sólo la primera letra en mayúscula, independientemente de como esté escrito en el documento HTML.</p>
+
+    <nav class="prev-next"><a class="bt prev" href="../fuentes-variables/index-1.htm" title="Fuentes variables CSS">
+    <span class="data">
+      <span>Fuentes variables CSS</span>
+      <small>Capítulo anterior</small>
+    </span>
+  </a><a class="bt next" href="../propiedades-avanzadas/index-1.htm" title="Propiedades avanzadas">
+    <span class="icon">
+      <svg-icon name="arrow-right"></svg-icon>
+    </span>
+    <span class="data">
+      <span>Propiedades avanzadas</span>
+      <small>Capítulo siguiente</small>
+    </span>
+  </a></nav>
+
+    <script async="" src="../../../pagead/js/f-1.txt"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center; margin:auto; margin-top: 2em" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0412426997270095" data-ad-slot="3027930890"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+      <div class="related">
+
+  <div class="author">
+    <div class="author-wrapper">
+      <img loading="lazy" class="circle" src="../../../assets/manz-1.webp" alt="Manz">
+      <div>
+        <p>Docente, divulgador informático y <a href="https://manz.dev/">streamer de código</a>. Amante de <strong>CSS</strong>, <strong>Javascript</strong>
+          y de la plataforma web. Ha trabajado como profesor en la Universidad de La Laguna y es director del curso de
+          Programación web FullStack y FrontEnd de EOI desde Tenerife. En sus ratos libres, busca GIF de gatos en Internet.</p>
+        <p class="twitch-badge">
+          <a href="https://twitch.tv/ManzDev">
+            <svg class="twitch" viewbox="0 0 1024 1024">
+              <path style="fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="m262.451 12.904-178.26 178.26v641.672h213.905v178.26l178.26-178.26h142.576L939.809 512V12.904H262.45zm35.645 71.287h570.383v392.164L725.904 618.932H583.287L458.514 743.705V618.932H298.096V84.192zM494.158 208.51v216.36h71.328V208.51h-71.328zm196 0v216.36h71.328V208.51h-71.328z"></path>
+            </svg>
+            Sígueme en Twitch
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="comentarios">
+    <script async="" src="../../../count-1.js" id="dsq-count-scr"></script>
+<script>
+var disqus_config = function () {
+  this.page.path = location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname;
+  this.page.url = 'https://lenguajecss.com' + this.page.path;
+  this.page.identifier = this.page.url;
+};
+document.addEventListener('DOMContentLoaded', function() {
+  const coms = document.querySelector('#comentarios');
+  a = coms.querySelector('#disqus_button');
+  a.dataset.disqusIdentifier = 'https://lenguajecss.com' + (location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname);
+  a.addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.id = 'disqus_thread';
+    coms.appendChild(div);
+    const d = document, s = d.createElement('script');
+    s.src = '//lenguajecss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    this.remove();
+  });
+});
+</script>
+
+    <a class="disqus-comment-count" id="disqus_button" href="#disqus_thread" data-disqus-identifier="https://lenguajecss.com/css/fuentes-y-tipografias/textos-y-alineaciones/">Leer comentarios</a>
+    <a class="discord" href="https://discord.manz.dev/">¡Accede a Discord y cuéntanos!</a>
+  </div>
+
+</div>
+
+    </div>
+    <div class="aside">
+      <div class="aside">
+
+  <div class="aside-top">
+    <a href="https://manz.dev/digitalocean" title="Empieza en DigitalOcean con 100$">
+      <img width="240" height="120" src="../../../assets/digital-ocean-1.png" alt="DigitalOcean">
+    </a>
+  </div><script type="module">
+  const ANCHOR_ICON = /* svg */`
+    <svg class="anchor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205" width="36" height="36">
+      <path d="m140 129 16 16s-20 30-42 30V71c14-5 25-18 25-34 0-20-17-36-37-36-21 0-38 16-38 36 0 15 11 29 25
+              34v104c-26-2-42-27-42-27l18-18-65-9 10 63 17-17c15 12 32 37 73 37 51-1 63-29 76-40l19 19 10-64-65
+              10zM83 36c0-10 8-18 19-18s19 8 19 18c0 11-9 19-19 19s-19-8-19-19z"/>
+    </svg>`;
+  // Add inner links to sidebar menu
+  export const addInnerLinks = () => {
+    const summary = document.querySelector(".aside .summary .links");
+    const headers = Array.from(document.querySelectorAll(".content h3, .content h4"));
+    const tocLinks = [];
+    headers.forEach((e) => {
+      const link = `${location.origin}${location.pathname}#${e.id}`;
+      e.innerHTML = `<a class="permalink" href="${link}">${e.textContent} ${ANCHOR_ICON}</a>`;
+      const headerType = e.nodeName.toLowerCase();
+      const textContent = headerType === "h4" ? e.textContent.replace("La propiedad ", "").replace("La función ", "") : e.textContent;
+      tocLinks.push(`<a class="${headerType}" href="#${e.id}">${textContent}</a>`);
+    });
+    summary.insertAdjacentHTML("beforeEnd", tocLinks.join("\n"));
+  };
+
+  addInnerLinks();
+</script>
+
+<div class="summary">
+  <div class="table">Tabla de contenidos</div>
+  <div class="links"></div>
+</div>
+</div>
+
+    </div>
+  </div><footer class="main">
+  <div class="square">
+    <a href="../../../index.htm"><h2>Lenguaje CSS</h2></a>
+    <div class="icons">
+      <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+      <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+      <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+      <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+      <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+      <a href="https://github.com/ManzDev" title="GitHub"><svg-icon type="social" name="github"></svg-icon></a>
+      <a href="https://codepen.io/Manz" title="Codepen"><svg-icon type="social" name="codepen"></svg-icon></a>
+      <a href="https://www.linkedin.com/in/joseromanhdez/" title="Linkedin"><svg-icon type="social" name="linkedin"></svg-icon></a>
+    </div>
+    <p>Documentación sobre CSS y las mejores herramientas y recursos para aprender a utilizar el lenguaje de estilos CSS (Hojas de estilo).</p>
+    <p id="footer">Creado y mantenido por <a href="https://twitter.com/Manz">@Manz</a> con <span title="<3">❤</span></p></div>
+</footer>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-136544-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async="" src='../../../analytics-1.js'></script>
+
+
+</body>
+</html>

@@ -1,0 +1,469 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+  <link rel="shortcut icon" href="../../../favicon.ico">
+  <title>Bordes CSS - CSS en español - Lenguaje CSS</title>
+  <link rel="preload" href="../../../critical.css" as="style">
+  <link rel="preload" href="../../../assets/fonts/blinker-vf.woff2" as="font" crossorigin="">
+  <link rel="preload" href="../../../assets/fonts/scope-one-400.woff2" as="font" crossorigin="">
+  <meta name="description" content="Con CSS podemos modificar los bordes de los elementos de un documento HTML. Desde su color o tamaño hasta redondearlos o usar imágenes expandibles.">
+  <link rel="stylesheet" href="../../../critical.css">
+  <link rel="stylesheet" href="../../../theme.css">
+  <script type="module" src="../../../main.js"></script>
+  <link rel="canonical" href="index.htm">
+  <meta property="og:title" content="Bordes CSS - CSS en español">
+  <meta property="og:image" content="https://lenguajecss.com/css/large-summary.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="Con CSS podemos modificar los bordes de los elementos de un documento HTML. Desde su color o tamaño hasta redondearlos o usar imágenes expandibles.">
+  <meta property="og:url" content="https://lenguajecss.com/css/modelo-de-cajas/bordes/">
+  <meta property="twitter:url" content="https://lenguajecss.com/css/modelo-de-cajas/bordes/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="@Manz">
+  <meta property="twitter:title" content="Bordes CSS - CSS en español">
+  <meta property="twitter:description" content="Con CSS podemos modificar los bordes de los elementos de un documento HTML. Desde su color o tamaño hasta redondearlos o usar imágenes expandibles.">
+  <meta property="twitter:image:src" content="https://lenguajecss.com/css/large-summary.jpg">
+</head>
+<body class="css post"><div class="page">
+    <div class="sidebar">
+      <div class="logo flex-center">
+  <a href="/">
+    <img width="42" height="42" src="../../../assets/logo.svg" alt="Logo">
+    Lenguaje CSS
+  </a>
+  <div class="icons" style="--icon-size: 32px; --icon-side-padding: 0.15em">
+    <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+    <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+    <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+    <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+    <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+  </div>
+  <span>Un sitio web de <a href="https://manz.dev/"><mark>Manz.dev</mark></a></span>
+</div>
+
+      <form class="search flex-center" action="https://www.google.com/search">
+  <label><span>Buscar:</span> <input type="search" name="q" placeholder="Buscar un tema (ej: flex, grid...)" autocomplete="off"></label>
+  <label><span>Sitio:</span> <input type="hidden" name="q" value="site:lenguajejs.com OR site:lenguajecss.com OR site:lenguajehtml.com OR site:terminaldelinux.com OR site:manz.dev"></label>
+  <div class="search-results"></div>
+</form>
+
+      
+
+<style>
+  sidebar-link {
+    --logo-image: url(../../logo.svg);
+  }
+</style>
+
+<div class="toc"><sidebar-link title="Volver al índice" href="../../index.htm" back="" direct=""></sidebar-link><sidebar-link href="../../cheatsheets/index.htm" title="CSS3 Cheatsheet" direct=""></sidebar-link><sidebar-section title="Introducción a CSS" href="../../introduccion/index.htm"><sidebar-link href="../../introduccion/que-es-css/index.htm" title="¿Qué es CSS?"></sidebar-link><sidebar-link href="../../introduccion/como-usar-css/index.htm" title="¿Cómo usar CSS?"></sidebar-link><sidebar-link href="../../introduccion/estructura-de-css/index.htm" title="Estructura de CSS"></sidebar-link><sidebar-link href="../../introduccion/minificar-css/index.htm" title="Minificar CSS"></sidebar-link><sidebar-link href="../../introduccion/navegadores-web/index.htm" title="Navegadores web"></sidebar-link><sidebar-link href="../../introduccion/niveles-y-prefijos-css/index.htm" title="Niveles de CSS y prefijos"></sidebar-link><sidebar-link href="../../introduccion/herencia-css/index.htm" title="Herencia en CSS"></sidebar-link><sidebar-link href="../../introduccion/cascada-css/index.htm" title="Cascada en CSS"></sidebar-link><sidebar-link href="../../introduccion/css-custom-properties/index.htm" title="Variables CSS"></sidebar-link><sidebar-link href="../../introduccion/guia-css/index.htm" title="La guía de propiedades CSS"></sidebar-link></sidebar-section><sidebar-section title="Modelo de cajas" href="../index.htm"><sidebar-link href="../unidades-css/index.htm" title="Unidades CSS"></sidebar-link><sidebar-link href="../que-es/index.htm" title="Modelo de cajas"></sidebar-link><sidebar-link href="../margenes-y-rellenos/index.htm" title="Márgenes y rellenos"></sidebar-link><sidebar-link href="index.htm" title="Bordes CSS"></sidebar-link><sidebar-link href="../border-radius/index.htm" title="Esquinas redondeadas"></sidebar-link><sidebar-link href="../propiedades-logicas-css/index.htm" title="Propiedades lógicas CSS"></sidebar-link><sidebar-link href="../bordes-imagenes/index.htm" title="Bordes con imágenes"></sidebar-link><sidebar-link href="../funciones-css/index.htm" title="Funciones CSS"></sidebar-link></sidebar-section><sidebar-section title="Colores, fondos e imágenes" href="../../colores-y-fondos/index.htm"><sidebar-link href="../../colores-y-fondos/colores-css/index.htm" title="Colores CSS"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-opacity/index.htm" title="La propiedad opacity"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-background-image/index.htm" title="La propiedad background-image"></sidebar-link><sidebar-link href="../../colores-y-fondos/linear-gradient/index.htm" title="Gradientes lineales"></sidebar-link><sidebar-link href="../../colores-y-fondos/radial-gradient/index.htm" title="Gradientes radiales"></sidebar-link><sidebar-link href="../../colores-y-fondos/conic-gradient/index.htm" title="Gradientes cónicos"></sidebar-link><sidebar-link href="../../colores-y-fondos/imagenes-css/index.htm" title="Imágenes y Objetos"></sidebar-link></sidebar-section><sidebar-section title="Selectores CSS" href="../../selectores/index.htm"><sidebar-link href="../../selectores/selectores-basicos/index.htm" title="Selectores CSS básicos"></sidebar-link><sidebar-link href="../../selectores/selectores-avanzados/index.htm" title="Selectores CSS avanzados"></sidebar-link><sidebar-link href="../../selectores/pseudoclases/index.htm" title="Pseudoclases CSS"></sidebar-link><sidebar-link href="../../selectores/pseudoclases-avanzadas/index.htm" title="Pseudoclases CSS avanzadas"></sidebar-link><sidebar-link href="../../selectores/pseudoelementos/index.htm" title="Pseudoelementos CSS"></sidebar-link><sidebar-link href="../../selectores/atributos/index.htm" title="Atributos CSS"></sidebar-link></sidebar-section><sidebar-section title="Reglas CSS" href="../../reglas-css/index.htm"><sidebar-link href="../../reglas-css/que-son-reglas-css/index.htm" title="¿Qué son las reglas CSS?"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-import/index.htm" title="La regla @import"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-layer/index.htm" title="La regla @layer"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-supports/index.htm" title="La regla @supports"></sidebar-link></sidebar-section><sidebar-section title="Fuentes y tipografías" href="../../fuentes-y-tipografias/index.htm"><sidebar-link href="../../fuentes-y-tipografias/tipografias/index.htm" title="Tipografías CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/tipografias-externas/index.htm" title="Tipografías externas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/fuentes-variables/index.htm" title="Fuentes variables CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/textos-y-alineaciones/index.htm" title="Textos y alineaciones"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/propiedades-avanzadas/index.htm" title="Propiedades avanzadas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/caracteristicas-personalizadas/index.htm" title="Características personalizadas"></sidebar-link></sidebar-section><sidebar-section title="Representación de datos" href="../../representacion-datos/index.htm"><sidebar-link href="../../representacion-datos/tablas-css/index.htm" title="Tablas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/listas-css/index.htm" title="Listas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/contadores-css/index.htm" title="Contadores CSS"></sidebar-link></sidebar-section><sidebar-section title="Maquetación y colocación" href="../../maquetacion-y-colocacion/index.htm"><sidebar-link href="../../maquetacion-y-colocacion/propiedad-display/index.htm" title="La propiedad display"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/posicionamiento-css/index.htm" title="La propiedad position"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/desplazamientos/index.htm" title="La propiedad float"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/flexbox/index.htm" title="Flexbox CSS"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/grid-css/index.htm" title="Grid CSS"></sidebar-link></sidebar-section><sidebar-section title="Interacciones" href="../../interacciones/index.htm"><sidebar-link href="../../interacciones/contornos/index.htm" title="Contornos"></sidebar-link><sidebar-link href="../../interacciones/cursor-del-raton/index.htm" title="Cursor del ratón"></sidebar-link><sidebar-link href="../../interacciones/scroll-y-overflow/index.htm" title="Scroll y Overflow"></sidebar-link><sidebar-link href="../../interacciones/snap-scroll/index.htm" title="CSS Snap Scroll"></sidebar-link></sidebar-section><sidebar-section title="Sombras" href="../../sombras/index.htm"><sidebar-link href="../../sombras/text-shadow/index.htm" title="Sombras CSS en textos"></sidebar-link><sidebar-link href="../../sombras/box-shadow/index.htm" title="Sombras CSS en cajas"></sidebar-link><sidebar-link href="../../sombras/drop-shadow/index.htm" title="Sombras idénticas CSS"></sidebar-link></sidebar-section><sidebar-section title="Efectos" href="../../efectos/index.htm"><sidebar-link href="../../efectos/filtros-css/index.htm" title="Filtros CSS"></sidebar-link><sidebar-link href="../../efectos/modos-de-fusion/index.htm" title="Modos de fusión CSS"></sidebar-link></sidebar-section><sidebar-section title="Máscaras y recortes" href="../../mascaras-y-recortes/index.htm"><sidebar-link href="../../mascaras-y-recortes/clip-path/index.htm" title="La propiedad clip-path"></sidebar-link><sidebar-link href="../../mascaras-y-recortes/mask-image/index.htm" title="La propiedad mask-image"></sidebar-link></sidebar-section><sidebar-section title="Responsive Web Design" href="../../responsive-web-design/index.htm"><sidebar-link href="../../responsive-web-design/que-es/index.htm" title="¿Qué es Responsive Design?"></sidebar-link><sidebar-link href="../../responsive-web-design/bases-responsive/index.htm" title="Bases del Responsive Design"></sidebar-link><sidebar-link href="../../responsive-web-design/media-queries/index.htm" title="Media Queries"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-impresos/index.htm" title="Medios impresos"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-paginados/index.htm" title="Medios paginados"></sidebar-link><sidebar-link href="../../responsive-web-design/preferencias-usuario/index.htm" title="Preferencias de usuario"></sidebar-link></sidebar-section><sidebar-section title="Animaciones CSS" href="../../animaciones/index.htm"><sidebar-link href="../../animaciones/transiciones/index.htm" title="Transiciones CSS"></sidebar-link><sidebar-link href="../../animaciones/timing-function/index.htm" title="Funciones de tiempo"></sidebar-link><sidebar-link href="../../animaciones/animaciones/index.htm" title="Animaciones CSS"></sidebar-link><sidebar-link href="../../animaciones/keyframes/index.htm" title="La regla @keyframes"></sidebar-link></sidebar-section><sidebar-section title="Transformaciones CSS" href="../../transformaciones/index.htm"><sidebar-link href="../../transformaciones/transform/index.htm" title="Transformaciones CSS"></sidebar-link><sidebar-link href="../../transformaciones/transform-translate/index.htm" title="Translaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-rotate/index.htm" title="Rotaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-scale/index.htm" title="Escalado 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-skew/index.htm" title="Deformaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-3d/index.htm" title="Transformaciones 3D"></sidebar-link><sidebar-link href="../../transformaciones/perspective/index.htm" title="Perspectivas CSS"></sidebar-link></sidebar-section><sidebar-section title="Dibujar con CSS" href="../../dibujar-con-css/index.htm"><sidebar-link href="../../dibujar-con-css/como-empezar/index.htm" title="¿Cómo dibujar con CSS?"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-html/index.htm" title="Primeros pasos: Estructura HTML"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-css/index.htm" title="Primeros pasos: Estructura CSS"></sidebar-link></sidebar-section></div>
+
+      
+    </div>
+    <div class="contents">
+      <header class="mega">
+  <h1>Bordes CSS</h1><h2>Características de los bordes de los elementos</h2></header>
+
+      <div class="content ">
+  <div class="breadcrumbs">
+  <a href="/">ATRÁS</a> <span>ᐳ</span> <a href="../../index.htm">css</a> <span>ᐳ</span> <a href="index.htm">Bordes CSS</a>
+</div>
+<p>En CSS es posible especificar el aspecto que tendrán los <strong>bordes</strong> de cualquier elemento HTML, pudiendo incluso, dar diferentes características a zonas particulares del borde, como por ejemplo, el borde superior, el borde izquierdo, el borde derecho o el borde inferior.</p>
+<h3 id="propiedades-de-bordes" tabindex="-1">Propiedades de bordes</h3>
+<p>Las propiedades básicas y específicas de los bordes en CSS son las siguientes:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>border-color</code> <badge-type class="p1234"></badge-type></td>
+<td><strong>black</strong> | <badge-type class="color"></badge-type></td>
+<td>Especifica el color que se utilizará en el borde.</td>
+</tr>
+<tr>
+<td><code>border-width</code> <badge-type class="p1234"></badge-type></td>
+<td>thin | <strong>medium</strong> | thick | <badge-type class="size"></badge-type></td>
+<td>Especifica un tamaño predefinido para el grosor del borde.</td>
+</tr>
+<tr>
+<td><code>border-style</code> <badge-type class="p1234"></badge-type></td>
+<td><strong>none</strong> | <badge-type class="style"></badge-type></td>
+<td>Define el estilo para el borde a utilizar (ver más adelante).</td>
+</tr>
+</tbody>
+</table>
+<p>En primer lugar, <code>border-color</code> establece el color del borde, de la misma forma que lo hicimos en apartados anteriores de colores. En segundo lugar, con <code>border-width</code> podemos establecer la anchura o grosor del borde utilizando tanto <strong>palabras clave</strong> predefinidas como un tamaño concreto con cualquier tipo de las <strong>unidades</strong> ya vistas.</p>
+<h4 id="la-propiedad-border-style" tabindex="-1">La propiedad border-style</h4>
+<p>Por último, con la propiedad <code>border-style</code> podemos aplicar un estilo determinado al borde de un elemento. En <strong>estilo de borde</strong> podemos elegir cualquiera de las siguientes opciones:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hidden</code></td>
+<td>Oculto. Idéntico a <code>none</code>, salvo para conflictos con tablas.</td>
+</tr>
+<tr>
+<td><code>dotted</code></td>
+<td>Establece un borde basado en puntos.</td>
+</tr>
+<tr>
+<td><code>dashed</code></td>
+<td>Establece un borde basado en rayas (línea discontínua).</td>
+</tr>
+<tr>
+<td><code>solid</code></td>
+<td>Establece un borde sólido (línea contínua).</td>
+</tr>
+<tr>
+<td><code>double</code></td>
+<td>Establece un borde doble (dos líneas contínuas).</td>
+</tr>
+<tr>
+<td><code>groove</code></td>
+<td>Establece un borde biselado con luz desde arriba.</td>
+</tr>
+<tr>
+<td><code>ridge</code></td>
+<td>Establece un borde biselado con luz desde abajo. Opuesto a <strong>groove</strong>.</td>
+</tr>
+<tr>
+<td><code>inset</code></td>
+<td>Establece un borde con profundidad «hacia dentro».</td>
+</tr>
+<tr>
+<td><code>outset</code></td>
+<td>Establece un borde con profundidad «hacia fuera». Opuesto a <strong>inset</strong>.</td>
+</tr>
+</tbody>
+</table>
+<p>Veamos un ejemplo sencillo aplicando alguna de estas características:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">div</span> <span class="token punctuation">{</span><br>  <span class="token property">border-color</span><span class="token punctuation">:</span> gray<span class="token punctuation">;</span><br>  <span class="token property">border-width</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span><br>  <span class="token property">border-style</span><span class="token punctuation">:</span> dotted<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Sin embargo, el borde más frecuente suele ser <strong>solid</strong>, que no es más que un borde liso y continuo. Pueden utilizarse cualquiera de los estilos indicados en la tabla anterior e incluso combinar con otras propiedades. Recuerda que si no aplica una de ellas, se aplica el valor por defecto.</p>
+<p>Veamos como se verían los diferentes estilos de borde utilizando <strong>10 píxels</strong> de grosor y color <strong>gris</strong>:</p>
+<p><img src="border-styles.png" alt="Estilos" width="800" height="600" loading="lazy"></p>
+<h3 id="bordes-múltiples-diferentes" tabindex="-1">Bordes múltiples (diferentes)</h3>
+<p>Hasta ahora, sólo hemos utilizado un parámetro en cada propiedad, lo que significa que se aplica el mismo valor para cada borde de un elemento (<em>borde superior, borde derecho, borde inferior y borde izquierdo</em>). Sin embargo, podemos especificar uno, dos, tres o cuatro parámetros, dependiendo de lo que queramos hacer:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>border-color</code> <badge-type class="p1234"></badge-type></td>
+<td><badge-type class="color"></badge-type></td>
+<td>1 parámetro. Aplica el mismo color a todos los bordes.</td>
+</tr>
+<tr>
+<td></td>
+<td><badge-type class="color"></badge-type> <badge-type class="color"></badge-type></td>
+<td>2 parámetros. Aplica al borde <strong>top/bottom</strong>, y al <strong>left/right</strong>.</td>
+</tr>
+<tr>
+<td></td>
+<td><badge-type class="color"></badge-type> <badge-type class="color"></badge-type> <badge-type class="color"></badge-type></td>
+<td>3 parámetros. Aplica al <strong>top</strong>, al <strong>left/right</strong> y al <strong>bottom</strong>.</td>
+</tr>
+<tr>
+<td></td>
+<td><badge-type class="color"></badge-type> <badge-type class="color"></badge-type> <badge-type class="color"></badge-type> <badge-type class="color"></badge-type></td>
+<td>4 parámetros. Aplica al <strong>top</strong>, <strong>right</strong>, <strong>bottom</strong> y <strong>left</strong>.</td>
+</tr>
+</tbody>
+</table>
+<p>De la misma forma, podemos hacer exactamente lo mismo con las propiedades <code>border-width</code> (<em>respecto al ancho del borde</em>) y <code>border-style</code> (<em>respecto al estilo del borde</em>). Teniendo en cuenta esto, disponemos de mucha flexibilidad a la hora de especificar esquemas de bordes más complejos:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">div</span> <span class="token punctuation">{</span><br>  <span class="token property">border-color</span><span class="token punctuation">:</span> red blue green<span class="token punctuation">;</span><br>  <span class="token property">border-width</span><span class="token punctuation">:</span> 2px 10px 5px<span class="token punctuation">;</span><br>  <span class="token property">border-style</span><span class="token punctuation">:</span> solid dotted solid<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>En el ejemplo anterior hemos utilizado <strong>3 parámetros</strong>, indicando un elemento con borde superior rojo sólido de 2 píxeles de grosor, con borde izquierdo y derecho punteado azul de 10 píxeles de grosor y con un borde inferior verde sólido de 5 píxeles de grosor.</p>
+<h3 id="atajo-bordes" tabindex="-1">Atajo: Bordes</h3>
+<p>Ya habremos visto que con tantas propiedades, para hacer algo relativamente sencillo, nos pueden quedar varias lineas de código complejas y difíciles de leer. Al igual que con otras propiedades CSS, podemos utilizar la propiedad de atajo <code>border</code>, con la que podemos hacer un resumen y no necesitar indicar múltiples propiedades individuales por separado, realizando el proceso de forma más corta:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>border</code></td>
+<td><badge-type class="size"></badge-type> <badge-type class="style"></badge-type> <badge-type class="color"></badge-type></td>
+<td>Propiedad de atajo para simplificar valores.</td>
+</tr>
+</tbody>
+</table>
+<p>Por ejemplo:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">div</span> <span class="token punctuation">{</span><br>  <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #000000<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Así pues, estamos aplicando un borde de <strong>1 píxel</strong> de grosor, estilo <strong>sólido</strong> y color <strong>negro</strong> a todos los bordes del elemento, ahorrando mucho espacio y escribiéndolo todo en una sola propiedad.</p>
+<blockquote>
+<p><strong>Consejo</strong>: Intenta organizarte y aplicar siempre los atajos si es posible. Ahorrarás mucho espacio en el documento y simplificarás la creación de diseños. El orden, aunque no es obligatorio, si es recomendable para mantener una cierta coherencia con el estilo de código.</p>
+</blockquote>
+<h3 id="bordes-específicos" tabindex="-1">Bordes específicos</h3>
+<p>Otra forma, quizás más intuitiva, es la de utilizar las propiedades de bordes específicos (<em>por zonas</em>) y aplicar estilos combinándolos junto a la <a href="../../introduccion/herencia-css/index.htm">herencia de CSS</a>. Para utilizarlas bastaría con indicarle la zona justo después de <code>border-</code>:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">div</span> <span class="token punctuation">{</span><br>  <span class="token property">border-bottom-width</span><span class="token punctuation">:</span> 2px<span class="token punctuation">;</span><br>  <span class="token property">border-bottom-style</span><span class="token punctuation">:</span> dotted<span class="token punctuation">;</span><br>  <span class="token property">border-bottom-color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Esto dibujaría <strong>sólo un borde inferior</strong> negro de 2 píxeles de grosor y con estilo punteado. Ahora imaginemos que queremos un elemento con todos los bordes en rojo a 5 píxeles de grosor, salvo el borde superior, que lo queremos con un borde de 15 píxeles en color naranja. Podríamos hacer lo siguiente:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">div</span> <span class="token punctuation">{</span><br>  <span class="token property">border</span><span class="token punctuation">:</span> 5px solid red<span class="token punctuation">;</span><br>  <span class="token property">border-top-width</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span><br>  <span class="token property">border-top-color</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span><br>  <span class="token property">border-top-style</span><span class="token punctuation">:</span> solid<span class="token punctuation">;</span>  <span class="token comment">/* Esta propiedad no es necesaria (se hereda) */</span><br><span class="token punctuation">}</span></code></pre>
+<p>El ejemplo anterior conseguiría nuestro objetivo. La primera propiedad establece todos los bordes del elemento, sin embargo, las siguientes propiedades modifican sólo el borde superior, cambiándolo a las características indicadas.</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>border-top-width</code></td>
+<td><badge-type class="size"></badge-type></td>
+<td>Propiedad de atajo para el grosor del borde superior.</td>
+</tr>
+<tr>
+<td><code>border-top-style</code></td>
+<td><badge-type class="style"></badge-type></td>
+<td>Propiedad de atajo para el estilo del borde superior.</td>
+</tr>
+<tr>
+<td><code>border-top-color</code></td>
+<td><badge-type class="color"></badge-type></td>
+<td>Propiedad de atajo para el color del borde superior.</td>
+</tr>
+<tr>
+<td><code>border-right-width</code></td>
+<td><badge-type class="size"></badge-type></td>
+<td>Propiedad de atajo para el grosor del borde derecho.</td>
+</tr>
+<tr>
+<td><code>border-right-style</code></td>
+<td><badge-type class="style"></badge-type></td>
+<td>Propiedad de atajo para el estilo del borde derecho.</td>
+</tr>
+<tr>
+<td><code>border-right-color</code></td>
+<td><badge-type class="color"></badge-type></td>
+<td>Propiedad de atajo para el color del borde derecho.</td>
+</tr>
+<tr>
+<td><code>border-bottom-width</code></td>
+<td><badge-type class="size"></badge-type></td>
+<td>Propiedad de atajo para el grosor del borde inferior.</td>
+</tr>
+<tr>
+<td><code>border-bottom-style</code></td>
+<td><badge-type class="style"></badge-type></td>
+<td>Propiedad de atajo para el estilo del borde inferior.</td>
+</tr>
+<tr>
+<td><code>border-bottom-color</code></td>
+<td><badge-type class="color"></badge-type></td>
+<td>Propiedad de atajo para el color del borde inferior.</td>
+</tr>
+<tr>
+<td><code>border-left-width</code></td>
+<td><badge-type class="size"></badge-type></td>
+<td>Propiedad de atajo para el grosor del borde izquierdo.</td>
+</tr>
+<tr>
+<td><code>border-left-style</code></td>
+<td><badge-type class="style"></badge-type></td>
+<td>Propiedad de atajo para el estilo del borde izquierdo.</td>
+</tr>
+<tr>
+<td><code>border-left-color</code></td>
+<td><badge-type class="color"></badge-type></td>
+<td>Propiedad de atajo para el color del borde izquierdo.</td>
+</tr>
+</tbody>
+</table>
+<p>Recuerda que también existen atajos para estas propiedades de bordes en zonas concretas, lo que nos permite simplificar aún más el ejemplo anterior, haciéndolo más fácil de comprender:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">div</span> <span class="token punctuation">{</span><br>  <span class="token property">border</span><span class="token punctuation">:</span> 5px solid red<span class="token punctuation">;</span><br>  <span class="token property">border-top</span><span class="token punctuation">:</span> 15px solid orange<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Dichas propiedades de atajo serían las siguientes:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>border-top</code></td>
+<td><badge-type class="size"></badge-type> <badge-type class="style"></badge-type> <badge-type class="color"></badge-type></td>
+<td>Propiedad de atajo para bordes superiores.</td>
+</tr>
+<tr>
+<td><code>border-right</code></td>
+<td><badge-type class="size"></badge-type> <badge-type class="style"></badge-type> <badge-type class="color"></badge-type></td>
+<td>Propiedad de atajo para bordes derechos.</td>
+</tr>
+<tr>
+<td><code>border-bottom</code></td>
+<td><badge-type class="size"></badge-type> <badge-type class="style"></badge-type> <badge-type class="color"></badge-type></td>
+<td>Propiedad de atajo para bordes inferiores.</td>
+</tr>
+<tr>
+<td><code>border-left</code></td>
+<td><badge-type class="size"></badge-type> <badge-type class="style"></badge-type> <badge-type class="color"></badge-type></td>
+<td>Propiedad de atajo para bordes izquierdos.</td>
+</tr>
+</tbody>
+</table>
+<p>Es muy importante entender como se está aplicando la herencia en los ejemplos anteriores, puesto que es una de las características más complejas de dominar de CSS junto a la cascada. Por ejemplo, si colocaramos el <code>border-top</code> antes del <code>border</code>, este último sobreescribiría los valores de <code>border-top</code> y no funcionaría de la misma forma.</p>
+
+    <nav class="prev-next"><a class="bt prev" href="../margenes-y-rellenos/index.htm" title="Márgenes y rellenos">
+    <span class="data">
+      <span>Márgenes y rellenos</span>
+      <small>Capítulo anterior</small>
+    </span>
+  </a><a class="bt next" href="../border-radius/index.htm" title="Esquinas redondeadas">
+    <span class="icon">
+      <svg-icon name="arrow-right"></svg-icon>
+    </span>
+    <span class="data">
+      <span>Esquinas redondeadas</span>
+      <small>Capítulo siguiente</small>
+    </span>
+  </a></nav>
+
+    <script async="" src="../../../pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center; margin:auto; margin-top: 2em" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0412426997270095" data-ad-slot="3027930890"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+      <div class="related">
+
+  <div class="author">
+    <div class="author-wrapper">
+      <img loading="lazy" class="circle" src="../../../assets/manz.webp" alt="Manz">
+      <div>
+        <p>Docente, divulgador informático y <a href="https://manz.dev/">streamer de código</a>. Amante de <strong>CSS</strong>, <strong>Javascript</strong>
+          y de la plataforma web. Ha trabajado como profesor en la Universidad de La Laguna y es director del curso de
+          Programación web FullStack y FrontEnd de EOI desde Tenerife. En sus ratos libres, busca GIF de gatos en Internet.</p>
+        <p class="twitch-badge">
+          <a href="https://twitch.tv/ManzDev">
+            <svg class="twitch" viewbox="0 0 1024 1024">
+              <path style="fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="m262.451 12.904-178.26 178.26v641.672h213.905v178.26l178.26-178.26h142.576L939.809 512V12.904H262.45zm35.645 71.287h570.383v392.164L725.904 618.932H583.287L458.514 743.705V618.932H298.096V84.192zM494.158 208.51v216.36h71.328V208.51h-71.328zm196 0v216.36h71.328V208.51h-71.328z"></path>
+            </svg>
+            Sígueme en Twitch
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="comentarios">
+    <script async="" src="../../../count.js" id="dsq-count-scr"></script>
+<script>
+var disqus_config = function () {
+  this.page.path = location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname;
+  this.page.url = 'https://lenguajecss.com' + this.page.path;
+  this.page.identifier = this.page.url;
+};
+document.addEventListener('DOMContentLoaded', function() {
+  const coms = document.querySelector('#comentarios');
+  a = coms.querySelector('#disqus_button');
+  a.dataset.disqusIdentifier = 'https://lenguajecss.com' + (location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname);
+  a.addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.id = 'disqus_thread';
+    coms.appendChild(div);
+    const d = document, s = d.createElement('script');
+    s.src = '//lenguajecss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    this.remove();
+  });
+});
+</script>
+
+    <a class="disqus-comment-count" id="disqus_button" href="#disqus_thread" data-disqus-identifier="https://lenguajecss.com/css/modelo-de-cajas/bordes/">Leer comentarios</a>
+    <a class="discord" href="https://discord.manz.dev/">¡Accede a Discord y cuéntanos!</a>
+  </div>
+
+</div>
+
+    </div>
+    <div class="aside">
+      <div class="aside">
+
+  <div class="aside-top">
+    <a href="https://manz.dev/digitalocean" title="Empieza en DigitalOcean con 100$">
+      <img width="240" height="120" src="../../../assets/digital-ocean.png" alt="DigitalOcean">
+    </a>
+  </div><script type="module">
+  const ANCHOR_ICON = /* svg */`
+    <svg class="anchor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205" width="36" height="36">
+      <path d="m140 129 16 16s-20 30-42 30V71c14-5 25-18 25-34 0-20-17-36-37-36-21 0-38 16-38 36 0 15 11 29 25
+              34v104c-26-2-42-27-42-27l18-18-65-9 10 63 17-17c15 12 32 37 73 37 51-1 63-29 76-40l19 19 10-64-65
+              10zM83 36c0-10 8-18 19-18s19 8 19 18c0 11-9 19-19 19s-19-8-19-19z"/>
+    </svg>`;
+  // Add inner links to sidebar menu
+  export const addInnerLinks = () => {
+    const summary = document.querySelector(".aside .summary .links");
+    const headers = Array.from(document.querySelectorAll(".content h3, .content h4"));
+    const tocLinks = [];
+    headers.forEach((e) => {
+      const link = `${location.origin}${location.pathname}#${e.id}`;
+      e.innerHTML = `<a class="permalink" href="${link}">${e.textContent} ${ANCHOR_ICON}</a>`;
+      const headerType = e.nodeName.toLowerCase();
+      const textContent = headerType === "h4" ? e.textContent.replace("La propiedad ", "").replace("La función ", "") : e.textContent;
+      tocLinks.push(`<a class="${headerType}" href="#${e.id}">${textContent}</a>`);
+    });
+    summary.insertAdjacentHTML("beforeEnd", tocLinks.join("\n"));
+  };
+
+  addInnerLinks();
+</script>
+
+<div class="summary">
+  <div class="table">Tabla de contenidos</div>
+  <div class="links"></div>
+</div>
+</div>
+
+    </div>
+  </div><footer class="main">
+  <div class="square">
+    <a href="/"><h2>Lenguaje CSS</h2></a>
+    <div class="icons">
+      <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+      <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+      <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+      <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+      <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+      <a href="https://github.com/ManzDev" title="GitHub"><svg-icon type="social" name="github"></svg-icon></a>
+      <a href="https://codepen.io/Manz" title="Codepen"><svg-icon type="social" name="codepen"></svg-icon></a>
+      <a href="https://www.linkedin.com/in/joseromanhdez/" title="Linkedin"><svg-icon type="social" name="linkedin"></svg-icon></a>
+    </div>
+    <p>Documentación sobre CSS y las mejores herramientas y recursos para aprender a utilizar el lenguaje de estilos CSS (Hojas de estilo).</p>
+    <p id="footer">Creado y mantenido por <a href="https://twitter.com/Manz">@Manz</a> con <span title="<3">❤</span></p></div>
+</footer>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-136544-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async="" src='../../../analytics.js'></script>
+
+
+</body>
+</html>

@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+  <link rel="shortcut icon" href="../../../favicon.ico">
+  <title>Tipografías externas - CSS en español - Lenguaje CSS</title>
+  <link rel="preload" href="../../../critical.css" as="style">
+  <link rel="preload" href="../../../assets/fonts/blinker-vf.woff2" as="font" crossorigin="">
+  <link rel="preload" href="../../../assets/fonts/scope-one-400.woff2" as="font" crossorigin="">
+  <meta name="description" content="En CSS es posible descargar tipografías no instaladas en el dispositivo del usuario de forma transparente, utilizando la regla @font-face o Google Fonts.">
+  <link rel="stylesheet" href="../../../critical.css">
+  <link rel="stylesheet" href="../../../theme.css">
+  <script type="module" src="../../../main.js"></script>
+  <link rel="canonical" href="index.htm">
+  <meta property="og:title" content="Tipografías externas - CSS en español">
+  <meta property="og:image" content="https://lenguajecss.com/css/large-summary.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="En CSS es posible descargar tipografías no instaladas en el dispositivo del usuario de forma transparente, utilizando la regla @font-face o Google Fonts.">
+  <meta property="og:url" content="https://lenguajecss.com/css/fuentes-y-tipografias/tipografias-externas/">
+  <meta property="twitter:url" content="https://lenguajecss.com/css/fuentes-y-tipografias/tipografias-externas/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="@Manz">
+  <meta property="twitter:title" content="Tipografías externas - CSS en español">
+  <meta property="twitter:description" content="En CSS es posible descargar tipografías no instaladas en el dispositivo del usuario de forma transparente, utilizando la regla @font-face o Google Fonts.">
+  <meta property="twitter:image:src" content="https://lenguajecss.com/css/large-summary.jpg">
+</head>
+<body class="css post"><div class="page">
+    <div class="sidebar">
+      <div class="logo flex-center">
+  <a href="/">
+    <img width="42" height="42" src="../../../assets/logo.svg" alt="Logo">
+    Lenguaje CSS
+  </a>
+  <div class="icons" style="--icon-size: 32px; --icon-side-padding: 0.15em">
+    <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+    <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+    <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+    <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+    <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+  </div>
+  <span>Un sitio web de <a href="https://manz.dev/"><mark>Manz.dev</mark></a></span>
+</div>
+
+      <form class="search flex-center" action="https://www.google.com/search">
+  <label><span>Buscar:</span> <input type="search" name="q" placeholder="Buscar un tema (ej: flex, grid...)" autocomplete="off"></label>
+  <label><span>Sitio:</span> <input type="hidden" name="q" value="site:lenguajejs.com OR site:lenguajecss.com OR site:lenguajehtml.com OR site:terminaldelinux.com OR site:manz.dev"></label>
+  <div class="search-results"></div>
+</form>
+
+      
+
+<style>
+  sidebar-link {
+    --logo-image: url(../../logo.svg);
+  }
+</style>
+
+<div class="toc"><sidebar-link title="Volver al índice" href="../../index.htm" back="" direct=""></sidebar-link><sidebar-link href="../../cheatsheets/index.htm" title="CSS3 Cheatsheet" direct=""></sidebar-link><sidebar-section title="Introducción a CSS" href="../../introduccion/index.htm"><sidebar-link href="../../introduccion/que-es-css/index.htm" title="¿Qué es CSS?"></sidebar-link><sidebar-link href="../../introduccion/como-usar-css/index.htm" title="¿Cómo usar CSS?"></sidebar-link><sidebar-link href="../../introduccion/estructura-de-css/index.htm" title="Estructura de CSS"></sidebar-link><sidebar-link href="../../introduccion/minificar-css/index.htm" title="Minificar CSS"></sidebar-link><sidebar-link href="../../introduccion/navegadores-web/index.htm" title="Navegadores web"></sidebar-link><sidebar-link href="../../introduccion/niveles-y-prefijos-css/index.htm" title="Niveles de CSS y prefijos"></sidebar-link><sidebar-link href="../../introduccion/herencia-css/index.htm" title="Herencia en CSS"></sidebar-link><sidebar-link href="../../introduccion/cascada-css/index.htm" title="Cascada en CSS"></sidebar-link><sidebar-link href="../../introduccion/css-custom-properties/index.htm" title="Variables CSS"></sidebar-link><sidebar-link href="../../introduccion/guia-css/index.htm" title="La guía de propiedades CSS"></sidebar-link></sidebar-section><sidebar-section title="Modelo de cajas" href="../../modelo-de-cajas/index.htm"><sidebar-link href="../../modelo-de-cajas/unidades-css/index.htm" title="Unidades CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/que-es/index.htm" title="Modelo de cajas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/margenes-y-rellenos/index.htm" title="Márgenes y rellenos"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes/index.htm" title="Bordes CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/border-radius/index.htm" title="Esquinas redondeadas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/propiedades-logicas-css/index.htm" title="Propiedades lógicas CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes-imagenes/index.htm" title="Bordes con imágenes"></sidebar-link><sidebar-link href="../../modelo-de-cajas/funciones-css/index.htm" title="Funciones CSS"></sidebar-link></sidebar-section><sidebar-section title="Colores, fondos e imágenes" href="../../colores-y-fondos/index.htm"><sidebar-link href="../../colores-y-fondos/colores-css/index.htm" title="Colores CSS"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-opacity/index.htm" title="La propiedad opacity"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-background-image/index.htm" title="La propiedad background-image"></sidebar-link><sidebar-link href="../../colores-y-fondos/linear-gradient/index.htm" title="Gradientes lineales"></sidebar-link><sidebar-link href="../../colores-y-fondos/radial-gradient/index.htm" title="Gradientes radiales"></sidebar-link><sidebar-link href="../../colores-y-fondos/conic-gradient/index.htm" title="Gradientes cónicos"></sidebar-link><sidebar-link href="../../colores-y-fondos/imagenes-css/index.htm" title="Imágenes y Objetos"></sidebar-link></sidebar-section><sidebar-section title="Selectores CSS" href="../../selectores/index.htm"><sidebar-link href="../../selectores/selectores-basicos/index.htm" title="Selectores CSS básicos"></sidebar-link><sidebar-link href="../../selectores/selectores-avanzados/index.htm" title="Selectores CSS avanzados"></sidebar-link><sidebar-link href="../../selectores/pseudoclases/index.htm" title="Pseudoclases CSS"></sidebar-link><sidebar-link href="../../selectores/pseudoclases-avanzadas/index.htm" title="Pseudoclases CSS avanzadas"></sidebar-link><sidebar-link href="../../selectores/pseudoelementos/index.htm" title="Pseudoelementos CSS"></sidebar-link><sidebar-link href="../../selectores/atributos/index.htm" title="Atributos CSS"></sidebar-link></sidebar-section><sidebar-section title="Reglas CSS" href="../../reglas-css/index.htm"><sidebar-link href="../../reglas-css/que-son-reglas-css/index.htm" title="¿Qué son las reglas CSS?"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-import/index.htm" title="La regla @import"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-layer/index.htm" title="La regla @layer"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-supports/index.htm" title="La regla @supports"></sidebar-link></sidebar-section><sidebar-section title="Fuentes y tipografías" href="../index.htm"><sidebar-link href="../tipografias/index.htm" title="Tipografías CSS"></sidebar-link><sidebar-link href="index.htm" title="Tipografías externas"></sidebar-link><sidebar-link href="../fuentes-variables/index.htm" title="Fuentes variables CSS"></sidebar-link><sidebar-link href="../textos-y-alineaciones/index.htm" title="Textos y alineaciones"></sidebar-link><sidebar-link href="../propiedades-avanzadas/index.htm" title="Propiedades avanzadas"></sidebar-link><sidebar-link href="../caracteristicas-personalizadas/index.htm" title="Características personalizadas"></sidebar-link></sidebar-section><sidebar-section title="Representación de datos" href="../../representacion-datos/index.htm"><sidebar-link href="../../representacion-datos/tablas-css/index.htm" title="Tablas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/listas-css/index.htm" title="Listas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/contadores-css/index.htm" title="Contadores CSS"></sidebar-link></sidebar-section><sidebar-section title="Maquetación y colocación" href="../../maquetacion-y-colocacion/index.htm"><sidebar-link href="../../maquetacion-y-colocacion/propiedad-display/index.htm" title="La propiedad display"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/posicionamiento-css/index.htm" title="La propiedad position"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/desplazamientos/index.htm" title="La propiedad float"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/flexbox/index.htm" title="Flexbox CSS"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/grid-css/index.htm" title="Grid CSS"></sidebar-link></sidebar-section><sidebar-section title="Interacciones" href="../../interacciones/index.htm"><sidebar-link href="../../interacciones/contornos/index.htm" title="Contornos"></sidebar-link><sidebar-link href="../../interacciones/cursor-del-raton/index.htm" title="Cursor del ratón"></sidebar-link><sidebar-link href="../../interacciones/scroll-y-overflow/index.htm" title="Scroll y Overflow"></sidebar-link><sidebar-link href="../../interacciones/snap-scroll/index.htm" title="CSS Snap Scroll"></sidebar-link></sidebar-section><sidebar-section title="Sombras" href="../../sombras/index.htm"><sidebar-link href="../../sombras/text-shadow/index.htm" title="Sombras CSS en textos"></sidebar-link><sidebar-link href="../../sombras/box-shadow/index.htm" title="Sombras CSS en cajas"></sidebar-link><sidebar-link href="../../sombras/drop-shadow/index.htm" title="Sombras idénticas CSS"></sidebar-link></sidebar-section><sidebar-section title="Efectos" href="../../efectos/index.htm"><sidebar-link href="../../efectos/filtros-css/index.htm" title="Filtros CSS"></sidebar-link><sidebar-link href="../../efectos/modos-de-fusion/index.htm" title="Modos de fusión CSS"></sidebar-link></sidebar-section><sidebar-section title="Máscaras y recortes" href="../../mascaras-y-recortes/index.htm"><sidebar-link href="../../mascaras-y-recortes/clip-path/index.htm" title="La propiedad clip-path"></sidebar-link><sidebar-link href="../../mascaras-y-recortes/mask-image/index.htm" title="La propiedad mask-image"></sidebar-link></sidebar-section><sidebar-section title="Responsive Web Design" href="../../responsive-web-design/index.htm"><sidebar-link href="../../responsive-web-design/que-es/index.htm" title="¿Qué es Responsive Design?"></sidebar-link><sidebar-link href="../../responsive-web-design/bases-responsive/index.htm" title="Bases del Responsive Design"></sidebar-link><sidebar-link href="../../responsive-web-design/media-queries/index.htm" title="Media Queries"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-impresos/index.htm" title="Medios impresos"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-paginados/index.htm" title="Medios paginados"></sidebar-link><sidebar-link href="../../responsive-web-design/preferencias-usuario/index.htm" title="Preferencias de usuario"></sidebar-link></sidebar-section><sidebar-section title="Animaciones CSS" href="../../animaciones/index.htm"><sidebar-link href="../../animaciones/transiciones/index.htm" title="Transiciones CSS"></sidebar-link><sidebar-link href="../../animaciones/timing-function/index.htm" title="Funciones de tiempo"></sidebar-link><sidebar-link href="../../animaciones/animaciones/index.htm" title="Animaciones CSS"></sidebar-link><sidebar-link href="../../animaciones/keyframes/index.htm" title="La regla @keyframes"></sidebar-link></sidebar-section><sidebar-section title="Transformaciones CSS" href="../../transformaciones/index.htm"><sidebar-link href="../../transformaciones/transform/index.htm" title="Transformaciones CSS"></sidebar-link><sidebar-link href="../../transformaciones/transform-translate/index.htm" title="Translaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-rotate/index.htm" title="Rotaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-scale/index.htm" title="Escalado 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-skew/index.htm" title="Deformaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-3d/index.htm" title="Transformaciones 3D"></sidebar-link><sidebar-link href="../../transformaciones/perspective/index.htm" title="Perspectivas CSS"></sidebar-link></sidebar-section><sidebar-section title="Dibujar con CSS" href="../../dibujar-con-css/index.htm"><sidebar-link href="../../dibujar-con-css/como-empezar/index.htm" title="¿Cómo dibujar con CSS?"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-html/index.htm" title="Primeros pasos: Estructura HTML"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-css/index.htm" title="Primeros pasos: Estructura CSS"></sidebar-link></sidebar-section></div>
+
+      
+    </div>
+    <div class="contents">
+      <header class="mega">
+  <h1>Tipografías externas</h1><h2>Utilizar tipografías externas (no instaladas)</h2></header>
+
+      <div class="content ">
+  <div class="breadcrumbs">
+  <a href="/">ATRÁS</a> <span>ᐳ</span> <a href="../../index.htm">css</a> <span>ᐳ</span> <a href="index.htm">Tipografías externas</a>
+</div>
+<p>Utilizar tipografías en CSS es maravilloso. Permite personalizar nuestra página web con aspectos tipográficos elegantes y atractivos, pero tiene una gran limitación: <strong>dependemos de que estén instaladas previamente en el sistema</strong>. Si usamos la propiedad <code>font-family</code> y especificamos el nombre de la tipografía a utilizar, en principio debería visualizarse. Sin embargo, si no existen, se mostrará con otra tipografía diferente.</p>
+<h3 id="problemas-con-las-tipografías" tabindex="-1">Problemas con las tipografías</h3>
+<p>Existe una serie de características por las que podemos tener problemas con una tipografía, y que deberíamos tener en cuenta a la hora de utilizarlas. Vamos a analizarlas detenidamente.</p>
+<h4 id="tipografías-no-instaladas" tabindex="-1">Tipografías no instaladas</h4>
+<p>Las tipografías especificadas en CSS mediante la propiedad <code>font-family</code> deben estar <strong>instaladas en el sistema</strong> donde se visualiza la página web. De lo contrario, no se visualizarán. Profundicemos en este problema. Considera el siguiente ejemplo de código CSS:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">{</span><br>  <span class="token property">font-family</span><span class="token punctuation">:</span> Vegur<span class="token punctuation">,</span> Georgia<span class="token punctuation">,</span> <span class="token string">"Times New Roman"</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Un usuario con la tipografía <a href="https://www.fontsquirrel.com/fonts/vegur">Vegur</a> instalada, vería sin problema el diseño con dicha tipografía, mientras que un usuario de Windows que no la tenga instalada en su sistema, la vería con la tipografía <strong>Georgia</strong>. De no tenerla instalada, la vería con <strong>Times New Roman</strong>. Esta última tipografía es una tipografía que viene instalada en los sistemas Windows, por lo que vería con esta tipografía si las anteriores fallan.</p>
+<h4 id="tipografías-entre-sistemas" tabindex="-1">Tipografías entre sistemas</h4>
+<p>Por otro lado, imaginemos que ahora visita la web un usuario que utiliza Linux o Mac. Si no tiene las dos primeras tipografías, tampoco tendrá la tipografía <strong>Times New Roman</strong>, ya que es una tipografía que viene instalada por defecto en sistemas Windows, pero no en sistemas Linux o Mac, por lo que finalmente, utilizaría la tipografía segura «sans-serif» y cargará una tipografía sin serifa.</p>
+<p>Esto ha creado una cierta <strong>inconsistencia</strong>, ya que la tipografía se está viendo de forma diferente dependiendo del sistema, y lo que nos gustaría es que sea lo más consistente posible entre diferentes sistemas y se vea en todos con la tipografía elegida por el diseñador. ¡Hay formas de solucionarlo, como veremos a continuación!</p>
+<h4 id="tipografías-con-licencias" tabindex="-1">Tipografías con licencias</h4>
+<p>Muchas tipografías genéricas tienen <strong>derechos de autor</strong> y no se deberían utilizar en nuestra página web si no hemos pagado su licencia. De la misma forma, muchas tipografías no vienen instaladas de serie en el sistema operativo porque no tienen permiso ni licencia.</p>
+<p>Las tipografías que vienen en sistemas Windows de serie (<em>Times New Roman, Verdana, Tahoma, Trebuchet MS...</em>) se verían correctamente en navegadores de usuarios con dicho sistema operativo, pero no ocurriría lo mismo en dispositivos con GNU/Linux o Mac. Y lo mismo con tablets o dispositivos móviles (<em>o viceversa</em>).</p>
+<p>En definitiva, aunque tenemos los mecanismos, vivimos en un mundo complicado en el que no es tan sencillo establecer una fuente específica para obtener el mismo resultado de diseño en todos los navegadores y sistemas disponibles.... al menos hasta que llegó la regla de CSS <code>@font-face</code>.</p>
+<h3 id="la-regla-font-face" tabindex="-1">La regla @font-face</h3>
+<p>La regla <code>@font-face</code> permite descargar una fuente o tipografía de una página web, cargarla en el navegador y utilizarla en nuestras páginas <strong>aunque no esté instalada en el sistema</strong>. Todo ello de forma transparente al usuario, sin que deba realizar ninguna acción.</p>
+<p>Veamos un ejemplo de como se puede utilizar:</p>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@font-face</span></span> <span class="token punctuation">{</span><br>  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'Open Sans'</span><span class="token punctuation">;</span><br>  <span class="token property">font-style</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span><br>  <span class="token property">font-weight</span><span class="token punctuation">:</span> 400<span class="token punctuation">;</span><br>  <span class="token property">src</span><span class="token punctuation">:</span><br>    <span class="token function">local</span><span class="token punctuation">(</span><span class="token string">"Open Sans"</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"/fonts/opensans.woff2"</span><span class="token punctuation">)</span></span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"woff2"</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"/fonts/opensans.woff"</span><span class="token punctuation">)</span></span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"woff"</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"/fonts/opensans.ttf"</span><span class="token punctuation">)</span></span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"truetype"</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"/fonts/opensans.otf"</span><span class="token punctuation">)</span></span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"opentype"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>La regla <code>@font-face</code> suele colocarse al principio del fichero CSS para avisar al navegador que vamos a utilizar una tipografía que es muy posible que no tenga instalada. En el ejemplo superior, lo hemos hecho con la fuente <a href="https://www.google.com/fonts/specimen/Open+Sans">Open Sans</a>, una tipografía libre creada por <strong>Steve Matteson</strong> para Google y disponible en <a href="https://fonts.google.com/">Google Fonts</a>.</p>
+<p>Basicamente, abrimos un bloque <code>@font-face</code>, establecemos su nombre mediante <code>font-family</code> y, opcionalmente, definimos sus características mediante propiedades como <code>font-style</code> o <code>font-weight</code>. El factor clave viene a la hora de <strong>indicar la tipografía</strong>, que se hace mediante la propiedad <code>src</code> (<em>source</em>) con los siguientes valores:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Significado</th>
+<th>Soporte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>local(&quot;Nombre&quot;)</code></td>
+<td>¿Está la fuente &quot;Nombre&quot; instalada? Si es así, no hace falta descargarla.</td>
+<td>Todos</td>
+</tr>
+<tr>
+<td><code>url(&quot;file.woff2&quot;)</code></td>
+<td>Formato <a href="https://www.w3.org/TR/WOFF2/">Web Open Font Format 2</a>. Mejora de <code>WOFF</code> con <a href="https://github.com/google/brotli">Brotli</a>.</td>
+<td><a href="https://caniuse.com/#feat=woff2">Bueno</a></td>
+</tr>
+<tr>
+<td><code>url(&quot;file.woff&quot;)</code></td>
+<td>Formato <a href="https://es.wikipedia.org/wiki/Web_Open_Font_Format">Web Open Font Format</a>. Es un <code>TTF</code> comprimido, ideal para web.</td>
+<td><a href="https://caniuse.com/#feat=woff">Bueno</a></td>
+</tr>
+<tr>
+<td><code>url(&quot;file.ttf&quot;)</code></td>
+<td>Formato <a href="https://en.wikipedia.org/wiki/TrueType">True Type</a>. Uno de los formatos más conocidos.</td>
+<td><a href="https://caniuse.com/#feat=ttf">Bueno</a></td>
+</tr>
+<tr>
+<td><code>url(&quot;file.otf&quot;)</code></td>
+<td>Formato <a href="https://en.wikipedia.org/wiki/OpenType">Open Type</a>. Mejora del formato <code>TTF</code>.</td>
+<td><a href="https://caniuse.com/#feat=ttf">Bueno</a></td>
+</tr>
+<tr>
+<td><code>url(&quot;file.eot&quot;)</code></td>
+<td>Formato <a href="https://en.wikipedia.org/wiki/Embedded_OpenType">Embedded OpenType</a>. Mejora de <code>OTF</code> , propietaria de Microsoft.</td>
+<td><a href="https://caniuse.com/#feat=eot">Sólo IE</a></td>
+</tr>
+<tr>
+<td><code>url(&quot;file.svg&quot;)</code></td>
+<td>Tipografías creadas como formas SVG. <strong>No usar</strong>, considerada <strong>obsoleta</strong>.</td>
+<td><a href="https://caniuse.com/#feat=svg-fonts">No usar</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<blockquote>
+<p><strong>Consejo</strong>: Puede ser una buena práctica utilizar la expresión <code>local()</code> seguida de los formatos <code>WOFF2</code> y <code>WOFF</code> (<em>en dicho orden</em>), dando así soporte a la mayoría de navegadores, ya que <code>WOFF</code> tiene muy buen soporte. Para dar soporte a navegadores muy antiguos quizás podría ser necesario incluir también el formato <code>TTF</code>.</p>
+</blockquote>
+</blockquote>
+<h3 id="google-fonts" tabindex="-1">Google Fonts</h3>
+<p>En la actualidad, es muy común utilizar <a href="http://fonts.google.com/">Google Fonts</a> como repositorio proveedor de tipografías para utilizar en nuestros sitios web por varias razones:</p>
+<ul>
+<li><strong>Gratuitas</strong>: Disponen de un amplio catálogo de fuentes y tipografías libres y/o gratuitas.</li>
+<li><strong>Cómodo</strong>: Resulta muy sencillo su uso: Google nos proporciona un código y el resto lo hace él.</li>
+<li><strong>Rápido</strong>: El servicio está muy extendido y utiliza un CDN, que <del>brinda ventajas de velocidad y caché</del>.</li>
+</ul>
+<blockquote>
+<blockquote>
+<blockquote>
+<p><strong>OJO</strong>: A partir de Chrome 86+ (<em>finales de 2020</em>), este y otros navegadores han comenzado a cambiar su <a href="https://developers.google.com/web/updates/2020/10/http-cache-partitioning">política de caché</a>, que elimina la ventaja de velocidad de CDN que se venía utilizando hasta ahora.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>En la propia página de <strong>Google Fonts</strong> podemos seleccionar las fuentes con las características deseadas y generar un código HTML con la tipografía (<em>o colección de tipografías</em>) que vamos a utilizar.</p>
+<h4 id="seleccionar-la-tipografía" tabindex="-1">Seleccionar la tipografía</h4>
+<p>Seleccionamos la tipografía que nos interesa, y de la lista de estilos (<em>generalmente aparecen varios</em>), pulsamos en «<strong>Select this style</strong>». Esto hará que aparezca una barra lateral, donde nos mostrará un fragmento de código en la zona «<strong>Use on the web</strong>»:</p>
+<p><img src="google-fonts-select.png" alt="Select fonts in Google Fonts" width="1200" height="855" loading="lazy"></p>
+<h4 id="preconexión-a-google-fonts" tabindex="-1">Preconexión a Google Fonts</h4>
+<p>Observarás que en el código facilitado por Google hay etiquetas <code>&lt;link rel=&quot;preconnect&quot;&gt;</code>. Se trata de un fragmento de código para que el navegador haga una preconexión a los subdominios de descarga de las tipografías. Esto hace que el tiempo de descarga sea un poco más corta:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>preconnect<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://fonts.googleapis.com<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>preconnect<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://fonts.gstatic.com<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span><span class="token punctuation">></span></span></code></pre>
+<h4 id="tipografía-de-google-fonts" tabindex="-1">Tipografía de Google Fonts</h4>
+<p>Existen dos formas de incluir la tipografía en nuestra página. Mediante un fragmento de código HTML, marcando la opción <code>&lt;link&gt;</code>, o mediante un fragmento de código CSS, marcando la opción <code>@import</code>. Veamos el fragmento de código que nos aparece si marcamos la primera, <code>&lt;link&gt;</code> para añadirlo en nuestro código HTML, más concretamente, antes de cerrar la etiqueta <code>&lt;/head&gt;</code>:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+<p>En el código anterior podemos ver:</p>
+<ul>
+<li>Una etiqueta <code>&lt;link rel=&quot;stylesheet&quot;&gt;</code>, que es un archivo CSS prefabricado de Google con reglas <code>@font-face</code> para cargar la tipografía <code>Open Sans</code> desde sus servidores.</li>
+</ul>
+<h4 id="tipografía-con-múltiples-pesos" tabindex="-1">Tipografía con múltiples pesos</h4>
+<p>Al añadir el código anterior, estaremos incluyendo código CSS para preparar nuestra página para utilizar la tipografía <code>Open Sans</code> con el peso <strong>400</strong> (<em>el peso por defecto</em>). Sin embargo, también podríamos seleccionar varios pesos diferentes de una tipografía:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://fonts.googleapis.com/css2?family=Open+Sans:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="80f7e7e8f4c0b3b0b0">[email&#160;protected]</a>;400;800&amp;display=swap<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+<p>Observa, que en este caso estamos añadiendo la tipografía <code>Open Sans</code> con los pesos <strong>300</strong>, <strong>400</strong> y <strong>800</strong>. De esta forma, podremos utilizar la propiedad CSS <code>font-weight</code> para indicar que peso concreto queremos utilizar.</p>
+<h4 id="múltiples-tipografías" tabindex="-1">Múltiples tipografías</h4>
+<p>Pero además, también podemos hacer lo mismo añadiendo diferentes tipografías, con diferentes pesos. Por ejemplo, en el siguiente fragmento seleccionamos la tipografía <strong>Roboto</strong> (<em>con grosor 400</em>), la tipografía <strong>Lato</strong> (<em>con grosor 300 y 400</em>). El código correspondiente sería el siguiente:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://fonts.googleapis.com/css2?family=Lato:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cdbaaaa5b98dfefdfd">[email&#160;protected]</a>;400&amp;family=Roboto&amp;display=swap<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+<p>De esta forma conseguimos cargar varias tipografías desde el repositorio de Google <strong>de una sola vez</strong>, sin la necesidad de varias líneas de código diferentes, que realizarían varias peticiones diferentes a <strong>Google Fonts</strong>, especialmente importante cuantas más tipografías tengamos.</p>
+<p>Nota que en este último ejemplo, en caso de no tener instaladas ningunas de las tipografías anteriores, estaríamos realizando <strong>4 descargas</strong>:</p>
+<ol>
+<li>
+<p>Descargamos el CSS de Google Fonts: <code>https://fonts.googleapis.com/css2?family=Lato:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b2c5d5dac6f2818282">[email&#160;protected]</a>;400&amp;family=Roboto&amp;display=swap</code></p>
+</li>
+<li>
+<p>Luego, el navegador lee las reglas <code>@font-face</code> del CSS de Google, y ahí encontrará 3 descargas: la tipografía <code>Lato</code> de peso 300, y la tipografía <code>Lato</code> de peso 400 (<em>son dos archivos diferentes</em>), y la tipografía <code>Roboto</code> de peso 400.</p>
+</li>
+</ol>
+<h4 id="tipografías-mediante-import" tabindex="-1">Tipografías mediante @import</h4>
+<p>Recuerda que también podemos incluir las tipografías en nuestro CSS (<em>en lugar del HTML</em>), seleccionando <code>@import</code> en lugar de <code>&lt;link&gt;</code> en la página de Google Fonts. Normalmente se suele hacer en el HTML porque suele ser ligeramente más rápido, aunque hablamos de tiempos muy pequeños.</p>
+<pre class="language-css"><code class="language-css"><span class="token comment">/* Código CSS */</span><br><span class="token atrule"><span class="token rule">@import</span> <span class="token function">url</span><span class="token punctuation">(</span>'<span class="token property">https</span><span class="token punctuation">:</span>//fonts.googleapis.com/css2?family=<span class="token property">Lato</span><span class="token punctuation">:</span>wght<span class="token atrule"><span class="token rule">@300</span><span class="token punctuation">;</span></span></span>400&amp;family=Roboto&amp;display=swap'<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Ten en cuenta que Google Fonts te da este código entre etiquetas <code>&lt;style&gt;</code> y <code>&lt;/style&gt;</code>. En ese caso, el fragmento de código iría en HTML, pero si lo quieres añadir en CSS, debes eliminar dichas etiquetas y la regla <code>@import</code> siempre debe ir al principio del fichero <code>.css</code>.</p>
+<h4 id="definir-la-tipografía-a-usar" tabindex="-1">Definir la tipografía a usar</h4>
+<p>Por último, no hay que olvidar que necesitaremos añadir la propiedad <code>font-family</code> al selector CSS que deseemos, como hemos hecho hasta ahora, indicando la tipografía que queremos utilizar. Sin esto, tendremos cargada la tipografía pero no la estaremos utilizando en ningún sitio:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.menu</span> <span class="token punctuation">{</span><br>  <span class="token property">font-family</span><span class="token punctuation">:</span> Lato<span class="token punctuation">,</span> Roboto<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span><br>  <span class="token property">font-weight</span><span class="token punctuation">:</span> 400<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>El parámetro <code>display</code> con valor <code>swap</code> que aparece en la URL de Google Fonts, corresponde a la propiedad <code>font-display</code>, la cuál se explica aquí <a href="../propiedades-avanzadas/index.htm">Propiedades avanzadas de tipografías</a>.</p>
+<blockquote>
+<blockquote>
+<p>No hay que dejar de tener en cuenta que <strong>cuantas más tipografías</strong> (<em>y/o más pesos</em>) incluyamos en nuestra página, <strong>más lenta será la experiencia del usuario</strong>, ya que más contenido tendrá que descargar. Salvo excepciones particulares, lo habitual suele ser elegir entre <strong>2-3 tipografías como máximo</strong>, cada una con una finalidad concreta: encabezados o titulares, tipografía de lectura normal y tipografía secundaria, por ejemplo.</p>
+</blockquote>
+</blockquote>
+<h3 id="atajo-para-tipografías" tabindex="-1">Atajo para tipografías</h3>
+<p>Finalmente, algunas de las propiedades más utilizadas de tipografías y fuentes se pueden resumir en una propiedad de atajo, como viene siendo habitual. El esquema es el siguiente:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.element</span> <span class="token punctuation">{</span><br>    <span class="token property">font</span><span class="token punctuation">:</span> &lt;style> &lt;variant> &lt;weight> &lt;size/line-height> &lt;family><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Por ejemplo, utilizar la tipografía <code>Arial</code> , con la fuente alternativa <code>Verdana</code> o una fuente segura sin serifa, a un tamaño de 16 píxeles, con un interlineado de 22 píxeles, un peso de 400, sin utilizar versalitas y con estilo cursiva:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.element</span> <span class="token punctuation">{</span><br>    <span class="token property">font</span><span class="token punctuation">:</span> italic normal 400 16px/22px Arial<span class="token punctuation">,</span> Verdana<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+
+    <nav class="prev-next"><a class="bt prev" href="../tipografias/index.htm" title="Tipografías CSS">
+    <span class="data">
+      <span>Tipografías CSS</span>
+      <small>Capítulo anterior</small>
+    </span>
+  </a><a class="bt next" href="../fuentes-variables/index.htm" title="Fuentes variables CSS">
+    <span class="icon">
+      <svg-icon name="arrow-right"></svg-icon>
+    </span>
+    <span class="data">
+      <span>Fuentes variables CSS</span>
+      <small>Capítulo siguiente</small>
+    </span>
+  </a></nav>
+
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async="" src="../../../pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center; margin:auto; margin-top: 2em" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0412426997270095" data-ad-slot="3027930890"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+      <div class="related">
+
+  <div class="author">
+    <div class="author-wrapper">
+      <img loading="lazy" class="circle" src="../../../assets/manz.webp" alt="Manz">
+      <div>
+        <p>Docente, divulgador informático y <a href="https://manz.dev/">streamer de código</a>. Amante de <strong>CSS</strong>, <strong>Javascript</strong>
+          y de la plataforma web. Ha trabajado como profesor en la Universidad de La Laguna y es director del curso de
+          Programación web FullStack y FrontEnd de EOI desde Tenerife. En sus ratos libres, busca GIF de gatos en Internet.</p>
+        <p class="twitch-badge">
+          <a href="https://twitch.tv/ManzDev">
+            <svg class="twitch" viewbox="0 0 1024 1024">
+              <path style="fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="m262.451 12.904-178.26 178.26v641.672h213.905v178.26l178.26-178.26h142.576L939.809 512V12.904H262.45zm35.645 71.287h570.383v392.164L725.904 618.932H583.287L458.514 743.705V618.932H298.096V84.192zM494.158 208.51v216.36h71.328V208.51h-71.328zm196 0v216.36h71.328V208.51h-71.328z"></path>
+            </svg>
+            Sígueme en Twitch
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="comentarios">
+    <script async="" src="../../../count.js" id="dsq-count-scr"></script>
+<script>
+var disqus_config = function () {
+  this.page.path = location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname;
+  this.page.url = 'https://lenguajecss.com' + this.page.path;
+  this.page.identifier = this.page.url;
+};
+document.addEventListener('DOMContentLoaded', function() {
+  const coms = document.querySelector('#comentarios');
+  a = coms.querySelector('#disqus_button');
+  a.dataset.disqusIdentifier = 'https://lenguajecss.com' + (location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname);
+  a.addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.id = 'disqus_thread';
+    coms.appendChild(div);
+    const d = document, s = d.createElement('script');
+    s.src = '//lenguajecss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    this.remove();
+  });
+});
+</script>
+
+    <a class="disqus-comment-count" id="disqus_button" href="#disqus_thread" data-disqus-identifier="https://lenguajecss.com/css/fuentes-y-tipografias/tipografias-externas/">Leer comentarios</a>
+    <a class="discord" href="https://discord.manz.dev/">¡Accede a Discord y cuéntanos!</a>
+  </div>
+
+</div>
+
+    </div>
+    <div class="aside">
+      <div class="aside">
+
+  <div class="aside-top">
+    <a href="https://manz.dev/digitalocean" title="Empieza en DigitalOcean con 100$">
+      <img width="240" height="120" src="../../../assets/digital-ocean.png" alt="DigitalOcean">
+    </a>
+  </div><script type="module">
+  const ANCHOR_ICON = /* svg */`
+    <svg class="anchor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205" width="36" height="36">
+      <path d="m140 129 16 16s-20 30-42 30V71c14-5 25-18 25-34 0-20-17-36-37-36-21 0-38 16-38 36 0 15 11 29 25
+              34v104c-26-2-42-27-42-27l18-18-65-9 10 63 17-17c15 12 32 37 73 37 51-1 63-29 76-40l19 19 10-64-65
+              10zM83 36c0-10 8-18 19-18s19 8 19 18c0 11-9 19-19 19s-19-8-19-19z"/>
+    </svg>`;
+  // Add inner links to sidebar menu
+  export const addInnerLinks = () => {
+    const summary = document.querySelector(".aside .summary .links");
+    const headers = Array.from(document.querySelectorAll(".content h3, .content h4"));
+    const tocLinks = [];
+    headers.forEach((e) => {
+      const link = `${location.origin}${location.pathname}#${e.id}`;
+      e.innerHTML = `<a class="permalink" href="${link}">${e.textContent} ${ANCHOR_ICON}</a>`;
+      const headerType = e.nodeName.toLowerCase();
+      const textContent = headerType === "h4" ? e.textContent.replace("La propiedad ", "").replace("La función ", "") : e.textContent;
+      tocLinks.push(`<a class="${headerType}" href="#${e.id}">${textContent}</a>`);
+    });
+    summary.insertAdjacentHTML("beforeEnd", tocLinks.join("\n"));
+  };
+
+  addInnerLinks();
+</script>
+
+<div class="summary">
+  <div class="table">Tabla de contenidos</div>
+  <div class="links"></div>
+</div>
+</div>
+
+    </div>
+  </div><footer class="main">
+  <div class="square">
+    <a href="/"><h2>Lenguaje CSS</h2></a>
+    <div class="icons">
+      <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+      <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+      <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+      <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+      <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+      <a href="https://github.com/ManzDev" title="GitHub"><svg-icon type="social" name="github"></svg-icon></a>
+      <a href="https://codepen.io/Manz" title="Codepen"><svg-icon type="social" name="codepen"></svg-icon></a>
+      <a href="https://www.linkedin.com/in/joseromanhdez/" title="Linkedin"><svg-icon type="social" name="linkedin"></svg-icon></a>
+    </div>
+    <p>Documentación sobre CSS y las mejores herramientas y recursos para aprender a utilizar el lenguaje de estilos CSS (Hojas de estilo).</p>
+    <p id="footer">Creado y mantenido por <a href="https://twitter.com/Manz">@Manz</a> con <span title="<3">❤</span></p></div>
+</footer>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-136544-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async="" src='../../../analytics.js'></script>
+
+
+</body>
+</html>

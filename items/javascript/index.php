@@ -1,5 +1,5 @@
 <?php include "../../templates/head.php"; ?>
-    <link rel="stylesheet" href="./css/aside.css">
+    <link rel="stylesheet" href="./css/aside-js.css">
     <link rel="stylesheet" href="./css/js-css.css">    
     <title>Javascript</title>
 <?php include "../../templates/nav-ini.php";?>

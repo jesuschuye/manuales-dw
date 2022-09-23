@@ -5,7 +5,7 @@
     <article>
       <h3 id="et_script">La etiqueta <strong><em>&lt;script&gt;&lt;/script&gt;</em></strong></h3>
       <div class="row mt-3">
-        <p class="destacado">Se utiliza para incluir código y/o archivos de javascript en un documento <b>html</b>. Existen 3 formas de hacerlo</p>
+        <p class="destacado destacado-js">Se utiliza para incluir código y/o archivos de javascript en un documento <b>html</b>. Existen 3 formas de hacerlo</p>
         <ul class="listado">
           <li><i class="bi bi-back"></i>Dentro de la etiqueta <b><em>head</em></b></li>
           <pre class="pre-content-list">
@@ -51,7 +51,7 @@
     <article>
       <h3 id="et_noscript">La etiqueta <strong><em>&lt;noscript&gt;&lt;/noscript&gt;</em></strong></h3>
       <div class="row mt-3">
-        <p class="destacado">Se utiliza para avisar que el navegador tiene javascript <b>desactivado.</b></p>
+        <p class="destacado destacado-js">Se utiliza para avisar que el navegador tiene javascript <b>desactivado.</b></p>
         <pre class="pre-content-list">
 
           <span class="text-info">&lt;head&gt;</span>
@@ -66,7 +66,7 @@
     <article>
       <h3 id="alzado">Alzado (hoisting)</h3>
       <div class="row mt-3">
-        <p class="destacado">Es la secuencia en la que javascript lee e interpreta un documento <b>html</b>.</p>
+        <p class="destacado destacado-js">Es la secuencia en la que javascript lee e interpreta un documento <b>html</b>.</p>
         <ul class="listado">
           <li><i class="bi bi-back"></i>Javascript es un lenguaje que utiliza un tipado (tipo de datos) dinámico. Es decir, se puede asignar y reasignar diferentes tipos de datos a una misma variable.</li>
           <li><i class="bi bi-back"></i>Para ello se utilizan 2 fases: la <strong>declaración</strong> y la <strong>inicialización</strong> de variables.
@@ -149,7 +149,7 @@
     <article>
       <h3 id="var">Declaración con <strong>var</strong></h3>
       <div class="row mt-3">
-        <p class="destacado"><b><em>var</em></b> hoy en dia ya no se usa mucho debido a la cuestión de la reasignación de valores a las variables</p>
+        <p class="destacado destacado-js"><b><em>var</em></b> hoy en dia ya no se usa mucho debido a la cuestión de la reasignación de valores a las variables</p>
         <p>Características:</p>
         <ul class="listado">
           <li><i class="bi bi-back"></i>Es completamente reasignable.
@@ -181,7 +181,7 @@
     <article>
       <h3 id="let">Declaración con <strong>let</strong></h3>
       <div class="row mt-3">
-        <p class="destacado">Es lo que está vigente desde 2015 (ES6)</p>
+        <p class="destacado destacado-js">Es lo que está vigente desde 2015 (ES6)</p>
         <p>Características</p>
         <ul class="listado">
           <li><i class="bi bi-back"></i>Es completamente reasignable dentro de su ámbito.
@@ -220,7 +220,7 @@
     <article>
       <h3 id="inmutabilidad">La inmutabilidad</h3>      
       <div class="row mt-3">
-        <p class="destacado">JavaScript es un lenguaje muy (quizá demasiado) flexible y ofrece varias opciones para manipular todo tipo de estructura de datos, algunas de estas opciones son <strong>Mutables</strong> y otros <strong>Inmutables</strong>.</p>
+        <p class="destacado destacado-js">JavaScript es un lenguaje muy (quizá demasiado) flexible y ofrece varias opciones para manipular todo tipo de estructura de datos, algunas de estas opciones son <strong>Mutables</strong> y otros <strong>Inmutables</strong>.</p>
         <p>
           Este concepto comenzó  a tener un auge importante en el desarrollo frontend gracias a que la programación funcional comenzó poco a poco a hacerse presente, siendo quizá el culpable la dupla React + Redux.
         </p>
@@ -235,7 +235,7 @@
     <article>
       <h3 id="const">Declaración con <strong>const</strong></h3>
       <div class="row mt-3">
-        <p class="muted destacado">Se utiliza para almacenar valores constantes (asociados a datos <a href="#" data-bs-toggle="tooltip" data-bs-title="number, string, boolean, undefined, null">primitivos</a>)es decir, que nunca cambiarán durante la ejecución del programa.</p>
+        <p class="muted destacado destacado-js">Se utiliza para almacenar valores constantes (asociados a datos <a href="#" data-bs-toggle="tooltip" data-bs-title="number, string, boolean, undefined, null">primitivos</a>)es decir, que nunca cambiarán durante la ejecución del programa.</p>
         <ul class="listado">
           <li><i class="bi bi-back"></i>Las variables <b><em>const</em></b> no pueden ser alzadas.
             <pre class="pre-content-list">
@@ -290,7 +290,7 @@
     <article>
       <h3 id="datosjs">Tipos de datos en Javascript</h3>
       <div class="row mt-3">
-        <p class="destacado">Existen 2 tipos de datos en Javascript: <strong>Primitivos</strong> y <strong>Estructurales</strong>.</p>
+        <p class="destacado destacado-js">Existen 2 tipos de datos en Javascript: <strong>Primitivos</strong> y <strong>Estructurales</strong>.</p>
         <ul class="listado">
           <li><i class="bi bi-back"></i>Los datos primitivos son controlados por el operador <strong><em>typeof</em></strong>.</li>
           <li><i class="bi bi-back"></i>Los datos estructurales son controlados por el operador <strong><em>instanceof</em></strong></li>
@@ -402,7 +402,7 @@
     <article>
       <h3></h3>
       <div class="row mt-3">
-        <p class="destacado"></p>
+        <p class="destacado destacado-js"></p>
         <pre class="pre-content-list">    
     
         </pre>
@@ -411,7 +411,7 @@
     <article>
       <h3></h3>
       <div class="row mt-3">
-        <p class="destacado"></p>
+        <p class="destacado destacado-js"></p>
         <pre class="pre-content-list">    
     
         </pre>
@@ -420,7 +420,7 @@
     <article>
       <h3></h3>
       <div class="row mt-3">
-        <p class="destacado"></p>
+        <p class="destacado destacado-js"></p>
         <pre class="pre-content-list">    
     
         </pre>
@@ -429,7 +429,7 @@
     <article>
       <h3></h3>
       <div class="row mt-3">
-        <p class="destacado"></p>
+        <p class="destacado destacado-js"></p>
         <pre class="pre-content-list">    
     
         </pre>
@@ -438,7 +438,7 @@
     <article>
       <h3></h3>
       <div class="row mt-3">
-        <p class="destacado"></p>
+        <p class="destacado destacado-js"></p>
         <pre class="pre-content-list">    
     
         </pre>

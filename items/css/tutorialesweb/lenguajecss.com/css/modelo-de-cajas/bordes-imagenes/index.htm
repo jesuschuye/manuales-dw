@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+  <link rel="shortcut icon" href="../../../favicon.ico">
+  <title>Bordes con imágenes - CSS en español - Lenguaje CSS</title>
+  <link rel="preload" href="../../../critical.css" as="style">
+  <link rel="preload" href="../../../assets/fonts/blinker-vf.woff2" as="font" crossorigin="">
+  <link rel="preload" href="../../../assets/fonts/scope-one-400.woff2" as="font" crossorigin="">
+  <meta name="description" content="Existe un sistema para crear bordes con imágenes, expandibles a partir de una imagen de base. En este artículo te explicamos como.">
+  <link rel="stylesheet" href="../../../critical.css">
+  <link rel="stylesheet" href="../../../theme.css">
+  <script type="module" src="../../../main.js"></script>
+  <link rel="canonical" href="index.htm">
+  <meta property="og:title" content="Bordes con imágenes - CSS en español">
+  <meta property="og:image" content="https://lenguajecss.com/css/modelo-de-cajas/bordes-imagenes/9-slice.png">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="Existe un sistema para crear bordes con imágenes, expandibles a partir de una imagen de base. En este artículo te explicamos como.">
+  <meta property="og:url" content="https://lenguajecss.com/css/modelo-de-cajas/bordes-imagenes/">
+  <meta property="twitter:url" content="https://lenguajecss.com/css/modelo-de-cajas/bordes-imagenes/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="@Manz">
+  <meta property="twitter:title" content="Bordes con imágenes - CSS en español">
+  <meta property="twitter:description" content="Existe un sistema para crear bordes con imágenes, expandibles a partir de una imagen de base. En este artículo te explicamos como.">
+  <meta property="twitter:image:src" content="https://lenguajecss.com/css/modelo-de-cajas/bordes-imagenes/9-slice.png">
+</head>
+<body class="css post"><div class="page">
+    <div class="sidebar">
+      <div class="logo flex-center">
+  <a href="/">
+    <img width="42" height="42" src="../../../assets/logo.svg" alt="Logo">
+    Lenguaje CSS
+  </a>
+  <div class="icons" style="--icon-size: 32px; --icon-side-padding: 0.15em">
+    <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+    <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+    <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+    <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+    <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+  </div>
+  <span>Un sitio web de <a href="https://manz.dev/"><mark>Manz.dev</mark></a></span>
+</div>
+
+      <form class="search flex-center" action="https://www.google.com/search">
+  <label><span>Buscar:</span> <input type="search" name="q" placeholder="Buscar un tema (ej: flex, grid...)" autocomplete="off"></label>
+  <label><span>Sitio:</span> <input type="hidden" name="q" value="site:lenguajejs.com OR site:lenguajecss.com OR site:lenguajehtml.com OR site:terminaldelinux.com OR site:manz.dev"></label>
+  <div class="search-results"></div>
+</form>
+
+      
+
+<style>
+  sidebar-link {
+    --logo-image: url(../../logo.svg);
+  }
+</style>
+
+<div class="toc"><sidebar-link title="Volver al índice" href="../../index.htm" back="" direct=""></sidebar-link><sidebar-link href="../../cheatsheets/index.htm" title="CSS3 Cheatsheet" direct=""></sidebar-link><sidebar-section title="Introducción a CSS" href="../../introduccion/index.htm"><sidebar-link href="../../introduccion/que-es-css/index.htm" title="¿Qué es CSS?"></sidebar-link><sidebar-link href="../../introduccion/como-usar-css/index.htm" title="¿Cómo usar CSS?"></sidebar-link><sidebar-link href="../../introduccion/estructura-de-css/index.htm" title="Estructura de CSS"></sidebar-link><sidebar-link href="../../introduccion/minificar-css/index.htm" title="Minificar CSS"></sidebar-link><sidebar-link href="../../introduccion/navegadores-web/index.htm" title="Navegadores web"></sidebar-link><sidebar-link href="../../introduccion/niveles-y-prefijos-css/index.htm" title="Niveles de CSS y prefijos"></sidebar-link><sidebar-link href="../../introduccion/herencia-css/index.htm" title="Herencia en CSS"></sidebar-link><sidebar-link href="../../introduccion/cascada-css/index.htm" title="Cascada en CSS"></sidebar-link><sidebar-link href="../../introduccion/css-custom-properties/index.htm" title="Variables CSS"></sidebar-link><sidebar-link href="../../introduccion/guia-css/index.htm" title="La guía de propiedades CSS"></sidebar-link></sidebar-section><sidebar-section title="Modelo de cajas" href="../index.htm"><sidebar-link href="../unidades-css/index.htm" title="Unidades CSS"></sidebar-link><sidebar-link href="../que-es/index.htm" title="Modelo de cajas"></sidebar-link><sidebar-link href="../margenes-y-rellenos/index.htm" title="Márgenes y rellenos"></sidebar-link><sidebar-link href="../bordes/index.htm" title="Bordes CSS"></sidebar-link><sidebar-link href="../border-radius/index.htm" title="Esquinas redondeadas"></sidebar-link><sidebar-link href="../propiedades-logicas-css/index.htm" title="Propiedades lógicas CSS"></sidebar-link><sidebar-link href="index.htm" title="Bordes con imágenes"></sidebar-link><sidebar-link href="../funciones-css/index.htm" title="Funciones CSS"></sidebar-link></sidebar-section><sidebar-section title="Colores, fondos e imágenes" href="../../colores-y-fondos/index.htm"><sidebar-link href="../../colores-y-fondos/colores-css/index.htm" title="Colores CSS"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-opacity/index.htm" title="La propiedad opacity"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-background-image/index.htm" title="La propiedad background-image"></sidebar-link><sidebar-link href="../../colores-y-fondos/linear-gradient/index.htm" title="Gradientes lineales"></sidebar-link><sidebar-link href="../../colores-y-fondos/radial-gradient/index.htm" title="Gradientes radiales"></sidebar-link><sidebar-link href="../../colores-y-fondos/conic-gradient/index.htm" title="Gradientes cónicos"></sidebar-link><sidebar-link href="../../colores-y-fondos/imagenes-css/index.htm" title="Imágenes y Objetos"></sidebar-link></sidebar-section><sidebar-section title="Selectores CSS" href="../../selectores/index.htm"><sidebar-link href="../../selectores/selectores-basicos/index.htm" title="Selectores CSS básicos"></sidebar-link><sidebar-link href="../../selectores/selectores-avanzados/index.htm" title="Selectores CSS avanzados"></sidebar-link><sidebar-link href="../../selectores/pseudoclases/index.htm" title="Pseudoclases CSS"></sidebar-link><sidebar-link href="../../selectores/pseudoclases-avanzadas/index.htm" title="Pseudoclases CSS avanzadas"></sidebar-link><sidebar-link href="../../selectores/pseudoelementos/index.htm" title="Pseudoelementos CSS"></sidebar-link><sidebar-link href="../../selectores/atributos/index.htm" title="Atributos CSS"></sidebar-link></sidebar-section><sidebar-section title="Reglas CSS" href="../../reglas-css/index.htm"><sidebar-link href="../../reglas-css/que-son-reglas-css/index.htm" title="¿Qué son las reglas CSS?"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-import/index.htm" title="La regla @import"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-layer/index.htm" title="La regla @layer"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-supports/index.htm" title="La regla @supports"></sidebar-link></sidebar-section><sidebar-section title="Fuentes y tipografías" href="../../fuentes-y-tipografias/index.htm"><sidebar-link href="../../fuentes-y-tipografias/tipografias/index.htm" title="Tipografías CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/tipografias-externas/index.htm" title="Tipografías externas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/fuentes-variables/index.htm" title="Fuentes variables CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/textos-y-alineaciones/index.htm" title="Textos y alineaciones"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/propiedades-avanzadas/index.htm" title="Propiedades avanzadas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/caracteristicas-personalizadas/index.htm" title="Características personalizadas"></sidebar-link></sidebar-section><sidebar-section title="Representación de datos" href="../../representacion-datos/index.htm"><sidebar-link href="../../representacion-datos/tablas-css/index.htm" title="Tablas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/listas-css/index.htm" title="Listas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/contadores-css/index.htm" title="Contadores CSS"></sidebar-link></sidebar-section><sidebar-section title="Maquetación y colocación" href="../../maquetacion-y-colocacion/index.htm"><sidebar-link href="../../maquetacion-y-colocacion/propiedad-display/index.htm" title="La propiedad display"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/posicionamiento-css/index.htm" title="La propiedad position"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/desplazamientos/index.htm" title="La propiedad float"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/flexbox/index.htm" title="Flexbox CSS"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/grid-css/index.htm" title="Grid CSS"></sidebar-link></sidebar-section><sidebar-section title="Interacciones" href="../../interacciones/index.htm"><sidebar-link href="../../interacciones/contornos/index.htm" title="Contornos"></sidebar-link><sidebar-link href="../../interacciones/cursor-del-raton/index.htm" title="Cursor del ratón"></sidebar-link><sidebar-link href="../../interacciones/scroll-y-overflow/index.htm" title="Scroll y Overflow"></sidebar-link><sidebar-link href="../../interacciones/snap-scroll/index.htm" title="CSS Snap Scroll"></sidebar-link></sidebar-section><sidebar-section title="Sombras" href="../../sombras/index.htm"><sidebar-link href="../../sombras/text-shadow/index.htm" title="Sombras CSS en textos"></sidebar-link><sidebar-link href="../../sombras/box-shadow/index.htm" title="Sombras CSS en cajas"></sidebar-link><sidebar-link href="../../sombras/drop-shadow/index.htm" title="Sombras idénticas CSS"></sidebar-link></sidebar-section><sidebar-section title="Efectos" href="../../efectos/index.htm"><sidebar-link href="../../efectos/filtros-css/index.htm" title="Filtros CSS"></sidebar-link><sidebar-link href="../../efectos/modos-de-fusion/index.htm" title="Modos de fusión CSS"></sidebar-link></sidebar-section><sidebar-section title="Máscaras y recortes" href="../../mascaras-y-recortes/index.htm"><sidebar-link href="../../mascaras-y-recortes/clip-path/index.htm" title="La propiedad clip-path"></sidebar-link><sidebar-link href="../../mascaras-y-recortes/mask-image/index.htm" title="La propiedad mask-image"></sidebar-link></sidebar-section><sidebar-section title="Responsive Web Design" href="../../responsive-web-design/index.htm"><sidebar-link href="../../responsive-web-design/que-es/index.htm" title="¿Qué es Responsive Design?"></sidebar-link><sidebar-link href="../../responsive-web-design/bases-responsive/index.htm" title="Bases del Responsive Design"></sidebar-link><sidebar-link href="../../responsive-web-design/media-queries/index.htm" title="Media Queries"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-impresos/index.htm" title="Medios impresos"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-paginados/index.htm" title="Medios paginados"></sidebar-link><sidebar-link href="../../responsive-web-design/preferencias-usuario/index.htm" title="Preferencias de usuario"></sidebar-link></sidebar-section><sidebar-section title="Animaciones CSS" href="../../animaciones/index.htm"><sidebar-link href="../../animaciones/transiciones/index.htm" title="Transiciones CSS"></sidebar-link><sidebar-link href="../../animaciones/timing-function/index.htm" title="Funciones de tiempo"></sidebar-link><sidebar-link href="../../animaciones/animaciones/index.htm" title="Animaciones CSS"></sidebar-link><sidebar-link href="../../animaciones/keyframes/index.htm" title="La regla @keyframes"></sidebar-link></sidebar-section><sidebar-section title="Transformaciones CSS" href="../../transformaciones/index.htm"><sidebar-link href="../../transformaciones/transform/index.htm" title="Transformaciones CSS"></sidebar-link><sidebar-link href="../../transformaciones/transform-translate/index.htm" title="Translaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-rotate/index.htm" title="Rotaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-scale/index.htm" title="Escalado 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-skew/index.htm" title="Deformaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-3d/index.htm" title="Transformaciones 3D"></sidebar-link><sidebar-link href="../../transformaciones/perspective/index.htm" title="Perspectivas CSS"></sidebar-link></sidebar-section><sidebar-section title="Dibujar con CSS" href="../../dibujar-con-css/index.htm"><sidebar-link href="../../dibujar-con-css/como-empezar/index.htm" title="¿Cómo dibujar con CSS?"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-html/index.htm" title="Primeros pasos: Estructura HTML"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-css/index.htm" title="Primeros pasos: Estructura CSS"></sidebar-link></sidebar-section></div>
+
+      
+    </div>
+    <div class="contents">
+      <header class="mega">
+  <h1>Bordes con imágenes</h1><h2>La técnica 9-slice para crear bordes con imágenes</h2></header>
+
+      <div class="content ">
+  <div class="breadcrumbs">
+  <a href="/">ATRÁS</a> <span>ᐳ</span> <a href="../../index.htm">css</a> <span>ᐳ</span> <a href="index.htm">Bordes con imágenes</a>
+</div>
+<p>Una de las limitaciones que tenía CSS, es que, si en lugar de utilizar los bordes de los que disponemos en CSS (<em>sólidos, punteados, etc...</em>) quisieramos hacer algo un poco más complejo con imágenes, podría volverse una tarea muy complicada. Por esa razón, <strong>CSS3</strong> incorporó en su momento un sistema para crear bordes extensibles basados en una imagen de molde.</p>
+<h3 id="la-técnica-9-slice" tabindex="-1">La técnica 9-slice</h3>
+<p>Dicho sistema se denomina <a href="https://en.wikipedia.org/wiki/9-slice_scaling">9-slice</a> (<em>muy utilizado en videojuegos</em>) y se basa en delimitar una imagen trazando <strong>cuatro líneas</strong> (<em>en rojo</em>). Esto hará que la imagen quede dividida en 9 fragmentos, donde el fragmento central es descartado y el resto es utilizado de molde para los bordes de un elemento:</p>
+<p><img src="9-slice.png" alt="Sistema 9-slice" width="900" height="484" loading="lazy"></p>
+<p>De esta forma, los fragmentos <strong>1</strong>, <strong>3</strong>, <strong>7</strong> y <strong>9</strong> se utilizarán para las esquinas y los fragmentos <strong>2</strong>, <strong>4</strong>, <strong>6</strong> y <strong>8</strong> se utilizarán para los bordes laterales, pudiendo expandirlos si se requiere y considera necesario con alguna de las propiedades que veremos a continuación.</p>
+<h3 id="propiedades-para-crear-bordes" tabindex="-1">Propiedades para crear bordes</h3>
+<p>Las propiedades que podemos utilizar para crear <strong>bordes con imágenes</strong> son las siguientes:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>border-image-width</code></td>
+<td>Especifica el grosor de la imagen utilizada para el borde.</td>
+</tr>
+<tr>
+<td><code>border-image-source</code></td>
+<td>Imagen a utilizar para los bordes con imágenes mediante la técnica 9-slice.</td>
+</tr>
+<tr>
+<td><code>border-image-slice</code></td>
+<td>Distancia donde se hace el punto de corte en la imagen.</td>
+</tr>
+<tr>
+<td><code>border-image-outset</code></td>
+<td>Tamaño en el que el borde crece hacia fuera. Una especie de padding del borde.</td>
+</tr>
+</tbody>
+</table>
+<p>Estas propiedades pueden ser algo complicadas, por lo que vamos a utilizar la siguiente imagen expandible (<em>imagen de la izquierda</em>), que simula ser un antiguo carrete fotográfico, como borde con imagen. Las líneas rojas no forman parte de la imagen original, sino que se utilizan en este ejemplo para dejar claro cuáles serían los límites marcados con <code>border-image-slice</code>. Una vez hecho esto, conseguiremos el resultado de la imagen de la derecha, en el cuál podremos ampliar el texto del elemento lo que queramos, que se adaptará solo a su contenido:</p>
+<p><img src="ejemplo-border-image.png" alt="Ejemplo con border-image en CSS" width="1001" height="473" loading="lazy"></p>
+<p>Para ello, utilizaremos el siguiente código CSS, donde antes que nada, establecemos un ancho al elemento con <code>width</code> y un <code>border</code> básico para que, en el caso de navegadores que no soporten <code>border-image</code>, tenga al menos un borde básico y nos sirva también como base a lo que vamos a hacer a continuación:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.borde</span> <span class="token punctuation">{</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span><br>  <span class="token property">border</span><span class="token punctuation">:</span> 42px solid black<span class="token punctuation">;</span><br>  <span class="token property">border-image-width</span><span class="token punctuation">:</span> 42px<span class="token punctuation">;</span><br>  <span class="token property">border-image-source</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>https://i.imgur.com/YC5PUl6.png<span class="token punctuation">)</span></span><span class="token punctuation">;</span><br>  <span class="token property">border-image-slice</span><span class="token punctuation">:</span> 110<span class="token punctuation">;</span><br>  <span class="token property">border-image-outset</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span><br>  <span class="token property">border-image-repeat</span><span class="token punctuation">:</span> repeat<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Para establecer los límites y poder utilizar imágenes en los bordes, hemos hecho uso de varias de las propiedades CSS necesarias para los bordes con imágenes. Veamos una por una para ver como funcionan.</p>
+<h4 id="la-propiedad-border-image-width" tabindex="-1">La propiedad <code>border-image-width</code></h4>
+<p>La propiedad <code>border-image-width</code> indica el <strong>tamaño</strong> que tendrá el borde de la imagen. El tamaño puede ser indicado con unidades (<em>píxeles o porcentajes, por ejemplo</em>) o como un <badge-type class="number"></badge-type>, sin indicar ninguna unidad, lo que lo tomará como múltiplo del tamaño establecido en <code>border-width</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>border-image-width</code> <badge-type class="p1234"></badge-type></td>
+<td><strong>1</strong> | <badge-type class="size"></badge-type> | <badge-type class="number"></badge-type> | auto</td>
+</tr>
+</tbody>
+</table>
+<p>En nuestro ejemplo, tanto indicarle un valor de <strong>1</strong> como dejarlo sin especificar, sería lo mismo que darle un tamaño de borde de de <code>42px</code>, pero por ejemplo, si indicamos <code>border-image-width: 2</code>, le estaremos indicando que use un tamaño de <code>84px</code>. Por otro lado, y al igual que vimos en el apartado de <code>margin</code>, se puede indicar 1, 2, 3 o 4 parámetros <badge-type class="p1234"></badge-type>.</p>
+<blockquote>
+<p><strong>Consejo:</strong> No olvides que hay que indicar también un <code>border-width</code> y un <code>border-style</code> para que el borde CSS esté definido y se pueda visualizar.</p>
+</blockquote>
+<h4 id="la-propiedad-border-image-source" tabindex="-1">La propiedad <code>border-image-source</code></h4>
+<p>La propiedad <code>border-image-source</code> establece, mediante la función CSS <code>url()</code>, la imagen que vamos a utilizar para crear nuestro borde con imágenes. Para ello, indicaremos una imagen al igual que lo hacemos con la propiedad <code>background-image</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>border-image-source</code></td>
+<td><strong>none</strong> | <badge-type class="gradient"></badge-type> | url(<em>imagen.png</em>)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<blockquote>
+<p><strong>Truco</strong>: ¡Recuerda que como imagen de fondo puedes usar <a href="../../colores-y-fondos/linear-gradient/index.htm">gradientes de CSS</a>, ya que internamente se interpretan como imágenes!</p>
+</blockquote>
+</blockquote>
+<h4 id="la-propiedad-border-image-slice" tabindex="-1">La propiedad <code>border-image-slice</code></h4>
+<p>La propiedad <code>border-image-slice</code> define el desplazamiento de las líneas divisorias de la imagen, o lo que es lo mismo, el tamaño de los bordes. Por defecto, el valor es de <strong>100%</strong> (<em>tamaño de ancho completo de la imagen</em>), pero también podemos usar números sin unidad <badge-type class="number"></badge-type>, que simbolizan píxeles de recorte. Se pueden especificar 1, 2, 3 ó 4 parámetros <badge-type class="p1234"></badge-type>.</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>border-image-slice</code> <badge-type class="p1234"></badge-type></td>
+<td><strong>100%</strong> | <badge-type class="size"></badge-type> | <badge-type class="number"></badge-type> <code>fill</code></td>
+</tr>
+</tbody>
+</table>
+<p>Por otro lado, añadiendo la palabra clave opcional <code>fill</code>, indicaremos que queremos rellenar el elemento con el fondo del fragmento <strong>5</strong>, que por defecto es descartado. Útil en casos que quieras aprovechar el fondo.</p>
+<p>En nuestro caso, nos podría valer tanto con <code>110</code> (<em>110 píxeles de recorte</em>) como con <code>23%</code>, ya que es más o menos la cantidad apropiada para establecer el límite tanto de ancho como de alto.</p>
+<h4 id="la-propiedad-border-image-outset" tabindex="-1">La propiedad <code>border-image-outset</code></h4>
+<p>La propiedad <code>border-image-outset</code> establece el <strong>factor de crecimiento</strong> (<em>hacia fuera</em>) de la imagen. Muy útil para compensar la imagen si se extiende hasta el contenido. Usar con cuidado, ya que puede desplazar el contenido.</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>border-image-outset</code> <badge-type class="p1234"></badge-type></td>
+<td><strong>0</strong> | <badge-type class="size"></badge-type></td>
+</tr>
+</tbody>
+</table>
+<p>Por defecto, esta propiedad no tiene desplazamiento, o lo que es lo mismo, el valor por defecto es <strong>0</strong>.</p>
+<h4 id="la-propiedad-border-image-repeat" tabindex="-1">La propiedad <code>border-image-repeat</code></h4>
+<p>Habremos comprobado que en algunas ocasiones, el modo en que se repite la imagen de borde no es la apropiada, o al menos, no es la que más se adapta a nuestro caso específico. Este comportamiento se puede variar mediante la propiedad <code>border-image-repeat</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>border-image-repeat</code> <badge-type class="p12"></badge-type></td>
+<td>[<em>repetición en X e Y</em>]</td>
+<td>1 parámetro. Comportamiento de repetición en ambos ejes.</td>
+</tr>
+<tr>
+<td></td>
+<td>[<em>rep. en X</em>] [<em>rep. en Y</em>]</td>
+<td>2 parámetros. Comportamiento de repetición por separado.</td>
+</tr>
+</tbody>
+</table>
+<p>Con dicha propiedad se establece como deben comportarse los fragmentos del borde y el tipo de repetición que deben efectuar. Se puede usar la modalidad de un parámetro en la que se aplica a todos los bordes, o la modalidad de dos parámetros donde estableces diferente comportamiento para los bordes horizontales y verticales.</p>
+<p>Esta propiedad puede tomar los siguientes valores:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>stretch</strong></td>
+<td>Los bordes se <strong>estiran</strong> hasta rellenar el área. Es el valor por defecto.</td>
+</tr>
+<tr>
+<td><em>repeat</em></td>
+<td>Los bordes se <strong>repiten</strong> hasta rellenar el área.</td>
+</tr>
+<tr>
+<td><em>round</em></td>
+<td>Igual que <em>repeat</em>, pero <strong>estira</strong> los fragmentos individualmente hasta rellenar el área completa.</td>
+</tr>
+<tr>
+<td><em>space</em></td>
+<td>Igual que <em>repeat</em>, pero <strong>añade espacios</strong> hasta rellenar el área completa.</td>
+</tr>
+</tbody>
+</table>
+<p>Para verlo más claramente, echemos un vistazo a esta representación visual del comportamiento de cada uno:</p>
+<p><img src="border-image-repeat.png" alt="Border-image-repeat values" width="1001" height="445" loading="lazy"></p>
+<p>Es importante recalcar los dos últimos valores (<em>round y space</em>) actúan igual que <strong>repeat</strong>, pero con un comportamiento ligeramente diferente que nos puede interesar en el caso de que la zona repetida quede descompensada.</p>
+<p>Utilizando la imagen y código CSS anterior, obtendríamos un resultado similar a este, que se adaptaría sólo al contenido que escribamos dentro del elemento HTML con clase <code>borde</code> :</p>
+<p><img src="border-image-css.png" alt="CSS: Border-image en acción" width="900" height="357" loading="lazy"></p>
+<h3 id="atajo-bordes-con-imágenes" tabindex="-1">Atajo: Bordes con imágenes</h3>
+<p>Como suele ser costumbre, este tipo de propiedades tienen una propiedad para ahorrar espacio y escribirlo todo de una sola vez. En este caso, la sintaxis es la siguiente:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">div</span> <span class="token punctuation">{</span><br>  <span class="token comment">/* border-image: &lt;source> &lt;slice> &lt;width> &lt;outset> &lt;repeat> */</span><br><br>  <span class="token property">border-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>https://i.imgur.com/YC5PUl6.png<span class="token punctuation">)</span></span> 23% 1 0 round<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+
+    <nav class="prev-next"><a class="bt prev" href="../propiedades-logicas-css/index.htm" title="Propiedades lógicas CSS">
+    <span class="data">
+      <span>Propiedades lógicas CSS</span>
+      <small>Capítulo anterior</small>
+    </span>
+  </a><a class="bt next" href="../funciones-css/index.htm" title="Funciones CSS">
+    <span class="icon">
+      <svg-icon name="arrow-right"></svg-icon>
+    </span>
+    <span class="data">
+      <span>Funciones CSS</span>
+      <small>Capítulo siguiente</small>
+    </span>
+  </a></nav>
+
+    <script async="" src="../../../pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center; margin:auto; margin-top: 2em" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0412426997270095" data-ad-slot="3027930890"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+      <div class="related">
+
+  <div class="author">
+    <div class="author-wrapper">
+      <img loading="lazy" class="circle" src="../../../assets/manz.webp" alt="Manz">
+      <div>
+        <p>Docente, divulgador informático y <a href="https://manz.dev/">streamer de código</a>. Amante de <strong>CSS</strong>, <strong>Javascript</strong>
+          y de la plataforma web. Ha trabajado como profesor en la Universidad de La Laguna y es director del curso de
+          Programación web FullStack y FrontEnd de EOI desde Tenerife. En sus ratos libres, busca GIF de gatos en Internet.</p>
+        <p class="twitch-badge">
+          <a href="https://twitch.tv/ManzDev">
+            <svg class="twitch" viewbox="0 0 1024 1024">
+              <path style="fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="m262.451 12.904-178.26 178.26v641.672h213.905v178.26l178.26-178.26h142.576L939.809 512V12.904H262.45zm35.645 71.287h570.383v392.164L725.904 618.932H583.287L458.514 743.705V618.932H298.096V84.192zM494.158 208.51v216.36h71.328V208.51h-71.328zm196 0v216.36h71.328V208.51h-71.328z"></path>
+            </svg>
+            Sígueme en Twitch
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="comentarios">
+    <script async="" src="../../../count.js" id="dsq-count-scr"></script>
+<script>
+var disqus_config = function () {
+  this.page.path = location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname;
+  this.page.url = 'https://lenguajecss.com' + this.page.path;
+  this.page.identifier = this.page.url;
+};
+document.addEventListener('DOMContentLoaded', function() {
+  const coms = document.querySelector('#comentarios');
+  a = coms.querySelector('#disqus_button');
+  a.dataset.disqusIdentifier = 'https://lenguajecss.com' + (location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname);
+  a.addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.id = 'disqus_thread';
+    coms.appendChild(div);
+    const d = document, s = d.createElement('script');
+    s.src = '//lenguajecss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    this.remove();
+  });
+});
+</script>
+
+    <a class="disqus-comment-count" id="disqus_button" href="#disqus_thread" data-disqus-identifier="https://lenguajecss.com/css/modelo-de-cajas/bordes-imagenes/">Leer comentarios</a>
+    <a class="discord" href="https://discord.manz.dev/">¡Accede a Discord y cuéntanos!</a>
+  </div>
+
+</div>
+
+    </div>
+    <div class="aside">
+      <div class="aside">
+
+  <div class="aside-top">
+    <a href="https://manz.dev/digitalocean" title="Empieza en DigitalOcean con 100$">
+      <img width="240" height="120" src="../../../assets/digital-ocean.png" alt="DigitalOcean">
+    </a>
+  </div><script type="module">
+  const ANCHOR_ICON = /* svg */`
+    <svg class="anchor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205" width="36" height="36">
+      <path d="m140 129 16 16s-20 30-42 30V71c14-5 25-18 25-34 0-20-17-36-37-36-21 0-38 16-38 36 0 15 11 29 25
+              34v104c-26-2-42-27-42-27l18-18-65-9 10 63 17-17c15 12 32 37 73 37 51-1 63-29 76-40l19 19 10-64-65
+              10zM83 36c0-10 8-18 19-18s19 8 19 18c0 11-9 19-19 19s-19-8-19-19z"/>
+    </svg>`;
+  // Add inner links to sidebar menu
+  export const addInnerLinks = () => {
+    const summary = document.querySelector(".aside .summary .links");
+    const headers = Array.from(document.querySelectorAll(".content h3, .content h4"));
+    const tocLinks = [];
+    headers.forEach((e) => {
+      const link = `${location.origin}${location.pathname}#${e.id}`;
+      e.innerHTML = `<a class="permalink" href="${link}">${e.textContent} ${ANCHOR_ICON}</a>`;
+      const headerType = e.nodeName.toLowerCase();
+      const textContent = headerType === "h4" ? e.textContent.replace("La propiedad ", "").replace("La función ", "") : e.textContent;
+      tocLinks.push(`<a class="${headerType}" href="#${e.id}">${textContent}</a>`);
+    });
+    summary.insertAdjacentHTML("beforeEnd", tocLinks.join("\n"));
+  };
+
+  addInnerLinks();
+</script>
+
+<div class="summary">
+  <div class="table">Tabla de contenidos</div>
+  <div class="links"></div>
+</div>
+</div>
+
+    </div>
+  </div><footer class="main">
+  <div class="square">
+    <a href="/"><h2>Lenguaje CSS</h2></a>
+    <div class="icons">
+      <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+      <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+      <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+      <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+      <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+      <a href="https://github.com/ManzDev" title="GitHub"><svg-icon type="social" name="github"></svg-icon></a>
+      <a href="https://codepen.io/Manz" title="Codepen"><svg-icon type="social" name="codepen"></svg-icon></a>
+      <a href="https://www.linkedin.com/in/joseromanhdez/" title="Linkedin"><svg-icon type="social" name="linkedin"></svg-icon></a>
+    </div>
+    <p>Documentación sobre CSS y las mejores herramientas y recursos para aprender a utilizar el lenguaje de estilos CSS (Hojas de estilo).</p>
+    <p id="footer">Creado y mantenido por <a href="https://twitter.com/Manz">@Manz</a> con <span title="<3">❤</span></p></div>
+</footer>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-136544-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async="" src='../../../analytics.js'></script>
+
+
+</body>
+</html>

@@ -1,33 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;600&family=Poppins:wght@300;500&family=Roboto:wght@300;500&display=swap');
-
-/* font-family: 'Lato', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif; */
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-body {
-    font-size: 300;
-}
-
-a {
-    text-decoration: none;
-}
-
-p {
-    font-size: 1.5em;
-}
-
 h1{
     color:orange;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
+    font-family: 'Lato', sans-serif;    
 }
 
 h2{
@@ -35,94 +8,16 @@ h2{
     font-family: 'Poppins', sans-serif;    
 }
 
-h3,
-h4,
-h5 {
-    margin: 1.2em 0;
-}
-
-dl{
-    padding: 1em 0 0 1em;
-}
-
-p.destacado{
+p.destacado-js{
     background-color: rgba(248, 220, 138,0.7);
     border-right: 10px solid #ffc107;
-    padding: 1em 0.5em;
-    margin: 1em 0;
-    font-size: 1.2em;
-    font-family: 'Lato', sans-serif;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
 }
 
-p.p-list{
+p.p-list-js{
     background-color: rgb(175, 215, 175);
-    border-right: 10px solid green;
-    margin: 1em 0;
-    padding: 0 0.5em;
-    font-size: 1em;
-    font-family: 'Lato', sans-serif;
-    border-radius: 5px;    
+    border-right: 10px solid green;    
 }
 
 .bg-orange{
     background-color: rgba(255, 193, 7, 0.5);;
-}
-
-.listado{
-    margin-bottom: 2em;
-    line-height: 2;
-}
-
-.listado li{
-    padding: 0 2em;
-}
-
-.pre-content-list{
-    color: white;
-    border: 3px solid grey;
-    padding: 0;
-    margin: 2em 0;
-    font-size: 1.1em;
-    background-color: #29313f;
-    line-height: 1.5;
-    white-space: pre-wrap;
-}
-
-.pre-div-name{
-    /* border: 1px solid lightcoral; */
-    width: 100%;
-    padding: 0;
-}
-
-.pre-div-name .pre-content-list{
-    width: 100%;
-    margin-top: 0;
-}
-
-p.name_file{
-    background-color: #ffc107;
-    margin:0;
-    padding: 0 0.5em;
-    font-size: small;
-    font-weight: 600;
-    display: inline-block;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    position: relative;
-    bottom: -1px;
-    left:5px;
-}
-
-.div-table{    
-    margin: 1.5em auto;    
-    width: 90%;
-    height: auto;
 }

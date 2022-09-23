@@ -1,0 +1,559 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+  <link rel="shortcut icon" href="../../../favicon-1.ico">
+  <title>Características personalizadas - CSS en español - Lenguaje CSS</title>
+  <link rel="preload" href="../../../critical-1.css" as="style">
+  <link rel="preload" href="../../../assets/fonts/blinker-vf-1.woff2" as="font" crossorigin="">
+  <link rel="preload" href="../../../assets/fonts/scope-one-400-1.woff2" as="font" crossorigin="">
+  <meta name="description" content="Es posible activar o desactivar aspectos avanzados relacionados con la tipografía, como ligaduras, variaciones... directamente desde CSS.">
+  <link rel="stylesheet" href="../../../critical-1.css">
+  <link rel="stylesheet" href="../../../theme-1.css">
+  <script type="module" src="../../../main-1.js"></script>
+  <link rel="canonical" href="index-1.htm">
+  <meta property="og:title" content="Características personalizadas - CSS en español">
+  <meta property="og:image" content="https://lenguajecss.com/css/large-summary.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="Es posible activar o desactivar aspectos avanzados relacionados con la tipografía, como ligaduras, variaciones... directamente desde CSS.">
+  <meta property="og:url" content="https://lenguajecss.com/css/fuentes-y-tipografias/caracteristicas-personalizadas/">
+  <meta property="twitter:url" content="https://lenguajecss.com/css/fuentes-y-tipografias/caracteristicas-personalizadas/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="@Manz">
+  <meta property="twitter:title" content="Características personalizadas - CSS en español">
+  <meta property="twitter:description" content="Es posible activar o desactivar aspectos avanzados relacionados con la tipografía, como ligaduras, variaciones... directamente desde CSS.">
+  <meta property="twitter:image:src" content="https://lenguajecss.com/css/large-summary.jpg">
+</head>
+<body class="css post"><div class="page">
+    <div class="sidebar">
+      <div class="logo flex-center">
+  <a href="../../../index.htm">
+    <img width="42" height="42" src="../../../assets/logo-1.svg" alt="Logo">
+    Lenguaje CSS
+  </a>
+  <div class="icons" style="--icon-size: 32px; --icon-side-padding: 0.15em">
+    <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+    <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+    <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+    <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+    <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+  </div>
+  <span>Un sitio web de <a href="https://manz.dev/"><mark>Manz.dev</mark></a></span>
+</div>
+
+      <form class="search flex-center" action="https://www.google.com/search">
+  <label><span>Buscar:</span> <input type="search" name="q" placeholder="Buscar un tema (ej: flex, grid...)" autocomplete="off"></label>
+  <label><span>Sitio:</span> <input type="hidden" name="q" value="site:lenguajejs.com OR site:lenguajecss.com OR site:lenguajehtml.com OR site:terminaldelinux.com OR site:manz.dev"></label>
+  <div class="search-results"></div>
+</form>
+
+      
+
+<style>
+  sidebar-link {
+    --logo-image: url(../../logo-1.svg);
+  }
+</style>
+
+<div class="toc"><sidebar-link title="Volver al índice" href="../../index-1.htm" back="" direct=""></sidebar-link><sidebar-link href="../../cheatsheets/index-1.htm" title="CSS3 Cheatsheet" direct=""></sidebar-link><sidebar-section title="Introducción a CSS" href="../../introduccion/index-1.htm"><sidebar-link href="../../introduccion/que-es-css/index-1.htm" title="¿Qué es CSS?"></sidebar-link><sidebar-link href="../../introduccion/como-usar-css/index-1.htm" title="¿Cómo usar CSS?"></sidebar-link><sidebar-link href="../../introduccion/estructura-de-css/index-1.htm" title="Estructura de CSS"></sidebar-link><sidebar-link href="../../introduccion/minificar-css/index-1.htm" title="Minificar CSS"></sidebar-link><sidebar-link href="../../introduccion/navegadores-web/index-1.htm" title="Navegadores web"></sidebar-link><sidebar-link href="../../introduccion/niveles-y-prefijos-css/index-1.htm" title="Niveles de CSS y prefijos"></sidebar-link><sidebar-link href="../../introduccion/herencia-css/index-1.htm" title="Herencia en CSS"></sidebar-link><sidebar-link href="../../introduccion/cascada-css/index-1.htm" title="Cascada en CSS"></sidebar-link><sidebar-link href="../../introduccion/css-custom-properties/index-1.htm" title="Variables CSS"></sidebar-link><sidebar-link href="../../introduccion/guia-css/index-1.htm" title="La guía de propiedades CSS"></sidebar-link></sidebar-section><sidebar-section title="Modelo de cajas" href="../../modelo-de-cajas/index-1.htm"><sidebar-link href="../../modelo-de-cajas/unidades-css/index-1.htm" title="Unidades CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/que-es/index-1.htm" title="Modelo de cajas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/margenes-y-rellenos/index-1.htm" title="Márgenes y rellenos"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes/index-1.htm" title="Bordes CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/border-radius/index-1.htm" title="Esquinas redondeadas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/propiedades-logicas-css/index-1.htm" title="Propiedades lógicas CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes-imagenes/index-1.htm" title="Bordes con imágenes"></sidebar-link><sidebar-link href="../../modelo-de-cajas/funciones-css/index-1.htm" title="Funciones CSS"></sidebar-link></sidebar-section><sidebar-section title="Colores, fondos e imágenes" href="../../colores-y-fondos/index-1.htm"><sidebar-link href="../../colores-y-fondos/colores-css/index-1.htm" title="Colores CSS"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-opacity/index-1.htm" title="La propiedad opacity"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-background-image/index-1.htm" title="La propiedad background-image"></sidebar-link><sidebar-link href="../../colores-y-fondos/linear-gradient/index-1.htm" title="Gradientes lineales"></sidebar-link><sidebar-link href="../../colores-y-fondos/radial-gradient/index-1.htm" title="Gradientes radiales"></sidebar-link><sidebar-link href="../../colores-y-fondos/conic-gradient/index-1.htm" title="Gradientes cónicos"></sidebar-link><sidebar-link href="../../colores-y-fondos/imagenes-css/index-1.htm" title="Imágenes y Objetos"></sidebar-link></sidebar-section><sidebar-section title="Selectores CSS" href="../../selectores/index-1.htm"><sidebar-link href="../../selectores/selectores-basicos/index-1.htm" title="Selectores CSS básicos"></sidebar-link><sidebar-link href="../../selectores/selectores-avanzados/index-1.htm" title="Selectores CSS avanzados"></sidebar-link><sidebar-link href="../../selectores/pseudoclases/index-1.htm" title="Pseudoclases CSS"></sidebar-link><sidebar-link href="../../selectores/pseudoclases-avanzadas/index-1.htm" title="Pseudoclases CSS avanzadas"></sidebar-link><sidebar-link href="../../selectores/pseudoelementos/index-1.htm" title="Pseudoelementos CSS"></sidebar-link><sidebar-link href="../../selectores/atributos/index-1.htm" title="Atributos CSS"></sidebar-link></sidebar-section><sidebar-section title="Reglas CSS" href="../../reglas-css/index-1.htm"><sidebar-link href="../../reglas-css/que-son-reglas-css/index-1.htm" title="¿Qué son las reglas CSS?"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-import/index-1.htm" title="La regla @import"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-layer/index-1.htm" title="La regla @layer"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-supports/index-1.htm" title="La regla @supports"></sidebar-link></sidebar-section><sidebar-section title="Fuentes y tipografías" href="../index-1.htm"><sidebar-link href="../tipografias/index-1.htm" title="Tipografías CSS"></sidebar-link><sidebar-link href="../tipografias-externas/index-1.htm" title="Tipografías externas"></sidebar-link><sidebar-link href="../fuentes-variables/index-1.htm" title="Fuentes variables CSS"></sidebar-link><sidebar-link href="../textos-y-alineaciones/index-1.htm" title="Textos y alineaciones"></sidebar-link><sidebar-link href="../propiedades-avanzadas/index-1.htm" title="Propiedades avanzadas"></sidebar-link><sidebar-link href="index-1.htm" title="Características personalizadas"></sidebar-link></sidebar-section><sidebar-section title="Representación de datos" href="../../representacion-datos/index-1.htm"><sidebar-link href="../../representacion-datos/tablas-css/index-1.htm" title="Tablas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/listas-css/index-1.htm" title="Listas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/contadores-css/index-1.htm" title="Contadores CSS"></sidebar-link></sidebar-section><sidebar-section title="Maquetación y colocación" href="../../maquetacion-y-colocacion/index-1.htm"><sidebar-link href="../../maquetacion-y-colocacion/propiedad-display/index-1.htm" title="La propiedad display"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/posicionamiento-css/index-1.htm" title="La propiedad position"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/desplazamientos/index-1.htm" title="La propiedad float"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/flexbox/index-1.htm" title="Flexbox CSS"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/grid-css/index-1.htm" title="Grid CSS"></sidebar-link></sidebar-section><sidebar-section title="Interacciones" href="../../interacciones/index-1.htm"><sidebar-link href="../../interacciones/contornos/index-1.htm" title="Contornos"></sidebar-link><sidebar-link href="../../interacciones/cursor-del-raton/index-1.htm" title="Cursor del ratón"></sidebar-link><sidebar-link href="../../interacciones/scroll-y-overflow/index-1.htm" title="Scroll y Overflow"></sidebar-link><sidebar-link href="../../interacciones/snap-scroll/index-1.htm" title="CSS Snap Scroll"></sidebar-link></sidebar-section><sidebar-section title="Sombras" href="../../sombras/index-1.htm"><sidebar-link href="../../sombras/text-shadow/index-1.htm" title="Sombras CSS en textos"></sidebar-link><sidebar-link href="../../sombras/box-shadow/index-1.htm" title="Sombras CSS en cajas"></sidebar-link><sidebar-link href="../../sombras/drop-shadow/index-1.htm" title="Sombras idénticas CSS"></sidebar-link></sidebar-section><sidebar-section title="Efectos" href="../../efectos/index-1.htm"><sidebar-link href="../../efectos/filtros-css/index-1.htm" title="Filtros CSS"></sidebar-link><sidebar-link href="../../efectos/modos-de-fusion/index-1.htm" title="Modos de fusión CSS"></sidebar-link></sidebar-section><sidebar-section title="Máscaras y recortes" href="../../mascaras-y-recortes/index-1.htm"><sidebar-link href="../../mascaras-y-recortes/clip-path/index-1.htm" title="La propiedad clip-path"></sidebar-link><sidebar-link href="../../mascaras-y-recortes/mask-image/index-1.htm" title="La propiedad mask-image"></sidebar-link></sidebar-section><sidebar-section title="Responsive Web Design" href="../../responsive-web-design/index-1.htm"><sidebar-link href="../../responsive-web-design/que-es/index-1.htm" title="¿Qué es Responsive Design?"></sidebar-link><sidebar-link href="../../responsive-web-design/bases-responsive/index-1.htm" title="Bases del Responsive Design"></sidebar-link><sidebar-link href="../../responsive-web-design/media-queries/index-1.htm" title="Media Queries"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-impresos/index-1.htm" title="Medios impresos"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-paginados/index-1.htm" title="Medios paginados"></sidebar-link><sidebar-link href="../../responsive-web-design/preferencias-usuario/index-1.htm" title="Preferencias de usuario"></sidebar-link></sidebar-section><sidebar-section title="Animaciones CSS" href="../../animaciones/index-1.htm"><sidebar-link href="../../animaciones/transiciones/index-1.htm" title="Transiciones CSS"></sidebar-link><sidebar-link href="../../animaciones/timing-function/index-1.htm" title="Funciones de tiempo"></sidebar-link><sidebar-link href="../../animaciones/animaciones/index-1.htm" title="Animaciones CSS"></sidebar-link><sidebar-link href="../../animaciones/keyframes/index-1.htm" title="La regla @keyframes"></sidebar-link></sidebar-section><sidebar-section title="Transformaciones CSS" href="../../transformaciones/index-1.htm"><sidebar-link href="../../transformaciones/transform/index-1.htm" title="Transformaciones CSS"></sidebar-link><sidebar-link href="../../transformaciones/transform-translate/index-1.htm" title="Translaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-rotate/index-1.htm" title="Rotaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-scale/index-1.htm" title="Escalado 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-skew/index-1.htm" title="Deformaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-3d/index-1.htm" title="Transformaciones 3D"></sidebar-link><sidebar-link href="../../transformaciones/perspective/index-1.htm" title="Perspectivas CSS"></sidebar-link></sidebar-section><sidebar-section title="Dibujar con CSS" href="../../dibujar-con-css/index-1.htm"><sidebar-link href="../../dibujar-con-css/como-empezar/index-1.htm" title="¿Cómo dibujar con CSS?"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-html/index-1.htm" title="Primeros pasos: Estructura HTML"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-css/index-1.htm" title="Primeros pasos: Estructura CSS"></sidebar-link></sidebar-section></div>
+
+      
+    </div>
+    <div class="contents">
+      <header class="mega">
+  <h1>Características personalizadas</h1><h2>Activar características especiales en tipografías</h2></header>
+
+      <div class="content ">
+  <div class="breadcrumbs">
+  <a href="../../../index.htm">ATRÁS</a> <span>ᐳ</span> <a href="../../index-1.htm">css</a> <span>ᐳ</span> <a href="index-1.htm">Características personalizadas</a>
+</div>
+<p>Ciertas tipografías tienen una serie de <strong>características avanzadas</strong> que pueden existir o no, dependiendo de la tipografía. Dichas características permiten realizar variaciones en las tipografías como las siguientes:</p>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ligadura</td>
+<td>Unión visual de 2 carácteres. Muy usada en programación, matemáticas e idiomas.</td>
+</tr>
+<tr>
+<td>Posicionamiento</td>
+<td>Colocación de carácteres de forma similar a los subíndices o superíndices.</td>
+</tr>
+<tr>
+<td>Mayúsculas/Minúsculas</td>
+<td>Variaciones relacionadas con las mayúsculas y minúsculas.</td>
+</tr>
+<tr>
+<td>Variaciones</td>
+<td>Se trata de grupos de variaciones visuales con un propósito concreto.</td>
+</tr>
+</tbody>
+</table>
+<p>Veamos detalladamente cada una de estas características:</p>
+<ul>
+<li>
+<p><strong>Ligaduras</strong>: Es posible activar una características llamada <strong>ligadura</strong> que no es más que la unión de ciertos carácteres cambiando su aspecto visual. Esto se puede hacer con la propiedad <code>font-variant-ligatures</code> , y dependiendo del valor específico, activaremos uno u otro tipo de ligadura. Existen las siguientes:</p>
+<ul>
+<li><strong>Ligaduras normales</strong>: Se indica con el valor <code>common-ligatures</code> . Se suele observar en valores como <code>fi</code> , <code>fl</code> , <code>ff</code> ...</li>
+<li><strong>Ligaduras discrecionales</strong>: Se indica con el valor <code>discretionary-ligatures</code> . Se suele observar en valores como <code>ch</code> , <code>sp</code> , <code>st</code> ...</li>
+<li><strong>Ligaduras históricas</strong>: Se indica con el valor <code>historical-ligatures</code> . Se aplican para mostrar ligaduras heredadas de escritura manual.</li>
+</ul>
+</li>
+<li>
+<p><strong>Posicionamiento de carácteres</strong>: Es posible activar una variación para indicar texto como subíndice o superíndice, similar a como se hace con las etiquetas HTML <code>&lt;sub&gt;</code> y <code>&lt;super&gt;</code> .</p>
+</li>
+<li>
+<p><strong>Mayúsculas y minúsculas</strong>: Es posible realizar ciertas variaciones como versalitas o similares, aplicadas sólo a minúsculas, sólo a mayúsculas o a ambas.</p>
+</li>
+<li>
+<p><strong>Variaciones numéricas</strong>: Con la propiedad <code>font-variant-numeric</code> podemos establecer ciertas variaciones como representar números con estilo antiguo, diferentes proporciones, como fracciones &quot;gráficas&quot; o incluso indicar que el cero tenga una raya o no.</p>
+</li>
+<li>
+<p><strong>Variaciones alternativas</strong>: Con la propiedad <code>font-variant-alternates</code> se pueden indicar una o múltiples variaciones visuales, donde se pueden mencionar las siguientes:</p>
+<ul>
+<li><strong>historical-forms</strong>: Muestra glifos históricos (<em>heredados de épocas pasadas</em>)</li>
+<li><strong>stylistic(<em>id</em>)</strong>: Muesta características de estilo alternativas de forma individual.</li>
+<li><strong>styleset(<em>id</em>)</strong>: Muestra un conjunto de características de estilo alternativas (<em>creados para trabajar juntos</em>).</li>
+<li><strong>character-variant(<em>id</em>)</strong>: Muestra ciertas variaciones en carácteres concretos.</li>
+<li><strong>swash(<em>id</em>)</strong>: Muestra decoraciones artísticas en los carácteres como adornos tipográficos.</li>
+<li><strong>ornaments(<em>id</em>)</strong>: Muestra glifos con adornos en lugar del caracter predeterminado.</li>
+<li><strong>anotation(<em>id</em>)</strong>: Muestra formas notacionales de glifos (glifos abiertos, cajas redondeadas, etc...)</li>
+</ul>
+</li>
+</ul>
+<h3 id="variaciones-en-tipografías" tabindex="-1">Variaciones en tipografías</h3>
+<p>Estas características pueden ser activadas o desactivadas desde CSS, por medio de una de las siguientes propiedades (<em>o de forma alternativa, utilizando una propiedad a bajo nivel que veremos más adelante</em>):</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad/Valores</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>font-variant-ligatures</code></td>
+<td>Establece un estilo de ligadura</td>
+</tr>
+<tr>
+<td colspan="2"><strong>normal</strong> | none | common-ligatures | no-common-ligatures | discretionary-ligatures | no-discretionary-ligatures | historical-ligatures | no-historical-ligatures | contextual | no-contextual</td>
+</tr>
+<tr>
+<td><code>font-variant-position</code></td>
+<td>Establece estilo subscript (<em>subíndice</em>) o superscript (<em>superíndice</em>)</td>
+</tr>
+<tr>
+<td colspan="2"><strong>normal</strong> | sub | super</td>
+</tr>
+<tr>
+<td><code>font-variant-caps</code></td>
+<td>Establece una variación de versalitas</td>
+</tr>
+<tr>
+<td colspan="2"><strong>normal</strong> | small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps</td>
+</tr>
+<tr>
+<td><code>font-variant-numeric</code></td>
+<td>Establece variaciones numéricas</td>
+</tr>
+<tr>
+<td colspan="2"><strong>normal</strong> | lining-nums | oldstyle-nums | proportional-nums | tabular-nums | diagonal-fractions | stacked-fractions | ordinal | slashed-zero</td>
+</tr>
+<tr>
+<td><code>font-variant-alternates</code></td>
+<td>Establece variaciones visuales</td>
+</tr>
+<tr>
+<td colspan="2"><strong>normal</strong> | historical-forms | stylistic(<em>id</em>) | styleset(<em>id</em>) | character-variant(<em>id</em>) | swash(<em>id</em>) | ornaments(<em>id</em>) | annotations(<em>id</em>)</td>
+</tr>
+<tr>
+<td><code>font-variant-east-asian</code></td>
+<td>Permite controlar los glifos de textos orientales</td>
+</tr>
+<tr>
+<td colspan="2"><strong>normal</strong> | jis78 | jis83 | jis90 | jis04 | simplified | traditional | full-width | proportional-width | ruby</td>
+</tr>
+<tr>
+<td><code>font-kerning</code></td>
+<td>Indica quién debe ajustar el kerning</td>
+</tr>
+<tr>
+<td colspan="2"><strong>auto</strong> | normal | none</td>
+</tr>
+</tbody>
+</table>
+<p>Ten en cuenta que en la mayoría de ellas, se puede utilizar la regla <code>@font-feature-values</code> para personalizar como utilizar la característica en cuestión (<em>la cuál debe existir y estar definida en la tipografía</em>). Veamos un ejemplo:</p>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@font-feature-values</span> <span class="token string">'bookmania'</span></span> <span class="token punctuation">{</span><br>    <span class="token atrule"><span class="token rule">@swash</span></span> <span class="token punctuation">{</span><br>        <span class="token property">flourish</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br><span class="token punctuation">}</span><br><br><span class="token selector">.texto-alternativo</span> <span class="token punctuation">{</span><br>    <span class="token property">font-variant-alternates</span><span class="token punctuation">:</span> <span class="token function">swash</span><span class="token punctuation">(</span>flourish<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<h3 id="características-a-bajo-nivel" tabindex="-1">Características a bajo nivel</h3>
+<p>La propiedad <code>font-feature-settings</code> es una propiedad a bajo nivel para indicar como debe comportarse una tipografía respecto a sus <strong>características especiales</strong>. Sólo debe usarse cuando no nos sirva otra propiedad con la que modificar dicha característica, la cuál normalmente se encuentra en la lista del apartado anterior.</p>
+<p>La sintaxis de esta propiedad es la que podemos ver a continuación (<em>se pueden combinar varias características separando por comas</em>):</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">{</span><br>    <span class="token comment">/* La característica "feat" está activada. */</span><br>    <span class="token property">font-feature-settings</span><span class="token punctuation">:</span> <span class="token string">"feat"</span> 1<span class="token punctuation">;</span><br>    <span class="token comment">/* Otra opción equivalente a la anterior. */</span><br>    <span class="token property">font-feature-settings</span><span class="token punctuation">:</span> <span class="token string">"feat"</span> on<span class="token punctuation">;</span><br>    <span class="token comment">/* La característica "feat" está desactivada. */</span><br>    <span class="token property">font-feature-settings</span><span class="token punctuation">:</span> <span class="token string">"feat"</span> 0<span class="token punctuation">;</span><br>    <span class="token comment">/* Otra opción equivalente a la anterior. */</span><br>    <span class="token property">font-feature-settings</span><span class="token punctuation">:</span> <span class="token string">"feat"</span> off<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Sin embargo, la característica «feat» no existe, es sólo un ejemplo teórico. Cada tipografía tiene un cierto número de características especiales (<em>hay tipografías que tienen varias, y tipografías que no tienen ninguna</em>). Veamos una lista de las características que existen:</p>
+<table>
+<thead>
+<tr>
+<th>Valor OTF</th>
+<th>Significado</th>
+<th>Propiedad equivalente</th>
+<th>Valor concreto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&quot;liga&quot; 1</code></td>
+<td>Ligaduras estándar (también <code>clig</code> )</td>
+<td><code>font-variant-ligatures</code></td>
+<td><code>common-ligatures</code></td>
+</tr>
+<tr>
+<td><code>&quot;dlig&quot; 1</code></td>
+<td>Ligaduras discrecionales</td>
+<td><code>font-variant-ligatures</code></td>
+<td><code>discretionary-ligatures</code></td>
+</tr>
+<tr>
+<td><code>&quot;hlig&quot; 1</code></td>
+<td>Ligaduras históricas</td>
+<td><code>font-variant-ligatures</code></td>
+<td><code>historical-ligatures</code></td>
+</tr>
+<tr>
+<td><code>&quot;calt&quot; 1</code></td>
+<td>Ligaduras contextuales alternativas</td>
+<td><code>font-variant-ligatures</code></td>
+<td><code>contextual</code></td>
+</tr>
+<tr>
+<td><code>&quot;ordn&quot; 1</code></td>
+<td>Marcas ordinales</td>
+<td><code>font-variant-numeric</code></td>
+<td><code>ordinal</code></td>
+</tr>
+<tr>
+<td><code>&quot;zero&quot; 1</code></td>
+<td>Raya del cero</td>
+<td><code>font-variant-numeric</code></td>
+<td><code>slashed-zero</code></td>
+</tr>
+<tr>
+<td><code>&quot;onum&quot; 1</code></td>
+<td>Figuras de estilo antiguo</td>
+<td><code>font-variant-numeric</code></td>
+<td><code>oldstyle-nums</code></td>
+</tr>
+<tr>
+<td><code>&quot;lnum&quot; 1</code></td>
+<td>Números alineados</td>
+<td><code>font-variant-numeric</code></td>
+<td><code>lining-nums</code></td>
+</tr>
+<tr>
+<td><code>&quot;pnum&quot; 1</code></td>
+<td>Números proporcionales</td>
+<td><code>font-variant-numeric</code></td>
+<td><code>proportional-nums</code></td>
+</tr>
+<tr>
+<td><code>&quot;tnum&quot; 1</code></td>
+<td>Figuras tabulares (mismo tamaño)</td>
+<td><code>font-variant-numeric</code></td>
+<td><code>tabular-nums</code></td>
+</tr>
+<tr>
+<td><code>&quot;frac&quot; 1</code></td>
+<td>Fracciones diagonales</td>
+<td><code>font-variant-numeric</code></td>
+<td><code>diagonal-fractions</code></td>
+</tr>
+<tr>
+<td><code>&quot;afrc&quot; 1</code></td>
+<td>Fracciones apiladas</td>
+<td><code>font-variant-numeric</code></td>
+<td><code>stacked-fractions</code></td>
+</tr>
+<tr>
+<td><code>&quot;sups&quot; 1</code></td>
+<td>Superíndices</td>
+<td><code>font-variant-position</code></td>
+<td><code>super</code></td>
+</tr>
+<tr>
+<td><code>&quot;subs&quot; 1</code></td>
+<td>Subíndices</td>
+<td><code>font-variant-position</code></td>
+<td><code>sub</code></td>
+</tr>
+<tr>
+<td><code>&quot;smcp&quot; 1</code></td>
+<td>Versalitas en minúsculas</td>
+<td><code>font-variant-caps</code></td>
+<td><code>small-caps</code></td>
+</tr>
+<tr>
+<td><code>&quot;c2sc&quot; 1</code></td>
+<td>Versalitas en mayúsculas y minúsculas</td>
+<td><code>font-variant-caps</code></td>
+<td><code>all-small-caps</code></td>
+</tr>
+<tr>
+<td><code>&quot;pcap&quot; 1</code></td>
+<td>Capitaliza minúsculas</td>
+<td><code>font-variant-caps</code></td>
+<td><code>petite-caps</code></td>
+</tr>
+<tr>
+<td><code>&quot;c2pc&quot; 1</code></td>
+<td>Capitaliza mayúsculas y minúsculas</td>
+<td><code>font-variant-caps</code></td>
+<td><code>all-petite-caps</code></td>
+</tr>
+<tr>
+<td><code>&quot;unic&quot; 1</code></td>
+<td>Versalitas en mayúsculas</td>
+<td><code>font-variant-caps</code></td>
+<td><code>unicase</code></td>
+</tr>
+<tr>
+<td><code>&quot;titl&quot; 1</code></td>
+<td>Mayúsculas para <a href="https://en.wikipedia.org/wiki/Titling_capitals">titulares</a></td>
+<td><code>font-variant-caps</code></td>
+<td><code>titling-caps</code></td>
+</tr>
+<tr>
+<td><code>&quot;swsh&quot; 1</code></td>
+<td>Decoraciones <a href="https://en.wikipedia.org/wiki/Swash_%28typography%29">swash</a></td>
+<td><code>font-variant-alternates</code></td>
+<td><code>swash()</code></td>
+</tr>
+<tr>
+<td><code>&quot;hist&quot; 1</code></td>
+<td>Glifos históricos</td>
+<td><code>font-variant-alternates</code></td>
+<td><code>historical-forms</code></td>
+</tr>
+<tr>
+<td><code>&quot;salt&quot; 1</code></td>
+<td>Carácteres con estilos alternativos</td>
+<td><code>font-variant-alternates</code></td>
+<td><code>stylistic()</code></td>
+</tr>
+<tr>
+<td><code>&quot;ss01&quot; 1</code></td>
+<td>Conjunto de estilos alternativos</td>
+<td><code>font-variant-alternates</code></td>
+<td><code>styleset(01)</code></td>
+</tr>
+<tr>
+<td><code>&quot;ss02&quot; 1</code></td>
+<td>Segundo conjunto de estilos alternativos</td>
+<td><code>font-variant-alternates</code></td>
+<td><code>styleset(02)</code></td>
+</tr>
+<tr>
+<td><code>&quot;ss03&quot; 1</code></td>
+<td>Tercer conjunto de estilos alternativos</td>
+<td><code>font-variant-alternates</code></td>
+<td><code>styleset(03)</code></td>
+</tr>
+<tr>
+<td><code>&quot;cv01&quot; 1</code></td>
+<td>Estilo alternativo para carácteres</td>
+<td><code>font-variant-alternates</code></td>
+<td><code>character-variant(01)</code></td>
+</tr>
+<tr>
+<td><code>&quot;ornm&quot; 1</code></td>
+<td>Adornos como fleurons o dingbats</td>
+<td><code>font-variant-alternates</code></td>
+<td><code>ornaments()</code></td>
+</tr>
+<tr>
+<td><code>&quot;nalt&quot; 1</code></td>
+<td>Dígitos circulares, carácteres invertidos...</td>
+<td><code>font-variant-alternates</code></td>
+<td><code>annotation()</code></td>
+</tr>
+<tr>
+<td><code>&quot;kern&quot; 1</code></td>
+<td>Kerning de tipografías</td>
+<td><code>font-kerning</code></td>
+<td><code>normal</code></td>
+</tr>
+</tbody>
+</table>
+<p>Para saber si la tipografía que estamos utilizando posee alguna de estas <strong>características especiales</strong>, podemos utilizar el comando de terminal <a href="https://github.com/ConradIrwin/font">font</a>, que lee dicha información de formatos WOFF2, WOFF, TTF u OTF. Dicho comando está programado en el lenguaje de programación <strong>Go</strong>, por lo que instalarlo es tan fácil como escribir desde una terminal lo siguiente:</p>
+<pre class="language-bash"><code class="language-bash">go get -u github.com/ConradIrwin/font/cmd/font    <span class="token comment"># Instalamos "font" (necesitamos Go)</span><br>font feature fichero.ttf                          <span class="token comment"># Leemos las características</span></code></pre>
+<p>Este comando nos mostrará los metadatos de la tipografía, incluyendo los flags de las features (<em>liga, tnum, frac, etc...</em>) que existen y están definidas en la tipografía en cuestión. El soporte actual de dicha propiedad es el siguiente:</p>
+<p><caniuse-support title="CSS font-feature-settings" feature="font-feature" edge="12/y" firefox="15/y" chrome="21/y" safari="9.1/y" opera="15/y" ios_saf="9.3/y" and_chr="103/y" and_ff="101/y">
+</caniuse-support></p>
+<h3 id="atajo-de-características" tabindex="-1">Atajo de características</h3>
+<p>Tradicionalmente, la propiedad <code>font-variant</code> sólo permitía los valores <code>normal</code> o <code>small-caps</code> . Sin embargo, las nuevas propuestas de CSS permiten utilizar esta propiedad como propiedad de atajo para todas las características que hemos visto en el apartado anterior. Por lo tanto, pasamos de este esquema antiguo (<em>soportado en la mayoría de los navegadores</em>):</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>font-variant</code></td>
+<td><strong>normal</strong> | small-caps</td>
+<td>Indica si utilizar versalitas o no</td>
+</tr>
+</tbody>
+</table>
+<p>Al esquema moderno, que es el siguiente:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">{</span><br>    <span class="token comment">/* font-variant: &lt;ligatures> &lt;caps> &lt;numeric> &lt;east-asian> &lt;position> */</span><br><span class="token punctuation">}</span></code></pre>
+<p>En él podemos utilizar los valores de cada propiedad individual: <code>font-variant-ligatures</code> , <code>font-variant-caps</code> , etc... en forma de atajo.</p>
+
+    <nav class="prev-next"><a class="bt prev" href="../propiedades-avanzadas/index-1.htm" title="Propiedades avanzadas">
+    <span class="data">
+      <span>Propiedades avanzadas</span>
+      <small>Capítulo anterior</small>
+    </span>
+  </a><a class="bt next" href="../../representacion-datos/tablas-css/index-1.htm" title="Tablas CSS">
+    <span class="icon">
+      <svg-icon name="arrow-right"></svg-icon>
+    </span>
+    <span class="data">
+      <span>Tablas CSS</span>
+      <small>Capítulo siguiente</small>
+    </span>
+  </a></nav>
+
+    <script async="" src="../../../pagead/js/f-1.txt"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center; margin:auto; margin-top: 2em" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0412426997270095" data-ad-slot="3027930890"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+      <div class="related">
+
+  <div class="author">
+    <div class="author-wrapper">
+      <img loading="lazy" class="circle" src="../../../assets/manz-1.webp" alt="Manz">
+      <div>
+        <p>Docente, divulgador informático y <a href="https://manz.dev/">streamer de código</a>. Amante de <strong>CSS</strong>, <strong>Javascript</strong>
+          y de la plataforma web. Ha trabajado como profesor en la Universidad de La Laguna y es director del curso de
+          Programación web FullStack y FrontEnd de EOI desde Tenerife. En sus ratos libres, busca GIF de gatos en Internet.</p>
+        <p class="twitch-badge">
+          <a href="https://twitch.tv/ManzDev">
+            <svg class="twitch" viewbox="0 0 1024 1024">
+              <path style="fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="m262.451 12.904-178.26 178.26v641.672h213.905v178.26l178.26-178.26h142.576L939.809 512V12.904H262.45zm35.645 71.287h570.383v392.164L725.904 618.932H583.287L458.514 743.705V618.932H298.096V84.192zM494.158 208.51v216.36h71.328V208.51h-71.328zm196 0v216.36h71.328V208.51h-71.328z"></path>
+            </svg>
+            Sígueme en Twitch
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="comentarios">
+    <script async="" src="../../../count-1.js" id="dsq-count-scr"></script>
+<script>
+var disqus_config = function () {
+  this.page.path = location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname;
+  this.page.url = 'https://lenguajecss.com' + this.page.path;
+  this.page.identifier = this.page.url;
+};
+document.addEventListener('DOMContentLoaded', function() {
+  const coms = document.querySelector('#comentarios');
+  a = coms.querySelector('#disqus_button');
+  a.dataset.disqusIdentifier = 'https://lenguajecss.com' + (location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname);
+  a.addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.id = 'disqus_thread';
+    coms.appendChild(div);
+    const d = document, s = d.createElement('script');
+    s.src = '//lenguajecss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    this.remove();
+  });
+});
+</script>
+
+    <a class="disqus-comment-count" id="disqus_button" href="#disqus_thread" data-disqus-identifier="https://lenguajecss.com/css/fuentes-y-tipografias/caracteristicas-personalizadas/">Leer comentarios</a>
+    <a class="discord" href="https://discord.manz.dev/">¡Accede a Discord y cuéntanos!</a>
+  </div>
+
+</div>
+
+    </div>
+    <div class="aside">
+      <div class="aside">
+
+  <div class="aside-top">
+    <a href="https://manz.dev/digitalocean" title="Empieza en DigitalOcean con 100$">
+      <img width="240" height="120" src="../../../assets/digital-ocean-1.png" alt="DigitalOcean">
+    </a>
+  </div><script type="module">
+  const ANCHOR_ICON = /* svg */`
+    <svg class="anchor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205" width="36" height="36">
+      <path d="m140 129 16 16s-20 30-42 30V71c14-5 25-18 25-34 0-20-17-36-37-36-21 0-38 16-38 36 0 15 11 29 25
+              34v104c-26-2-42-27-42-27l18-18-65-9 10 63 17-17c15 12 32 37 73 37 51-1 63-29 76-40l19 19 10-64-65
+              10zM83 36c0-10 8-18 19-18s19 8 19 18c0 11-9 19-19 19s-19-8-19-19z"/>
+    </svg>`;
+  // Add inner links to sidebar menu
+  export const addInnerLinks = () => {
+    const summary = document.querySelector(".aside .summary .links");
+    const headers = Array.from(document.querySelectorAll(".content h3, .content h4"));
+    const tocLinks = [];
+    headers.forEach((e) => {
+      const link = `${location.origin}${location.pathname}#${e.id}`;
+      e.innerHTML = `<a class="permalink" href="${link}">${e.textContent} ${ANCHOR_ICON}</a>`;
+      const headerType = e.nodeName.toLowerCase();
+      const textContent = headerType === "h4" ? e.textContent.replace("La propiedad ", "").replace("La función ", "") : e.textContent;
+      tocLinks.push(`<a class="${headerType}" href="#${e.id}">${textContent}</a>`);
+    });
+    summary.insertAdjacentHTML("beforeEnd", tocLinks.join("\n"));
+  };
+
+  addInnerLinks();
+</script>
+
+<div class="summary">
+  <div class="table">Tabla de contenidos</div>
+  <div class="links"></div>
+</div>
+</div>
+
+    </div>
+  </div><footer class="main">
+  <div class="square">
+    <a href="../../../index.htm"><h2>Lenguaje CSS</h2></a>
+    <div class="icons">
+      <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+      <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+      <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+      <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+      <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+      <a href="https://github.com/ManzDev" title="GitHub"><svg-icon type="social" name="github"></svg-icon></a>
+      <a href="https://codepen.io/Manz" title="Codepen"><svg-icon type="social" name="codepen"></svg-icon></a>
+      <a href="https://www.linkedin.com/in/joseromanhdez/" title="Linkedin"><svg-icon type="social" name="linkedin"></svg-icon></a>
+    </div>
+    <p>Documentación sobre CSS y las mejores herramientas y recursos para aprender a utilizar el lenguaje de estilos CSS (Hojas de estilo).</p>
+    <p id="footer">Creado y mantenido por <a href="https://twitter.com/Manz">@Manz</a> con <span title="<3">❤</span></p></div>
+</footer>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-136544-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async="" src='../../../analytics-1.js'></script>
+
+
+</body>
+</html>

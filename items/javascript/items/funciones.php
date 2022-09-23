@@ -24,7 +24,7 @@
               <article>
                 <h3>Concepto</h3>
                 <div class="row mt-3">
-                  <p class="destacado">Las funciones son uno de los bloques de construcción fundamentales en JavaScript</p>
+                  <p class="destacado destacado-js">Las funciones son uno de los bloques de construcción fundamentales en JavaScript</p>
                   <p>Una función en JavaScript es similar a un procedimiento — un conjunto de instrucciones que realiza una tarea o calcula un valor, pero para que un procedimiento califique como función, debe tomar alguna entrada y devolver una salida donde hay alguna relación obvia entre la entrada y la salida. Para usar una función, debes definirla en algún lugar del ámbito desde el que deseas llamarla.</p>
                 </div>
               </article>
@@ -82,7 +82,7 @@
                   <span class="text-comentario">//invocación</span>
                   <span class="text-info">saludo</span>();
                 </pre>
-                <p class="destacado">En ocasiones en que el contenido de la <em>función flecha</em> es de una sola línea, se podrán <b>omitir</b> los <b>paréntesis</b> que envuelven a los argumentos, <b>las llaves</b> que envuelven el cuerpo de la función y la palabra <b>return</b></p>
+                <p class="destacado destacado-js">En ocasiones en que el contenido de la <em>función flecha</em> es de una sola línea, se podrán <b>omitir</b> los <b>paréntesis</b> que envuelven a los argumentos, <b>las llaves</b> que envuelven el cuerpo de la función y la palabra <b>return</b></p>
                 <pre class="pre-content-list">
 
                   <span class="comentario">//Función que convierte en mayúscula</span>
@@ -102,7 +102,7 @@
               <article>
                 <h3>Parametros y Argumentos</h3>
                 <div class="row mt-3">
-                  <p class="destacado">Son 2 conceptos distintos pero que finalmente se complementan ya que los argumentos se convierten en parámetros.</p>
+                  <p class="destacado destacado-js">Son 2 conceptos distintos pero que finalmente se complementan ya que los argumentos se convierten en parámetros.</p>
                   <ul class="listado">
                     <li><i class="bi bi-back"></i><strong><em>Los argumentos</em></strong> son los valores que se le pasan a la función al momento de invocarse. Finalmente son aceptados como <strong><em>parámetros</em></strong>.</li>
                     <li><i class="bi bi-back"></i><strong><em>Los parámetros</em></strong> son accesibles como variables en el cuerpo de la función</li>

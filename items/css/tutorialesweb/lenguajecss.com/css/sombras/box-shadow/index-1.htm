@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e7bbf">
+  <link rel="shortcut icon" href="../../../favicon-1.ico">
+  <title>Sombras CSS en cajas - CSS en español - Lenguaje CSS</title>
+  <link rel="preload" href="../../../critical-1.css" as="style">
+  <link rel="preload" href="../../../assets/fonts/blinker-vf-1.woff2" as="font" crossorigin="">
+  <link rel="preload" href="../../../assets/fonts/scope-one-400-1.woff2" as="font" crossorigin="">
+  <meta name="description" content="Para crear sombras en CSS, en general, si no se trata de textos, necesitas utilizar la propiedad box-shadow. Veamos como se utiliza.">
+  <link rel="stylesheet" href="../../../critical-1.css">
+  <link rel="stylesheet" href="../../../theme-1.css">
+  <script type="module" src="../../../main-1.js"></script>
+  <link rel="canonical" href="index-1.htm">
+  <meta property="og:title" content="Sombras CSS en cajas - CSS en español">
+  <meta property="og:image" content="https://lenguajecss.com/css/large-summary.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="Para crear sombras en CSS, en general, si no se trata de textos, necesitas utilizar la propiedad box-shadow. Veamos como se utiliza.">
+  <meta property="og:url" content="https://lenguajecss.com/css/sombras/box-shadow/">
+  <meta property="twitter:url" content="https://lenguajecss.com/css/sombras/box-shadow/">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="@Manz">
+  <meta property="twitter:title" content="Sombras CSS en cajas - CSS en español">
+  <meta property="twitter:description" content="Para crear sombras en CSS, en general, si no se trata de textos, necesitas utilizar la propiedad box-shadow. Veamos como se utiliza.">
+  <meta property="twitter:image:src" content="https://lenguajecss.com/css/large-summary.jpg">
+</head>
+<body class="css post"><div class="page">
+    <div class="sidebar">
+      <div class="logo flex-center">
+  <a href="../../../index.htm">
+    <img width="42" height="42" src="../../../assets/logo-1.svg" alt="Logo">
+    Lenguaje CSS
+  </a>
+  <div class="icons" style="--icon-size: 32px; --icon-side-padding: 0.15em">
+    <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+    <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+    <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+    <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+    <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+  </div>
+  <span>Un sitio web de <a href="https://manz.dev/"><mark>Manz.dev</mark></a></span>
+</div>
+
+      <form class="search flex-center" action="https://www.google.com/search">
+  <label><span>Buscar:</span> <input type="search" name="q" placeholder="Buscar un tema (ej: flex, grid...)" autocomplete="off"></label>
+  <label><span>Sitio:</span> <input type="hidden" name="q" value="site:lenguajejs.com OR site:lenguajecss.com OR site:lenguajehtml.com OR site:terminaldelinux.com OR site:manz.dev"></label>
+  <div class="search-results"></div>
+</form>
+
+      
+
+<style>
+  sidebar-link {
+    --logo-image: url(../../logo-1.svg);
+  }
+</style>
+
+<div class="toc"><sidebar-link title="Volver al índice" href="../../index-1.htm" back="" direct=""></sidebar-link><sidebar-link href="../../cheatsheets/index-1.htm" title="CSS3 Cheatsheet" direct=""></sidebar-link><sidebar-section title="Introducción a CSS" href="../../introduccion/index-1.htm"><sidebar-link href="../../introduccion/que-es-css/index-1.htm" title="¿Qué es CSS?"></sidebar-link><sidebar-link href="../../introduccion/como-usar-css/index-1.htm" title="¿Cómo usar CSS?"></sidebar-link><sidebar-link href="../../introduccion/estructura-de-css/index-1.htm" title="Estructura de CSS"></sidebar-link><sidebar-link href="../../introduccion/minificar-css/index-1.htm" title="Minificar CSS"></sidebar-link><sidebar-link href="../../introduccion/navegadores-web/index-1.htm" title="Navegadores web"></sidebar-link><sidebar-link href="../../introduccion/niveles-y-prefijos-css/index-1.htm" title="Niveles de CSS y prefijos"></sidebar-link><sidebar-link href="../../introduccion/herencia-css/index-1.htm" title="Herencia en CSS"></sidebar-link><sidebar-link href="../../introduccion/cascada-css/index-1.htm" title="Cascada en CSS"></sidebar-link><sidebar-link href="../../introduccion/css-custom-properties/index-1.htm" title="Variables CSS"></sidebar-link><sidebar-link href="../../introduccion/guia-css/index-1.htm" title="La guía de propiedades CSS"></sidebar-link></sidebar-section><sidebar-section title="Modelo de cajas" href="../../modelo-de-cajas/index-1.htm"><sidebar-link href="../../modelo-de-cajas/unidades-css/index-1.htm" title="Unidades CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/que-es/index-1.htm" title="Modelo de cajas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/margenes-y-rellenos/index-1.htm" title="Márgenes y rellenos"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes/index-1.htm" title="Bordes CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/border-radius/index-1.htm" title="Esquinas redondeadas"></sidebar-link><sidebar-link href="../../modelo-de-cajas/propiedades-logicas-css/index-1.htm" title="Propiedades lógicas CSS"></sidebar-link><sidebar-link href="../../modelo-de-cajas/bordes-imagenes/index-1.htm" title="Bordes con imágenes"></sidebar-link><sidebar-link href="../../modelo-de-cajas/funciones-css/index-1.htm" title="Funciones CSS"></sidebar-link></sidebar-section><sidebar-section title="Colores, fondos e imágenes" href="../../colores-y-fondos/index-1.htm"><sidebar-link href="../../colores-y-fondos/colores-css/index-1.htm" title="Colores CSS"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-opacity/index-1.htm" title="La propiedad opacity"></sidebar-link><sidebar-link href="../../colores-y-fondos/propiedad-background-image/index-1.htm" title="La propiedad background-image"></sidebar-link><sidebar-link href="../../colores-y-fondos/linear-gradient/index-1.htm" title="Gradientes lineales"></sidebar-link><sidebar-link href="../../colores-y-fondos/radial-gradient/index-1.htm" title="Gradientes radiales"></sidebar-link><sidebar-link href="../../colores-y-fondos/conic-gradient/index-1.htm" title="Gradientes cónicos"></sidebar-link><sidebar-link href="../../colores-y-fondos/imagenes-css/index-1.htm" title="Imágenes y Objetos"></sidebar-link></sidebar-section><sidebar-section title="Selectores CSS" href="../../selectores/index-1.htm"><sidebar-link href="../../selectores/selectores-basicos/index-1.htm" title="Selectores CSS básicos"></sidebar-link><sidebar-link href="../../selectores/selectores-avanzados/index-1.htm" title="Selectores CSS avanzados"></sidebar-link><sidebar-link href="../../selectores/pseudoclases/index-1.htm" title="Pseudoclases CSS"></sidebar-link><sidebar-link href="../../selectores/pseudoclases-avanzadas/index-1.htm" title="Pseudoclases CSS avanzadas"></sidebar-link><sidebar-link href="../../selectores/pseudoelementos/index-1.htm" title="Pseudoelementos CSS"></sidebar-link><sidebar-link href="../../selectores/atributos/index-1.htm" title="Atributos CSS"></sidebar-link></sidebar-section><sidebar-section title="Reglas CSS" href="../../reglas-css/index-1.htm"><sidebar-link href="../../reglas-css/que-son-reglas-css/index-1.htm" title="¿Qué son las reglas CSS?"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-import/index-1.htm" title="La regla @import"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-layer/index-1.htm" title="La regla @layer"></sidebar-link><sidebar-link href="../../reglas-css/la-regla-supports/index-1.htm" title="La regla @supports"></sidebar-link></sidebar-section><sidebar-section title="Fuentes y tipografías" href="../../fuentes-y-tipografias/index-1.htm"><sidebar-link href="../../fuentes-y-tipografias/tipografias/index-1.htm" title="Tipografías CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/tipografias-externas/index-1.htm" title="Tipografías externas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/fuentes-variables/index-1.htm" title="Fuentes variables CSS"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/textos-y-alineaciones/index-1.htm" title="Textos y alineaciones"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/propiedades-avanzadas/index-1.htm" title="Propiedades avanzadas"></sidebar-link><sidebar-link href="../../fuentes-y-tipografias/caracteristicas-personalizadas/index-1.htm" title="Características personalizadas"></sidebar-link></sidebar-section><sidebar-section title="Representación de datos" href="../../representacion-datos/index-1.htm"><sidebar-link href="../../representacion-datos/tablas-css/index-1.htm" title="Tablas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/listas-css/index-1.htm" title="Listas CSS"></sidebar-link><sidebar-link href="../../representacion-datos/contadores-css/index-1.htm" title="Contadores CSS"></sidebar-link></sidebar-section><sidebar-section title="Maquetación y colocación" href="../../maquetacion-y-colocacion/index-1.htm"><sidebar-link href="../../maquetacion-y-colocacion/propiedad-display/index-1.htm" title="La propiedad display"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/posicionamiento-css/index-1.htm" title="La propiedad position"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/desplazamientos/index-1.htm" title="La propiedad float"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/flexbox/index-1.htm" title="Flexbox CSS"></sidebar-link><sidebar-link href="../../maquetacion-y-colocacion/grid-css/index-1.htm" title="Grid CSS"></sidebar-link></sidebar-section><sidebar-section title="Interacciones" href="../../interacciones/index-1.htm"><sidebar-link href="../../interacciones/contornos/index-1.htm" title="Contornos"></sidebar-link><sidebar-link href="../../interacciones/cursor-del-raton/index-1.htm" title="Cursor del ratón"></sidebar-link><sidebar-link href="../../interacciones/scroll-y-overflow/index-1.htm" title="Scroll y Overflow"></sidebar-link><sidebar-link href="../../interacciones/snap-scroll/index-1.htm" title="CSS Snap Scroll"></sidebar-link></sidebar-section><sidebar-section title="Sombras" href="../index-1.htm"><sidebar-link href="../text-shadow/index-1.htm" title="Sombras CSS en textos"></sidebar-link><sidebar-link href="index-1.htm" title="Sombras CSS en cajas"></sidebar-link><sidebar-link href="../drop-shadow/index-1.htm" title="Sombras idénticas CSS"></sidebar-link></sidebar-section><sidebar-section title="Efectos" href="../../efectos/index-1.htm"><sidebar-link href="../../efectos/filtros-css/index-1.htm" title="Filtros CSS"></sidebar-link><sidebar-link href="../../efectos/modos-de-fusion/index-1.htm" title="Modos de fusión CSS"></sidebar-link></sidebar-section><sidebar-section title="Máscaras y recortes" href="../../mascaras-y-recortes/index-1.htm"><sidebar-link href="../../mascaras-y-recortes/clip-path/index-1.htm" title="La propiedad clip-path"></sidebar-link><sidebar-link href="../../mascaras-y-recortes/mask-image/index-1.htm" title="La propiedad mask-image"></sidebar-link></sidebar-section><sidebar-section title="Responsive Web Design" href="../../responsive-web-design/index-1.htm"><sidebar-link href="../../responsive-web-design/que-es/index-1.htm" title="¿Qué es Responsive Design?"></sidebar-link><sidebar-link href="../../responsive-web-design/bases-responsive/index-1.htm" title="Bases del Responsive Design"></sidebar-link><sidebar-link href="../../responsive-web-design/media-queries/index-1.htm" title="Media Queries"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-impresos/index-1.htm" title="Medios impresos"></sidebar-link><sidebar-link href="../../responsive-web-design/medios-paginados/index-1.htm" title="Medios paginados"></sidebar-link><sidebar-link href="../../responsive-web-design/preferencias-usuario/index-1.htm" title="Preferencias de usuario"></sidebar-link></sidebar-section><sidebar-section title="Animaciones CSS" href="../../animaciones/index-1.htm"><sidebar-link href="../../animaciones/transiciones/index-1.htm" title="Transiciones CSS"></sidebar-link><sidebar-link href="../../animaciones/timing-function/index-1.htm" title="Funciones de tiempo"></sidebar-link><sidebar-link href="../../animaciones/animaciones/index-1.htm" title="Animaciones CSS"></sidebar-link><sidebar-link href="../../animaciones/keyframes/index-1.htm" title="La regla @keyframes"></sidebar-link></sidebar-section><sidebar-section title="Transformaciones CSS" href="../../transformaciones/index-1.htm"><sidebar-link href="../../transformaciones/transform/index-1.htm" title="Transformaciones CSS"></sidebar-link><sidebar-link href="../../transformaciones/transform-translate/index-1.htm" title="Translaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-rotate/index-1.htm" title="Rotaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-scale/index-1.htm" title="Escalado 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-skew/index-1.htm" title="Deformaciones 2D"></sidebar-link><sidebar-link href="../../transformaciones/transform-3d/index-1.htm" title="Transformaciones 3D"></sidebar-link><sidebar-link href="../../transformaciones/perspective/index-1.htm" title="Perspectivas CSS"></sidebar-link></sidebar-section><sidebar-section title="Dibujar con CSS" href="../../dibujar-con-css/index-1.htm"><sidebar-link href="../../dibujar-con-css/como-empezar/index-1.htm" title="¿Cómo dibujar con CSS?"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-html/index-1.htm" title="Primeros pasos: Estructura HTML"></sidebar-link><sidebar-link href="../../dibujar-con-css/estructura-css/index-1.htm" title="Primeros pasos: Estructura CSS"></sidebar-link></sidebar-section></div>
+
+      
+    </div>
+    <div class="contents">
+      <header class="mega">
+  <h1>Sombras CSS en cajas</h1><h2>La propiedad box-shadow</h2></header>
+
+      <div class="content ">
+  <div class="breadcrumbs">
+  <a href="../../../index.htm">ATRÁS</a> <span>ᐳ</span> <a href="../../index-1.htm">css</a> <span>ᐳ</span> <a href="index-1.htm">Sombras CSS en cajas</a>
+</div>
+<p>Se denominan <strong>sombras sobre cajas</strong> a las sombras en CSS que se pueden crear en una etiqueta o elemento HTML. Para ello, se utiliza la propiedad <code>box-shadow</code>, que funciona de forma muy similar a la que vimos en las sombras de texto, sólo que con algunos añadidos interesantes.</p>
+<h3 id="sombras-en-elementos" tabindex="-1">Sombras en elementos</h3>
+<p>En primer lugar, las sombras <code>box-shadow</code> están desactivadas sobre cualquier elemento, lo mismo que ocurriría si aplicamos el valor <code>none</code> a dicha propiedad. Veamos un resumen de valores que podemos indicar a esta propiedad de sombras:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Valor</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>box-shadow</code></td>
+<td><strong>none</strong></td>
+<td>Elimina (o simplemente no establece) sombra sobre un elemento.</td>
+</tr>
+<tr>
+<td><code>box-shadow</code></td>
+<td><badge-type class="posx"></badge-type> <badge-type class="posy"></badge-type></td>
+<td>Crea una sombra <strong>color negro</strong> desplazándola ligeramente en horizontal y/o vertical.</td>
+</tr>
+<tr>
+<td><code>box-shadow</code></td>
+<td><badge-type class="posx"></badge-type> <badge-type class="posy"></badge-type> <badge-type class="size"></badge-type></td>
+<td>Idem a la anterior, pero desenfocando o difuminando la sombra.</td>
+</tr>
+<tr>
+<td><code>box-shadow</code></td>
+<td><badge-type class="posx"></badge-type> <badge-type class="posy"></badge-type> <badge-type class="size"></badge-type> <badge-type class="size"></badge-type></td>
+<td>Idem a la anterior, pero además aplicando un factor de crecimiento a la sombra.</td>
+</tr>
+<tr>
+<td><code>box-shadow</code></td>
+<td><badge-type class="posx"></badge-type> <badge-type class="posy"></badge-type> <badge-type class="size"></badge-type> <badge-type class="color"></badge-type></td>
+<td>Idem a la anterior, cambiando el color de la sombra.</td>
+</tr>
+<tr>
+<td><code>box-shadow</code></td>
+<td><badge-type class="posx"></badge-type> <badge-type class="posy"></badge-type> <badge-type class="size"></badge-type> <badge-type class="color"></badge-type> <code>inset</code></td>
+<td>Idem a la anterior, pero estableciendo una sombra interna en lugar de externa.</td>
+</tr>
+</tbody>
+</table>
+<p>La palabra clave <code>inset</code> se puede escribir en cualquier otro orden, pero se suele indicar al final. Veamos cada uno de estos parámetros, uno por uno, junto a sus peculiaridades.</p>
+<h4 id="desplazamiento-de-la-sombra" tabindex="-1">Desplazamiento de la sombra</h4>
+<p>Los dos primeros parámetros, <badge-type class="posx"></badge-type> y <badge-type class="posy"></badge-type>, son los parámetros obligatorios mínimos para hacer funcionar la propiedad <code>box-shadow</code>, donde indicamos el desplazamiento que tendrá la sombra en el eje x (<em>horizontal</em>) y en el eje y (<em>vertical</em>).</p>
+<p>Así pues, si queremos desplazar una sombra ligeramente a la derecha (<em>eje x, primer parámetro</em>) y hacia abajo (<em>eje y, segundo parámetro</em>), tendríamos que escribir, como mínimo, algo similar a lo siguiente:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.element</span> <span class="token punctuation">{</span><br>  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 5px 5px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>En este caso, la sombra se crea de color <code>currentColor</code> (<em>habitualmente <strong>black</strong></em>) y sin difuminar, como veremos en los siguientes apartados. Ten en cuenta que valores negativos invierten la dirección de la sombra. Si <code>5px 5px</code> mueve la sombra 5 píxels a la derecha y hacia abajo, <code>-5px -5px</code> movería la sombra 5 píxels a la izquierda, y 5 píxels hacia arriba.</p>
+<h4 id="desenfoque-de-la-sombra" tabindex="-1">Desenfoque de la sombra</h4>
+<p>El tercer parámetro de la propiedad <code>box-shadow</code> indica la cantidad de desenfoque o difuminado que queremos utilizar en nuestra sombra. Por defecto, tiene un valor de <code>0</code>, o lo que es lo mismo, la sombra será igual a la caja original, por lo que será completamente lisa, sin difuminar. Este valor puede irse ampliando y de esta forma conseguiremos una sombra más desenfocada:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.element</span> <span class="token punctuation">{</span><br>  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 5px 5px 0<span class="token punctuation">;</span>      <span class="token comment">/* Sombra sin desenfoque */</span><br>  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 5px 5px 2px<span class="token punctuation">;</span>    <span class="token comment">/* Sombra con ligero desenfoque */</span><br>  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 5px 5px 10px<span class="token punctuation">;</span>   <span class="token comment">/* Sombra desenfocada */</span><br>  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 5px 5px 40px<span class="token punctuation">;</span>   <span class="token comment">/* Sombra con un desenfoque casi disipado */</span><br><span class="token punctuation">}</span></code></pre>
+<blockquote>
+<blockquote>
+<p>Ten en cuenta que las sombras con <code>box-shadow</code> siempre serán rectangulares. Si quisieramos una sombra idéntica, por ejemplo, a una imagen con transparencia, donde se respeten los espacios transparentes, deberías ver la función <code>drop-shadow()</code> de la propiedad <code>filter</code>, que explicamos más adelante.</p>
+</blockquote>
+</blockquote>
+<h4 id="factor-de-crecimiento" tabindex="-1">Factor de crecimiento</h4>
+<p>Un cuarto parámetro <strong>opcional</strong> permite indicar un factor de crecimiento para la sombra. Este valor no es obligatorio escribirlo, y muchas veces comprobarás que el cuarto parámetro de la propiedad <code>box-shadow</code> es el color, es decir, el siguiente apartado, omitiendo este parámetro. Esto es absolutamente normal, ya que este parámetro es opcional y se indica sólo cuando es necesario. En caso contrario, este parámetro valdrá <code>0</code> y será omitido.</p>
+<p>El parámetro de <strong>factor de crecimiento</strong> es un parámetro donde podemos indicar una unidad que hará crecer la sombra en todos sus lados el tamaño indicado, de forma que crezca un poco más de lo que ocupa. Algo que puede ser realmente útil, por ejemplo, en el caso de que el desplazamiento sea <code>0</code> (<em>la sombra está justo detrás del elemento</em>) y queremos que se muestre ligeramente alrededor de la etiqueta a la que le aplicamos <code>box-shadow</code>. Veamos un ejemplo:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.element</span> <span class="token punctuation">{</span><br>  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 0 10px 5px<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Esto hará que la sombra esté posicionada justo detrás del elemento, tenga un nivel de desenfoque de <code>10px</code> y, además, la hagamos crecer unos <code>5px</code> por cada lado.</p>
+<h4 id="color-de-la-sombra" tabindex="-1">Color de la sombra</h4>
+<p>Aunque en los ejemplos anteriores lo hemos omitido por el momento, lo habitual es que las sombras creadas con <code>box-shadow</code> incluyan siempre <strong>cuatro valores</strong>: desplazamiento de x, desplazamiento de y, nivel de desenfoque y color de la sombra. Luego, el factor de crecimiento y la palabra clave <code>inset</code> que veremos posteriormente, son opcionales y se usan sólo cuando son necesarias.</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.element</span> <span class="token punctuation">{</span><br>  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 15px 5px 10px #48529944<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Con el parámetro del color podemos cambiar el color de la sombra a nuestro antojo, no sólo utilizando palabras clave, valores hexadecimales y/o las funciones <code>rgb()</code> o <code>hsl()</code>, sino utilizando canales alfa para conseguir cierta transparencia, si así lo deseamos. En el ejemplo anterior utilizamos el color <code>#485299</code> con una transparencia en hexadecimal de <code>44</code>, teniendo en cuenta que los valores de canal alfa en hexadecimal van desde <code>00</code> (<em>totalmente transparente</em>) hasta <code>ff</code> (<em>totalmente opaco</em>).</p>
+<h4 id="sombra-interior" tabindex="-1">Sombra interior</h4>
+<p>Nuestras sombras creadas con <code>box-shadow</code> permiten indicar la palabra clave <code>inset</code>, lo que hará que la sombra en lugar de colocarse por fuera de nuestro elemento y ser una <strong>sombra exterior</strong> (<em>por defecto</em>), pasará a ser una <strong>sombra interior</strong> y colocarse por dentro del elemento. Ten en cuenta que en este caso, los desplazamientos indicados se invierten, de modo que si teníamos una sombra por la zona inferior-derecha, tendríamos que invertir los valores para que la sombra interior también esté en la zona inferior-derecha:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.element</span> <span class="token punctuation">{</span><br>  <span class="token comment">/* Sombra exterior que se desplaza hacia la zona inferior-derecha */</span><br>  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 10px 10px 5px black<span class="token punctuation">;</span><br><br>  <span class="token comment">/* Sombra interior que se desplaza hacia la zona inferior-derecha */</span><br>  <span class="token property">box-shadow</span><span class="token punctuation">:</span> -10px -10px 5px black inset<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Observa que hemos invertido los valores de los desplazamientos de <badge-type class="posx"></badge-type> y <badge-type class="posy"></badge-type>.</p>
+<h3 id="sombras-de-texto-múltiples" tabindex="-1">Sombras de texto múltiples</h3>
+<p>Como hemos visto en otros casos como en propiedades como <code>background-image</code> o <code>text-shadow</code>, la propiedad <code>box-shadow</code> permite indicar valores múltiples separados por coma, permitiendo en este caso, crear sombras múltiples e independientes.</p>
+<p>La sintaxis es muy sencilla y se suele escribir así para hacerlo más legible:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.element</span> <span class="token punctuation">{</span><br>  <span class="token property">box-shadow</span><span class="token punctuation">:</span><br>    5px 5px 10px black<span class="token punctuation">,</span><br>    10px 10px 10px red<span class="token punctuation">,</span><br>    20px 20px 10px blue<span class="token punctuation">,</span><br>    10px 10px 10px <span class="token function">rgb</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">,</span> 0.5<span class="token punctuation">)</span> inset<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>En este caso hemos creado múltiples sombras de diferentes colores y con diferentes desplazamientos, incluso una de ellas una sombra interior.</p>
+<h3 id="pixel-art-con-box-shadow" tabindex="-1">Pixel art con box-shadow</h3>
+<p>Existe una técnica muy curiosa con la que se puede hacer <strong>pixel art sólo con CSS</strong> (<em>o incluso combinar con bucles Javascript y hacerlo más flexible</em>). A grandes rasgos, se trata de crear un elemento de un tamaño muy específico (<em>por ejemplo, 32 pixels</em>) y crear sombras sin desenfoque con el desplazamiento adecuado que simulen los pixels.</p>
+<p>De esta forma, en primer lugar creamos el <strong>pixel base</strong>:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pixel<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css"><br><span class="token selector">.pixel</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 32px<span class="token punctuation">;</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> 32px<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code></pre>
+<p>Una vez lo tenemos, todo se basa en utilizar <code>box-shadow</code> para crear nuevos píxels con desplazamiento. Aquí puedes ver como creamos una sombra roja (<em>se creará del mismo tamaño que el píxel base</em>) y la desplazamos exactamente <code>32px</code> a la derecha, por lo que aparecerá justo al lado del píxel base. Lo mismo con el siguiente píxel (<em>dorado</em>):</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.pixel</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> 32px<span class="token punctuation">;</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> 32px<span class="token punctuation">;</span><br><br>  <span class="token property">box-shadow</span><span class="token punctuation">:</span><br>    32px 0 0 red<span class="token punctuation">,</span><br>    64px 0 0 gold<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Para hacer el código más flexible y fácil de mantener, podemos hacer uso de <a href="../../introduccion/css-custom-properties/index-1.htm">variables CSS</a> y organizar/reescribir un poco el código. Quizás puede ser más difícil de leer si no tienes cierta soltura con CSS, pero es mucho más flexible si necesitamos cambiar tamaños o similar:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.pixel</span> <span class="token punctuation">{</span><br>  <span class="token property">--size</span><span class="token punctuation">:</span> 32px<span class="token punctuation">;</span><br><br>  <span class="token property">background</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span><br>  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--size<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">height</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--size<span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>  <span class="token property">box-shadow</span><span class="token punctuation">:</span><br>    <span class="token function">calc</span><span class="token punctuation">(</span>1 * <span class="token function">var</span><span class="token punctuation">(</span>--size<span class="token punctuation">)</span><span class="token punctuation">)</span> 0 0 gold<span class="token punctuation">,</span><br>    <span class="token function">calc</span><span class="token punctuation">(</span>2 * <span class="token function">var</span><span class="token punctuation">(</span>--size<span class="token punctuation">)</span><span class="token punctuation">)</span> 0 0 blue<span class="token punctuation">,</span><br>    0 <span class="token function">calc</span><span class="token punctuation">(</span>1 * <span class="token function">var</span><span class="token punctuation">(</span>--size<span class="token punctuation">)</span><span class="token punctuation">)</span> 0 red<span class="token punctuation">,</span><br>    <span class="token function">calc</span><span class="token punctuation">(</span>1 * <span class="token function">var</span><span class="token punctuation">(</span>--size<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">calc</span><span class="token punctuation">(</span>1 * <span class="token function">var</span><span class="token punctuation">(</span>--size<span class="token punctuation">)</span><span class="token punctuation">)</span> 0 hotpink<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Ahora podríamos cambiar el valor de la CSS custom property <code>--size</code> y el resto del código se adaptaría automáticamente, gracias a que hemos utilizado cálculos con la función <code>calc()</code> y variables css con la función <code>var()</code>.</p>
+
+    <nav class="prev-next"><a class="bt prev" href="../text-shadow/index-1.htm" title="Sombras CSS en textos">
+    <span class="data">
+      <span>Sombras CSS en textos</span>
+      <small>Capítulo anterior</small>
+    </span>
+  </a><a class="bt next" href="../drop-shadow/index-1.htm" title="Sombras idénticas CSS">
+    <span class="icon">
+      <svg-icon name="arrow-right"></svg-icon>
+    </span>
+    <span class="data">
+      <span>Sombras idénticas CSS</span>
+      <small>Capítulo siguiente</small>
+    </span>
+  </a></nav>
+
+    <script async="" src="../../../pagead/js/f-1.txt"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center; margin:auto; margin-top: 2em" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-0412426997270095" data-ad-slot="3027930890"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+      <div class="related">
+
+  <div class="author">
+    <div class="author-wrapper">
+      <img loading="lazy" class="circle" src="../../../assets/manz-1.webp" alt="Manz">
+      <div>
+        <p>Docente, divulgador informático y <a href="https://manz.dev/">streamer de código</a>. Amante de <strong>CSS</strong>, <strong>Javascript</strong>
+          y de la plataforma web. Ha trabajado como profesor en la Universidad de La Laguna y es director del curso de
+          Programación web FullStack y FrontEnd de EOI desde Tenerife. En sus ratos libres, busca GIF de gatos en Internet.</p>
+        <p class="twitch-badge">
+          <a href="https://twitch.tv/ManzDev">
+            <svg class="twitch" viewbox="0 0 1024 1024">
+              <path style="fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" d="m262.451 12.904-178.26 178.26v641.672h213.905v178.26l178.26-178.26h142.576L939.809 512V12.904H262.45zm35.645 71.287h570.383v392.164L725.904 618.932H583.287L458.514 743.705V618.932H298.096V84.192zM494.158 208.51v216.36h71.328V208.51h-71.328zm196 0v216.36h71.328V208.51h-71.328z"></path>
+            </svg>
+            Sígueme en Twitch
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="comentarios">
+    <script async="" src="../../../count-1.js" id="dsq-count-scr"></script>
+<script>
+var disqus_config = function () {
+  this.page.path = location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname;
+  this.page.url = 'https://lenguajecss.com' + this.page.path;
+  this.page.identifier = this.page.url;
+};
+document.addEventListener('DOMContentLoaded', function() {
+  const coms = document.querySelector('#comentarios');
+  a = coms.querySelector('#disqus_button');
+  a.dataset.disqusIdentifier = 'https://lenguajecss.com' + (location.pathname.endsWith("/") ? location.pathname.substring(0, location.pathname.length - 1) : location.pathname);
+  a.addEventListener('click', function() {
+    const div = document.createElement('div');
+    div.id = 'disqus_thread';
+    coms.appendChild(div);
+    const d = document, s = d.createElement('script');
+    s.src = '//lenguajecss.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    this.remove();
+  });
+});
+</script>
+
+    <a class="disqus-comment-count" id="disqus_button" href="#disqus_thread" data-disqus-identifier="https://lenguajecss.com/css/sombras/box-shadow/">Leer comentarios</a>
+    <a class="discord" href="https://discord.manz.dev/">¡Accede a Discord y cuéntanos!</a>
+  </div>
+
+</div>
+
+    </div>
+    <div class="aside">
+      <div class="aside">
+
+  <div class="aside-top">
+    <a href="https://manz.dev/digitalocean" title="Empieza en DigitalOcean con 100$">
+      <img width="240" height="120" src="../../../assets/digital-ocean-1.png" alt="DigitalOcean">
+    </a>
+  </div><script type="module">
+  const ANCHOR_ICON = /* svg */`
+    <svg class="anchor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205" width="36" height="36">
+      <path d="m140 129 16 16s-20 30-42 30V71c14-5 25-18 25-34 0-20-17-36-37-36-21 0-38 16-38 36 0 15 11 29 25
+              34v104c-26-2-42-27-42-27l18-18-65-9 10 63 17-17c15 12 32 37 73 37 51-1 63-29 76-40l19 19 10-64-65
+              10zM83 36c0-10 8-18 19-18s19 8 19 18c0 11-9 19-19 19s-19-8-19-19z"/>
+    </svg>`;
+  // Add inner links to sidebar menu
+  export const addInnerLinks = () => {
+    const summary = document.querySelector(".aside .summary .links");
+    const headers = Array.from(document.querySelectorAll(".content h3, .content h4"));
+    const tocLinks = [];
+    headers.forEach((e) => {
+      const link = `${location.origin}${location.pathname}#${e.id}`;
+      e.innerHTML = `<a class="permalink" href="${link}">${e.textContent} ${ANCHOR_ICON}</a>`;
+      const headerType = e.nodeName.toLowerCase();
+      const textContent = headerType === "h4" ? e.textContent.replace("La propiedad ", "").replace("La función ", "") : e.textContent;
+      tocLinks.push(`<a class="${headerType}" href="#${e.id}">${textContent}</a>`);
+    });
+    summary.insertAdjacentHTML("beforeEnd", tocLinks.join("\n"));
+  };
+
+  addInnerLinks();
+</script>
+
+<div class="summary">
+  <div class="table">Tabla de contenidos</div>
+  <div class="links"></div>
+</div>
+<div class="video-related">
+  <div class="table">Lo usamos en...</div><a href="https://youtu.be/QxQnaqEyhyU"><img src="../../../vi/QxQnaqEyhyU/mqdefault-1.jpg" alt="Sombras CSS en cajas"></a></div></div>
+
+    </div>
+  </div><footer class="main">
+  <div class="square">
+    <a href="../../../index.htm"><h2>Lenguaje CSS</h2></a>
+    <div class="icons">
+      <a href="https://twitter.com/Manz" title="Twitter"><svg-icon type="social" name="twitter"></svg-icon></a>
+      <a href="https://twitch.tv/manzdev" title="Twitch"><svg-icon type="social" name="twitch"></svg-icon></a>
+      <a href="https://instagram.com/manz.dev" title="Instagram"><svg-icon type="social" name="instagram"></svg-icon></a>
+      <a href="https://youtube.com/ManzDev?sub_confirmation=1" title="YouTube"><svg-icon type="social" name="youtube"></svg-icon></a>
+      <a href="https://discord.manz.dev/" title="Servidor de Discord"><svg-icon type="social" name="discord"></svg-icon></a>
+      <a href="https://github.com/ManzDev" title="GitHub"><svg-icon type="social" name="github"></svg-icon></a>
+      <a href="https://codepen.io/Manz" title="Codepen"><svg-icon type="social" name="codepen"></svg-icon></a>
+      <a href="https://www.linkedin.com/in/joseromanhdez/" title="Linkedin"><svg-icon type="social" name="linkedin"></svg-icon></a>
+    </div>
+    <p>Documentación sobre CSS y las mejores herramientas y recursos para aprender a utilizar el lenguaje de estilos CSS (Hojas de estilo).</p>
+    <p id="footer">Creado y mantenido por <a href="https://twitter.com/Manz">@Manz</a> con <span title="<3">❤</span></p></div>
+</footer>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-136544-3', 'auto');
+ga('send', 'pageview');
+</script>
+<script async="" src='../../../analytics-1.js'></script>
+
+
+</body>
+</html>
