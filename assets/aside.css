@@ -3,10 +3,11 @@
     padding: 0;
     line-height: 2;
     position: sticky;
-    top: 150px;
+    top: 130px;
     /* border: 1px solid lightcoral; */
 }
 
+/* ul->class: list-indice */
 .list-indice {
     list-style: none;
     padding: 0;
@@ -16,7 +17,7 @@
 }
 
 .list-indice li{
-    margin-bottom: 2em;
+    margin-bottom: 2em;    
 }
 
 .list-indice li:hover {
@@ -37,8 +38,17 @@
     border-radius: 5px;    
 }
 
+.list-indice li .sub-list-indice{
+    display: none;
+}
+
 .sub-list-indice li{
     padding: 0;
     margin: 0px;
-    width: 100%;
+    width: 100%;    
 }
+
+.list-indice li:hover .sub-list-indice{
+    display: block;
+}
+

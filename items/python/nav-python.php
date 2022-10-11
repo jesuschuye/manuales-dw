@@ -1,5 +1,5 @@
 <div class="row position-nav-2">
-    <ul class="nav justify-content-center bg-skyblue">
+    <ul class="nav justify-content-center bg-purple-mix">
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="https://html5.org/" target="_blank">HTML5.org</a>
         </li>            

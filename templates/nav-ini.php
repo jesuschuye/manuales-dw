@@ -17,6 +17,7 @@
                             <li><a class="dropdown-item" href="<?=BASE_URL?>html/index.php">HTML</a></li>
                             <li><a class="dropdown-item" href="<?=BASE_URL?>css/index.php">CSS</a></li>
                             <li><a class="dropdown-item" href="<?=BASE_URL?>javascript/index.php">Javascript</a></li>
+                            <li><a class="dropdown-item" href="<?=BASE_URL?>jquery/index.php">JQuery</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -25,6 +26,7 @@
                             <li><a class="dropdown-item" href="<?=BASE_URL?>node/index.php">Node</a></li>
                             <li><a class="dropdown-item" href="<?=BASE_URL?>php/index.php">PHP</a></li>
                             <li><a class="dropdown-item" href="<?=BASE_URL?>java/index.php">JAVA</a></li>
+                            <li><a class="dropdown-item" href="<?=BASE_URL?>c-char/index.php">C#</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -41,17 +43,14 @@
                         <a class="nav-link" href="<?=BASE_URL?>ajax/index.php">Ajax</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?=BASE_URL?>jquery/index.php">Jquery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=BASE_URL?>c-char/index.php">C#</a>
-                    </li>
+                        <a class="nav-link" href="<?=BASE_URL?>mysql/index.php">MySql</a>
+                    </li>                    
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Moviles</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mobiles</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="<?=BASE_URL?>moviles/r-native/index.php">React Native</a></li>
-                            <li><a class="dropdown-item" href="<?=BASE_URL?>moviles/flutter/index.php">Flutter</a></li>                            
-                            <li><a class="dropdown-item" href="<?=BASE_URL?>moviles/dart/index.php">Dart</a></li>
+                            <li><a class="dropdown-item" href="<?=BASE_URL?>mobiles/r-native/index.php">React Native</a></li>
+                            <li><a class="dropdown-item" href="<?=BASE_URL?>mobiles/flutter/index.php">Flutter</a></li>                            
+                            <li><a class="dropdown-item" href="<?=BASE_URL?>mobiles/dart/index.php">Dart</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">

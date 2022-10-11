@@ -6,6 +6,9 @@
                     " target="_blank">Oficial PHP</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./otras-fuentes/mcazorla-gitbooks/index.html" target="_blank">Mcazorla</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="./basicos.php">PHP Básico</a>
             </li>            
             <li class="nav-item">
@@ -17,7 +20,8 @@
             </li>            
             <li class="nav-item">
                 <a class="nav-link" href="/items/laravel/index.php">Laravel</a>
-            </li>            
+            </li>
+            <!-- utilitarios -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">Utilitarios
@@ -28,6 +32,7 @@
                     <li><a class="dropdown-item" href="https://desarrolloweb.com/manuales/manual-php.html">desarrolloweb.com</a></li>
                 </ul>
             </li>
+            <!-- cursos -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">Cursos
@@ -39,6 +44,7 @@
                     <li><a class="dropdown-item" href="https://www.udemy.com/join/login-popup/?locale=es_ES&response_typ|=html&next=https%3A%2F%2Fwww.udemy.com%2F" target="_blank">Udemy</a></li>
                 </ul>
             </li>
+            <!-- dashboards -->
             <li class="nav-item dropdown">                
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">Dashboards
@@ -50,7 +56,7 @@
                     <li><a class="dropdown-item" href="https://pratikborsadiya.in/vali-admin/">Vali Admin</a></li>
                     <li><a class="dropdown-item" href="https://html5up.net/">html5up.net</a></li>
                 </ul>                    
-            </li>            
+            </li>
         </ul>
     </div>
 </div>

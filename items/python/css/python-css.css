@@ -4,3 +4,13 @@
   border-left-width: 10px;
   border-left-color: purple;
 }
+
+.bg-purple-mix{
+  background-color: rgb(239, 174, 239);
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: rgba(128, 0, 128, 0.5);
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: rgba(128, 0, 128, 0.5);
+}

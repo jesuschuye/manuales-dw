@@ -1,0 +1,4099 @@
+<!DOCTYPE html><html lang="en"><head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Ejercicios de Introducci&#xF3;n a PHP &#xB7; Programaci&#xF3;n en el servidor</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content>
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="mcazorla">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-comment/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="https://gstatic.gitbook.com/images/b1c4c86ca817a71628d2debe73be9a64.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../02_arrays/index.html">
+    
+    
+    <link rel="prev" href="operadores.html">
+    
+
+    
+<style>
+    .book .book-summary .book-search,
+    .book .book-summary ul.summary {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+    }
+    .book-summary {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        overflow-y: auto;
+    }
+    .book-summary > nav {
+        flex: 1 1 auto;
+        overflow-y: auto;
+        overflow-y: overlay;
+    }
+    .gl-wrapper {
+        margin: 0;
+        display: block;
+        padding: 0;
+        position: relative;
+        line-height: 15px;
+        background: #fafafa;
+    }
+    .gl-wrapper:before {
+        background: -webkit-linear-gradient(to bottom, rgba(250,250,250,0) 0%, #fafafa 100%);
+        background: -moz-linear-gradient(to bottom, rgba(250,250,250,0) 0%, #fafafa 100%);
+        top: -24px;
+        width: 100%;
+        height: 24px;
+        content: "";
+        display: block;
+        position: absolute;
+        background: linear-gradient(to bottom, rgba(250,250,250,0) 0%, #fafafa 100%);
+    }
+    .book.color-theme-1 .gl-wrapper {
+        background: #121212;
+    }
+    .book.color-theme-1 .gl-wrapper:before {
+        background: -webkit-linear-gradient(to bottom, rgba(18,18,18,0) 0%, #121212 100%);
+        background: -moz-linear-gradient(to bottom, rgba(18,18,18,0) 0%, #121212 100%);
+        background: linear-gradient(to bottom, rgba(18,18,18,0) 0%, #121212 100%);
+    }
+    .book.color-theme-2 .gl-wrapper {
+        background: #2e3243;
+    }
+    .book.color-theme-2 .gl-wrapper:before {
+        background: -webkit-linear-gradient(to bottom, rgba(46,50,67,0) 0%, #2e3243 100%);
+        background: -moz-linear-gradient(to bottom, rgba(46,50,67,0) 0%, #2e3243 100%);
+        background: linear-gradient(to bottom, rgba(46,50,67,0) 0%, #2e3243 100%);
+    }
+    .gl-wrapper .gitbook-link {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        color: #9DAAB6;
+        margin: 16px;
+        display: flex;
+        padding: 0;
+        align-items: center;
+        margin-left: 32px;
+        padding-top: 8px;
+        padding-left: 16px;
+        border-radius: 3px;
+        padding-right: 16px;
+        padding-bottom: 8px;
+        text-decoration: none;
+        background-color: #E6ECF1;
+        -webkit-box-align: center;
+    }
+    .gl-wrapper .tm-logo {
+        margin: 0;
+        display: block;
+        padding: 0;
+        font-size: 40px;
+    }
+    .gl-wrapper .tm-content {
+        flex: 1;
+        margin: 0;
+        display: block;
+        padding: 0;
+        padding-left: 16px;
+    }
+    .gl-wrapper .tm-content .container {
+        margin: 0;
+        display: block;
+        padding: 0;
+    }
+    .gl-wrapper .tm-content .tm-container .tm-text {
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        line-height: 1.625;
+    }
+</style></head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.gitbook.com/book/mcazorla/programacion-en-el-servidor" target="_blank" class="custom-link">Programaci&#xF3;n en el servidor</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../index.html">
+            
+                    
+                    Programaci&#xF3;n en el servidor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="index.html">
+            
+                    
+                    Introducci&#xF3;n a la programaci&#xF3;n en el servidor
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="linux.html">
+            
+                <a href="linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="apache.html">
+            
+                <a href="apache.html">
+            
+                    
+                    Apache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="php.html">
+            
+                <a href="php.html">
+            
+                    
+                    PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="arquitectura_de_aplicaciones_web.html">
+            
+                <a href="arquitectura_de_aplicaciones_web.html">
+            
+                    
+                    Arquitectura de aplicaciones web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="primer_ejemplo_en_php.html">
+            
+                <a href="primer_ejemplo_en_php.html">
+            
+                    
+                    Primer ejemplo en PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="peticiones_y_respuestas_en_php.html">
+            
+                <a href="peticiones_y_respuestas_en_php.html">
+            
+                    
+                    Peticiones y respuestas en PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="concatenacion_de_cadenas.html">
+            
+                <a href="concatenacion_de_cadenas.html">
+            
+                    
+                    Concatenaci&#xF3;n de cadenas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="constantes.html">
+            
+                <a href="constantes.html">
+            
+                    
+                    Constantes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="ambito_de_las_variables.html">
+            
+                <a href="ambito_de_las_variables.html">
+            
+                    
+                    &#xC1;mbito de las variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="operadores.html">
+            
+                <a href="operadores.html">
+            
+                    
+                    Operadores
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.13" data-path="ejercicios_de_introduccion_a_php.html">
+            
+                <a href="ejercicios_de_introduccion_a_php.html">
+            
+                    
+                    Ejercicios de Introducci&#xF3;n a PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02_arrays/">
+            
+                <a href="../02_arrays/index.html">
+            
+                    
+                    Arrays
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02_arrays/arrays_multidimensionales.html">
+            
+                <a href="../02_arrays/arrays_multidimensionales.html">
+            
+                    
+                    Arrays multidimensionales
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02_arrays/ordenacion_de_arrays.html">
+            
+                <a href="../02_arrays/ordenacion_de_arrays.html">
+            
+                    
+                    Ordenaci&#xF3;n de arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02_arrays/lectura_desde_fichero.html">
+            
+                <a href="../02_arrays/lectura_desde_fichero.html">
+            
+                    
+                    Lectura desde fichero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../02_arrays/operadores_de_arrays.html">
+            
+                <a href="../02_arrays/operadores_de_arrays.html">
+            
+                    
+                    Operadores de arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../02_arrays/otras_funciones.html">
+            
+                <a href="../02_arrays/otras_funciones.html">
+            
+                    
+                    Otras funciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../02_arrays/ejercicios_de_arrays.html">
+            
+                <a href="../02_arrays/ejercicios_de_arrays.html">
+            
+                    
+                    Ejercicios de Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../funciones/">
+            
+                <a href="../funciones/index.html">
+            
+                    
+                    Funciones y reutilizaci&#xF3;n de c&#xF3;digo
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../funciones/funciones.html">
+            
+                <a href="../funciones/funciones.html">
+            
+                    
+                    Funciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../funciones/parametros.html">
+            
+                <a href="../funciones/parametros.html">
+            
+                    
+                    Par&#xE1;metros
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../funciones/devolucion_de_valores.html">
+            
+                <a href="../funciones/devolucion_de_valores.html">
+            
+                    
+                    Devoluci&#xF3;n de valores
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../funciones/reutilizacion_de_codigo.html">
+            
+                <a href="../funciones/reutilizacion_de_codigo.html">
+            
+                    
+                    Reutilizaci&#xF3;n de c&#xF3;digo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../funciones/namespaces-espacios-de-nombres.html">
+            
+                <a href="../funciones/namespaces-espacios-de-nombres.html">
+            
+                    
+                    Namespaces (espacios de nombres)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../funciones/ejercicios_de_funciones_y_reutilizacion_de_codigo.html">
+            
+                <a href="../funciones/ejercicios_de_funciones_y_reutilizacion_de_codigo.html">
+            
+                    
+                    Ejercicios de Funciones y reutilizaci&#xF3;n de c&#xF3;digo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../gestion_de_errores_y_depuracion_en_php/">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/index.html">
+            
+                    
+                    Gesti&#xF3;n de errores y depuraci&#xF3;n en PHP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../gestion_de_errores_y_depuracion_en_php/errores_sintacticos.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/errores_sintacticos.html">
+            
+                    
+                    Errores sint&#xE1;cticos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../gestion_de_errores_y_depuracion_en_php/errores_de_ejecucion.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/errores_de_ejecucion.html">
+            
+                    
+                    Errores de ejecuci&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../gestion_de_errores_y_depuracion_en_php/llamadas_a_funciones_que_no_existen.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/llamadas_a_funciones_que_no_existen.html">
+            
+                    
+                    Llamadas a funciones que no existen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../gestion_de_errores_y_depuracion_en_php/lectura_o_escritura_de_archivos.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/lectura_o_escritura_de_archivos.html">
+            
+                    
+                    Lectura o escritura de archivos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../gestion_de_errores_y_depuracion_en_php/interaccion_con_mysql_u_otras_bases_de_datos.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/interaccion_con_mysql_u_otras_bases_de_datos.html">
+            
+                    
+                    Interacci&#xF3;n con MySQL u otras bases de datos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../gestion_de_errores_y_depuracion_en_php/conexiones_a_servicios_de_red.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/conexiones_a_servicios_de_red.html">
+            
+                    
+                    Conexiones a servicios de red
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../gestion_de_errores_y_depuracion_en_php/comprobacion_de_entrada_de_datos_incorrecta.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/comprobacion_de_entrada_de_datos_incorrecta.html">
+            
+                    
+                    Comprobaci&#xF3;n de entrada de datos incorrecta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../gestion_de_errores_y_depuracion_en_php/errores_logicos.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/errores_logicos.html">
+            
+                    
+                    Errores l&#xF3;gicos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../gestion_de_errores_y_depuracion_en_php/funciones_de_ayuda_para_depuracion_de_variables.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/funciones_de_ayuda_para_depuracion_de_variables.html">
+            
+                    
+                    Funciones de ayuda para depuraci&#xF3;n de variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../gestion_de_errores_y_depuracion_en_php/tipos_de_error.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/tipos_de_error.html">
+            
+                    
+                    Tipos de error
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../gestion_de_errores_y_depuracion_en_php/tipos_de_errores_estandar.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/tipos_de_errores_estandar.html">
+            
+                    
+                    Tipos de errores est&#xE1;ndar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../gestion_de_errores_y_depuracion_en_php/tipos_de_errores_personalizados.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/tipos_de_errores_personalizados.html">
+            
+                    
+                    Tipos de errores personalizados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../gestion_de_errores_y_depuracion_en_php/parametros_de_configuracion_relacionados_con_errores_y_log.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/parametros_de_configuracion_relacionados_con_errores_y_log.html">
+            
+                    
+                    Par&#xE1;metros de configuraci&#xF3;n relacionados con errores y log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../gestion_de_errores_y_depuracion_en_php/gestion_personalizada_de_errores.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/gestion_personalizada_de_errores.html">
+            
+                    
+                    Gesti&#xF3;n personalizada de errores
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" data-path="../gestion_de_errores_y_depuracion_en_php/sistema_de_abandono.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/sistema_de_abandono.html">
+            
+                    
+                    Sistema de abandono
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" data-path="../gestion_de_errores_y_depuracion_en_php/funciones_de_traza_y_depuracion.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/funciones_de_traza_y_depuracion.html">
+            
+                    
+                    Funciones de traza y depuraci&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.17" data-path="../gestion_de_errores_y_depuracion_en_php/liberia_xdebug.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/liberia_xdebug.html">
+            
+                    
+                    Liberia XDebug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.18" data-path="../gestion_de_errores_y_depuracion_en_php/depuracion_con_xdebug_y_netbeans.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/depuracion_con_xdebug_y_netbeans.html">
+            
+                    
+                    Depuraci&#xF3;n con XDebug y NetBeans
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.19" data-path="../gestion_de_errores_y_depuracion_en_php/ventana_de_depuracion_de_netbeans.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/ventana_de_depuracion_de_netbeans.html">
+            
+                    
+                    Ventana de depuraci&#xF3;n de NetBeans
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20" data-path="../gestion_de_errores_y_depuracion_en_php/sesion_de_depuracion.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/sesion_de_depuracion.html">
+            
+                    
+                    Sesi&#xF3;n de depuraci&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.21" data-path="../gestion_de_errores_y_depuracion_en_php/ejercicios_de_gestion_de_errores_y_depuracion_de_php.html">
+            
+                <a href="../gestion_de_errores_y_depuracion_en_php/ejercicios_de_gestion_de_errores_y_depuracion_de_php.html">
+            
+                    
+                    Ejercicios de Gesti&#xF3;n de errores y depuraci&#xF3;n de PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../programacion_orientada_a_objetos/">
+            
+                <a href="../programacion_orientada_a_objetos/index.html">
+            
+                    
+                    Programaci&#xF3;n Orientada a Objetos
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../programacion_orientada_a_objetos/los_objetos.html">
+            
+                <a href="../programacion_orientada_a_objetos/los_objetos.html">
+            
+                    
+                    Los objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../programacion_orientada_a_objetos/las_clases.html">
+            
+                <a href="../programacion_orientada_a_objetos/las_clases.html">
+            
+                    
+                    Las clases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../programacion_orientada_a_objetos/modelos_de_objetos.html">
+            
+                <a href="../programacion_orientada_a_objetos/modelos_de_objetos.html">
+            
+                    
+                    Modelos de objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../programacion_orientada_a_objetos/herencia.html">
+            
+                <a href="../programacion_orientada_a_objetos/herencia.html">
+            
+                    
+                    Herencia
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../programacion_orientada_a_objetos/poo_en_php.html">
+            
+                <a href="../programacion_orientada_a_objetos/poo_en_php.html">
+            
+                    
+                    POO en PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../programacion_orientada_a_objetos/ejercicios_de_programacion_orientada_a_objetos.html">
+            
+                <a href="../programacion_orientada_a_objetos/ejercicios_de_programacion_orientada_a_objetos.html">
+            
+                    
+                    Ejercicios de Programaci&#xF3;n Orientada a Objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/index.html">
+            
+                    
+                    Funciones para manejar cadenas y Expresiones regulares
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/programacion_segura_-_filtrado_de_datos.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/programacion_segura_-_filtrado_de_datos.html">
+            
+                    
+                    Programaci&#xF3;n segura - Filtrado de datos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/funciones_para_aplicar_formato.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/funciones_para_aplicar_formato.html">
+            
+                    
+                    Funciones para aplicar formato
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/aplicar_formato_a_cadenas_para_presentaciones.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/aplicar_formato_a_cadenas_para_presentaciones.html">
+            
+                    
+                    Aplicar formato a cadenas para presentaciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/saltos_de_linea_en_html_nl2br.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/saltos_de_linea_en_html_nl2br.html">
+            
+                    
+                    Saltos de l&#xED;nea en HTML: nl2br()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/aplicar_formato_a_una_cadena_para_su_impresion.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/aplicar_formato_a_una_cadena_para_su_impresion.html">
+            
+                    
+                    Aplicar formato a una cadena para su impresi&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/formato_para_almacenamiento.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/formato_para_almacenamiento.html">
+            
+                    
+                    Formato para almacenamiento
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/expresiones_regulares.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/expresiones_regulares.html">
+            
+                    
+                    Expresiones regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/los_fundamentos.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/los_fundamentos.html">
+            
+                    
+                    Los fundamentos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/conjuntos_y_clases_de_caracteres.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/conjuntos_y_clases_de_caracteres.html">
+            
+                    
+                    Conjuntos y clases de caracteres
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/repeticion.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/repeticion.html">
+            
+                    
+                    Repetici&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/subexpresiones.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/subexpresiones.html">
+            
+                    
+                    Subexpresiones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/recontar_subexpresiones.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/recontar_subexpresiones.html">
+            
+                    
+                    Recontar subexpresiones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/anclajes_al_principio_o_al_final_de_una_cadena.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/anclajes_al_principio_o_al_final_de_una_cadena.html">
+            
+                    
+                    Anclajes al principio o al final de una cadena
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/bifurcacion.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/bifurcacion.html">
+            
+                    
+                    Bifurcaci&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/buscar_coincidencias_de_caracteres_especiales.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/buscar_coincidencias_de_caracteres_especiales.html">
+            
+                    
+                    Buscar coincidencias de caracteres especiales
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.16" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/resumen_de_los_caracteres_especiales.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/resumen_de_los_caracteres_especiales.html">
+            
+                    
+                    Resumen de los caracteres especiales
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.17" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/funciones_para_manejar_expresiones_regulares.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/funciones_para_manejar_expresiones_regulares.html">
+            
+                    
+                    Funciones para manejar expresiones regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.18" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/sustituir_subcadenas_con_expresiones_regulares.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/sustituir_subcadenas_con_expresiones_regulares.html">
+            
+                    
+                    Sustituir subcadenas con expresiones regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.19" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/filtros.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/filtros.html">
+            
+                    
+                    Filtros
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.20" data-path="../funciones_para_manejar_cadenas_y_expresiones_regulares/ejercicios_de_la_sesion_de_funciones_para_manejar_cadenas_y_expresiones_regulares.html">
+            
+                <a href="../funciones_para_manejar_cadenas_y_expresiones_regulares/ejercicios_de_la_sesion_de_funciones_para_manejar_cadenas_y_expresiones_regulares.html">
+            
+                    
+                    Ejercicios de la sesi&#xF3;n de funciones para manejar cadenas y Expresiones regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../programacion_orientada_a_objetos_ii/">
+            
+                <a href="../programacion_orientada_a_objetos_ii/index.html">
+            
+                    
+                    Programaci&#xF3;n Orientada a Objetos II
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../programacion_orientada_a_objetos_ii/acceder_a_los_atributos_de_una_clase.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/acceder_a_los_atributos_de_una_clase.html">
+            
+                    
+                    Acceder a los atributos de una clase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../programacion_orientada_a_objetos_ii/reemplazos.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/reemplazos.html">
+            
+                    
+                    Reemplazos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../programacion_orientada_a_objetos_ii/evitar_reemplazos_con_final.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/evitar_reemplazos_con_final.html">
+            
+                    
+                    Evitar reemplazos con final
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../programacion_orientada_a_objetos_ii/herencia_multiple.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/herencia_multiple.html">
+            
+                    
+                    Herencia m&#xFA;ltiple
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../programacion_orientada_a_objetos_ii/interfaces__herencia_de_interfaz.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/interfaces__herencia_de_interfaz.html">
+            
+                    
+                    Interfaces ( Herencia de interfaz)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../programacion_orientada_a_objetos_ii/metodos_y_atributos_estaticos.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/metodos_y_atributos_estaticos.html">
+            
+                    
+                    M&#xE9;todos y Atributos est&#xE1;ticos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../programacion_orientada_a_objetos_ii/definicion_de_constantes.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/definicion_de_constantes.html">
+            
+                    
+                    Definici&#xF3;n de constantes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../programacion_orientada_a_objetos_ii/comprobar_el_tipo_de_una_clase_operador_instanceof.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/comprobar_el_tipo_de_una_clase_operador_instanceof.html">
+            
+                    
+                    Comprobar el tipo de una clase (operador instanceof)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../programacion_orientada_a_objetos_ii/sugerencia_de_tipo_de_clase__type_hinting.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/sugerencia_de_tipo_de_clase__type_hinting.html">
+            
+                    
+                    Sugerencia de tipo de clase ( Type Hinting)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../programacion_orientada_a_objetos_ii/clonar_objetos.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/clonar_objetos.html">
+            
+                    
+                    Clonar objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../programacion_orientada_a_objetos_ii/comparacion_de_objetos.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/comparacion_de_objetos.html">
+            
+                    
+                    Comparaci&#xF3;n de objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../programacion_orientada_a_objetos_ii/clases_abstractas.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/clases_abstractas.html">
+            
+                    
+                    Clases Abstractas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../programacion_orientada_a_objetos_ii/sobrecarga_de_metodos.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/sobrecarga_de_metodos.html">
+            
+                    
+                    Sobrecarga de m&#xE9;todos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="../programacion_orientada_a_objetos_ii/autocarga_de_objetos.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/autocarga_de_objetos.html">
+            
+                    
+                    Autocarga de objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.15" data-path="../programacion_orientada_a_objetos_ii/iteracion_de_objetos.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/iteracion_de_objetos.html">
+            
+                    
+                    Iteraci&#xF3;n de objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.16" data-path="../programacion_orientada_a_objetos_ii/interfaz_iteradores.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/interfaz_iteradores.html">
+            
+                    
+                    Interfaz Iteradores
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.17" data-path="../programacion_orientada_a_objetos_ii/api_de_reflexion.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/api_de_reflexion.html">
+            
+                    
+                    API de Reflexi&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.18" data-path="../programacion_orientada_a_objetos_ii/otras_funciones_interesantes_para_trabajar_con_clases_y_objetos.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/otras_funciones_interesantes_para_trabajar_con_clases_y_objetos.html">
+            
+                    
+                    Otras funciones interesantes para trabajar con clases y objetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.19" data-path="../programacion_orientada_a_objetos_ii/ejercicios_de_programacion_orientada_a_objetos_ii.html">
+            
+                <a href="../programacion_orientada_a_objetos_ii/ejercicios_de_programacion_orientada_a_objetos_ii.html">
+            
+                    
+                    Ejercicios de Programaci&#xF3;n Orientada a Objetos II
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../gestion_de_excepciones_en_php/">
+            
+                <a href="../gestion_de_excepciones_en_php/index.html">
+            
+                    
+                    Gesti&#xF3;n de excepciones en PHP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../gestion_de_excepciones_en_php/conceptos_de_control_de_excepciones.html">
+            
+                <a href="../gestion_de_excepciones_en_php/conceptos_de_control_de_excepciones.html">
+            
+                    
+                    Conceptos de control de excepciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../gestion_de_excepciones_en_php/bloque_try.html">
+            
+                <a href="../gestion_de_excepciones_en_php/bloque_try.html">
+            
+                    
+                    Bloque try
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../gestion_de_excepciones_en_php/bloque_catch.html">
+            
+                <a href="../gestion_de_excepciones_en_php/bloque_catch.html">
+            
+                    
+                    Bloque catch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../gestion_de_excepciones_en_php/la_clase_exception.html">
+            
+                <a href="../gestion_de_excepciones_en_php/la_clase_exception.html">
+            
+                    
+                    La clase Exception
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../gestion_de_excepciones_en_php/excepciones_definidas_por_el_usuario.html">
+            
+                <a href="../gestion_de_excepciones_en_php/excepciones_definidas_por_el_usuario.html">
+            
+                    
+                    Excepciones definidas por el usuario
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../gestion_de_excepciones_en_php/excepciones_predefinidas.html">
+            
+                <a href="../gestion_de_excepciones_en_php/excepciones_predefinidas.html">
+            
+                    
+                    Excepciones predefinidas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../gestion_de_excepciones_en_php/relanzar_excepciones.html">
+            
+                <a href="../gestion_de_excepciones_en_php/relanzar_excepciones.html">
+            
+                    
+                    Relanzar excepciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../gestion_de_excepciones_en_php/recolector_de_excepciones.html">
+            
+                <a href="../gestion_de_excepciones_en_php/recolector_de_excepciones.html">
+            
+                    
+                    Recolector de excepciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../gestion_de_excepciones_en_php/palabra_reservada_finally_a_partir_de_php_55.html">
+            
+                <a href="../gestion_de_excepciones_en_php/palabra_reservada_finally_a_partir_de_php_55.html">
+            
+                    
+                    Palabra reservada finally a partir de PHP 5.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../gestion_de_excepciones_en_php/ejercicios_de_gestion_de_excepciones.html">
+            
+                <a href="../gestion_de_excepciones_en_php/ejercicios_de_gestion_de_excepciones.html">
+            
+                    
+                    Ejercicios de Gesti&#xF3;n de Excepciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/index.html">
+            
+                    
+                    Introducci&#xF3;n al acceso a bases de datos con MySQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/acceso_a_mysql_usando_la_extension_mysql.html">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/acceso_a_mysql_usando_la_extension_mysql.html">
+            
+                    
+                    Acceso a MySQL usando la extensi&#xF3;n MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/funciones_para_comprobar_y_filtrar_datos.html">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/funciones_para_comprobar_y_filtrar_datos.html">
+            
+                    
+                    Funciones para comprobar y filtrar datos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/establecer_y_cerrar_una_conexion.html">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/establecer_y_cerrar_una_conexion.html">
+            
+                    
+                    Establecer y cerrar una conexi&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/comprobacion_de_errores.html">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/comprobacion_de_errores.html">
+            
+                    
+                    Comprobaci&#xF3;n de errores
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/seleccionar_una_base_de_datos.html">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/seleccionar_una_base_de_datos.html">
+            
+                    
+                    Seleccionar una base de datos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/ejecutar_una_consulta_sobre_la_base_de_datos.html">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/ejecutar_una_consulta_sobre_la_base_de_datos.html">
+            
+                    
+                    Ejecutar una consulta sobre la base de datos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/recuperar_resultados_de_la_consulta.html">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/recuperar_resultados_de_la_consulta.html">
+            
+                    
+                    Recuperar resultados de la consulta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/liberar_el_resultado_de_la_consulta.html">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/liberar_el_resultado_de_la_consulta.html">
+            
+                    
+                    Liberar el resultado de la consulta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/acceder_a_mysql_mediante_la_extension_mysql_improved_mysqli.html">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/acceder_a_mysql_mediante_la_extension_mysql_improved_mysqli.html">
+            
+                    
+                    Acceder a MySQL mediante la extensi&#xF3;n MySQL Improved (MySQLI)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/establecer_y_cerrar_una_conexion_mysqli.html">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/establecer_y_cerrar_una_conexion_mysqli.html">
+            
+                    
+                    Establecer y cerrar una conexi&#xF3;n (MySQLI)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/seleccionar_una_base_de_datos_mysqli.html">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/seleccionar_una_base_de_datos_mysqli.html">
+            
+                    
+                    Seleccionar una base de datos (MySQLI)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/consultar_la_base_de_datos.html">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/consultar_la_base_de_datos.html">
+            
+                    
+                    Consultar la base de datos (MySQLI)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.13" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/recuperar_resultados_de_una_consulta.html">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/recuperar_resultados_de_una_consulta.html">
+            
+                    
+                    Recuperar resultados de una consulta (MySQLI)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.14" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/liberar_resultado_de_una_consulta.html">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/liberar_resultado_de_una_consulta.html">
+            
+                    
+                    Liberar resultado de una consulta (MySQLI)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.15" data-path="../introduccion_al_acceso_a_bases_de_datos_con_mysql/ejercicios_de_introduccion_al_acceso_a_bases_de_datos_con_mysql.html">
+            
+                <a href="../introduccion_al_acceso_a_bases_de_datos_con_mysql/ejercicios_de_introduccion_al_acceso_a_bases_de_datos_con_mysql.html">
+            
+                    
+                    Ejercicios de Introducci&#xF3;n al acceso a bases de datos con MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/">
+            
+                <a href="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/index.html">
+            
+                    
+                    Conceptos avanzados de acceso a bases de datos con MySQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/gestion_de_transacciones.html">
+            
+                <a href="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/gestion_de_transacciones.html">
+            
+                    
+                    Gesti&#xF3;n de transacciones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/ultimo_identificador_insertado.html">
+            
+                <a href="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/ultimo_identificador_insertado.html">
+            
+                    
+                    &#xDA;ltimo identificador insertado
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/ejemplo_completo.html">
+            
+                <a href="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/ejemplo_completo.html">
+            
+                    
+                    Ejemplo completo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/instrucciones_predefinidas.html">
+            
+                <a href="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/instrucciones_predefinidas.html">
+            
+                    
+                    Instrucciones predefinidas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/interfaces_de_bases_de_datos.html">
+            
+                <a href="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/interfaces_de_bases_de_datos.html">
+            
+                    
+                    Interfaces de bases de datos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/pdo_php_data_objects.html">
+            
+                <a href="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/pdo_php_data_objects.html">
+            
+                    
+                    PDO: PHP Data Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/ejercicios_de_conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql.html">
+            
+                <a href="../conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql/ejercicios_de_conceptos_avanzados_de_acceso_a_bases_de_datos_con_mysql.html">
+            
+                    
+                    Ejercicios de Conceptos avanzados de acceso a bases de datos con MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../control_de_sesiones/">
+            
+                <a href="../control_de_sesiones/index.html">
+            
+                    
+                    Control de sesiones
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../control_de_sesiones/cuando_debemos_usar_cookies_en_una_aplicacion.html">
+            
+                <a href="../control_de_sesiones/cuando_debemos_usar_cookies_en_una_aplicacion.html">
+            
+                    
+                    Cuando debemos usar cookies en una aplicaci&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../control_de_sesiones/aproximacion_al_control_de_sesiones.html">
+            
+                <a href="../control_de_sesiones/aproximacion_al_control_de_sesiones.html">
+            
+                    
+                    Aproximaci&#xF3;n al control de sesiones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../control_de_sesiones/aproximacion_usando_variables_ocultas.html">
+            
+                <a href="../control_de_sesiones/aproximacion_usando_variables_ocultas.html">
+            
+                    
+                    Aproximaci&#xF3;n usando variables ocultas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../control_de_sesiones/aproximacion_usando_cookies.html">
+            
+                <a href="../control_de_sesiones/aproximacion_usando_cookies.html">
+            
+                    
+                    Aproximaci&#xF3;n usando cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../control_de_sesiones/sesiones_en_php.html">
+            
+                <a href="../control_de_sesiones/sesiones_en_php.html">
+            
+                    
+                    Sesiones en PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../control_de_sesiones/control_de_sesiones_con_y_sin_cookies.html">
+            
+                <a href="../control_de_sesiones/control_de_sesiones_con_y_sin_cookies.html">
+            
+                    
+                    Control de sesiones con y sin Cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../control_de_sesiones/control_de_sesiones_con_cookies.html">
+            
+                <a href="../control_de_sesiones/control_de_sesiones_con_cookies.html">
+            
+                    
+                    Control de sesiones con cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../control_de_sesiones/establecer__recuperar_los_valores_de_la_cookie_de_sesion.html">
+            
+                <a href="../control_de_sesiones/establecer__recuperar_los_valores_de_la_cookie_de_sesion.html">
+            
+                    
+                    Establecer \/ Recuperar los valores de la cookie de sesi&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../control_de_sesiones/directivas_de_configuracion.html">
+            
+                <a href="../control_de_sesiones/directivas_de_configuracion.html">
+            
+                    
+                    Directivas de configuraci&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../control_de_sesiones/ejercicios_de_control_de_sesiones.html">
+            
+                <a href="../control_de_sesiones/ejercicios_de_control_de_sesiones.html">
+            
+                    
+                    Ejercicios de Control de sesiones
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../patrones_de_diseno_en_php_i/">
+            
+                <a href="../patrones_de_diseno_en_php_i/index.html">
+            
+                    
+                    Patrones de dise&#xF1;o en PHP (I)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../patrones_de_diseno_en_php_i/que_son_los_patrones_software.html">
+            
+                <a href="../patrones_de_diseno_en_php_i/que_son_los_patrones_software.html">
+            
+                    
+                    &#xBF;Qu&#xE9; son los patrones software?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../patrones_de_diseno_en_php_i/un_ejemplo_en_php_-_el_patron_iterator.html">
+            
+                <a href="../patrones_de_diseno_en_php_i/un_ejemplo_en_php_-_el_patron_iterator.html">
+            
+                    
+                    Un ejemplo en PHP - El patr&#xF3;n Iterator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../patrones_de_diseno_en_php_i/bibliografia_de_patrones_generales.html">
+            
+                <a href="../patrones_de_diseno_en_php_i/bibliografia_de_patrones_generales.html">
+            
+                    
+                    Bibliograf&#xED;a de patrones generales
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../patrones_de_diseno_en_php_i/lo_bueno_y_lo_malo_de_los_patrones.html">
+            
+                <a href="../patrones_de_diseno_en_php_i/lo_bueno_y_lo_malo_de_los_patrones.html">
+            
+                    
+                    Lo bueno y lo malo de los patrones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../patrones_de_diseno_en_php_i/partes_de_un_patron.html">
+            
+                <a href="../patrones_de_diseno_en_php_i/partes_de_un_patron.html">
+            
+                    
+                    Partes de un patr&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.6" data-path="../patrones_de_diseno_en_php_i/ejemplo_de_patron_-_problema_a_resolver.html">
+            
+                <a href="../patrones_de_diseno_en_php_i/ejemplo_de_patron_-_problema_a_resolver.html">
+            
+                    
+                    Ejemplo de patr&#xF3;n - Problema a resolver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.7" data-path="../patrones_de_diseno_en_php_i/dao_data_access_object.html">
+            
+                <a href="../patrones_de_diseno_en_php_i/dao_data_access_object.html">
+            
+                    
+                    DAO (Data Access Object)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.8" data-path="../patrones_de_diseno_en_php_i/patron_singleton_gof.html">
+            
+                <a href="../patrones_de_diseno_en_php_i/patron_singleton_gof.html">
+            
+                    
+                    Patr&#xF3;n Singleton (GoF)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.9" data-path="../patrones_de_diseno_en_php_i/ejercicios_de_patrones_de_diseno_en_php_i.html">
+            
+                <a href="../patrones_de_diseno_en_php_i/ejercicios_de_patrones_de_diseno_en_php_i.html">
+            
+                    
+                    Ejercicios de Patrones de dise&#xF1;o en PHP (I)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../patrones_de_diseno_en_php_ii__patron_mvc/">
+            
+                <a href="../patrones_de_diseno_en_php_ii__patron_mvc/index.html">
+            
+                    
+                    Patrones de dise&#xF1;o en PHP (II) : Patr&#xF3;n MVC
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../patrones_de_diseno_en_php_ii__patron_mvc/problema.html">
+            
+                <a href="../patrones_de_diseno_en_php_ii__patron_mvc/problema.html">
+            
+                    
+                    Problema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../patrones_de_diseno_en_php_ii__patron_mvc/solucion.html">
+            
+                <a href="../patrones_de_diseno_en_php_ii__patron_mvc/solucion.html">
+            
+                    
+                    Soluci&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../patrones_de_diseno_en_php_ii__patron_mvc/componentes_de_la_arquitectura_mvc.html">
+            
+                <a href="../patrones_de_diseno_en_php_ii__patron_mvc/componentes_de_la_arquitectura_mvc.html">
+            
+                    
+                    Componentes de la arquitectura MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="../patrones_de_diseno_en_php_ii__patron_mvc/el_patron_mvc_adaptado_a_la_web.html">
+            
+                <a href="../patrones_de_diseno_en_php_ii__patron_mvc/el_patron_mvc_adaptado_a_la_web.html">
+            
+                    
+                    El patr&#xF3;n MVC adaptado a la web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.5" data-path="../patrones_de_diseno_en_php_ii__patron_mvc/ejemplo_de_como_crear_un_sistema_mvc_paso_a_paso_1.html">
+            
+                <a href="../patrones_de_diseno_en_php_ii__patron_mvc/ejemplo_de_como_crear_un_sistema_mvc_paso_a_paso_1.html">
+            
+                    
+                    Ejemplo de c&#xF3;mo crear un sistema MVC paso a paso (1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../patrones_de_diseno_en_php_ii_patron_mvc_2/">
+            
+                <a href="../patrones_de_diseno_en_php_ii_patron_mvc_2/index.html">
+            
+                    
+                    Patrones de dise&#xF1;o en PHP (II): Patr&#xF3;n MVC (2)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../patrones_de_diseno_en_php_ii_patron_mvc_2/clase_singleton_de_configuracion.html">
+            
+                <a href="../patrones_de_diseno_en_php_ii_patron_mvc_2/clase_singleton_de_configuracion.html">
+            
+                    
+                    Clase singleton de configuraci&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../patrones_de_diseno_en_php_ii_patron_mvc_2/clase_view.html">
+            
+                <a href="../patrones_de_diseno_en_php_ii_patron_mvc_2/clase_view.html">
+            
+                    
+                    Clase View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../patrones_de_diseno_en_php_ii_patron_mvc_2/singleton_dbmanager.html">
+            
+                <a href="../patrones_de_diseno_en_php_ii_patron_mvc_2/singleton_dbmanager.html">
+            
+                    
+                    Singleton DBManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../patrones_de_diseno_en_php_ii_patron_mvc_2/clase_libros_model.html">
+            
+                <a href="../patrones_de_diseno_en_php_ii_patron_mvc_2/clase_libros_model.html">
+            
+                    
+                    Clase Libros_Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.5" data-path="../patrones_de_diseno_en_php_ii_patron_mvc_2/clase_libros_controller.html">
+            
+                <a href="../patrones_de_diseno_en_php_ii_patron_mvc_2/clase_libros_controller.html">
+            
+                    
+                    Clase Libros_Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.6" data-path="../patrones_de_diseno_en_php_ii_patron_mvc_2/corefrontcontrollerphp.html">
+            
+                <a href="../patrones_de_diseno_en_php_ii_patron_mvc_2/corefrontcontrollerphp.html">
+            
+                    
+                    core\/FrontController.php
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.7" data-path="../patrones_de_diseno_en_php_ii_patron_mvc_2/fichero_indexphp_como_punto_de_entrada.html">
+            
+                <a href="../patrones_de_diseno_en_php_ii_patron_mvc_2/fichero_indexphp_como_punto_de_entrada.html">
+            
+                    
+                    Fichero index.php como punto de entrada
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.8" data-path="../patrones_de_diseno_en_php_ii_patron_mvc_2/y_como_funciona_todo_esto.html">
+            
+                <a href="../patrones_de_diseno_en_php_ii_patron_mvc_2/y_como_funciona_todo_esto.html">
+            
+                    
+                    &#xBF;Y como funciona todo esto?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.9" data-path="../patrones_de_diseno_en_php_ii_patron_mvc_2/afinando_el_mini_mvc.html">
+            
+                <a href="../patrones_de_diseno_en_php_ii_patron_mvc_2/afinando_el_mini_mvc.html">
+            
+                    
+                    Afinando el mini MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../introducci&#xF3;n-a-laravel.html">
+            
+                <a href="https://mcazorla.gitbooks.io/programacion-en-el-servidor/content/introducci&amp;">
+            
+                    
+                    Frameworks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../laravel.html">
+            
+                <a href="../laravel.html">
+            
+                    
+                    Laravel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../estructura-de-laravel.html">
+            
+                <a href="../estructura-de-laravel.html">
+            
+                    
+                    Estructura de Laravel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../patr&#xF3;n-mvc-aplicado-a-laravel.html">
+            
+                <a href="https://mcazorla.gitbooks.io/programacion-en-el-servidor/content/patr&amp;">
+            
+                    
+                    Patr&#xF3;n MVC aplicado a Laravel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="../modelos.html">
+            
+                <a href="../modelos.html">
+            
+                    
+                    Modelos
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.4.1" data-path="../query-builder.html">
+            
+                <a href="../query-builder.html">
+            
+                    
+                    Query Builder
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../apis.html">
+            
+                <a href="../apis.html">
+            
+                    
+                    APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../rest.html">
+            
+                <a href="../rest.html">
+            
+                    
+                    REST
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../introduccion_a_codeigniter/">
+            
+                <a href="../introduccion_a_codeigniter/index.html">
+            
+                    
+                    Introducci&#xF3;n a CodeIgniter
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../introduccion_a_codeigniter/estado_del_arte.html">
+            
+                <a href="../introduccion_a_codeigniter/estado_del_arte.html">
+            
+                    
+                    Estado del arte
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../introduccion_a_codeigniter/codeigniter.html">
+            
+                <a href="../introduccion_a_codeigniter/codeigniter.html">
+            
+                    
+                    CodeIgniter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../introduccion_a_codeigniter/estructura_del_framework_codeigniter.html">
+            
+                <a href="../introduccion_a_codeigniter/estructura_del_framework_codeigniter.html">
+            
+                    
+                    Estructura del framework CodeIgniter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4" data-path="../introduccion_a_codeigniter/la_carpeta_system.html">
+            
+                <a href="../introduccion_a_codeigniter/la_carpeta_system.html">
+            
+                    
+                    La carpeta system
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.5" data-path="../introduccion_a_codeigniter/la_carpeta_application.html">
+            
+                <a href="../introduccion_a_codeigniter/la_carpeta_application.html">
+            
+                    
+                    La carpeta application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.6" data-path="../introduccion_a_codeigniter/configuracion_inicial.html">
+            
+                <a href="../introduccion_a_codeigniter/configuracion_inicial.html">
+            
+                    
+                    Configuraci&#xF3;n inicial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.7" data-path="../introduccion_a_codeigniter/fichero_configphp.html">
+            
+                <a href="../introduccion_a_codeigniter/fichero_configphp.html">
+            
+                    
+                    Fichero config.php
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.8" data-path="../introduccion_a_codeigniter/diagrama_de_flujo_de_la_aplicacion.html">
+            
+                <a href="../introduccion_a_codeigniter/diagrama_de_flujo_de_la_aplicacion.html">
+            
+                    
+                    Diagrama de flujo de la aplicaci&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.9" data-path="../introduccion_a_codeigniter/el_patron_mvc_implementado_por_codeigniter.html">
+            
+                <a href="../introduccion_a_codeigniter/el_patron_mvc_implementado_por_codeigniter.html">
+            
+                    
+                    El patr&#xF3;n MVC implementado por CodeIgniter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.10" data-path="../introduccion_a_codeigniter/modelos.html">
+            
+                <a href="../introduccion_a_codeigniter/modelos.html">
+            
+                    
+                    Modelos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.11" data-path="../introduccion_a_codeigniter/controladores.html">
+            
+                <a href="../introduccion_a_codeigniter/controladores.html">
+            
+                    
+                    Controladores
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.12" data-path="../introduccion_a_codeigniter/vista.html">
+            
+                <a href="../introduccion_a_codeigniter/vista.html">
+            
+                    
+                    Vistas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.13" data-path="../introduccion_a_codeigniter/ejercicios_de_introduccion_a_codeigniter_1.html">
+            
+                <a href="../introduccion_a_codeigniter/ejercicios_de_introduccion_a_codeigniter_1.html">
+            
+                    
+                    Ejercicios de Introducci&#xF3;n a CodeIgniter 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../introduccion_a_codeigniter_2/">
+            
+                <a href="../introduccion_a_codeigniter_2/index.html">
+            
+                    
+                    Introducci&#xF3;n a CodeIgniter 2
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../introduccion_a_codeigniter_2/mas_ficheros_de_configuracion.html">
+            
+                <a href="../introduccion_a_codeigniter_2/mas_ficheros_de_configuracion.html">
+            
+                    
+                    M&#xE1;s ficheros de configuraci&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../introduccion_a_codeigniter_2/fichero_databasephp.html">
+            
+                <a href="../introduccion_a_codeigniter_2/fichero_databasephp.html">
+            
+                    
+                    Fichero database.php
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../introduccion_a_codeigniter_2/fichero_autoloadphp.html">
+            
+                <a href="../introduccion_a_codeigniter_2/fichero_autoloadphp.html">
+            
+                    
+                    Fichero autoload.php
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="../introduccion_a_codeigniter_2/fichero_routesphp.html">
+            
+                <a href="../introduccion_a_codeigniter_2/fichero_routesphp.html">
+            
+                    
+                    Fichero routes.php
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.5" data-path="../introduccion_a_codeigniter_2/librerias_de_codeigniter.html">
+            
+                <a href="../introduccion_a_codeigniter_2/librerias_de_codeigniter.html">
+            
+                    
+                    Librer&#xED;as de CodeIgniter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="../introduccion_a_codeigniter_2/la_libreria_database.html">
+            
+                <a href="../introduccion_a_codeigniter_2/la_libreria_database.html">
+            
+                    
+                    La librer&#xED;a Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.7" data-path="../introduccion_a_codeigniter_2/sentencias_preparadas.html">
+            
+                <a href="../introduccion_a_codeigniter_2/sentencias_preparadas.html">
+            
+                    
+                    Sentencias preparadas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.8" data-path="../introduccion_a_codeigniter_2/patron_active_record.html">
+            
+                <a href="../introduccion_a_codeigniter_2/patron_active_record.html">
+            
+                    
+                    Patr&#xF3;n Active Record
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.9" data-path="../introduccion_a_codeigniter_2/consultas_avanzadas.html">
+            
+                <a href="../introduccion_a_codeigniter_2/consultas_avanzadas.html">
+            
+                    
+                    Consultas avanzadas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.10" data-path="../introduccion_a_codeigniter_2/helper_url.html">
+            
+                <a href="../introduccion_a_codeigniter_2/helper_url.html">
+            
+                    
+                    Helper URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.11" data-path="../introduccion_a_codeigniter_2/gestion_de_errores_en_codeigniter.html">
+            
+                <a href="../introduccion_a_codeigniter_2/gestion_de_errores_en_codeigniter.html">
+            
+                    
+                    Gesti&#xF3;n de errores en CodeIgniter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.12" data-path="../introduccion_a_codeigniter_2/clase_benchmark.html">
+            
+                <a href="../introduccion_a_codeigniter_2/clase_benchmark.html">
+            
+                    
+                    Clase Benchmark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.13" data-path="../introduccion_a_codeigniter_2/clase_profiler.html">
+            
+                <a href="../introduccion_a_codeigniter_2/clase_profiler.html">
+            
+                    
+                    Clase Profiler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.14" data-path="../introduccion_a_codeigniter_2/ejercicios_de_introduccion_a_codeigniter_2.html">
+            
+                <a href="../introduccion_a_codeigniter_2/ejercicios_de_introduccion_a_codeigniter_2.html">
+            
+                    
+                    Ejercicios de Introducci&#xF3;n a CodeIgniter 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../conceptos_avanzados_de_codeigniter/">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/index.html">
+            
+                    
+                    Conceptos avanzados de CodeIgniter
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../conceptos_avanzados_de_codeigniter/la_clase_input.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/la_clase_input.html">
+            
+                    
+                    La clase Input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../conceptos_avanzados_de_codeigniter/capa_de_seguridad.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/capa_de_seguridad.html">
+            
+                    
+                    Capa de seguridad
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="../conceptos_avanzados_de_codeigniter/filtrado_xss.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/filtrado_xss.html">
+            
+                    
+                    Filtrado XSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.4" data-path="../conceptos_avanzados_de_codeigniter/recoger_datos_de_post,cookie_o_server.html">
+            
+                <a href="https://mcazorla.gitbooks.io/programacion-en-el-servidor/content/conceptos_avanzados_de_codeigniter/recoger_datos_de_post,cookie_o_server.html">
+            
+                    
+                    Recoger datos de POST,COOKIE o SERVER
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.5" data-path="../conceptos_avanzados_de_codeigniter/this-input-post.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/this-input-post.html">
+            
+                    
+                    $this-&gt;input-&gt;post()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.6" data-path="../conceptos_avanzados_de_codeigniter/this-input-cookie.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/this-input-cookie.html">
+            
+                    
+                    $this-&gt;input-&gt;cookie()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.7" data-path="../conceptos_avanzados_de_codeigniter/this-input-server.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/this-input-server.html">
+            
+                    
+                    $this-&gt;input-&gt;server()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.8" data-path="../conceptos_avanzados_de_codeigniter/clase_security.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/clase_security.html">
+            
+                    
+                    Clase Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.9" data-path="../conceptos_avanzados_de_codeigniter/clase_form_validation.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/clase_form_validation.html">
+            
+                    
+                    Clase Form Validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.10" data-path="../conceptos_avanzados_de_codeigniter/ejemplo_de_validacion_de_formulario.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/ejemplo_de_validacion_de_formulario.html">
+            
+                    
+                    Ejemplo de validaci&#xF3;n de formulario
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.11" data-path="../conceptos_avanzados_de_codeigniter/vista_de_formulario_enviado_correctamente.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/vista_de_formulario_enviado_correctamente.html">
+            
+                    
+                    Vista de formulario enviado correctamente
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.12" data-path="../conceptos_avanzados_de_codeigniter/el_controlador.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/el_controlador.html">
+            
+                    
+                    El controlador
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.13" data-path="../conceptos_avanzados_de_codeigniter/establecer_reglas_de_validacion.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/establecer_reglas_de_validacion.html">
+            
+                    
+                    Establecer reglas de validaci&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.14" data-path="../conceptos_avanzados_de_codeigniter/reglas_en_cascada.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/reglas_en_cascada.html">
+            
+                    
+                    Reglas en cascada
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.15" data-path="../conceptos_avanzados_de_codeigniter/preprocesar_datos.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/preprocesar_datos.html">
+            
+                    
+                    Preprocesar datos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.16" data-path="../conceptos_avanzados_de_codeigniter/callbacks_estableciendo_nuestras_propias_funciones_de_validacion.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/callbacks_estableciendo_nuestras_propias_funciones_de_validacion.html">
+            
+                    
+                    Callbacks: Estableciendo nuestras propias funciones de validaci&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.17" data-path="../conceptos_avanzados_de_codeigniter/mostrar_errores_de_forma_individual.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/mostrar_errores_de_forma_individual.html">
+            
+                    
+                    Mostrar errores de forma individual
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.18" data-path="../conceptos_avanzados_de_codeigniter/listado_de_reglas_de_validacion.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/listado_de_reglas_de_validacion.html">
+            
+                    
+                    Listado de reglas de validaci&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.19" data-path="../conceptos_avanzados_de_codeigniter/lista_de_las_funciones_de_preprocesado_de_datos.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/lista_de_las_funciones_de_preprocesado_de_datos.html">
+            
+                    
+                    Lista de las funciones de preprocesado de datos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.20" data-path="../conceptos_avanzados_de_codeigniter/la_libreria_session.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/la_libreria_session.html">
+            
+                    
+                    La librer&#xED;a Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.21" data-path="../conceptos_avanzados_de_codeigniter/borrar_datos_almacenados_en_la_sesion.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/borrar_datos_almacenados_en_la_sesion.html">
+            
+                    
+                    Borrar datos almacenados en la sesi&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.22" data-path="../conceptos_avanzados_de_codeigniter/mensajes_tipo_flashdata.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/mensajes_tipo_flashdata.html">
+            
+                    
+                    Mensajes tipo &apos;flashdata&apos;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.23" data-path="../conceptos_avanzados_de_codeigniter/guardar_datos_de_sesion_en_base_de_datos.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/guardar_datos_de_sesion_en_base_de_datos.html">
+            
+                    
+                    Guardar datos de sesi&#xF3;n en base de datos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.24" data-path="../conceptos_avanzados_de_codeigniter/destruir_una_sesion.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/destruir_una_sesion.html">
+            
+                    
+                    Destruir una sesi&#xF3;n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.25" data-path="../conceptos_avanzados_de_codeigniter/propiedades_de_configuracion_para_las_sesiones.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/propiedades_de_configuracion_para_las_sesiones.html">
+            
+                    
+                    Propiedades de configuraci&#xF3;n para las sesiones
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.26" data-path="../conceptos_avanzados_de_codeigniter/extender_el_ci_controller_por_defecto_de_codeigniter.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/extender_el_ci_controller_por_defecto_de_codeigniter.html">
+            
+                    
+                    Extender el CI_Controller por defecto de CodeIgniter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.27" data-path="../conceptos_avanzados_de_codeigniter/acceso_solo_para_usuarios_registrados.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/acceso_solo_para_usuarios_registrados.html">
+            
+                    
+                    Acceso s&#xF3;lo para usuarios registrados
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.28" data-path="../conceptos_avanzados_de_codeigniter/frontend_ejercicios_de_conceptos_avanzados_de_codeigniter.html">
+            
+                <a href="../conceptos_avanzados_de_codeigniter/frontend_ejercicios_de_conceptos_avanzados_de_codeigniter.html">
+            
+                    
+                    FRONTEND: Ejercicios de conceptos avanzados de CodeIgniter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../proyecto_de_integracion_carro_de_la_compra_con_codeigniter/">
+            
+                <a href="../proyecto_de_integracion_carro_de_la_compra_con_codeigniter/index.html">
+            
+                    
+                    Proyecto de integraci&#xF3;n: carro de la compra con CodeIgniter
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.21.1" data-path="../proyecto_de_integracion_carro_de_la_compra_con_codeigniter/creacion_de_un_carro_de_la_compra_con_codeigniter.html">
+            
+                <a href="../proyecto_de_integracion_carro_de_la_compra_con_codeigniter/creacion_de_un_carro_de_la_compra_con_codeigniter.html">
+            
+                    
+                    Creaci&#xF3;n de un carro de la compra con CodeIgniter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21.2" data-path="../proyecto_de_integracion_carro_de_la_compra_con_codeigniter/ejercicios_integracion_de_un_carro_de_la_compra_con_codeigniter.html">
+            
+                <a href="../proyecto_de_integracion_carro_de_la_compra_con_codeigniter/ejercicios_integracion_de_un_carro_de_la_compra_con_codeigniter.html">
+            
+                    
+                    Ejercicios: Integraci&#xF3;n de un carro de la compra con CodeIgniter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../apendices/">
+            
+                <a href="../apendices/index.html">
+            
+                    
+                    Ap&#xE9;ndices
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../apendices/guia_estilo.html">
+            
+                <a href="../apendices/guia_estilo.html">
+            
+                    
+                    Gu&#xED;a de estilo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    
+<div class="gl-wrapper">
+    <a class="gitbook-link" href="https://www.gitbook.com?utm_source=public_site_legacy&amp;utm_medium=referral&amp;utm_campaign=trademark&amp;utm_term=mcazorla&amp;utm_content=powered_by" target="blank">
+        <div class="tm-logo">
+            <svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="currentColor" viewBox="0 0 1067 769" xmlns="http://www.w3.org/2000/svg" stroke="none" class="icon-7f6730be--text-3f89f380"><g><path d="M480.026 640.677c17.205 0 31.2 13.997 31.2 31.194s-13.995 31.193-31.2 31.193c-17.197 0-31.193-13.996-31.193-31.193 0-17.197 13.996-31.194 31.193-31.194m489.93-193.226c-17.203 0-31.2-13.998-31.2-31.195 0-17.204 13.997-31.2 31.2-31.2 17.198 0 31.194 13.996 31.194 31.2 0 17.197-13.996 31.195-31.193 31.195m0-127.804c-53.269 0-96.609 43.34-96.609 96.609 0 10.373 1.723 20.702 5.123 30.741L559.328 616.879c-18.132-26.128-47.521-41.617-79.302-41.617-36.821 0-70.391 21.065-86.63 54.003L106.68 478.109c-30.288-15.927-52.965-65.817-50.56-111.223 1.248-23.687 9.438-42.071 21.897-49.17 7.916-4.493 17.436-4.099 27.526 1.188l1.916 1.01c75.96 40.022 324.6 170.981 335.063 175.844 16.157 7.47 25.14 10.5 52.659-2.547l513.958-267.3c7.53-2.844 16.315-10.062 16.315-21.023 0-15.205-15.72-21.199-15.765-21.199-29.218-14.018-74.163-35.054-117.987-55.57C798.033 84.26 691.861 34.547 645.23 10.132c-40.253-21.072-72.655-3.311-78.432.282l-11.227 5.555C345.727 119.743 64.898 258.826 48.911 268.553 20.278 285.973 2.547 320.679.252 363.768c-3.586 68.304 31.261 139.506 81.069 165.634l303.172 156.354c6.83 47.306 47.55 82.725 95.532 82.725 52.78 0 95.808-42.546 96.603-95.14L910.541 492.38c16.93 13.233 37.92 20.486 59.416 20.486 53.268 0 96.61-43.341 96.61-96.61s-43.342-96.61-96.61-96.61" fill-rule="evenodd"/></g></svg>
+        </div>
+        <div class="tm-content">
+            <div class="tm-container">
+                <span class="tm-text">
+                    Powered by <b>GitBook</b>
+                </span>
+            </div>
+        </div>
+    </a>
+</div></div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../index.html">Ejercicios de Introducci&#xF3;n a PHP</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="ejercicios-de-introducci&#xF3;n-a-php">Ejercicios de Introducci&#xF3;n a PHP</h2>
+<p>Crea un proyecto **sesion02** e introduce ah&#xED; todos los ficheros que vayas creando. Posteriormente se ir&#xE1;n subiendo a vuestro espacio en el servidor para que sean corregidos ah&#xED; directamente.
+       </p>
+
+
+
+<h3 id="un-ejemplo-un-poco-m&#xE1;s-complejo">Un ejemplo un poco m&#xE1;s complejo</h3>
+<p>Dentro del proyecto sesion02, crea un fichero llamado _today.php_ y copia el siguiente c&#xF3;digo:
+</p>
+
+<pre><code class="lang-php">    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+       &lt;head&gt;
+          &lt;title&gt; Ejemplo PHP &lt;/title&gt;
+       &lt;/head&gt;
+       &lt;body&gt;
+          &lt;p&gt;Hoy es:
+          <span class="hljs-meta">&lt;?php</span>
+             <span class="hljs-keyword">echo</span> date(<span class="hljs-string">&apos;l, F jS Y&apos;</span>);
+          <span class="hljs-meta">?&gt;</span>
+          &lt;p&gt;
+       &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>
+    Accede al fichero _today.php_ a trav&#xE9;s del servidor web local (http://localhost/sesion02/2.8.1/today.php).
+    El servidor web procesar&#xE1; el c&#xF3;digo PHP, devolviendo al navegador tan s&#xF3;lo el c&#xF3;digo HTML. De hecho,
+    si usamos la opci&#xF3;n del navegador para visualizar el c&#xF3;digo fuente del documento recibido (bot&#xF3;n derecho -&gt; ver c&#xF3;digo fuente), no veremos ning&#xFA;n
+    rastro del c&#xF3;digo PHP original. Tan s&#xF3;lo veremos:
+    </p>
+
+
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Fecha de hoy<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hoy es
+      Saturday, October 5th 2013  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>
+    El navegador interpretar&#xE1; este c&#xF3;digo HTML y mostrar&#xE1; el la fecha actual del &#xBF;servidor o del cliente?.
+    </p>
+<p>
+        Uno de los objetivos de esta sesi&#xF3;n es que te familiarizes con la ayuda de PHP. Por ello, accede al manual y busca informaci&#xF3;n de la
+funcion date.
+        &#xBF;Qu&#xE9; significado tienen las letras
+        **&apos;l, F jS Y&apos;**?
+<br>
+Dentro del fichero today.php da respuesta a la pregunta en un comentario multil&#xED;nea (/**/)
+    </p>
+
+<blockquote>
+<p>Aunque no todav&#xED;a no hemos hablado de las <strong>funciones en PHP</strong>, date es una ellas, la forma de invocarlas es similar a otros lenguajes como C, Java, Perl y otros (ver&#xE1;s que en PHP hay funciones muy similares a las de otros lenguajes)</p>
+</blockquote>
+<h3 id="optativo-a&#xF1;adiendo-m&#xE1;s-funcionalidad-al-ejercicio-anterior">(OPTATIVO) A&#xF1;adiendo m&#xE1;s funcionalidad al ejercicio anterior</h3>
+<p>Vamos a a&#xF1;adir un poco m&#xE1;s de complejidad al ejercicio anterior mostrando la hora actual justo despu&#xE9;s de la fecha.
+        Para ello usa el operador de concatenaci&#xF3;n **&quot;.&quot;** justo al final la invocaci&#xF3;n a la llamada date(..) concatenando
+        mostrar este cadena **y son las HH:MM:SS horas** (HH:horas, MM:minutos y SS:segundos)
+        </p>
+
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Fecha de hoy<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hoy es
+      Saturday, October 5th 2013 y son las 09:18:15 horas. <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="formularios-y-protocolo-http">Formularios y protocolo HTTP</h3>
+<p>
+    En este ejercicio vamos a seguir profundizando en la sintaxis b&#xE1;sica del lenguaje apoy&#xE1;ndonos en el estudio del manejo de los datos recibidos
+    por PHP a
+    partir de un formulario.
+    </p>
+<p>
+    Creamos un fichero llamado **phpinfo.php** con el siguiente contenido:
+    </p>
+
+<pre><code class="lang-php">&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;phpinfo&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      <span class="hljs-meta">&lt;?php</span>
+         phpinfo();
+      <span class="hljs-meta">?&gt;</span>
+   &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>
+    Si consultamos el manual de PHP en
+    <a href="http://php.net/manual/es/function.phpinfo.php" title="Acceso directo a la funci&#xF3;n phpinfo() en el manual" target="_blank">
+http://php.net/manual/es/function.phpinfo.php</a>, veremos que **phpinfo()** es una funci&#xF3;n que genera como salida un documento con una gran
+    cantidad de informaci&#xF3;n sobre la versi&#xF3;n de PHP utilizada y el entorno en el que se    encuentra (como por ejemplo, datos sobre el servidor web).
+    (parte de esa informaci&#xF3;n proviene del fichero de configuraci&#xF3;n de PHP llamado **php.ini**)
+    El resultado ser&#xED;a algo parecido a lo que se muestra en la siguiente figura:
+    </p>
+
+<p><img src="php-s02-ej-phpinfo.png" alt="Ejemplo de salida de la funci&#xF3;n phpinfo()" title="Ejemplo de salida de la funci&#xF3;n phpinfo()"></p>
+<blockquote>
+<p>Hace ya unos cuantos a&#xF1;os, cuando los proveedores de servicios que ofrec&#xED;an espacio web gratuito junto con PHP4 y una base de datos MySQL, recomendaban crear un peque&#xF1;o script PHP con el c&#xF3;digo anterior para comprobar que la instalaci&#xF3;n de la arquitectura LAMP era correcta.
+Si ve&#xED;amos la informaci&#xF3;n del fichero php.ini, es que la instalaci&#xF3;n hab&#xED;a sido correcta.
+        <br>
+Adem&#xE1;s es una manera r&#xE1;pida y eficaz de consultar la versi&#xF3;n de PHP que se est&#xE1; ejecutando. Para m&#xE1;s inri, los paquetes WAMP y XAMPP incluyen accesos directos a la ejecucion de la funci&#xF3;n phpinfo(). En WAMP, pod&#xE9;is ejecutarla accediendo a esta url: <a href="http://localhost/?phpinfo=1" title="Acceso directo a la ejecuci&#xF3;n de phpinfo() desde WAMP" target="_blank">http://localhost/?phpinfo=1</a></p>
+</blockquote>
+<p>
+    Ahora podremos probar a acceder a nuestra p&#xE1;gina con la siguiente URL:
+    </p>
+
+<pre><code class="lang-html">http://localhost/sesion02/2.8.3/phpinfo.php?id=1&amp;accion=test
+</code></pre>
+<p>
+    En este caso estaremos pasando dos p&#xE1;rametros (id y acci&#xF3;n) junto con sus respectivos valores (1 y test) al servidor mediante el m&#xE9;todo GET.
+    En la p&#xE1;gina generada como resultado podemos buscar, por ejemplo, la variable QUERY_STRING dentro de la secci&#xF3;n **Apache environment**.
+    Esta es una variable que genera autom&#xE1;ticamente PHP y que contiene los datos incluidos en la query_string de la URL, tal cual fueron escritos. Lo
+    podemos visualizar en la siguiente figura:
+    </p>
+
+<p><img src="https://mcazorla.gitbooks.io/programacion-en-el-servidor/content/01_introduccion_a_la_programacion_servidor/php-s02-ej-phpinfo-apache-env.png" alt="Apache Environment" title="Apache Environment"></p>
+<p>Otra secci&#xF3;n importante es la muestra la informaci&#xF3;n de la cabeceras HTTP intercambiadas entre cliente y servidor. La siguiente imagen podemos ver
+    un ejemplo:</p>
+
+<p><img src="https://mcazorla.gitbooks.io/programacion-en-el-servidor/content/01_introduccion_a_la_programacion_servidor/php-s02-ej-phpinfo-http-headers.png" alt="Informaci&#xF3;n de las cabeceras HTTP" title="Informaci&#xF3;n de las cabeceras HTTP"></p>
+<p>Tambi&#xE9;n podremos ver, bajo la secci&#xF3;n **PHP variables**, c&#xF3;mo se han creado una serie de variables asociadas a las siglas EGPCS (Environment, GET, POST, Cookie y Server). Por ejemplo, tenemos las variables **_REQUEST[&quot;id&quot;]** y **_GET[&quot;id&quot;],**
+    ambas con valor 1, y las variables **_REQUEST[&quot;accion&quot;]** y **_GET[&quot;accion&quot;]**, ambas con el valor
+    **test**.
+    Gracias a estas variables podremos acceder en el interior del c&#xF3;digo PHP a los datos introducidos por el usuario en un formulario.
+    </p>
+
+<p><img src="https://mcazorla.gitbooks.io/programacion-en-el-servidor/content/01_introduccion_a_la_programacion_servidor/php-s02-ej-phpinfo-php-variables.png" alt="Variables PHP predefinidas de EGPCS (Environment, GET, POST, Cookie, Server)" title="Variables PHP predefinidas de EGPCS (Environment, GET, POST, Cookie, Server)"></p>
+<p>
+        Podemos personalizar lo que muestra la funci&#xF3;n phpinfo() si pasamos como par&#xE1;metro un constante predefinida de PHP. Averigua como mostrar
+        solo la informaci&#xF3;n mostrada por la combinaci&#xF3;n EGPCS en el script test.php
+    </p>
+<p>
+    Con respecto al m&#xE9;todo **POST**, el env&#xED;o de datos se realiza a trav&#xE9;s de la propia petici&#xF3;n HTTP, sin mostrar nada en la URL. Vamos a verlo
+    tambi&#xE9;n con un ejemplo, basado en el archivo **test.php** creado en el ejemplo anterior.
+    </p>
+<p>
+    Creamos el siguiente formulario HTML en un fichero llamado **formpedidos.html**:
+    </p>
+
+<blockquote>
+<p>En este formulario se han introducido algunos elementos HTML que no siguen el est&#xE1;ndar 4.01. Se ha hecho as&#xED; para poder dotarle de un mejor aspecto sin necesidad de utilizar CSS.</p>
+</blockquote>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Formulario de pedidos<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;test.php&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span> &gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">bgcolor</span>=<span class="hljs-string">&quot;#cccccc&quot;</span> &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;150&quot;</span> &gt;</span>Producto<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;15&quot;</span> <span class="hljs-attr">align</span>=<span class="hljs-string">&quot;center&quot;</span> &gt;</span>Cantidad<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Barras de pan<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">align</span>=<span class="hljs-string">&quot;center&quot;</span> &gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;barras&quot;</span> <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;3&quot;</span> <span class="hljs-attr">maxlength</span>=<span class="hljs-string">&quot;3&quot;</span> &gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Ensaimadas<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">align</span>=<span class="hljs-string">&quot;center&quot;</span> &gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;ensaimadas&quot;</span> <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;3&quot;</span> <span class="hljs-attr">maxlength</span>=<span class="hljs-string">&quot;3&quot;</span> &gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Napolitanas<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">align</span>=<span class="hljs-string">&quot;center&quot;</span> &gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;napolitanas&quot;</span> <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;3&quot;</span> <span class="hljs-attr">maxlength</span>=<span class="hljs-string">&quot;3&quot;</span> &gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">&quot;2&quot;</span> &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;60&amp;&quot;</span> &gt;</span>Como encontr&amp;oacute; esta web?<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;desde&quot;</span> &gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span> &gt;</span>Soy un cliente habitual<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2&quot;</span> &gt;</span>Anuncio del peri&#xF3;dico<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;3&quot;</span> &gt;</span>P&#xE1;ginas amarillas<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;4&quot;</span> &gt;</span>Google<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">&quot;2&quot;</span> <span class="hljs-attr">align</span>=<span class="hljs-string">&quot;center&quot;</span> &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">&quot;2&quot;</span> &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Enviar pedido&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;submit&quot;</span> &gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>
+    Obs&#xE9;rvese como el campo **action** del formulario apunta hacia nuestro fichero **test.php**.<br> Esto quiere decir que al pulsar el bot&#xF3;n de env&#xED;o de datos, &#xE9;stos ser&#xE1;n enviados a la p&#xE1;gina **test.php** por medio del m&#xE9;todo POST (no aparecer&#xE1; ning&#xFA;n dato en la URL). Si buscamos entre toda la informaci&#xF3;n proporcionada por **test.php**, podremos ver que se han creado unas cuantas variables que nos permitir&#xED;an acceder desde el interior del c&#xF3;digo PHP a los datos del formulario, a partir de los nombres asignados a los campos del formulario en el c&#xF3;digo HTML.<br>En concreto, deberemos podemos buscar los arrays **_REQUEST** y **_POST** para comprobarlo.
+    </p>
+<p>
+Para aprender a c&#xF3;mo manejar los datos del formulario desde el interior del c&#xF3;digo PHP empezaremos con dos sencillos pasos.
+    Modificaremos el valor del atributo **action** del formulario de **formpedidos.html** para que apunte a un nuevo fichero que vamos a crear, cuyo nombre ser&#xE1; **procesar_pedido.php** y cuyo contenido ser&#xE1; el siguiente:
+</p>
+
+<pre><code class="lang-php">&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;Panader&#xED;a Berta &#x2013; Resultados del pedido&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;h1&gt;Panader&#xED;a Berta&lt;/h1&gt;
+      &lt;h2&gt;Resultados del pedido&lt;/h2&gt;
+      <span class="hljs-meta">&lt;?php</span>
+         <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;&lt;p&gt;Formulario de pedido procesado correctamente&lt;/p&gt;&apos;</span>;
+      <span class="hljs-meta">?&gt;</span>
+   &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Como podemos observar, el contenido del fichero se divide en:</p>
+
+<ul>
+<li>c&#xF3;digo HTML:</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Panader&#xED;a Berta<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Resultados del pedido<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+<ul>
+<li>etiquetas PHP (de inicio y terminaci&#xF3;n), que indican qu&#xE9; parte del fichero es c&#xF3;digo PHP:</li>
+</ul>
+<pre><code class="lang-html"><span class="php"><span class="hljs-meta">&lt;?php</span> ... <span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<ul>
+<li>y c&#xF3;digo PHP. En concreto, una instrucci&#xF3;n cuya funci&#xF3;n es a&#xF1;adir al c&#xF3;digo HTML enviado al navegador lo que se encuentra entre comillas simples. Esta instrucci&#xF3;n, como cualquier otra instrucci&#xF3;n PHP, deber&#xE1; <strong>terminar siempre</strong> con el s&#xED;mbolo de punto y coma:</li>
+</ul>
+<pre><code class="lang-php"><span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;&lt;p&gt;Formulario de pedidos procesado correctamente&lt;/p&gt;&apos;</span>;
+</code></pre>
+<p>
+  Etiquetas de inicio y fin del parser PHP:
+</p>
+
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Formulario procesado correctamente&apos;</span>; <span class="hljs-meta">?&gt;</span>
+</code></pre>
+<p>
+Aunque en versiones anteriores han existido otras formas de iniciar y cerrar el c&#xF3;digo PHP, actualmente este es el &#xFA;nico estilo que se podr&#xE1; utilizar.
+</p>
+<p>
+    Si nos fijamos en el fichero **procesar_pedido.php** veremos que realmente no se est&#xE1; haciendo    nada con los datos enviados con el formulario, as&#xED; que vamos a ver c&#xF3;mo acceder a ellos.<br>
+    &#xBF;C&#xF3;mo podemos acceder a esos valores? PHP maneja un conjunto de variables que crea autom&#xE1;ticamente a partir de los datos recibidos, ya sea mediante la petici&#xF3;n HTTP en el caso de un formulario de tipo POST, como a trav&#xE9;s de la query string en el caso de un formulario de tipo GET. Hemos de tener en cuenta algo muy importante, y es que en PHP ** los nombres de variable siempre empiezan con el s&#xED;mbolo $**.
+</p>
+<p>
+**Acceso a variables seg&#xFA;n su procedencia**: se basa en el uso de un array generado autom&#xE1;ticamente por PHP al recibir los datos del formulario (hablaremos en profundidad sobre los arrays m&#xE1;s adelante), como por ejemplo **$\_POST[&apos;barras&apos;]**.
+    </p>
+<p>
+**Seg&#xFA;n el m&#xE9;todo de env&#xED;o**, se generar&#xE1; alguno de los siguientes arrays:
+    </p>
+
+<ul>
+<li><p>Si el formulario hizo uso del m&#xE9;todo POST, el array ser&#xE1; <em>$_POST</em> (por ejemplo, podemos acceder a la cantidad de barras introducida por el usuario
+mediante <em>$_POST[&apos;barras&apos;]</em>).</p>
+</li>
+<li><p>Si el formulario hizo uso del m&#xE9;todo GET, el array ser&#xE1; <em>$_GET</em> (por ejemplo, podemos acceder a la cantidad de barras introducida por el
+usuario mediante <em>$_GET[&apos;barras&apos;]</em>).</p>
+</li>
+<li><p>En ambos casos, se crear&#xE1; tambi&#xE9;n un array llamado <em>$_REQUEST</em> (por ejemplo, podemos    acceder a la cantidad de barras introducida por el usuario
+mediante <em>$_REQUEST[&apos;barras&apos;]</em>).</p>
+</li>
+</ul>
+<p>Se trata de tres arrays superglobales (veremos qu&#xE9; significa esto m&#xE1;s adelante). La ventaja es que con este m&#xE9;todo tendremos muy clara la procedencia de los datos (GET o POST). La desventaja principal es que es inc&#xF3;modo trabajar con nombres de variable tan largos. Una soluci&#xF3;n para esto es crear variables al inicio del fichero que contengan una copia de estos valores:
+    </p>
+
+<pre><code class="lang-php">$barras = $_POST[<span class="hljs-string">&apos;barras&apos;</span>];
+</code></pre>
+<p>
+    Modificamos _procesar_pedido.php_ para que realmente se haga uso de los datos del formulario:
+    </p>
+
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+   <span class="hljs-comment">// Creamos nombres de variables    cortos</span>
+   $barras = $_POST[<span class="hljs-string">&apos;barras&apos;</span>];
+   $ensaimadas = $_POST[<span class="hljs-string">&apos;ensaimadas&apos;</span>];
+   $napolitanas = $_POST[<span class="hljs-string">&apos;napolitanas&apos;</span>];
+<span class="hljs-meta">?&gt;</span>
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;Panader&#xED;a Berta - Resultados del pedido&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;h1&gt;Panader&#xED;a Berta&lt;/h1&gt;
+      &lt;h2&gt;Resultados del pedido&lt;/h2&gt;
+      <span class="hljs-meta">&lt;?php</span>
+         <span class="hljs-comment">/* Procesamos el pedido */</span>
+         <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;&lt;p&gt;Su pedido es el siguiente: &lt;/p&gt;&apos;</span>;
+         <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;&lt;p&gt;Barras solicitadas: &lt;strong&gt;&apos;</span> . $barras . <span class="hljs-string">&apos;&lt;/strong&gt;&lt;br&gt;&apos;</span>;
+         <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Ensaimadas solicitadas: &lt;strong&gt;&apos;</span> . $ensaimadas . <span class="hljs-string">&apos;&lt;/strong&gt;&lt;br&gt;&apos;</span>;
+         <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Napolitanas solicitadas: &lt;strong&gt;&apos;</span> . $napolitanas . <span class="hljs-string">&apos;&lt;/strong&gt;&lt;/p&gt;&apos;</span>;
+      <span class="hljs-meta">?&gt;</span>
+   &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>
+    Lo &#xFA;nico que har&#xE1; nuestro ejemplo ser&#xE1; a&#xF1;adir al c&#xF3;digo HTML devuelto al navegador un p&#xE1;rrafo en el que se mostrar&#xE1; el valor de algunos de los campos del
+    formulario (concretamente, la cantidad de productos del
+    pedido). Para ello hacemos uso de las variables _$barras_, _$ensaimadas_ y _$napolitanas_
+    que hemos creado a partir de los datos recibidos por medio del array _$_POST_. Al hacer esto podremos acceder a la informaci&#xF3;n del formulario de una
+    manera m&#xE1;s manejable.
+    </p>
+<p>
+    En el segundo bloque de c&#xF3;digo PHP que hemos a&#xF1;adido podemos ver un ejemplo de **concatenaci&#xF3;n de cadenas**. Este operador permite construir cadenas de caracteres a partir de cadenas m&#xE1;s peque&#xF1;as y otros tipos de datos. En nuestro ejemplo, para cada producto hemos creado una cadena con un texto y el n&#xFA;mero de unidades de dicho producto. La sintaxis requiere el uso de comillas simples para las subcadenas y el operador punto para unir diferentes partes de la nueva cadena:
+    </p>
+
+<pre><code class="lang-php"><span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Barras solicitadas: &lt;strong&gt;&apos;</span> . $barras . <span class="hljs-string">&apos;&lt;/strong&gt;&lt;br&gt;&apos;</span>;
+</code></pre>
+<p>
+    Otra forma posible de conseguir el mismo resultado es utilizar las comillas dobles. Cualquier variable que se encuentre entre comillas dobles ser&#xE1; sustituida
+    por su valor. Sin embargo, este m&#xE9;todo no es v&#xE1;lido para el caso de arrays, en el que tendremos que utilizar una construcci&#xF3;n como la anterior.
+    </p>
+
+<pre><code class="lang-php"><span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Barras solicitadas: &lt;strong&gt;$barras&lt;/strong&gt;&lt;br&gt;&quot;</span>;
+</code></pre>
+<p>
+    Recuerda que solo podemos a&#xF1;adir variables a la cadena de esta forma con comillas dobles, no con comillas simples. Si hubi&#xE9;ramos tecleado lo siguiente:
+    </p>
+
+<pre><code class="lang-php"><span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Barras solicitadas: &lt;strong&gt;$barras&lt;/strong&gt;&lt;br&gt;&apos;</span>;
+</code></pre>
+<p>se hubiera enviado la siguiente secuencia al navegador junto al resto del c&#xF3;digo HTML:
+</p>
+
+<pre><code class="lang-html">Barras solicitadas: <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>$barras<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Se deja como ejercicio al lector comprobar qu&#xE9; es lo que ocurrir&#xED;a en el caso de que el m&#xE9;todo de env&#xED;o del formulario fuera GET y modificar el c&#xF3;digo para que todo volviera a funcionar correctamente.</p>
+</blockquote>
+<p>
+    Por &#xFA;limo a&#xF1;ade al script **procesar_pedido.php** el siguiente c&#xF3;digo, para que una vez que el usuario introduzca su pedido desde el formulario se le muestre el precio total del mismo incluyendo el IVA:
+    </p>
+
+<pre><code class="lang-php">$nproductos = $barras + $ensaimadas + $napolitanas;
+$total_acumulado = $barras * <span class="hljs-number">2</span> + $ensaimadas * <span class="hljs-number">10</span> + $napolitanas * <span class="hljs-number">4</span>;
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;&lt;p&gt;&lt;strong&gt;Subtotal:&lt;/strong&gt;&apos;</span>.number_format($total_acumulado,<span class="hljs-number">2</span>).<span class="hljs-string">&apos; &amp;euro;&lt;br&gt;&apos;</span>;
+$impuestos = <span class="hljs-number">0.21</span>; <span class="hljs-comment">// iva al 21%</span>
+$total_acumulado = $total_acumulado * (<span class="hljs-number">1</span> + $impuestos);
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;&lt;strong&gt;Total IVA incluido (21%):&lt;/strong&gt;&apos;</span> . number_format($total_acumulado,<span class="hljs-number">2</span>).<span class="hljs-string">&apos; &amp;euro;&lt;/p&gt;&apos;</span>;
+</code></pre>
+<blockquote>
+<p>La funci&#xF3;n <strong>number_format</strong> devuelve una cadena en la que se expresa el n&#xFA;mero pasado como primer par&#xE1;metro como un n&#xFA;mero real con tantos decimales como se indica en el segundo par&#xE1;metro. M&#xE1;s informaci&#xF3;n en el manual de PHP:
+   <a href="http://www.php.net/manual/es/function.number-format.php" target="_blank">http://www.php.net/manual/es/function.number-format.php</a></p>
+</blockquote>
+<h3 id="constantes">Constantes</h3>
+<p> Define constantes en _procesar_pedido.php _ para almacenar el precio de los productos de la panader&#xED;a, as&#xED; como para almacenar el IVA. Utiliza las constantes en la parte del c&#xF3;digo donde corresponda.</p>
+
+
+
+
+<h3 id="comprobaci&#xF3;n-de-los-datos-de-entrada">Comprobaci&#xF3;n de los datos de entrada</h3>
+<p>A&#xF1;adir el c&#xF3;digo necesario a _procesar_pedido.php_ para que se compruebe que se han introducido valores en todos los campos del formulario de pedidos de la panader&#xED;a. En el caso en el que alg&#xFA;n campo est&#xE9; vac&#xED;o, mostrar un mensaje de error y terminar la ejecuci&#xF3;n del script PHP. Para ello, busca informaci&#xF3;n sobre las funciones _boolean isset(mixed var)_ y _boolean empty(mixed var)_.
+            </p>
+<p>
+Por otra parte, se deber&#xE1; tambi&#xE9;n comprobar que el n&#xFA;mero de unidades de cada producto del pedido sea un n&#xFA;mero mayor o igual que cero.Para esto nos podemos apoyar de la funci&#xF3;n _is_numeric(mixed var)_ , consultando la documentaci&#xF3;n de PHP para comprender su funcionamiento.
+</p>
+<p>
+En ambos casos ser&#xE1; necesario utilizar la instrucci&#xF3;n _if_ . Se puede consultar su sintaxis en el ejercicio de estructuras de control. Para interrumpir la ejecuci&#xF3;n del script utiliza la funci&#xF3;n _die()_.
+</p>
+
+
+
+
+<h3 id="conversi&#xF3;n-de-tipos">Conversi&#xF3;n de tipos</h3>
+<p>A&#xF1;adir el c&#xF3;digo necesario para convertir los datos obtenidos del formulario (que ser&#xE1;n cadenas de texto) a su tipo de datos correspondiente.</p>
+
+
+
+
+<h3 id="estructuras-de-control">Estructuras de control</h3>
+<p>
+ Modificar el formulario HTML a&#xF1;adiendo un nuevo campo que permita escoger el tipo de cliente (PARTICULAR o EMPRESA) mediante un cuadro de selecci&#xF3;n (elemento `<select>`). Modificar tambi&#xE9;n _procesar_pedido.php_ para que se aplique un descuento diferente en ambos casos (un 1% para particulares y un 5% para empresas).
+        </select></p>
+<p>
+A&#xF1;adir otro campo al formulario HTML que le permita indicar al cliente el n&#xFA;mero de copias que desea obtener de la salida proporcionada por _procesar_pedido.php_. En este &#xFA;ltimo fichero hacer los cambios necesarios para que se muestre la salida tantas veces como lo haya solicitado el cliente.
+</p>
+<p>
+Para resolver este ejercicio deber&#xE1;s hacer uso de las estructuras de control de PHP, que no han sido explicadas anteriormente, pero que son muy parecidas a las de cualquier lenguaje de programaci&#xF3;n. A continuaci&#xF3;n tienes unos cuantos ejemplos. En primer lugar, un
+ejemplo de uso de _if..else_:
+        </p>
+
+<pre><code class="lang-php"><span class="hljs-keyword">if</span> ($desde == <span class="hljs-number">1</span>)
+   <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Soy un cliente habitual&apos;</span>;
+<span class="hljs-keyword">elseif</span> ($desde == <span class="hljs-number">2</span>)
+   <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Anuncio de periodico&apos;</span>;
+<span class="hljs-keyword">elseif</span> ($desde == <span class="hljs-number">3</span>)
+   <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Paginas amarillas&apos;</span>;
+<span class="hljs-keyword">elseif</span> ($desde == <span class="hljs-number">4</span>)
+   <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Google&apos;</span>;
+<span class="hljs-keyword">else</span>
+   <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;No nos ha indicado como nos encontro&apos;</span>;
+</code></pre>
+<p>
+Un ejemplo de uso de _switch_:
+</p>
+
+<pre><code class="lang-php"><span class="hljs-keyword">switch</span>($desde)
+{
+   <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;1&apos;</span>:
+      <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Soy cliente habitual&apos;</span>;
+      <span class="hljs-keyword">break</span>;
+   <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;2&apos;</span>:
+      <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Otros&apos;</span>;
+      <span class="hljs-keyword">break</span>;
+}
+</code></pre>
+<p>
+Un ejemplo de
+_while_ :
+</p>
+
+<pre><code class="lang-php">$contador = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">while</span> ($contador &lt;= <span class="hljs-number">10</span>)
+{
+   <span class="hljs-keyword">echo</span> $contador;
+   $contador--;
+}
+</code></pre>
+<p>
+Un ejemplo de
+_do..while_ :
+</p>
+
+<pre><code class="lang-php">$contador = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">do</span>
+{
+   <span class="hljs-keyword">echo</span> $contador;
+   $contador--;
+} <span class="hljs-keyword">while</span> ($contador &lt;= <span class="hljs-number">10</span>)
+</code></pre>
+<p>
+Y por &#xFA;ltimo un ejemplo de _for_ :
+</p>
+
+<pre><code class="lang-php"><span class="hljs-keyword">for</span> ($contador = <span class="hljs-number">0</span>; $contador &lt;= <span class="hljs-number">10</span>; $contador++)
+{
+   <span class="hljs-keyword">echo</span> $contador;
+}
+</code></pre>
+<h3 id="optativo-sintaxis-alternativa-de-las-estructuras-de-control">(OPTATIVO) Sintaxis alternativa de las estructuras de control</h3>
+<p>El lenguaje PHP dispone de una sintaxis alternativa para las estructuras de control. Esta sintaxis ser&#xE1; utilizada m&#xE1;s adelante durante el curso para la generaci&#xF3;n de plantillas. Su utilidad es mostrar estas instrucciones con una sintaxis m&#xE1;s clara para aquellas personas que no sepan programar. Por ejemplo, el siguiente c&#xF3;digo:
+            </p>
+
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+   <span class="hljs-keyword">if</span> ($prueba)
+   {
+      <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Hola\n&quot;</span>;
+   }
+<span class="hljs-meta">?&gt;</span>
+</code></pre>
+<p>podr&#xED;a haber sido expresado en PHP de la siguiente manera:</p>
+
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span> <span class="hljs-keyword">if</span> ($prueba): <span class="hljs-meta">?&gt;</span>
+<span class="hljs-meta">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Hola\n&amp;rdquo; ?&gt;
+&lt;?php endif; ?&gt;
+</span></code></pre>
+<p>
+Tienes una referencia completa sobre esta sintaxis aplicada a las  estructuras de control enumeradas en el ejercicio anterior en la
+direcci&#xF3;n siguiente: <a href="http://php.net/manual/es/control-structures.alternative-syntax.php" target="_blank">
+http://php.net/manual/es/control-structures.alternative-syntax.php</a>.
+</p>
+<p>En este ejercicio deber&#xE1;s repetir todo lo que se te pidi&#xF3; en el ejercicio anterior (diferente descuento seg&#xFA;n el tipo de cliente y repetir varias veces la salida) pero utilizando exclusivamente esta nueva sintaxis.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="operadores.html" class="navigation navigation-prev " aria-label="Previous page: Operadores">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../02_arrays/index.html" class="navigation navigation-next " aria-label="Next page: Arrays">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Ejercicios de Introducción a PHP","level":"1.2.13","depth":2,"next":{"title":"Arrays","level":"1.3","depth":1,"path":"02_arrays/README.md","ref":"02_arrays/README.md","articles":[{"title":"Arrays multidimensionales","level":"1.3.1","depth":2,"path":"02_arrays/arrays_multidimensionales.md","ref":"02_arrays/arrays_multidimensionales.md","articles":[]},{"title":"Ordenación de arrays","level":"1.3.2","depth":2,"path":"02_arrays/ordenacion_de_arrays.md","ref":"02_arrays/ordenacion_de_arrays.md","articles":[]},{"title":"Lectura desde fichero","level":"1.3.3","depth":2,"path":"02_arrays/lectura_desde_fichero.md","ref":"02_arrays/lectura_desde_fichero.md","articles":[]},{"title":"Operadores de arrays","level":"1.3.4","depth":2,"path":"02_arrays/operadores_de_arrays.md","ref":"02_arrays/operadores_de_arrays.md","articles":[]},{"title":"Otras funciones","level":"1.3.5","depth":2,"path":"02_arrays/otras_funciones.md","ref":"02_arrays/otras_funciones.md","articles":[]},{"title":"Ejercicios de Arrays","level":"1.3.6","depth":2,"path":"02_arrays/ejercicios_de_arrays.md","ref":"02_arrays/ejercicios_de_arrays.md","articles":[]}]},"previous":{"title":"Operadores","level":"1.2.12","depth":2,"path":"01_introduccion_a_la_programacion_servidor/operadores.md","ref":"01_introduccion_a_la_programacion_servidor/operadores.md","articles":[]},"dir":"ltr"},"config":{"plugins":["comment"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"white","family":"serif","size":2},"comment":{"highlightCommented":true},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"mcazorla","pdf":{"pageNumbers":true,"fontSize":16,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Programación en el servidor","language":"en","links":{"sidebar":{"Programación en el servidor":"https://www.gitbook.com/book/mcazorla/programacion-en-el-servidor"},"gitbook":true},"gitbook":"*","description":""},"file":{"path":"01_introduccion_a_la_programacion_servidor/ejercicios_de_introduccion_a_php.md","mtime":"2017-10-15T19:57:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-15T20:02:26.476Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-comment/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    
+
+
+</body></html>

@@ -1,6 +1,6 @@
 <?php include "../../templates/head.php";?>
 <link rel="stylesheet" href="./css/git-css.css">
-<title>GIT</title>
+<title>GIT | Help</title>
 <!-- <?php include "../../templates/nav-ini.php";?> -->
 <?php include "./nav-git.php";?>
 
@@ -381,7 +381,6 @@
                     </article>
                 </div>
             </section>
-
         </div>
     </div>
 </div>

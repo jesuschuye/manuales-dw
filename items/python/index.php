@@ -1,10 +1,9 @@
 <?php include "../../templates/head.php";?>
 <link rel="stylesheet" href="./css/aside.css">
 <link rel="stylesheet" href="./css/python-css.css">
-<title>python</title>
+<title>Python | Help</title>
 <?php include "../../templates/nav-ini.php";?>
 <?php include "./nav-python.php";?>
-<h1>Index Python</h1>
 <div class="container-fluid content-gen">
     <div class="row mt-3 contenido">
         <!-- indice -->

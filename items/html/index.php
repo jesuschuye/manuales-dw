@@ -1,21 +1,19 @@
 <?php include "../../templates/head.php";?>
+<link rel="stylesheet" href="./css/aside-html.css">
 <link rel="stylesheet" href="./css/html-css.css">
-<title>html</title>
+<title>HTML | Help</title>
 <?php include "../../templates/nav-ini.php";?>
 <?php include "./nav-html.php";?>
-<section>
-    <div class="container">
-        <h2></h2>
-        <article>
-            <h2></h2>
-            <div class="row">
-                <div class="row mt-5">
-                    <h3 class="h5"></h3>
-                    <p class="destacado"></p>
-                    <pre class="pre-content"></pre>
-                </div>                    
-            </div>
-        </article>
+<div class="container-fluid content-gen">
+    <div class="row mt-3 contenido">
+        <!-- indice -->
+        <div class="col-md-3">
+            <?php include "./templates/aside-html.php";?>
+        </div>
+        <!-- contenido -->
+        <div class="col-md-9 px-md-4">
+            <?php include "./introduccion.php";?>
+        </div>
     </div>
-</section>
+</div>
 <?php include "../../templates/footer.php"?>
